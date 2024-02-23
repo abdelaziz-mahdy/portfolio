@@ -76,49 +76,49 @@ class GithubIssue {
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> _data = <String, dynamic>{};
-        _data["url"] = url;
-        _data["repository_url"] = repositoryUrl;
-        _data["labels_url"] = labelsUrl;
-        _data["comments_url"] = commentsUrl;
-        _data["events_url"] = eventsUrl;
-        _data["html_url"] = htmlUrl;
-        _data["id"] = id;
-        _data["node_id"] = nodeId;
-        _data["number"] = number;
-        _data["title"] = title;
+        final Map<String, dynamic> data = <String, dynamic>{};
+        data["url"] = url;
+        data["repository_url"] = repositoryUrl;
+        data["labels_url"] = labelsUrl;
+        data["comments_url"] = commentsUrl;
+        data["events_url"] = eventsUrl;
+        data["html_url"] = htmlUrl;
+        data["id"] = id;
+        data["node_id"] = nodeId;
+        data["number"] = number;
+        data["title"] = title;
         if(user != null) {
-            _data["user"] = user?.toJson();
+            data["user"] = user?.toJson();
         }
         if(labels != null) {
-            _data["labels"] = labels;
+            data["labels"] = labels;
         }
-        _data["state"] = state;
-        _data["locked"] = locked;
-        _data["assignee"] = assignee;
+        data["state"] = state;
+        data["locked"] = locked;
+        data["assignee"] = assignee;
         if(assignees != null) {
-            _data["assignees"] = assignees;
+            data["assignees"] = assignees;
         }
-        _data["milestone"] = milestone;
-        _data["comments"] = comments;
-        _data["created_at"] = createdAt;
-        _data["updated_at"] = updatedAt;
-        _data["closed_at"] = closedAt;
-        _data["author_association"] = authorAssociation;
-        _data["active_lock_reason"] = activeLockReason;
-        _data["draft"] = draft;
+        data["milestone"] = milestone;
+        data["comments"] = comments;
+        data["created_at"] = createdAt;
+        data["updated_at"] = updatedAt;
+        data["closed_at"] = closedAt;
+        data["author_association"] = authorAssociation;
+        data["active_lock_reason"] = activeLockReason;
+        data["draft"] = draft;
         if(pullRequest != null) {
-            _data["pull_request"] = pullRequest?.toJson();
+            data["pull_request"] = pullRequest?.toJson();
         }
-        _data["body"] = body;
+        data["body"] = body;
         if(reactions != null) {
-            _data["reactions"] = reactions?.toJson();
+            data["reactions"] = reactions?.toJson();
         }
-        _data["timeline_url"] = timelineUrl;
-        _data["performed_via_github_app"] = performedViaGithubApp;
-        _data["state_reason"] = stateReason;
-        _data["score"] = score;
-        return _data;
+        data["timeline_url"] = timelineUrl;
+        data["performed_via_github_app"] = performedViaGithubApp;
+        data["state_reason"] = stateReason;
+        data["score"] = score;
+        return data;
     }
 
     GithubIssue copyWith({

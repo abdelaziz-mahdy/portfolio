@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:portfolio/github/models/github_issue.dart';
-import 'package:portfolio/github/models/pull_request.dart';
 
 class GitHubAPI {
   final String username;
@@ -29,7 +28,14 @@ class GitHubAPI {
           },
         );
         final prs = response.data['items'] as List;
+        // print(prs);
         allPRs.addAll(prs.map((e) => GithubIssue.fromJson(e)));
+        /// Update the state of the PRs to 'merged' if they have been merged
+        for (var element in allPRs) {
+          if (element.pullRequest?.mergedAt != null) {
+            element.state = 'merged';
+          }
+        }
         if (prs.length < perPage) {
           break; // Break the loop if there are no more PRs to fetch
         }

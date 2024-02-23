@@ -46,26 +46,26 @@ class User {
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> _data = <String, dynamic>{};
-        _data["login"] = login;
-        _data["id"] = id;
-        _data["node_id"] = nodeId;
-        _data["avatar_url"] = avatarUrl;
-        _data["gravatar_id"] = gravatarId;
-        _data["url"] = url;
-        _data["html_url"] = htmlUrl;
-        _data["followers_url"] = followersUrl;
-        _data["following_url"] = followingUrl;
-        _data["gists_url"] = gistsUrl;
-        _data["starred_url"] = starredUrl;
-        _data["subscriptions_url"] = subscriptionsUrl;
-        _data["organizations_url"] = organizationsUrl;
-        _data["repos_url"] = reposUrl;
-        _data["events_url"] = eventsUrl;
-        _data["received_events_url"] = receivedEventsUrl;
-        _data["type"] = type;
-        _data["site_admin"] = siteAdmin;
-        return _data;
+        final Map<String, dynamic> data = <String, dynamic>{};
+        data["login"] = login;
+        data["id"] = id;
+        data["node_id"] = nodeId;
+        data["avatar_url"] = avatarUrl;
+        data["gravatar_id"] = gravatarId;
+        data["url"] = url;
+        data["html_url"] = htmlUrl;
+        data["followers_url"] = followersUrl;
+        data["following_url"] = followingUrl;
+        data["gists_url"] = gistsUrl;
+        data["starred_url"] = starredUrl;
+        data["subscriptions_url"] = subscriptionsUrl;
+        data["organizations_url"] = organizationsUrl;
+        data["repos_url"] = reposUrl;
+        data["events_url"] = eventsUrl;
+        data["received_events_url"] = receivedEventsUrl;
+        data["type"] = type;
+        data["site_admin"] = siteAdmin;
+        return data;
     }
 
     User copyWith({

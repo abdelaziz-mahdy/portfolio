@@ -30,18 +30,18 @@ class Reactions {
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> _data = <String, dynamic>{};
-        _data["url"] = url;
-        _data["total_count"] = totalCount;
-        _data["+1"] = plusOne;
-        _data["-1"] = minusOne;
-        _data["laugh"] = laugh;
-        _data["hooray"] = hooray;
-        _data["confused"] = confused;
-        _data["heart"] = heart;
-        _data["rocket"] = rocket;
-        _data["eyes"] = eyes;
-        return _data;
+        final Map<String, dynamic> data = <String, dynamic>{};
+        data["url"] = url;
+        data["total_count"] = totalCount;
+        data["+1"] = plusOne;
+        data["-1"] = minusOne;
+        data["laugh"] = laugh;
+        data["hooray"] = hooray;
+        data["confused"] = confused;
+        data["heart"] = heart;
+        data["rocket"] = rocket;
+        data["eyes"] = eyes;
+        return data;
     }
 
     Reactions copyWith({

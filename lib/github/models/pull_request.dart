@@ -22,13 +22,13 @@ class PullRequest {
     }
 
     Map<String, dynamic> toJson() {
-        final Map<String, dynamic> _data = <String, dynamic>{};
-        _data["url"] = url;
-        _data["html_url"] = htmlUrl;
-        _data["diff_url"] = diffUrl;
-        _data["patch_url"] = patchUrl;
-        _data["merged_at"] = mergedAt;
-        return _data;
+        final Map<String, dynamic> data = <String, dynamic>{};
+        data["url"] = url;
+        data["html_url"] = htmlUrl;
+        data["diff_url"] = diffUrl;
+        data["patch_url"] = patchUrl;
+        data["merged_at"] = mergedAt;
+        return data;
     }
 
     PullRequest copyWith({

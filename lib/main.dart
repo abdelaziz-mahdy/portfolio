@@ -1,16 +1,9 @@
-import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:portfolio/github/data/github_data.dart';
+import 'package:portfolio/github/view/pull_requests_on_public_repos.dart';
 
 Future<void> main() async {
-  final gitHubAPI =
-      GitHubAPI('zezo357'); // Replace with actual username and token
-  final prs = await gitHubAPI.fetchPublicPRs(
-      filterOutsideRepos: true); // Set to false if you don't want to filter
-  print('Found ${prs.length} PRs.');
-  // Uncomment the next line to print details of each PR
-  prs.forEach((pr) => print((pr.toJson())));
+
   runApp(const MyApp());
 }
 
@@ -122,6 +115,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const Expanded(
+              child: PullRequestsOnPublicRepos(
+              ),
+            )
           ],
         ),
       ),
