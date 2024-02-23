@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/github/models/github_issue.dart';
 
+
 class GithubIssuesList extends StatelessWidget {
   final List<GithubIssue> issues;
 
@@ -11,27 +12,37 @@ class GithubIssuesList extends StatelessWidget {
     return ListView.builder(
       itemCount: issues.length,
       itemBuilder: (context, index) {
-        final issue = issues[index];
-        return Card(
-          margin: const EdgeInsets.all(8.0),
-          child: ListTile(
-            title: Text(issue.title ?? 'No title'),
-            subtitle: Text(issue.body?.toString() ?? 'No description'),
-            leading: issue.user?.avatarUrl != null
-                ? CircleAvatar(
-                    backgroundImage: NetworkImage(issue.user!.avatarUrl!),
-                  )
-                : null,
-            trailing: Text(issue.state ?? 'No state'),
-            onTap: () {
-              // Handle tap if needed, for example opening issue URL
-              if (issue.htmlUrl != null) {
-                // Use your preferred method/package to open URLs, like url_launcher
-              }
-            },
-          ),
-        );
+        return GithubIssueCard(issue: issues[index]);
       },
+    );
+  }
+}
+
+class GithubIssueCard extends StatelessWidget {
+  final GithubIssue issue;
+
+  const GithubIssueCard({super.key, required this.issue});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.all(8.0),
+      child: ListTile(
+        title: Text(issue.title ?? 'No title'),
+        subtitle: Text(issue.body?.toString() ?? 'No description'),
+        leading: issue.user?.avatarUrl != null
+            ? CircleAvatar(
+                backgroundImage: NetworkImage(issue.user!.avatarUrl!),
+              )
+            : null,
+        trailing: Text(issue.state ?? 'No state'),
+        onTap: () {
+          // Handle tap if needed, for example opening issue URL
+          if (issue.htmlUrl != null) {
+            // Use your preferred method/package to open URLs, like url_launcher
+          }
+        },
+      ),
     );
   }
 }
