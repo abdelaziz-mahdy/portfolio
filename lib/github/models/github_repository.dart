@@ -54,7 +54,7 @@ class GithubRepository {
   String? sshUrl;
   String? cloneUrl;
   String? svnUrl;
-  dynamic homepage;
+  String? homepage;
   int? size;
   int? stargazersCount;
   int? watchersCount;
@@ -243,6 +243,13 @@ class GithubRepository {
     watchers = json["watchers"];
     defaultBranch = json["default_branch"];
   }
+  bool doesDemoExist() {
+    return homepage != null &&
+        homepage!.isNotEmpty &&
+        !(homepage!.startsWith('www.github.com') ||
+            homepage!.startsWith('github.com') ||
+            homepage!.startsWith('https://github.com'));
+  }
 
   static List<GithubRepository> fromList(List<Map<String, dynamic>> list) {
     return list.map((map) => GithubRepository.fromJson(map)).toList();
@@ -390,7 +397,7 @@ class GithubRepository {
     String? sshUrl,
     String? cloneUrl,
     String? svnUrl,
-    dynamic homepage,
+    String? homepage,
     int? size,
     int? stargazersCount,
     int? watchersCount,

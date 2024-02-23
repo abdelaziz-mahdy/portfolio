@@ -62,19 +62,56 @@ class GitHubAPI {
     }
   }
 
-  Future<List<GithubRepository>> fetchRepos({bool includeForks = true}) async {
+  Future<List<String>> fetchUserOrgs() async {
+    List<String> orgs = [];
+    try {
+      final response =
+          await _dio.get('https://api.github.com/users/$username/orgs');
+      final List<dynamic> orgData = response.data;
+      for (var org in orgData) {
+        orgs.add(org['login']); // 'login' is the organization's username
+      }
+    } catch (e, stackTrace) {
+      print('Failed to fetch organizations: $e $stackTrace');
+    }
+    return orgs;
+  }
+
+  Future<List<GithubRepository>> fetchAllReposForUserAndOrgs(
+      {bool includeForks = true}) async {
+    List<GithubRepository> allRepos = [];
+    // Fetch user's repos
+    allRepos.addAll(await fetchRepos(includeForks: includeForks));
+
+    // Fetch user's organizations
+    List<String> orgs = await fetchUserOrgs();
+    // print("Orgs: $orgs");
+    // Fetch repos for each organization
+    for (String orgName in orgs) {
+      List<GithubRepository> orgRepos =
+          await fetchRepos(includeForks: includeForks, orgName: orgName);
+      allRepos.addAll(orgRepos);
+    }
+
+    return allRepos;
+  }
+
+  Future<List<GithubRepository>> fetchRepos(
+      {bool includeForks = true, String? orgName}) async {
     List<GithubRepository> repos = [];
     int page = 1;
     const int perPage = 100;
+    String baseUrl = orgName == null
+        ? 'https://api.github.com/users/$username/repos'
+        : 'https://api.github.com/orgs/$orgName/repos';
+
     try {
       while (true) {
         final response = await _dio.get(
-          'https://api.github.com/users/$username/repos',
+          baseUrl,
           queryParameters: {
             'page': page,
             'per_page': perPage,
-            'type':
-                'owner' // Ensures we only get repositories owned by the user
           },
         );
         final List<dynamic> repoData = response.data;

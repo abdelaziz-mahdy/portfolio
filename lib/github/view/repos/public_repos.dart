@@ -21,19 +21,17 @@ class _RepositoriesListState extends State<RepositoriesList> {
   Future<void> fetchRepositories() async {
     isLoading.value = true;
     List<GithubRepository> fetchedRepos =
-        await gitHubAPI.fetchRepos(includeForks: false);
+        await gitHubAPI.fetchAllReposForUserAndOrgs(includeForks: false);
 
-    // Custom sort: prioritize by homepage presence, then by star count
     fetchedRepos.sort((a, b) {
-      // Check homepage presence: repositories with a homepage come first
-      int homepageComparison =
-          (b.homepage != null && b.homepage!.isNotEmpty ? 1 : 0) -
-              (a.homepage != null && a.homepage!.isNotEmpty ? 1 : 0);
-      if (homepageComparison != 0) {
-        return homepageComparison;
+      // First, sort by star count in descending order
+      int starComparison =
+          (b.stargazersCount ?? 0).compareTo(a.stargazersCount ?? 0);
+      if (starComparison != 0) {
+        return starComparison; // Prioritize by star count first
       }
-      // If both have or don't have a homepage, then sort by star count
-      return (b.stargazersCount ?? 0).compareTo(a.stargazersCount ?? 0);
+      // If star counts are equal, prioritize by homepage presence
+      return (b.doesDemoExist() ? 1 : 0) - (a.doesDemoExist() ? 1 : 0);
     });
 
     repositories = fetchedRepos;
@@ -89,10 +87,9 @@ class _RepositoriesListState extends State<RepositoriesList> {
                         subtitle: Text(
                             repo.description?.toString() ?? 'No Description'),
                         trailing: ElevatedButton(
-                          onPressed:
-                              repo.homepage != null && repo.homepage!.isNotEmpty
-                                  ? () => _launchURL(repo.homepage!)
-                                  : null,
+                          onPressed: repo.doesDemoExist()
+                              ? () => _launchURL(repo.homepage!)
+                              : null,
                           child: const Text('Demo'),
                         ),
                         onTap: () => _launchURL(repo.htmlUrl ?? ''),
