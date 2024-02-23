@@ -10,8 +10,6 @@ class GithubIssueCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
       child: ListTile(

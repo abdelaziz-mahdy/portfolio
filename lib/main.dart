@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
-import 'package:portfolio/github/view/pull_requests_on_public_repos.dart';
+import 'package:portfolio/github/view/pull_requests/pull_requests_on_public_repos.dart';
+import 'package:portfolio/github/view/repos/public_repos.dart';
 
 Future<void> main() async {
-
   runApp(const MyApp());
 }
 
@@ -115,9 +114,11 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            // const Expanded(
+            //   child: PullRequestsOnPublicRepos(),
+            // )
             const Expanded(
-              child: PullRequestsOnPublicRepos(
-              ),
+              child: RepositoriesList(),
             )
           ],
         ),

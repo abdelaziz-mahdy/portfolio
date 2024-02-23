@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/github/models/github_issue.dart';
-import 'package:portfolio/github/view/github_issue_card.dart';
+import 'package:portfolio/github/view/pull_requests/github_issue_card.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class RepositoryCard extends StatelessWidget {
