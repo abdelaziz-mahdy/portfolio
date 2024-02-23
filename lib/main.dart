@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/github/view/pull_requests/pull_requests_on_public_repos.dart';
 import 'package:portfolio/github/view/repos/public_repos.dart';
 
 Future<void> main() async {

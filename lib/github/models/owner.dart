@@ -1,93 +1,112 @@
 class Owner {
-    String? login;
-    int? id;
-    String? nodeId;
-    String? avatarUrl;
-    String? gravatarId;
-    String? url;
-    String? htmlUrl;
-    String? followersUrl;
-    String? followingUrl;
-    String? gistsUrl;
-    String? starredUrl;
-    String? subscriptionsUrl;
-    String? organizationsUrl;
-    String? reposUrl;
-    String? eventsUrl;
-    String? receivedEventsUrl;
-    String? type;
-    bool? siteAdmin;
+  String? login;
+  int? id;
+  String? nodeId;
+  String? avatarUrl;
+  String? gravatarId;
+  String? url;
+  String? htmlUrl;
+  String? followersUrl;
+  String? followingUrl;
+  String? gistsUrl;
+  String? starredUrl;
+  String? subscriptionsUrl;
+  String? organizationsUrl;
+  String? reposUrl;
+  String? eventsUrl;
+  String? receivedEventsUrl;
+  String? type;
+  bool? siteAdmin;
 
-    Owner({this.login, this.id, this.nodeId, this.avatarUrl, this.gravatarId, this.url, this.htmlUrl, this.followersUrl, this.followingUrl, this.gistsUrl, this.starredUrl, this.subscriptionsUrl, this.organizationsUrl, this.reposUrl, this.eventsUrl, this.receivedEventsUrl, this.type, this.siteAdmin});
+  Owner(
+      {this.login,
+      this.id,
+      this.nodeId,
+      this.avatarUrl,
+      this.gravatarId,
+      this.url,
+      this.htmlUrl,
+      this.followersUrl,
+      this.followingUrl,
+      this.gistsUrl,
+      this.starredUrl,
+      this.subscriptionsUrl,
+      this.organizationsUrl,
+      this.reposUrl,
+      this.eventsUrl,
+      this.receivedEventsUrl,
+      this.type,
+      this.siteAdmin});
 
-    Owner.fromJson(Map<String, dynamic> json) {
-        login = json["login"];
-        id = json["id"];
-        nodeId = json["node_id"];
-        avatarUrl = json["avatar_url"];
-        gravatarId = json["gravatar_id"];
-        url = json["url"];
-        htmlUrl = json["html_url"];
-        followersUrl = json["followers_url"];
-        followingUrl = json["following_url"];
-        gistsUrl = json["gists_url"];
-        starredUrl = json["starred_url"];
-        subscriptionsUrl = json["subscriptions_url"];
-        organizationsUrl = json["organizations_url"];
-        reposUrl = json["repos_url"];
-        eventsUrl = json["events_url"];
-        receivedEventsUrl = json["received_events_url"];
-        type = json["type"];
-        siteAdmin = json["site_admin"];
-    }
+  Owner.fromJson(Map<String, dynamic> json) {
+    login = json["login"];
+    id = json["id"];
+    nodeId = json["node_id"];
+    avatarUrl = json["avatar_url"];
+    gravatarId = json["gravatar_id"];
+    url = json["url"];
+    htmlUrl = json["html_url"];
+    followersUrl = json["followers_url"];
+    followingUrl = json["following_url"];
+    gistsUrl = json["gists_url"];
+    starredUrl = json["starred_url"];
+    subscriptionsUrl = json["subscriptions_url"];
+    organizationsUrl = json["organizations_url"];
+    reposUrl = json["repos_url"];
+    eventsUrl = json["events_url"];
+    receivedEventsUrl = json["received_events_url"];
+    type = json["type"];
+    siteAdmin = json["site_admin"];
+  }
 
-    static List<Owner> fromList(List<Map<String, dynamic>> list) {
-        return list.map((map) => Owner.fromJson(map)).toList();
-    }
+  static List<Owner> fromList(List<Map<String, dynamic>> list) {
+    return list.map((map) => Owner.fromJson(map)).toList();
+  }
 
-    Map<String, dynamic> toJson() {
-        final Map<String, dynamic> _data = <String, dynamic>{};
-        _data["login"] = login;
-        _data["id"] = id;
-        _data["node_id"] = nodeId;
-        _data["avatar_url"] = avatarUrl;
-        _data["gravatar_id"] = gravatarId;
-        _data["url"] = url;
-        _data["html_url"] = htmlUrl;
-        _data["followers_url"] = followersUrl;
-        _data["following_url"] = followingUrl;
-        _data["gists_url"] = gistsUrl;
-        _data["starred_url"] = starredUrl;
-        _data["subscriptions_url"] = subscriptionsUrl;
-        _data["organizations_url"] = organizationsUrl;
-        _data["repos_url"] = reposUrl;
-        _data["events_url"] = eventsUrl;
-        _data["received_events_url"] = receivedEventsUrl;
-        _data["type"] = type;
-        _data["site_admin"] = siteAdmin;
-        return _data;
-    }
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["login"] = login;
+    data["id"] = id;
+    data["node_id"] = nodeId;
+    data["avatar_url"] = avatarUrl;
+    data["gravatar_id"] = gravatarId;
+    data["url"] = url;
+    data["html_url"] = htmlUrl;
+    data["followers_url"] = followersUrl;
+    data["following_url"] = followingUrl;
+    data["gists_url"] = gistsUrl;
+    data["starred_url"] = starredUrl;
+    data["subscriptions_url"] = subscriptionsUrl;
+    data["organizations_url"] = organizationsUrl;
+    data["repos_url"] = reposUrl;
+    data["events_url"] = eventsUrl;
+    data["received_events_url"] = receivedEventsUrl;
+    data["type"] = type;
+    data["site_admin"] = siteAdmin;
+    return data;
+  }
 
-    Owner copyWith({
-        String? login,
-        int? id,
-        String? nodeId,
-        String? avatarUrl,
-        String? gravatarId,
-        String? url,
-        String? htmlUrl,
-        String? followersUrl,
-        String? followingUrl,
-        String? gistsUrl,
-        String? starredUrl,
-        String? subscriptionsUrl,
-        String? organizationsUrl,
-        String? reposUrl,
-        String? eventsUrl,
-        String? receivedEventsUrl,
-        String? type,
-        bool? siteAdmin,
-    }) => Owner(
+  Owner copyWith({
+    String? login,
+    int? id,
+    String? nodeId,
+    String? avatarUrl,
+    String? gravatarId,
+    String? url,
+    String? htmlUrl,
+    String? followersUrl,
+    String? followingUrl,
+    String? gistsUrl,
+    String? starredUrl,
+    String? subscriptionsUrl,
+    String? organizationsUrl,
+    String? reposUrl,
+    String? eventsUrl,
+    String? receivedEventsUrl,
+    String? type,
+    bool? siteAdmin,
+  }) =>
+      Owner(
         login: login ?? this.login,
         id: id ?? this.id,
         nodeId: nodeId ?? this.nodeId,
@@ -106,5 +125,5 @@ class Owner {
         receivedEventsUrl: receivedEventsUrl ?? this.receivedEventsUrl,
         type: type ?? this.type,
         siteAdmin: siteAdmin ?? this.siteAdmin,
-    );
+      );
 }

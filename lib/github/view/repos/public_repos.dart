@@ -73,9 +73,9 @@ class _RepositoriesListState extends State<RepositoriesList> {
                   ListTile(
                     title: Row(
                       children: [
-                        Icon(Icons.star, color: Colors.yellow),
+                        const Icon(Icons.star, color: Colors.yellow),
                         Text(" ${repo.stargazersCount ?? 0}"),
-                        SizedBox(width: 8),
+                        const SizedBox(width: 8),
                         Expanded(child: Text(repo.name ?? 'No Name')),
                       ],
                     ),

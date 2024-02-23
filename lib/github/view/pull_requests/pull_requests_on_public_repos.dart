@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_issue.dart';
-import 'package:portfolio/github/models/github_repository.dart';
 import 'package:portfolio/github/utils.dart';
 import 'package:portfolio/github/view/pull_requests/repository_card.dart';
 
@@ -27,7 +26,6 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
   int totalPRs = 0;
 
   Future<void> fetchIssues() async {
-
     isLoading.value = true;
     List<GithubIssue> issues =
         await gitHubAPI.fetchPublicPRs(filterOutsideRepos: true);
