@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:portfolio/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_repository.dart';
@@ -62,50 +64,57 @@ class _RepositoriesListState extends State<RepositoriesList> {
         if (isLoading) {
           return const Center(child: CircularProgressIndicator());
         }
-        return ListView.builder(
-          itemCount: repositories.length,
-          itemBuilder: (context, index) {
-            final repo = repositories[index];
-            return Card(
-              margin: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  ListTile(
-                    title: Row(
-                      children: [
-                        const Icon(Icons.star, color: Colors.yellow),
-                        Text(" ${repo.stargazersCount ?? 0}"),
-                        const SizedBox(width: 8),
-                        Expanded(child: Text(repo.name ?? 'No Name')),
-                      ],
-                    ),
-                    subtitle:
-                        Text(repo.description?.toString() ?? 'No Description'),
-                    trailing: ElevatedButton(
-                      onPressed:
-                          repo.homepage != null && repo.homepage!.isNotEmpty
-                              ? () => _launchURL(repo.homepage!)
-                              : null,
-                      child: const Text('Demo'),
-                    ),
-                    onTap: () => _launchURL(repo.htmlUrl ?? ''),
+        return Column(children: [
+          const Text("Public Repos",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          const SizedBox(height: 16.0),
+          Expanded(
+            child: ListView.builder(
+              itemCount: repositories.length,
+              itemBuilder: (context, index) {
+                final repo = repositories[index];
+                return Card(
+                  margin: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        title: Row(
+                          children: [
+                            const Icon(Icons.star, color: Colors.yellow),
+                            Text(" ${repo.stargazersCount ?? 0}"),
+                            const SizedBox(width: 8),
+                            Expanded(child: Text(repo.name ?? 'No Name')),
+                          ],
+                        ),
+                        subtitle: Text(
+                            repo.description?.toString() ?? 'No Description'),
+                        trailing: ElevatedButton(
+                          onPressed:
+                              repo.homepage != null && repo.homepage!.isNotEmpty
+                                  ? () => _launchURL(repo.homepage!)
+                                  : null,
+                          child: const Text('Demo'),
+                        ),
+                        onTap: () => _launchURL(repo.htmlUrl ?? ''),
+                      ),
+                      // // Language Card
+                      // if (repo.language != null)
+                      //   Container(
+                      //     alignment: Alignment.centerRight,
+                      //     padding: const EdgeInsets.symmetric(
+                      //         horizontal: 16, vertical: 8),
+                      //     child: Chip(
+                      //       label: Text(repo.language ?? 'Language: Unknown'),
+                      //       avatar: const Icon(Icons.code, size: 20.0),
+                      //     ),
+                      //   ),
+                    ],
                   ),
-                  // // Language Card
-                  // if (repo.language != null)
-                  //   Container(
-                  //     alignment: Alignment.centerRight,
-                  //     padding: const EdgeInsets.symmetric(
-                  //         horizontal: 16, vertical: 8),
-                  //     child: Chip(
-                  //       label: Text(repo.language ?? 'Language: Unknown'),
-                  //       avatar: const Icon(Icons.code, size: 20.0),
-                  //     ),
-                  //   ),
-                ],
-              ),
-            );
-          },
-        );
+                );
+              },
+            ),
+          )
+        ]);
       },
     );
   }
