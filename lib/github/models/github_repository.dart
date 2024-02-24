@@ -243,12 +243,13 @@ class GithubRepository {
     watchers = json["watchers"];
     defaultBranch = json["default_branch"];
   }
+
   bool doesDemoExist() {
-    return homepage != null &&
-        homepage!.isNotEmpty &&
-        !(homepage!.startsWith('www.github.com') ||
-            homepage!.startsWith('github.com') ||
-            homepage!.startsWith('https://github.com'));
+    return hasPages ?? false;
+  }
+
+  String getDemoUrl() {
+    return "https://${owner?.login}.github.io/$name/";
   }
 
   static List<GithubRepository> fromList(List<Map<String, dynamic>> list) {

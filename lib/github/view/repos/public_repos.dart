@@ -88,7 +88,7 @@ class _RepositoriesListState extends State<RepositoriesList> {
                             repo.description?.toString() ?? 'No Description'),
                         trailing: ElevatedButton(
                           onPressed: repo.doesDemoExist()
-                              ? () => _launchURL(repo.homepage!)
+                              ? () => _launchURL(repo.getDemoUrl())
                               : null,
                           child: const Text('Demo'),
                         ),
