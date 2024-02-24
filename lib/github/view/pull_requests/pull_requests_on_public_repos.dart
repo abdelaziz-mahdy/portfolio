@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants.dart';
+import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_issue.dart';
 import 'package:portfolio/github/utils.dart';
@@ -104,13 +104,19 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
         if (isLoading) {
           return const Center(child: CircularProgressIndicator());
         }
-        return ListView(
+        return Column(
           children: [
             _buildSummary(), // Include the summary at the top
-            ...groupedIssues.entries.map((entry) {
-              return RepositoryCard(
-                  repositoryUrl: entry.key, issues: entry.value);
-            }),
+
+            ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                ...groupedIssues.entries.map((entry) {
+                  return RepositoryCard(
+                      repositoryUrl: entry.key, issues: entry.value);
+                }),
+              ],
+            ),
           ],
         );
       },

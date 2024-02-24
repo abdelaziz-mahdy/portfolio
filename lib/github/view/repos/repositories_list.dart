@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:portfolio/constants.dart';
+import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_repository.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -68,6 +66,7 @@ class _RepositoriesListState extends State<RepositoriesList> {
           const SizedBox(height: 16.0),
           Expanded(
             child: ListView.builder(
+              scrollDirection: Axis.horizontal,
               itemCount: repositories.length,
               itemBuilder: (context, index) {
                 final repo = repositories[index];

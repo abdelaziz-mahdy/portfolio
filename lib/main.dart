@@ -1,126 +1,241 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:portfolio/constants/constants.dart';
+import 'package:portfolio/constants/models/course.dart';
+import 'package:portfolio/constants/models/education.dart';
+import 'package:portfolio/constants/models/experience.dart';
 import 'package:portfolio/github/view/pull_requests/pull_requests_on_public_repos.dart';
-import 'package:portfolio/github/view/repos/public_repos.dart';
+import 'package:portfolio/github/view/repos/repositories_list.dart';
 
-Future<void> main() async {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Portfolio',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const PortfolioHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
+class PortfolioHomePage extends StatelessWidget {
+  const PortfolioHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: const Text('Portfolio'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.email),
+            onPressed: () {
+              // Handle your email action here
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.link),
+            onPressed: () {
+              // Handle your LinkedIn action here
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.code),
+            onPressed: () {
+              // Handle your GitHub action here
+            },
+          ),
+        ],
       ),
-      body: const Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Row(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Expanded(
-              child: PullRequestsOnPublicRepos(),
-            ),
-            Expanded(
-              child: RepositoriesList(),
-            )
+      body: SingleChildScrollView(
+        child: StaggeredGrid.count(
+          crossAxisCount: MediaQuery.of(context).size.width > 600 ? 2 : 1,
+          // childAspectRatio: (MediaQuery.of(context).size.width / 2) / 300,
+          children: [
+            CourseCard(courses: Constants.courses),
+            SkillsCard(skills: Constants.skills),
+            EducationCard(educations: Constants.education),
+            ExperienceCard(experiences: Constants.experience),
+            // PullRequestsOnPublicRepos(),  // Uncomment if these are to be included
+            // RepositoriesList(),           // Adjust layout or wrap with a fixed height Container if necessary
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class SkillsCard extends StatelessWidget {
+  final List<String> skills;
+
+  const SkillsCard({super.key, required this.skills});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: const EdgeInsets.all(8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('Skills',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Wrap(
+              spacing: 8.0, // gap between adjacent chips
+              runSpacing: 4.0, // gap between lines
+              children: skills
+                  .map((skill) => Card(
+                        margin: const EdgeInsets.all(2.0),
+                        color: Colors.white,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            skill,
+                          ),
+                        ),
+                      ))
+                  .toList(),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+Widget buildCardWithTitleAndChildren(String title, List<Widget> children) {
+  return Card(
+    margin: const EdgeInsets.all(8.0),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Text(title,
+              style:
+                  const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+        ),
+        ...children,
+      ],
+    ),
+  );
+}
+
+class CourseCard extends StatelessWidget {
+  final List<Course> courses;
+
+  const CourseCard({super.key, required this.courses});
+
+  @override
+  Widget build(BuildContext context) {
+    List<Widget> courseWidgets = courses
+        .map((course) => CustomCard(
+              title: course.title,
+              items: [course.platform, course.period],
+            ))
+        .toList();
+    return buildCardWithTitleAndChildren("Courses", courseWidgets);
+  }
+}
+
+class EducationCard extends StatelessWidget {
+  final List<Education> educations;
+
+  const EducationCard({super.key, required this.educations});
+
+  @override
+  Widget build(BuildContext context) {
+    List<Widget> educationWidgets = educations
+        .map((education) => CustomCard(
+              title: education.degree,
+              items: [
+                education.institution,
+                education.gradationProject,
+                education.period
+              ],
+            ))
+        .toList();
+    return buildCardWithTitleAndChildren("Education", educationWidgets);
+  }
+}
+
+class ExperienceCard extends StatelessWidget {
+  final List<Experience> experiences;
+
+  const ExperienceCard({super.key, required this.experiences});
+
+  @override
+  Widget build(BuildContext context) {
+    return buildCardWithTitleAndChildren(
+      "Experience",
+      experiences
+          .map((experience) => _buildExperienceContent(context, experience))
+          .toList(),
+    );
+  }
+
+  Widget _buildExperienceContent(BuildContext context, Experience experience) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text('${experience.title} at ${experience.company}',
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            Text('Period: ${experience.period}',
+                style: const TextStyle(fontSize: 16)),
+            const SizedBox(height: 10),
+            const Text('Responsibilities:',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            ...experience.responsibilities.map((item) =>
+                Text('• $item', style: const TextStyle(fontSize: 16))),
+            if (experience.extra != null && experience.extra!.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              const Text('Achievements:',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              ...experience.extra!.map((item) =>
+                  Text('• $item', style: const TextStyle(fontSize: 16))),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class CustomCard extends StatelessWidget {
+  final String title;
+  final List<String> items;
+
+  const CustomCard({super.key, required this.title, required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      child: Card(
+        child: ListTile(
+          title: Text(title),
+          subtitle: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: items.map((item) => Text(item)).toList(),
+          ),
+        ),
+      ),
     );
   }
 }
