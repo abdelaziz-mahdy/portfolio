@@ -5,6 +5,9 @@ import 'package:portfolio/constants/models/experience.dart';
 class Constants {
   static String githubUsername = 'zezo357';
   static String? githubToken;
+  static String profilePictureUrl = ''; // Replace with actual path or URL
+  static String profileName =
+      'Abdelaziz Mahdy'; // Replace with your actual name
 
   static List<String> profile = [
     'Passionate CS graduate with a focus on mobile application development, especially in Flutter.',
@@ -73,4 +76,9 @@ class Constants {
         platform: 'Coursera',
         period: '08/2021 - 09/2021')
   ];
+}
+
+class StylingConstants {
+  static const double cardsWidth = 400;
+  static const double listViewHeight = 400;
 }

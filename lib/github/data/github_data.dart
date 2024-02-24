@@ -132,4 +132,14 @@ class GitHubAPI {
       return [];
     }
   }
+
+  Future<String> fetchUserAvatarUrl() async {
+    try {
+      final response = await _dio.get('https://api.github.com/users/$username');
+      return response.data['avatar_url'] as String;
+    } catch (e, stackTrace) {
+      print('Failed to fetch user avatar: $e $stackTrace');
+      return '';
+    }
+  }
 }

@@ -5,14 +5,17 @@ import 'package:portfolio/github/models/github_repository.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class RepositoriesList extends StatefulWidget {
-  const RepositoriesList({super.key});
+  static const routeName = '/repositories';
+  final double cardWidth;
+  const RepositoriesList({super.key, required this.cardWidth});
 
   @override
   State<RepositoriesList> createState() => _RepositoriesListState();
 }
 
 class _RepositoriesListState extends State<RepositoriesList> {
-  final GitHubAPI gitHubAPI = GitHubAPI(Constants.githubUsername);
+  final GitHubAPI gitHubAPI =
+      GitHubAPI(Constants.githubUsername, token: Constants.githubToken);
   List<GithubRepository> repositories = [];
   ValueNotifier<bool> isLoading = ValueNotifier(false);
 
@@ -60,7 +63,7 @@ class _RepositoriesListState extends State<RepositoriesList> {
         if (isLoading) {
           return const Center(child: CircularProgressIndicator());
         }
-        return Column(children: [
+        return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const Text("Public Repos",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           const SizedBox(height: 16.0),
@@ -70,29 +73,50 @@ class _RepositoriesListState extends State<RepositoriesList> {
               itemCount: repositories.length,
               itemBuilder: (context, index) {
                 final repo = repositories[index];
-                return Card(
-                  margin: const EdgeInsets.all(8.0),
+                return SizedBox(
+                  width: widget.cardWidth,
                   child: Column(
                     children: [
-                      ListTile(
-                        title: Row(
-                          children: [
-                            const Icon(Icons.star, color: Colors.yellow),
-                            Text(" ${repo.stargazersCount ?? 0}"),
-                            const SizedBox(width: 8),
-                            Expanded(child: Text(repo.name ?? 'No Name')),
-                          ],
-                        ),
-                        subtitle: Text(
-                            repo.description?.toString() ?? 'No Description'),
-                        trailing: ElevatedButton(
-                          onPressed: repo.doesDemoExist()
-                              ? () => _launchURL(repo.getDemoUrl())
-                              : null,
-                          child: const Text('Demo'),
-                        ),
+                      InkWell(
                         onTap: () => _launchURL(repo.htmlUrl ?? ''),
-                      ),
+                        child: Card(
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 8.0, vertical: 4.0),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    const Icon(Icons.star,
+                                        color: Colors.yellow),
+                                    Text(" ${repo.stargazersCount ?? 0}"),
+                                    const SizedBox(width: 8),
+                                    Expanded(
+                                        child: Text(repo.name ?? 'No Name')),
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 4.0),
+                                  child: Text(repo.description?.toString() ??
+                                      'No Description'),
+                                ),
+                                Align(
+                                  alignment: Alignment.centerRight,
+                                  child: ElevatedButton(
+                                    onPressed: repo.doesDemoExist()
+                                        ? () => _launchURL(repo.getDemoUrl())
+                                        : null,
+                                    child: const Text('Demo'),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      )
+
                       // // Language Card
                       // if (repo.language != null)
                       //   Container(

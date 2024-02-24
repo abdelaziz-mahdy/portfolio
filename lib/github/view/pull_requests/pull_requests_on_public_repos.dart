@@ -6,7 +6,8 @@ import 'package:portfolio/github/utils.dart';
 import 'package:portfolio/github/view/pull_requests/repository_card.dart';
 
 class PullRequestsOnPublicRepos extends StatefulWidget {
-  const PullRequestsOnPublicRepos({super.key});
+  final double cardWidth;
+  const PullRequestsOnPublicRepos({super.key, required this.cardWidth});
 
   @override
   State<PullRequestsOnPublicRepos> createState() =>
@@ -14,8 +15,8 @@ class PullRequestsOnPublicRepos extends StatefulWidget {
 }
 
 class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
-  final gitHubAPI = GitHubAPI(
-      Constants.githubUsername); // Replace with actual username and token
+  final gitHubAPI = GitHubAPI(Constants.githubUsername,
+      token: Constants.githubToken); // Replace with actual username and token
 
   Map<String, List<GithubIssue>> groupedIssues = {};
   ValueNotifier<bool> isLoading = ValueNotifier(false);
@@ -105,17 +106,23 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
           return const Center(child: CircularProgressIndicator());
         }
         return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _buildSummary(), // Include the summary at the top
 
-            ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                ...groupedIssues.entries.map((entry) {
-                  return RepositoryCard(
-                      repositoryUrl: entry.key, issues: entry.value);
-                }),
-              ],
+            Expanded(
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  ...groupedIssues.entries.map((entry) {
+                    return RepositoryCard(
+                      repositoryUrl: entry.key,
+                      issues: entry.value,
+                      cardWidth: widget.cardWidth,
+                    );
+                  }),
+                ],
+              ),
             ),
           ],
         );

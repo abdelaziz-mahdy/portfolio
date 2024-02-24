@@ -12,21 +12,39 @@ class GithubIssueCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
-      child: ListTile(
-          title: Text(issue.title ?? 'No title'),
-          trailing: Icon(Icons.circle, color: getStateColor(issue.state)),
-          onTap: () async {
-            final url = issue.htmlUrl;
-            if (url != null && await canLaunchUrl(Uri.parse(url))) {
-              await launchUrl(Uri.parse(url),
-                  mode: LaunchMode.externalApplication);
-            } else {
-              // Optionally, show an error or a message if the URL can't be opened
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Could not open the issue.')),
-              );
-            }
-          }),
+      child: InkWell(
+        onTap: () async {
+          final url = issue.htmlUrl;
+          if (url != null && await canLaunchUrl(Uri.parse(url))) {
+            await launchUrl(Uri.parse(url),
+                mode: LaunchMode.externalApplication);
+          } else {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Could not open the issue.')),
+            );
+          }
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(issue.title ?? 'No title',
+                  style: Theme.of(context).textTheme.titleMedium),
+              const SizedBox(height: 4.0),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                      child: Text(issue.body ?? 'No description',
+                          overflow: TextOverflow.ellipsis, maxLines: 2)),
+                  Icon(Icons.circle, color: getStateColor(issue.state)),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

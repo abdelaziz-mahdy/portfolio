@@ -6,11 +6,13 @@ import 'package:url_launcher/url_launcher.dart';
 class RepositoryCard extends StatelessWidget {
   final String repositoryUrl;
   final List<GithubIssue> issues;
+  final double cardWidth;
 
   const RepositoryCard({
     super.key,
     required this.repositoryUrl,
     required this.issues,
+    required this.cardWidth,
   });
 
   Future<void> _launchURL(String url) async {
@@ -25,33 +27,36 @@ class RepositoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.all(10.0),
-      elevation: 4.0,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            TextButton(
-              onPressed: () => _launchURL(repositoryUrl),
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: 8.0),
-                child: Text(
-                  repositoryUrl.split('/').last,
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        color:
-                            Colors.blue, // Make it look like a clickable link
-                        decoration: TextDecoration.underline,
-                      ),
+    return SingleChildScrollView(
+      child: Card(
+        margin: const EdgeInsets.all(10.0),
+        elevation: 4.0,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TextButton(
+                onPressed: () => _launchURL(repositoryUrl),
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: Text(
+                    repositoryUrl.split('/').last,
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          color:
+                              Colors.blue, // Make it look like a clickable link
+                          decoration: TextDecoration.underline,
+                        ),
+                  ),
                 ),
               ),
-            ),
-            ...issues.map((issue) => Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4.0),
-                  child: GithubIssueCard(issue: issue),
-                )),
-          ],
+              ...issues.map((issue) => Container(
+                    margin: const EdgeInsets.symmetric(vertical: 4.0),
+                    child: SizedBox(
+                        width: cardWidth, child: GithubIssueCard(issue: issue)),
+                  )),
+            ],
+          ),
         ),
       ),
     );
