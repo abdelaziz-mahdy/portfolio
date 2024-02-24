@@ -25,7 +25,7 @@ class SkillsCard extends StatelessWidget {
               children: skills
                   .map((skill) => Card(
                         margin: const EdgeInsets.all(2.0),
-                        color: Colors.white,
+                        color: Theme.of(context).primaryColor,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
