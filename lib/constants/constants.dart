@@ -5,6 +5,9 @@ import 'package:portfolio/constants/models/experience.dart';
 class Constants {
   static String githubUsername = 'zezo357';
   static String? githubToken;
+
+  static String? linkedInUrl = "https://www.linkedin.com/in/abdelaziz-mahdy/";
+  static String? email = "abdelaziz.h.mahdy@gmail.com";
   static String profilePictureUrl = ''; // Replace with actual path or URL
   static String profileName =
       'Abdelaziz Mahdy'; // Replace with your actual name
