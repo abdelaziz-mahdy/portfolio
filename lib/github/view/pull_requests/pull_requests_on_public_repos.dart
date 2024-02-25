@@ -69,7 +69,13 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
             runSpacing: 8,
             children: prStatesSummary.entries.map((entry) {
               return Chip(
-                label: Text("${entry.key}: ${entry.value}"),
+                label: Text(
+                  "${entry.key}: ${entry.value}",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodySmall
+                      ?.copyWith(color: Colors.white),
+                ),
                 backgroundColor: getStateColor(entry.key),
               );
             }).toList(),

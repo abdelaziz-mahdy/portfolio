@@ -72,31 +72,34 @@ class _MyAppState extends State<MyApp> {
             ],
           ),
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                const ProfileSection(),
-                StaggeredGrid.count(
-                  crossAxisCount:
-                      MediaQuery.of(context).size.width > 600 ? 2 : 1,
-                  // childAspectRatio: (MediaQuery.of(context).size.width / 2) / 300,
-                  children: [
-                    CourseCard(courses: Constants.courses),
-                    SkillsCard(skills: Constants.skills),
-                    EducationCard(educations: Constants.education),
-                    ExperienceCard(experiences: Constants.experience),
-                  ],
-                ),
-                const SizedBox(
-                    height: StylingConstants.listViewHeight,
-                    child: PullRequestsOnPublicRepos(
-                      cardWidth: StylingConstants.cardsWidth,
-                    )), // Uncomment if these are to be included
-                const SizedBox(
-                    height: StylingConstants.listViewHeight,
-                    child: RepositoriesList(
-                      cardWidth: StylingConstants.cardsWidth,
-                    )), // Adjust layout or wrap with a fixed height Container if necessary
-              ],
+            child: Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Column(
+                children: [
+                  const ProfileSection(),
+                  StaggeredGrid.count(
+                    crossAxisCount:
+                        MediaQuery.of(context).size.width > 600 ? 2 : 1,
+                    // childAspectRatio: (MediaQuery.of(context).size.width / 2) / 300,
+                    children: [
+                      CourseCard(courses: Constants.courses),
+                      SkillsCard(skills: Constants.skills),
+                      EducationCard(educations: Constants.education),
+                      ExperienceCard(experiences: Constants.experience),
+                    ],
+                  ),
+                  const SizedBox(
+                      height: StylingConstants.listViewHeight,
+                      child: PullRequestsOnPublicRepos(
+                        cardWidth: StylingConstants.cardsWidth,
+                      )), // Uncomment if these are to be included
+                  const SizedBox(
+                      height: StylingConstants.listViewHeight,
+                      child: RepositoriesList(
+                        cardWidth: StylingConstants.cardsWidth,
+                      )), // Adjust layout or wrap with a fixed height Container if necessary
+                ],
+              ),
             ),
           ),
         ));

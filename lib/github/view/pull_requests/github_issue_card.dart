@@ -36,7 +36,7 @@ class GithubIssueCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
-                      child: Text(issue.body ?? 'No description',
+                      child: Text(issue.body ?? '',
                           overflow: TextOverflow.ellipsis, maxLines: 2)),
                   Icon(Icons.circle, color: getStateColor(issue.state)),
                 ],
