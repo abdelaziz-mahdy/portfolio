@@ -43,8 +43,6 @@ class RepositoryCard extends StatelessWidget {
                   child: Text(
                     repositoryUrl.split('/').last,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color:
-                              Colors.blue, // Make it look like a clickable link
                           decoration: TextDecoration.underline,
                         ),
                   ),
