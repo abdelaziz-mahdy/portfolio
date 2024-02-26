@@ -15,8 +15,14 @@ import 'package:portfolio/github/view/pull_requests/pull_requests_on_public_repo
 import 'package:portfolio/github/view/repos/repositories_list.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-void main() => runApp(const MyApp());
-
+void main() {
+  // It is required to add the following to run the meta_seo package correctly
+  // before the running of the Flutter app
+  if (kIsWeb) {
+    MetaSEO().config();
+  }
+  runApp(const MyApp());
+}
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
