@@ -1,6 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:meta_seo/meta_seo.dart';
 import 'package:simple_icons/simple_icons.dart';
 
 import 'package:portfolio/constants/constants.dart';
@@ -33,6 +35,16 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      // Define MetaSEO object
+      MetaSEO meta = MetaSEO();
+      // add meta seo data for web app as you want
+      meta.author(author: Constants.profileName);
+      meta.description(
+          description:
+              "Portfolio of ${Constants.profileName} using Flutter, showcasing my skills and projects");
+      meta.keywords(keywords: 'Flutter, Dart, SEO, Meta, Web, Portfolio');
+    }
     return MaterialApp(
         title: 'Portfolio',
         theme: ThemeData(
