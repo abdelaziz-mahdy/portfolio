@@ -132,8 +132,8 @@ class Home extends StatelessWidget {
                 children: [
                   CourseCard(courses: Constants.courses),
                   SkillsCard(skills: Constants.skills),
-                  EducationCard(educations: Constants.education),
                   ExperienceCard(experiences: Constants.experience),
+                  EducationCard(educations: Constants.education),
                 ],
               ),
               const SizedBox(

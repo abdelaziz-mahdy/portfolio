@@ -83,5 +83,7 @@ class Constants {
 
 class StylingConstants {
   static const double cardsWidth = 400;
-  static const double listViewHeight = 400;
+  
+  static const double profileSectionHeight = 400;
+  static const double listViewHeight = 550;
 }

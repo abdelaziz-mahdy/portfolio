@@ -105,19 +105,24 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
             _buildSummary(), // Include the summary at the top
 
             Expanded(
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  ...groupedIssues.entries.map((entry) {
-                    return RepositoryCard(
-                      repositoryUrl: entry.key,
-                      issues: entry.value,
-                      cardWidth: widget.cardWidth,
-                    );
-                  }),
-                ],
+                child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: widget.cardWidth, // Creates two rows
+                childAspectRatio: .8,
+                crossAxisSpacing: 10, // Adjust the spacing as needed
+                mainAxisSpacing: 10, // Adjust the spacing as needed
               ),
-            ),
+              itemCount: groupedIssues.entries.length,
+              itemBuilder: (context, index) {
+                final entry = groupedIssues.entries.elementAt(index);
+                return RepositoryCard(
+                  repositoryUrl: entry.key,
+                  issues: entry.value,
+                  cardWidth: widget.cardWidth,
+                );
+              },
+              scrollDirection: Axis.horizontal,
+            )),
           ],
         );
       },

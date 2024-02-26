@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_repository.dart';
@@ -71,67 +72,58 @@ class _RepositoriesListState extends State<RepositoriesList> {
           ),
           const SizedBox(height: 16.0),
           Expanded(
-            child: ListView.builder(
+            child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: widget.cardWidth, // Creates two rows
+                childAspectRatio: 0.8,
+                crossAxisSpacing: 10, // Adjust the spacing as needed
+                mainAxisSpacing: 10, // Adjust the spacing as needed
+              ),
               scrollDirection: Axis.horizontal,
               itemCount: repositories.length,
               itemBuilder: (context, index) {
                 final repo = repositories[index];
                 return SizedBox(
                   width: widget.cardWidth,
-                  child: Column(
-                    children: [
-                      InkWell(
-                        onTap: () => _launchURL(repo.htmlUrl ?? ''),
-                        child: Card(
-                          margin: const EdgeInsets.symmetric(
-                              horizontal: 8.0, vertical: 4.0),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                  // height: widget.cardWidth,
+                  child: InkWell(
+                    onTap: () => _launchURL(repo.htmlUrl ?? ''),
+                    child: Card(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 4.0),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
                               children: [
-                                Row(
-                                  children: [
-                                    const Icon(Icons.star,
-                                        color: Colors.yellow),
-                                    Text(" ${repo.stargazersCount ?? 0}"),
-                                    const SizedBox(width: 8),
-                                    Expanded(
-                                        child: Text(repo.name ?? 'No Name')),
-                                  ],
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 4.0),
-                                  child: Text(repo.description?.toString() ??
-                                      'No Description'),
-                                ),
-                                Align(
-                                  alignment: Alignment.centerRight,
-                                  child: ElevatedButton(
-                                    onPressed: repo.doesDemoExist()
-                                        ? () => _launchURL(repo.getDemoUrl())
-                                        : null,
-                                    child: const Text('Demo'),
-                                  ),
-                                ),
+                                const Icon(Icons.star, color: Colors.yellow),
+                                Text(" ${repo.stargazersCount ?? 0}"),
+                                const SizedBox(width: 8),
+                                Expanded(child: Text(repo.name ?? 'No Name')),
                               ],
                             ),
-                          ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 4.0),
+                                child: Text(repo.description?.toString() ??
+                                    'No Description'),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: ElevatedButton(
+                                onPressed: repo.doesDemoExist()
+                                    ? () => _launchURL(repo.getDemoUrl())
+                                    : null,
+                                child: const Text('Demo'),
+                              ),
+                            ),
+                          ],
                         ),
-                      )
-
-                      // // Language Card
-                      // if (repo.language != null)
-                      //   Container(
-                      //     alignment: Alignment.centerRight,
-                      //     padding: const EdgeInsets.symmetric(
-                      //         horizontal: 16, vertical: 8),
-                      //     child: Chip(
-                      //       label: Text(repo.language ?? 'Language: Unknown'),
-                      //       avatar: const Icon(Icons.code, size: 20.0),
-                      //     ),
-                      //   ),
-                    ],
+                      ),
+                    ),
                   ),
                 );
               },

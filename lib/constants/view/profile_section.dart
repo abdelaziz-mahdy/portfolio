@@ -37,7 +37,7 @@ class _ProfileSectionState extends State<ProfileSection> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: StylingConstants.listViewHeight,
+      height: StylingConstants.profileSectionHeight,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: LayoutBuilder(
