@@ -21,6 +21,8 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
 
   Map<String, List<GithubIssue>> groupedIssues = {};
   ValueNotifier<bool> isLoading = ValueNotifier(false);
+  ValueNotifier<String?> errorMessage = ValueNotifier(null);
+
   // Add these properties to your state class
   int totalRepositories = 0;
   Map<String, int> prStatesSummary = {};
@@ -29,26 +31,31 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
 
   Future<void> fetchIssues() async {
     isLoading.value = true;
-    List<GithubIssue> issues =
-        await gitHubAPI.fetchPublicPRs(filterOutsideRepos: true);
-    Map<String, List<GithubIssue>> tempGroupedIssues = {};
-    Map<String, int> tempPrStatesSummary = {};
+    errorMessage.value = null;
+    try {
+      List<GithubIssue> issues =
+          await gitHubAPI.fetchPublicPRs(filterOutsideRepos: true);
+      Map<String, List<GithubIssue>> tempGroupedIssues = {};
+      Map<String, int> tempPrStatesSummary = {};
 
-    for (var issue in issues) {
-      String key = issue.repositoryUrl ?? 'Unknown';
-      tempGroupedIssues.putIfAbsent(key, () => []);
-      tempGroupedIssues[key]?.add(issue);
+      for (var issue in issues) {
+        String key = issue.repositoryUrl ?? 'Unknown';
+        tempGroupedIssues.putIfAbsent(key, () => []);
+        tempGroupedIssues[key]?.add(issue);
 
-      String state = issue.state ?? 'Unknown';
-      tempPrStatesSummary[state] = (tempPrStatesSummary[state] ?? 0) + 1;
+        String state = issue.state ?? 'Unknown';
+        tempPrStatesSummary[state] = (tempPrStatesSummary[state] ?? 0) + 1;
+      }
+
+      groupedIssues = tempGroupedIssues;
+      totalRepositories = tempGroupedIssues.length;
+      totalPRs = issues.length;
+      prStatesSummary = tempPrStatesSummary;
+    } catch (e) {
+      errorMessage.value = e.toString();
+    } finally {
+      isLoading.value = false;
     }
-
-    groupedIssues = tempGroupedIssues;
-    totalRepositories = tempGroupedIssues.length;
-    totalPRs = issues.length;
-    prStatesSummary = tempPrStatesSummary;
-
-    isLoading.value = false;
   }
 
   Widget _buildSummary() {
@@ -99,17 +106,24 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
       builder: (context, bool isLoading, child) {
         if (isLoading) {
           return Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: const Center(child: CircularProgressIndicator()));
         }
+
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.min,
           children: [
             _buildSummary(), // Include the summary at the top
+            if (errorMessage.value != null)
+              Container(
+                  margin: const EdgeInsets.all(10),
+                  child: Center(
+                      child: Text(errorMessage.value!,
+                          style: const TextStyle(color: Colors.red)))),
 
             StaggeredGrid.count(
-              crossAxisCount: MediaQuery.of(context).size.width > 600 ? 3 : 1,
+              crossAxisCount: isPortrait(context) ? 1 : 2,
               children: groupedIssues.entries
                   .map((e) => RepositoryCard(
                         repositoryUrl: e.key,

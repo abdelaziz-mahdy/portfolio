@@ -22,3 +22,7 @@ Color getStateColor(String? state) {
       return Colors.grey.shade300;
   }
 }
+
+bool isPortrait(BuildContext context) {
+  return MediaQuery.of(context).size.width < 600;
+}

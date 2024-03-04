@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
@@ -20,25 +19,31 @@ class _RepositoriesListState extends State<RepositoriesList> {
       GitHubAPI(Constants.githubUsername, token: Constants.githubToken);
   List<GithubRepository> repositories = [];
   ValueNotifier<bool> isLoading = ValueNotifier(false);
-
+  ValueNotifier<String?> errorMessage = ValueNotifier(null);
   Future<void> fetchRepositories() async {
-    isLoading.value = true;
-    List<GithubRepository> fetchedRepos =
-        await gitHubAPI.fetchAllReposForUserAndOrgs(includeForks: false);
+    try {
+      isLoading.value = true;
+      errorMessage.value = null;
+      List<GithubRepository> fetchedRepos =
+          await gitHubAPI.fetchAllReposForUserAndOrgs(includeForks: false);
 
-    fetchedRepos.sort((a, b) {
-      // First, sort by star count in descending order
-      int starComparison =
-          (b.stargazersCount ?? 0).compareTo(a.stargazersCount ?? 0);
-      if (starComparison != 0) {
-        return starComparison; // Prioritize by star count first
-      }
-      // If star counts are equal, prioritize by homepage presence
-      return (b.doesDemoExist() ? 1 : 0) - (a.doesDemoExist() ? 1 : 0);
-    });
+      fetchedRepos.sort((a, b) {
+        // First, sort by star count in descending order
+        int starComparison =
+            (b.stargazersCount ?? 0).compareTo(a.stargazersCount ?? 0);
+        if (starComparison != 0) {
+          return starComparison; // Prioritize by star count first
+        }
+        // If star counts are equal, prioritize by homepage presence
+        return (b.doesDemoExist() ? 1 : 0) - (a.doesDemoExist() ? 1 : 0);
+      });
 
-    repositories = fetchedRepos;
-    isLoading.value = false;
+      repositories = fetchedRepos;
+    } catch (e) {
+      errorMessage.value = e.toString();
+    } finally {
+      isLoading.value = false;
+    }
   }
 
   @override
@@ -64,9 +69,10 @@ class _RepositoriesListState extends State<RepositoriesList> {
       builder: (_, isLoading, __) {
         if (isLoading) {
           return Container(
-            margin: EdgeInsets.all(10),
-            child: const Center(child: CircularProgressIndicator()));
+              margin: const EdgeInsets.all(10),
+              child: const Center(child: CircularProgressIndicator()));
         }
+
         return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -78,6 +84,12 @@ class _RepositoriesListState extends State<RepositoriesList> {
                         TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
               const SizedBox(height: 16.0),
+              if (errorMessage.value != null)
+                Container(
+                    margin: const EdgeInsets.all(10),
+                    child: Center(
+                        child: Text(errorMessage.value!,
+                            style: const TextStyle(color: Colors.red)))),
               StaggeredGrid.count(
                 crossAxisCount: 2,
                 children: repositories

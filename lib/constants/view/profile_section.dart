@@ -11,7 +11,7 @@ class ProfileSection extends StatefulWidget {
 
 class _ProfileSectionState extends State<ProfileSection> {
   final ValueNotifier<bool> _isLoading = ValueNotifier(false);
-  final ValueNotifier<String?> _userImageUrl = ValueNotifier(null);
+  String? _userImageUrl;
   final ValueNotifier<String?> _errorMessage = ValueNotifier(null);
   final GitHubAPI _gitHubAPI =
       GitHubAPI(Constants.githubUsername, token: Constants.githubToken);
@@ -26,9 +26,9 @@ class _ProfileSectionState extends State<ProfileSection> {
     _isLoading.value = true;
     try {
       final imageUrl = await _gitHubAPI.fetchUserAvatarUrl();
-      _userImageUrl.value = imageUrl;
+      _userImageUrl = imageUrl;
     } catch (e) {
-      _errorMessage.value = 'Failed to load user image';
+      _errorMessage.value = 'Failed to load user image: $e';
     } finally {
       _isLoading.value = false;
     }
@@ -46,7 +46,7 @@ class _ProfileSectionState extends State<ProfileSection> {
             List<Widget> children = [
               const Spacer(),
               // Image and details go here
-              _buildImageSection(),
+              Expanded(child: _buildImageSection()),
               const Spacer(),
               Expanded(flex: 4, child: _buildDetailsSection()),
               const Spacer(),
@@ -65,12 +65,15 @@ class _ProfileSectionState extends State<ProfileSection> {
 
   Widget _buildImageSection() {
     // Build the image section here, using ValueListenableBuilder for _userImageUrl
-    return ValueListenableBuilder<String?>(
-      valueListenable: _userImageUrl,
-      builder: (context, imageUrl, _) {
-        return imageUrl != null
+    return ValueListenableBuilder<bool>(
+      valueListenable: _isLoading,
+      builder: (context, isLoading, _) {
+        if (_errorMessage.value != null) {
+          return Text(_errorMessage.value!);
+        }
+        return _userImageUrl != null
             ? ClipOval(
-                child: Image.network(imageUrl,
+                child: Image.network(_userImageUrl!,
                     width: 120, height: 120, fit: BoxFit.scaleDown))
             : const CircleAvatar(
                 radius: 60,
@@ -96,7 +99,6 @@ class _ProfileSectionState extends State<ProfileSection> {
   @override
   void dispose() {
     _isLoading.dispose();
-    _userImageUrl.dispose();
     _errorMessage.dispose();
     super.dispose();
   }

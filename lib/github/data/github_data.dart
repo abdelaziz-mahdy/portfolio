@@ -73,6 +73,12 @@ class GitHubAPI {
       }
     } catch (e, stackTrace) {
       print('Failed to fetch organizations: $e $stackTrace');
+      if (e is DioException) {
+        if (e.response?.data['message'] != null) {
+          throw Exception(e.response?.data['message']);
+        }
+      }
+      rethrow;
     }
     return orgs;
   }
@@ -129,7 +135,12 @@ class GitHubAPI {
       return repos;
     } catch (e, stackTrace) {
       print('Failed to fetch repositories: $e $stackTrace');
-      return [];
+      if (e is DioException) {
+        if (e.response?.data['message'] != null) {
+          throw Exception(e.response?.data['message']);
+        }
+      }
+      rethrow;
     }
   }
 
@@ -139,7 +150,12 @@ class GitHubAPI {
       return response.data['avatar_url'] as String;
     } catch (e, stackTrace) {
       print('Failed to fetch user avatar: $e $stackTrace');
-      return '';
+      if (e is DioException) {
+        if (e.response?.data['message'] != null) {
+          throw Exception(e.response?.data['message']);
+        }
+      }
+      rethrow;
     }
   }
 }

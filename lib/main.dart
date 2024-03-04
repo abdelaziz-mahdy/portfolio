@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:meta_seo/meta_seo.dart';
+import 'package:portfolio/github/utils.dart';
 import 'package:simple_icons/simple_icons.dart';
 
 import 'package:portfolio/constants/constants.dart';
@@ -146,13 +147,14 @@ class Home extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(30.0),
+          padding:
+              EdgeInsets.symmetric(horizontal: isPortrait(context) ? 10 : 30),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               const ProfileSection(),
               StaggeredGrid.count(
-                crossAxisCount: MediaQuery.of(context).size.width > 600 ? 2 : 1,
+                crossAxisCount: isPortrait(context) ? 1 : 2,
                 // childAspectRatio: (MediaQuery.of(context).size.width / 2) / 300,
                 children: [
                   CourseCard(courses: Constants.courses),
@@ -161,10 +163,10 @@ class Home extends StatelessWidget {
                   EducationCard(educations: Constants.education),
                 ],
               ),
-              PullRequestsOnPublicRepos(
+              const PullRequestsOnPublicRepos(
                 cardWidth: StylingConstants.cardsWidth,
               ), // Uncomment if these are to be included
-              RepositoriesList(
+              const RepositoriesList(
                 cardWidth: StylingConstants.cardsWidth,
               ), // Adjust layout or wrap with a fixed height Container if necessary
             ],
