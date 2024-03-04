@@ -73,8 +73,7 @@ class _ProfileSectionState extends State<ProfileSection> {
         }
         return _userImageUrl != null
             ? ClipOval(
-                child: Image.network(_userImageUrl!,
-                    width: 120, height: 120, fit: BoxFit.scaleDown))
+                child: Image.network(_userImageUrl!, fit: BoxFit.scaleDown))
             : const CircleAvatar(
                 radius: 60,
                 child: Icon(Icons.person,
