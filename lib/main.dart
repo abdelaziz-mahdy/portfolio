@@ -84,7 +84,10 @@ class Home extends StatelessWidget {
         title: const Text('Portfolio'),
         actions: [
           IconButton(
-            icon: const Icon(SimpleIcons.gmail),
+            icon: Icon(SimpleIcons.gmail,
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? Colors.white
+                    : SimpleIconColors.gmail),
             onPressed: () async {
               final emailUri = Uri.parse('mailto:${Constants.email}');
               if (await canLaunchUrl(emailUri)) {
@@ -98,8 +101,10 @@ class Home extends StatelessWidget {
             width: 10,
           ),
           IconButton(
-            icon: const Icon(SimpleIcons.linkedin,
-                color: SimpleIconColors.linkedin),
+            icon: Icon(SimpleIcons.linkedin,
+                color: Theme.of(context).brightness == Brightness.dark
+                    ? Colors.white
+                    : SimpleIconColors.linkedin),
             onPressed: () async {
               Uri url = Uri.parse(Constants.linkedInUrl!);
               if (await canLaunchUrl(url)) {

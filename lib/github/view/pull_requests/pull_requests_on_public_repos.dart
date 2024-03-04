@@ -98,7 +98,9 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
       valueListenable: isLoading,
       builder: (context, bool isLoading, child) {
         if (isLoading) {
-          return const Center(child: CircularProgressIndicator());
+          return Container(
+              margin: EdgeInsets.all(10),
+              child: const Center(child: CircularProgressIndicator()));
         }
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

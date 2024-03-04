@@ -63,7 +63,9 @@ class _RepositoriesListState extends State<RepositoriesList> {
       valueListenable: isLoading,
       builder: (_, isLoading, __) {
         if (isLoading) {
-          return const Center(child: CircularProgressIndicator());
+          return Container(
+            margin: EdgeInsets.all(10),
+            child: const Center(child: CircularProgressIndicator()));
         }
         return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
