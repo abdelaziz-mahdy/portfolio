@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_issue.dart';
@@ -101,28 +102,20 @@ class _PullRequestsOnPublicReposState extends State<PullRequestsOnPublicRepos> {
         }
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.min,
           children: [
             _buildSummary(), // Include the summary at the top
 
-            Expanded(
-                child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: widget.cardWidth, // Creates two rows
-                childAspectRatio: .8,
-                crossAxisSpacing: 10, // Adjust the spacing as needed
-                mainAxisSpacing: 10, // Adjust the spacing as needed
-              ),
-              itemCount: groupedIssues.entries.length,
-              itemBuilder: (context, index) {
-                final entry = groupedIssues.entries.elementAt(index);
-                return RepositoryCard(
-                  repositoryUrl: entry.key,
-                  issues: entry.value,
-                  cardWidth: widget.cardWidth,
-                );
-              },
-              scrollDirection: Axis.horizontal,
-            )),
+            StaggeredGrid.count(
+              crossAxisCount: MediaQuery.of(context).size.width > 600 ? 3 : 1,
+              children: groupedIssues.entries
+                  .map((e) => RepositoryCard(
+                        repositoryUrl: e.key,
+                        issues: e.value,
+                        cardWidth: widget.cardWidth,
+                      ))
+                  .toList(),
+            ),
           ],
         );
       },

@@ -23,6 +23,7 @@ void main() {
   }
   runApp(const MyApp());
 }
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -142,6 +143,7 @@ class Home extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(30.0),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               const ProfileSection(),
               StaggeredGrid.count(
@@ -154,16 +156,12 @@ class Home extends StatelessWidget {
                   EducationCard(educations: Constants.education),
                 ],
               ),
-              const SizedBox(
-                  height: StylingConstants.listViewHeight,
-                  child: PullRequestsOnPublicRepos(
-                    cardWidth: StylingConstants.cardsWidth,
-                  )), // Uncomment if these are to be included
-              const SizedBox(
-                  height: StylingConstants.listViewHeight,
-                  child: RepositoriesList(
-                    cardWidth: StylingConstants.cardsWidth,
-                  )), // Adjust layout or wrap with a fixed height Container if necessary
+              PullRequestsOnPublicRepos(
+                cardWidth: StylingConstants.cardsWidth,
+              ), // Uncomment if these are to be included
+              RepositoriesList(
+                cardWidth: StylingConstants.cardsWidth,
+              ), // Adjust layout or wrap with a fixed height Container if necessary
             ],
           ),
         ),

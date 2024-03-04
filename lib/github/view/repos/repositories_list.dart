@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/data/github_data.dart';
 import 'package:portfolio/github/models/github_repository.dart';
@@ -64,72 +65,70 @@ class _RepositoriesListState extends State<RepositoriesList> {
         if (isLoading) {
           return const Center(child: CircularProgressIndicator());
         }
-        return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text("Public Repos",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-          ),
-          const SizedBox(height: 16.0),
-          Expanded(
-            child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: widget.cardWidth, // Creates two rows
-                childAspectRatio: 0.8,
-                crossAxisSpacing: 10, // Adjust the spacing as needed
-                mainAxisSpacing: 10, // Adjust the spacing as needed
+        return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text("Public Repos",
+                    style:
+                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               ),
-              scrollDirection: Axis.horizontal,
-              itemCount: repositories.length,
-              itemBuilder: (context, index) {
-                final repo = repositories[index];
-                return SizedBox(
-                  width: widget.cardWidth,
-                  // height: widget.cardWidth,
-                  child: InkWell(
-                    onTap: () => _launchURL(repo.htmlUrl ?? ''),
-                    child: Card(
-                      margin: const EdgeInsets.symmetric(
-                          horizontal: 8.0, vertical: 4.0),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                const Icon(Icons.star, color: Colors.yellow),
-                                Text(" ${repo.stargazersCount ?? 0}"),
-                                const SizedBox(width: 8),
-                                Expanded(child: Text(repo.name ?? 'No Name')),
-                              ],
-                            ),
-                            Expanded(
+              const SizedBox(height: 16.0),
+              StaggeredGrid.count(
+                crossAxisCount: 2,
+                children: repositories
+                    .map((repo) => SizedBox(
+                          width: widget.cardWidth,
+                          // height: widget.cardWidth,
+                          child: InkWell(
+                            onTap: () => _launchURL(repo.htmlUrl ?? ''),
+                            child: Card(
+                              margin: const EdgeInsets.symmetric(
+                                  horizontal: 8.0, vertical: 4.0),
                               child: Padding(
-                                padding: const EdgeInsets.only(top: 4.0),
-                                child: Text(repo.description?.toString() ??
-                                    'No Description'),
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        const Icon(Icons.star,
+                                            color: Colors.yellow),
+                                        Text(" ${repo.stargazersCount ?? 0}"),
+                                        const SizedBox(width: 8),
+                                        Expanded(
+                                            child:
+                                                Text(repo.name ?? 'No Name')),
+                                      ],
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 4.0),
+                                      child: Text(
+                                          repo.description?.toString() ??
+                                              'No Description'),
+                                    ),
+                                    Align(
+                                      alignment: Alignment.centerRight,
+                                      child: ElevatedButton(
+                                        onPressed: repo.doesDemoExist()
+                                            ? () =>
+                                                _launchURL(repo.getDemoUrl())
+                                            : null,
+                                        child: const Text('Demo'),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                            Align(
-                              alignment: Alignment.centerRight,
-                              child: ElevatedButton(
-                                onPressed: repo.doesDemoExist()
-                                    ? () => _launchURL(repo.getDemoUrl())
-                                    : null,
-                                child: const Text('Demo'),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          )
-        ]);
+                          ),
+                        ))
+                    .toList(),
+              ),
+            ]);
       },
     );
   }
