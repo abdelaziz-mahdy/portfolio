@@ -30,6 +30,7 @@ class GitHubAPI {
         );
         final prs = response.data['items'] as List;
         // print(prs);
+
         allPRs.addAll(prs.map((e) => GithubIssue.fromJson(e)));
 
         /// Update the state of the PRs to 'merged' if they have been merged
@@ -121,6 +122,7 @@ class GitHubAPI {
           },
         );
         final List<dynamic> repoData = response.data;
+
         for (var repoJson in repoData) {
           bool isFork = repoJson['fork'] as bool;
           if (includeForks || !isFork) {

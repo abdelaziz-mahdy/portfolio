@@ -3,7 +3,7 @@ import 'package:portfolio/constants/models/education.dart';
 import 'package:portfolio/constants/models/experience.dart';
 
 class Constants {
-  static String githubUsername = 'zezo357';
+  static String githubUsername = 'abdelaziz-mahdy';
   static String? githubToken;
 
   static String? linkedInUrl = "https://www.linkedin.com/in/abdelaziz-mahdy/";
