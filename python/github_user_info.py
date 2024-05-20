@@ -27,16 +27,13 @@ def get_user_info(username):
               ... on Tree {{
                 entries {{
                   name
-                  object {{
-                    ... on Blob {{
-                      text
-                      url
-                    }}
-                  }}
+                  type
                 }}
               }}
             }}
-            hasPages
+            pageInfo {{
+              hasNextPage
+            }}
             homepageUrl
           }}
         }}
@@ -62,7 +59,6 @@ def get_user_info(username):
 
     user_data = result.get('data', {}).get('user')
     if not user_data:
-        print("Failed to retrieve user data:", result)
         raise Exception("Failed to retrieve user data")
 
     user_info = {
@@ -80,14 +76,14 @@ def get_user_info(username):
             'link': repo['url'],
             'image': False,
             'image_link': None,
-            'github_pages_link': repo['homepageUrl'] if repo['hasPages'] else None
+            'github_pages_link': repo['homepageUrl']
         }
 
         if repo['object']:
             for entry in repo['object']['entries']:
-                if 'screenshot' in entry['name'].lower() or 'image' in entry['name'].lower():
+                if entry['type'] == 'blob' and ('screenshot' in entry['name'].lower() or 'image' in entry['name'].lower()):
                     repo_info['image'] = True
-                    repo_info['image_link'] = entry['object']['url']
+                    repo_info['image_link'] = f"https://github.com/{username}/{repo['name']}/blob/main/{entry['name']}"
                     break
 
         user_info['repos'].append(repo_info)
