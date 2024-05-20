@@ -55,7 +55,15 @@ def get_user_info(username):
     }}
     """
     result = run_query(query)
-    user_data = result['data']['user']
+
+    if 'errors' in result:
+        print("Errors:", result['errors'])
+        raise Exception("Query returned errors")
+
+    user_data = result.get('data', {}).get('user')
+    if not user_data:
+        print("Failed to retrieve user data:", result)
+        raise Exception("Failed to retrieve user data")
 
     user_info = {
         'username': user_data['login'],
@@ -100,7 +108,9 @@ def get_user_info(username):
 if __name__ == '__main__':
     repo_name = os.getenv('GITHUB_REPOSITORY')
     owner, _ = repo_name.split('/')
-    user_info = get_user_info(owner)
-
-    # Print user info in JSON format for cleaner readability
-    print(json.dumps(user_info, indent=4))
+    try:
+        user_info = get_user_info(owner)
+        # Print user info in JSON format for cleaner readability
+        print(json.dumps(user_info, indent=4))
+    except Exception as e:
+        print(f"Error: {e}")
