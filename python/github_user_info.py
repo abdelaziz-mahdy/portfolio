@@ -121,5 +121,8 @@ if __name__ == '__main__':
         user_info = get_user_info(owner)
         # Print user info in JSON format for cleaner readability
         print(json.dumps(user_info, indent=4))
+        # Save user info to a JSON file
+        with open('user_info.json', 'w') as f:
+            json.dump(user_info, f)
     except Exception as e:
         print(f"Error: {e}")
