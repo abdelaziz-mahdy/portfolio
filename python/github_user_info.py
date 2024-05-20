@@ -12,7 +12,7 @@ def get_user_info(username):
         'username': user.login,
         'image_url': user.avatar_url,
         'repos': [],
-        'pull_requests': {}
+        'pull_requests': []
     }
 
     # Get all repos that are not forks
@@ -41,21 +41,20 @@ def get_user_info(username):
 
             user_info['repos'].append(repo_info)
 
-    # Get all pull requests
+    # Get all pull requests and the stars of the main repo
     for repo in user.get_repos():
         prs = repo.get_pulls(state='all')
         for pr in prs:
             if pr.user.login == username:
-                if repo.name not in user_info['pull_requests']:
-                    user_info['pull_requests'][repo.name] = {
-                        'repo_stars': repo.stargazers_count,
-                        'repo_link': repo.html_url,
-                        'pull_requests': []
-                    }
-                user_info['pull_requests'][repo.name]['pull_requests'].append({
+                base_repo = pr.base.repo
+                pull_request_info = {
                     'title': pr.title,
-                    'link': pr.html_url
-                })
+                    'link': pr.html_url,
+                    'base_repo_name': base_repo.full_name,
+                    'base_repo_stars': base_repo.stargazers_count,
+                    'base_repo_link': base_repo.html_url
+                }
+                user_info['pull_requests'].append(pull_request_info)
 
     return user_info
 
