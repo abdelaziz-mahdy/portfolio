@@ -18,11 +18,13 @@ def get_user_info(username):
       user(login: "{username}") {{
         login
         avatarUrl
-        repositories(first: 100, isFork: false) {{
+        repositories(first: 100, isFork: false, orderBy: {{field: UPDATED_AT, direction: DESC}}) {{
           nodes {{
             name
             url
             stargazerCount
+            description
+            updatedAt
             object(expression: "HEAD:") {{
               ... on Tree {{
                 entries {{
@@ -38,10 +40,15 @@ def get_user_info(username):
           nodes {{
             title
             url
+            state
             baseRepository {{
               nameWithOwner
               stargazerCount
               url
+              description
+              owner {{
+                login
+              }}
             }}
           }}
         }}
@@ -62,7 +69,7 @@ def get_user_info(username):
         'username': user_data['login'],
         'image_url': user_data['avatarUrl'],
         'repos': [],
-        'pull_requests': []
+        'pull_requests': {}
     }
 
     # Process repositories
@@ -71,9 +78,11 @@ def get_user_info(username):
             'name': repo['name'],
             'stars': repo['stargazerCount'],
             'link': repo['url'],
+            'description': repo['description'],
+            'updated_at': repo['updatedAt'],
             'image': False,
             'image_link': None,
-            'github_pages_link': repo['homepageUrl']
+            'github_pages_link': repo['homepageUrl'] if repo['homepageUrl'] else None
         }
 
         if repo['object']:
@@ -87,14 +96,21 @@ def get_user_info(username):
 
     # Process pull requests
     for pr in user_data['pullRequests']['nodes']:
-        pull_request_info = {
-            'title': pr['title'],
-            'link': pr['url'],
-            'base_repo_name': pr['baseRepository']['nameWithOwner'],
-            'base_repo_stars': pr['baseRepository']['stargazerCount'],
-            'base_repo_link': pr['baseRepository']['url']
-        }
-        user_info['pull_requests'].append(pull_request_info)
+        if pr['baseRepository']['owner']['login'] != username:
+            base_repo_name = pr['baseRepository']['nameWithOwner']
+            if base_repo_name not in user_info['pull_requests']:
+                user_info['pull_requests'][base_repo_name] = {
+                    'repo_stars': pr['baseRepository']['stargazerCount'],
+                    'repo_link': pr['baseRepository']['url'],
+                    'repo_description': pr['baseRepository']['description'],
+                    'prs': []
+                }
+            pull_request_info = {
+                'title': pr['title'],
+                'link': pr['url'],
+                'state': pr['state']
+            }
+            user_info['pull_requests'][base_repo_name]['prs'].append(pull_request_info)
 
     return user_info
 
