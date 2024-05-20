@@ -1,0 +1,31 @@
+name: Get GitHub User Info
+
+on:
+  push:
+    branches:
+      - main
+      - test-python
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  get-user-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install PyGithub requests
+
+      - name: Run GitHub user info script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python python/github_user_info.py
