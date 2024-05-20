@@ -23,16 +23,13 @@ def get_user_info(username):
             name
             url
             stargazerCount
-            object(expression: "HEAD:screenshot/") {{
+            object(expression: "HEAD:") {{
               ... on Tree {{
                 entries {{
                   name
                   type
                 }}
               }}
-            }}
-            pageInfo {{
-              hasNextPage
             }}
             homepageUrl
           }}
