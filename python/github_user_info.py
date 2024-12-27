@@ -72,7 +72,7 @@ def get_user_info(username):
         'pull_requests': {}
     }
 
-    # Process repositories
+    # Process repositories (that the user owns)
     for repo in user_data['repositories']['nodes']:
         repo_info = {
             'name': repo['name'],
@@ -94,7 +94,7 @@ def get_user_info(username):
 
         user_info['repos'].append(repo_info)
 
-    # Process pull requests
+    # Process pull requests (to other people's repositories)
     for pr in user_data['pullRequests']['nodes']:
         if pr['baseRepository']['owner']['login'] != username:
             base_repo_name = pr['baseRepository']['nameWithOwner']
@@ -119,10 +119,65 @@ if __name__ == '__main__':
     owner, _ = repo_name.split('/')
     try:
         user_info = get_user_info(owner)
+
         # Print user info in JSON format for cleaner readability
         print(json.dumps(user_info, indent=4))
-        # Save user info to a JSON file
-        with open('user_info.json', 'w') as f:
-            json.dump(user_info, f)
+
+        # Separate 'owned' vs 'external' contributed repos
+        owned_repos = []
+        external_repos = []
+
+        # (a) User's own repos
+        for r in user_info['repos']:
+            owned_repos.append({
+                'name': r['name'],
+                'link': r['link']
+            })
+
+        # (b) External repos contributed to via PRs
+        for base_repo, info in user_info['pull_requests'].items():
+            external_repos.append({
+                'name': base_repo,
+                'link': info['repo_link']
+            })
+
+        # Deduplicate each category (just in case)
+        # (Though typically 'owned' should not appear in 'external')
+        def deduplicate_repos(repo_list):
+            unique = []
+            seen = set()
+            for repo in repo_list:
+                if repo['name'] not in seen:
+                    unique.append(repo)
+                    seen.add(repo['name'])
+            return unique
+
+        owned_repos = deduplicate_repos(owned_repos)
+        external_repos = deduplicate_repos(external_repos)
+
+        # Prepare final contributed_repos structure
+        contributed_repos = {
+            "owned": owned_repos,
+            "external": external_repos
+        }
+
+        # 1. Save the contributed repos (with sections) to JSON
+        with open('contributed_repos.json', 'w') as f:
+            json.dump(contributed_repos, f, indent=4)
+
+        # 2. Create a README with two distinct sections
+        with open('CONTRIBUTED_REPOS.md', 'w') as f:
+            f.write("# Contributed Repositories\n\n")
+
+            f.write("## Owned\n\n")
+            for repo in owned_repos:
+                f.write(f"- [{repo['name']}]({repo['link']})\n")
+
+            f.write("\n## External\n\n")
+            for repo in external_repos:
+                f.write(f"- [{repo['name']}]({repo['link']})\n")
+
+        print("Successfully saved 'contributed_repos.json' and 'CONTRIBUTED_REPOS.md' with two sections!")
+
     except Exception as e:
         print(f"Error: {e}")
