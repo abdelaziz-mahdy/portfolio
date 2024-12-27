@@ -313,6 +313,66 @@
         {
             "name": "polarby/render",
             "link": "https://github.com/polarby/render"
+        },
+        {
+            "name": "marchdev-tk/mdcharts",
+            "link": "https://github.com/marchdev-tk/mdcharts"
+        },
+        {
+            "name": "leanflutter/flutter_distributor",
+            "link": "https://github.com/leanflutter/flutter_distributor"
+        },
+        {
+            "name": "kodjodevf/mangayomi-extensions",
+            "link": "https://github.com/kodjodevf/mangayomi-extensions"
+        },
+        {
+            "name": "serverpod/serverpod",
+            "link": "https://github.com/serverpod/serverpod"
+        },
+        {
+            "name": "rainyl/opencv_dart",
+            "link": "https://github.com/rainyl/opencv_dart"
+        },
+        {
+            "name": "rainyl/opencv.full",
+            "link": "https://github.com/rainyl/opencv.full"
+        },
+        {
+            "name": "prabhuc94/desktop_screenshot",
+            "link": "https://github.com/prabhuc94/desktop_screenshot"
+        },
+        {
+            "name": "aakashkondhalkar/external_path",
+            "link": "https://github.com/aakashkondhalkar/external_path"
+        },
+        {
+            "name": "Tienisto/rhttp",
+            "link": "https://github.com/Tienisto/rhttp"
+        },
+        {
+            "name": "Flutter-Bounty-Hunters/cutting_room",
+            "link": "https://github.com/Flutter-Bounty-Hunters/cutting_room"
+        },
+        {
+            "name": "rainyl/awesome-opencv_dart",
+            "link": "https://github.com/rainyl/awesome-opencv_dart"
+        },
+        {
+            "name": "rainyl/dartcv",
+            "link": "https://github.com/rainyl/dartcv"
+        },
+        {
+            "name": "miguelpruivo/flutter_file_picker",
+            "link": "https://github.com/miguelpruivo/flutter_file_picker"
+        },
+        {
+            "name": "ghoshRitesh12/aniwatch-api",
+            "link": "https://github.com/ghoshRitesh12/aniwatch-api"
+        },
+        {
+            "name": "dsc-uob/subtitle",
+            "link": "https://github.com/dsc-uob/subtitle"
         }
     ]
 }
