@@ -5,65 +5,169 @@ import json
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 HEADERS = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
 
+
 def run_query(query):
-    request = requests.post('https://api.github.com/graphql', json={'query': query}, headers=HEADERS)
-    if request.status_code == 200:
-        return request.json()
+    """Sends a GraphQL query to the GitHub API and returns the JSON response."""
+    response = requests.post(
+        'https://api.github.com/graphql',
+        json={'query': query},
+        headers=HEADERS
+    )
+    if response.status_code == 200:
+        return response.json()
     else:
-        raise Exception(f"Query failed to run by returning code of {request.status_code}. {query}")
+        raise Exception(
+            f"Query failed to run with code {response.status_code}. {query}"
+        )
+
+
+def fetch_all_repositories(username):
+    """
+    Fetch ALL (not just first 100) repositories owned by `username`
+    using GraphQL pagination.
+    """
+    all_repos = []
+    has_next_page = True
+    after_cursor = None
+
+    while has_next_page:
+        # Notice the 'after' variable is passed as a GraphQL variable
+        # but must be represented as a string inside the query:
+        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+
+        query = f"""
+        {{
+          user(login: "{username}") {{
+            repositories(
+              first: 100,
+              isFork: false,
+              orderBy: {{field: UPDATED_AT, direction: DESC}}
+              {after_part}
+            ) {{
+              pageInfo {{
+                hasNextPage
+                endCursor
+              }}
+              nodes {{
+                name
+                url
+                stargazerCount
+                description
+                updatedAt
+                object(expression: "HEAD:") {{
+                  ... on Tree {{
+                    entries {{
+                      name
+                      type
+                    }}
+                  }}
+                }}
+                homepageUrl
+              }}
+            }}
+          }}
+        }}
+        """
+
+        result = run_query(query)
+        user_data = result.get('data', {}).get('user')
+        if not user_data:
+            break
+
+        repo_data = user_data['repositories']
+        # Add fetched nodes to all_repos
+        all_repos.extend(repo_data['nodes'])
+
+        # Update pagination info
+        has_next_page = repo_data['pageInfo']['hasNextPage']
+        after_cursor = repo_data['pageInfo']['endCursor']
+
+    return all_repos
+
+
+def fetch_all_pull_requests(username):
+    """
+    Fetch ALL (not just first 100) pull requests created by `username`
+    using GraphQL pagination.
+    """
+    all_prs = []
+    has_next_page = True
+    after_cursor = None
+
+    while has_next_page:
+        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+
+        query = f"""
+        {{
+          user(login: "{username}") {{
+            pullRequests(
+              first: 100
+              {after_part}
+            ) {{
+              pageInfo {{
+                hasNextPage
+                endCursor
+              }}
+              nodes {{
+                title
+                url
+                state
+                baseRepository {{
+                  nameWithOwner
+                  stargazerCount
+                  url
+                  description
+                  owner {{
+                    login
+                  }}
+                }}
+              }}
+            }}
+          }}
+        }}
+        """
+
+        result = run_query(query)
+        user_data = result.get('data', {}).get('user')
+        if not user_data:
+            break
+
+        pr_data = user_data['pullRequests']
+        all_prs.extend(pr_data['nodes'])
+
+        # Update pagination info
+        has_next_page = pr_data['pageInfo']['hasNextPage']
+        after_cursor = pr_data['pageInfo']['endCursor']
+
+    return all_prs
+
 
 def get_user_info(username):
-    query = f"""
+    """
+    Combines the above pagination helpers to build
+    a cohesive 'user_info' dict with:
+      - username
+      - image_url
+      - repos (all repos)
+      - pull_requests (all PRs to external repos)
+    """
+    # -- You can also fetch the user's avatar if you want:
+    avatar_query = f"""
     {{
       user(login: "{username}") {{
         login
         avatarUrl
-        repositories(first: 100, isFork: false, orderBy: {{field: UPDATED_AT, direction: DESC}}) {{
-          nodes {{
-            name
-            url
-            stargazerCount
-            description
-            updatedAt
-            object(expression: "HEAD:") {{
-              ... on Tree {{
-                entries {{
-                  name
-                  type
-                }}
-              }}
-            }}
-            homepageUrl
-          }}
-        }}
-        pullRequests(first: 100) {{
-          nodes {{
-            title
-            url
-            state
-            baseRepository {{
-              nameWithOwner
-              stargazerCount
-              url
-              description
-              owner {{
-                login
-              }}
-            }}
-          }}
-        }}
       }}
     }}
     """
-    result = run_query(query)
-
-    if 'errors' in result:
-        print("Errors:", result['errors'])
-        raise Exception("Query returned errors")
-
-    user_data = result.get('data', {}).get('user')
+    avatar_result = run_query(avatar_query)
+    user_data = avatar_result.get('data', {}).get('user')
     if not user_data:
-        raise Exception("Failed to retrieve user data")
+        raise Exception(f"Failed to retrieve data for user '{username}'")
+
+    # Fetch all repos and all PRs using pagination
+    repos = fetch_all_repositories(username)
+    prs = fetch_all_pull_requests(username)
 
     user_info = {
         'username': user_data['login'],
@@ -72,8 +176,8 @@ def get_user_info(username):
         'pull_requests': {}
     }
 
-    # Process repositories (that the user owns)
-    for repo in user_data['repositories']['nodes']:
+    # Process owned repositories
+    for repo in repos:
         repo_info = {
             'name': repo['name'],
             'stars': repo['stargazerCount'],
@@ -85,24 +189,33 @@ def get_user_info(username):
             'github_pages_link': repo['homepageUrl'] if repo['homepageUrl'] else None
         }
 
-        if repo['object']:
+        # Check if there's a blob that looks like an image or screenshot
+        if repo.get('object') and repo['object'].get('entries'):
             for entry in repo['object']['entries']:
-                if entry['type'] == 'blob' and ('screenshot' in entry['name'].lower() or 'image' in entry['name'].lower()):
+                if (entry['type'] == 'blob' and
+                   ('screenshot' in entry['name'].lower() or 'image' in entry['name'].lower())):
                     repo_info['image'] = True
-                    repo_info['image_link'] = f"https://github.com/{username}/{repo['name']}/blob/main/{entry['name']}"
+                    repo_info['image_link'] = (
+                        f"https://github.com/{username}/{
+                            repo['name']}/blob/main/{entry['name']}"
+                    )
                     break
 
         user_info['repos'].append(repo_info)
 
-    # Process pull requests (to other people's repositories)
-    for pr in user_data['pullRequests']['nodes']:
-        if pr['baseRepository']['owner']['login'] != username:
-            base_repo_name = pr['baseRepository']['nameWithOwner']
+    # Process pull requests to external repositories
+    for pr in prs:
+        base_repo = pr['baseRepository']
+        if not base_repo:
+            continue
+
+        if base_repo['owner']['login'] != username:
+            base_repo_name = base_repo['nameWithOwner']
             if base_repo_name not in user_info['pull_requests']:
                 user_info['pull_requests'][base_repo_name] = {
-                    'repo_stars': pr['baseRepository']['stargazerCount'],
-                    'repo_link': pr['baseRepository']['url'],
-                    'repo_description': pr['baseRepository']['description'],
+                    'repo_stars': base_repo['stargazerCount'],
+                    'repo_link': base_repo['url'],
+                    'repo_description': base_repo['description'],
                     'prs': []
                 }
             pull_request_info = {
@@ -110,15 +223,19 @@ def get_user_info(username):
                 'link': pr['url'],
                 'state': pr['state']
             }
-            user_info['pull_requests'][base_repo_name]['prs'].append(pull_request_info)
+            user_info['pull_requests'][base_repo_name]['prs'].append(
+                pull_request_info)
 
     return user_info
 
+
 if __name__ == '__main__':
+    # For example, if GITHUB_REPOSITORY is "octocat/Hello-World", 'owner' = "octocat"
     repo_name = os.getenv('GITHUB_REPOSITORY')
     owner, _ = repo_name.split('/')
     try:
         user_info = get_user_info(owner)
+        print(json.dumps(user_info, indent=4))
 
         # Print user info in JSON format for cleaner readability
         print(json.dumps(user_info, indent=4))
