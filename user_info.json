@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-26T13:15:44+00:00",
+    "generated_at": "2026-07-26T14:18:28+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-07-26T09:35:14Z",
+            "updated_at": "2026-07-26T14:10:54Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -4988,7 +4988,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 177952,
+            "repo_stars": 177953,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5415,7 +5415,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5267,
+            "repo_stars": 5268,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
