@@ -38,10 +38,19 @@
   <link rel="manifest" href="manifest.json">
 
   <style>
-    /* The pre-boot block below is the only text a crawler, a reader-mode
+    /* The static block in the body is the only text a crawler, a reader-mode
        parser, or a visitor without JavaScript can see: Flutter's CanvasKit
-       renderer paints the app itself into a canvas, leaving no DOM text.
-       It is removed once the Flutter app takes over. */
+       renderer paints the app into a canvas and leaves no DOM text.
+
+       It must stay in the served HTML, but it must never reach a human's
+       screen — otherwise the page flashes a plain-text CV for however long
+       main.dart.js takes to download. The `js` class below is set during head
+       parsing, before the body paints, so the swap happens without a frame of
+       the fallback ever being drawn. */
+
+    html { background: #FAF8FF; }
+    body { margin: 0; }
+
     #pre-boot {
       margin: 0 auto;
       padding: 48px 24px;
@@ -51,17 +60,64 @@
       color: #1a1a1e;
     }
 
-    @media (prefers-color-scheme: dark) {
-      body { background: #131316; }
-      #pre-boot { color: #ececf1; }
-      #pre-boot a { color: #a98be6; }
-    }
-
     #pre-boot h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
     #pre-boot h2 { font-size: 1rem; margin: 2rem 0 .5rem; }
     #pre-boot p { margin: 0 0 1rem; }
     #pre-boot ul { margin: 0; padding-left: 1.2rem; }
+
+    /* Hidden unless JavaScript is running, so a no-JS visitor gets the text
+       rather than a spinner that will never resolve. */
+    #boot { display: none; }
+
+    .js #pre-boot { display: none; }
+
+    .js #boot {
+      display: flex;
+      position: fixed;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      /* Matches the app's own scaffold colour so the handoff to Flutter's
+         loading state is not a visible change of background. */
+      background: #FAF8FF;
+    }
+
+    #boot .spinner {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 3px solid rgba(37, 99, 235, 0.22);
+      border-top-color: #2563EB;
+      animation: boot-spin 800ms linear infinite;
+    }
+
+    @keyframes boot-spin { to { transform: rotate(360deg); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      #boot .spinner {
+        animation: boot-pulse 1.4s ease-in-out infinite;
+        border-top-color: rgba(37, 99, 235, 0.22);
+        background: #2563EB;
+      }
+      @keyframes boot-pulse { 50% { opacity: .35; } }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      html, .js #boot { background: #131318; }
+      #pre-boot { color: #ececf1; }
+      #pre-boot a { color: #a98be6; }
+      #boot .spinner {
+        border-color: rgba(167, 199, 255, 0.24);
+        border-top-color: #A7C7FF;
+      }
+    }
   </style>
+
+  <script>
+    // Runs while the head is parsed, before the body is painted. Setting the
+    // flag here rather than after load is what prevents the flash.
+    document.documentElement.classList.add('js');
+  </script>
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -94,6 +150,10 @@
     </ul>
   </div>
 
+  <div id="boot" role="status" aria-live="polite" aria-label="Loading portfolio">
+    <div class="spinner"></div>
+  </div>
+
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
@@ -103,11 +163,19 @@
         },
         onEntrypointLoaded: function (engineInitializer) {
           engineInitializer.initializeEngine().then(function (appRunner) {
-            // Hand the page over to Flutter only once the engine is ready, so
-            // the static content stays visible for the whole boot.
-            var preBoot = document.getElementById('pre-boot');
-            if (preBoot) preBoot.remove();
             appRunner.runApp();
+
+            // Drop the boot chrome on the frame after Flutter starts painting.
+            // Removing it before runApp would expose a blank page for a frame;
+            // removing it on a timer would guess.
+            requestAnimationFrame(function () {
+              requestAnimationFrame(function () {
+                var preBoot = document.getElementById('pre-boot');
+                if (preBoot) preBoot.remove();
+                var boot = document.getElementById('boot');
+                if (boot) boot.remove();
+              });
+            });
           });
         }
       });
