@@ -1,149 +1,89 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:portfolio/constants/constants.dart';
-import 'package:portfolio/github/data/github_data.dart';
-import 'package:portfolio/github/models/github_repository.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:portfolio/github/models/portfolio_data.dart';
+import 'package:portfolio/github/utils.dart';
 
-class RepositoriesList extends StatefulWidget {
+class RepositoriesList extends StatelessWidget {
   static const routeName = '/repositories';
+  final List<PortfolioRepository> repositories;
   final double cardWidth;
-  const RepositoriesList({super.key, required this.cardWidth});
 
-  @override
-  State<RepositoriesList> createState() => _RepositoriesListState();
-}
-
-class _RepositoriesListState extends State<RepositoriesList> {
-  final GitHubAPI gitHubAPI =
-      GitHubAPI(Constants.githubUsername, token: Constants.githubToken);
-  List<GithubRepository> repositories = [];
-  ValueNotifier<bool> isLoading = ValueNotifier(false);
-  ValueNotifier<String?> errorMessage = ValueNotifier(null);
-  Future<void> fetchRepositories() async {
-    try {
-      isLoading.value = true;
-      errorMessage.value = null;
-      List<GithubRepository> fetchedRepos =
-          await gitHubAPI.fetchAllReposForUserAndOrgs(includeForks: false);
-
-      fetchedRepos.sort((a, b) {
-        // First, sort by star count in descending order
-        int starComparison =
-            (b.stargazersCount ?? 0).compareTo(a.stargazersCount ?? 0);
-        if (starComparison != 0) {
-          return starComparison; // Prioritize by star count first
-        }
-        // If star counts are equal, prioritize by homepage presence
-        return (b.doesDemoExist() ? 1 : 0) - (a.doesDemoExist() ? 1 : 0);
-      });
-
-      repositories = fetchedRepos;
-    } catch (e) {
-      errorMessage.value = e.toString();
-    } finally {
-      isLoading.value = false;
-    }
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    fetchRepositories();
-  }
-
-  Future<void> _launchURL(String url) async {
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Could not launch the repository URL.')),
-      );
-    }
-  }
+  const RepositoriesList({
+    super.key,
+    required this.repositories,
+    required this.cardWidth,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder<bool>(
-      valueListenable: isLoading,
-      builder: (_, isLoading, __) {
-        if (isLoading) {
-          return Container(
-              margin: const EdgeInsets.all(10),
-              child: const Center(child: CircularProgressIndicator()));
-        }
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Text(
+            "Public Repos",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+        ),
+        const SizedBox(height: 16.0),
+        StaggeredGrid.count(
+          crossAxisCount: 2,
+          children: repositories
+              .map((repo) => SizedBox(
+                    width: cardWidth,
+                    child: _RepositoryCard(repository: repo),
+                  ))
+              .toList(),
+        ),
+      ],
+    );
+  }
+}
 
-        return Column(
+class _RepositoryCard extends StatelessWidget {
+  final PortfolioRepository repository;
+
+  const _RepositoryCard({required this.repository});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => openExternalUrl(context, repository.link),
+      child: Card(
+        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text("Public Repos",
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Row(
+                children: [
+                  const Icon(Icons.star, color: Colors.yellow),
+                  Text(" ${repository.stars}"),
+                  const SizedBox(width: 8),
+                  Expanded(child: Text(repository.name)),
+                ],
               ),
-              const SizedBox(height: 16.0),
-              if (errorMessage.value != null)
-                Container(
-                    margin: const EdgeInsets.all(10),
-                    child: Center(
-                        child: Text(errorMessage.value!,
-                            style: const TextStyle(color: Colors.red)))),
-              StaggeredGrid.count(
-                crossAxisCount: 2,
-                children: repositories
-                    .map((repo) => SizedBox(
-                          width: widget.cardWidth,
-                          // height: widget.cardWidth,
-                          child: InkWell(
-                            onTap: () => _launchURL(repo.htmlUrl ?? ''),
-                            child: Card(
-                              margin: const EdgeInsets.symmetric(
-                                  horizontal: 8.0, vertical: 4.0),
-                              child: Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Icon(Icons.star,
-                                            color: Colors.yellow),
-                                        Text(" ${repo.stargazersCount ?? 0}"),
-                                        const SizedBox(width: 8),
-                                        Expanded(
-                                            child:
-                                                Text(repo.name ?? 'No Name')),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 4.0),
-                                      child: Text(
-                                          repo.description?.toString() ??
-                                              'No Description'),
-                                    ),
-                                    Align(
-                                      alignment: Alignment.centerRight,
-                                      child: ElevatedButton(
-                                        onPressed: repo.doesDemoExist()
-                                            ? () =>
-                                                _launchURL(repo.getDemoUrl())
-                                            : null,
-                                        child: const Text('Demo'),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ))
-                    .toList(),
+              Padding(
+                padding: const EdgeInsets.only(top: 4.0),
+                child: Text(repository.description ?? 'No Description'),
               ),
-            ]);
-      },
+              Align(
+                alignment: Alignment.centerRight,
+                child: ElevatedButton(
+                  onPressed: repository.hasDemo
+                      ? () => openExternalUrl(context, repository.demoUrl)
+                      : null,
+                  child: const Text('Demo'),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

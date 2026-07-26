@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 Color getStateColor(String? state) {
   switch (state?.toLowerCase()) {
@@ -25,4 +26,22 @@ Color getStateColor(String? state) {
 
 bool isPortrait(BuildContext context) {
   return MediaQuery.of(context).size.width < 600;
+}
+
+/// Opens [url] in a new tab or the platform browser.
+///
+/// Reports failure through the caller's [ScaffoldMessenger] rather than
+/// throwing, so a dead link never breaks the page.
+Future<void> openExternalUrl(BuildContext context, String? url) async {
+  if (url == null || url.isEmpty) {
+    return;
+  }
+
+  final uri = Uri.tryParse(url);
+  if (uri == null || !await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+    if (!context.mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Could not open $url')),
+    );
+  }
 }

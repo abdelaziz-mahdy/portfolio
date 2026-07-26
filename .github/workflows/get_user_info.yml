@@ -4,10 +4,20 @@ on:
   push:
     branches:
       - main
-      - test-python
   pull_request:
     branches:
       - main
+  # The dataset goes stale between pushes, so refresh it on a schedule.
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: get-user-info-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   get-user-info:
@@ -15,27 +25,27 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install PyGithub requests
+        run: pip install requests
 
       - name: Run GitHub user info script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python python/github_user_info.py
 
-      - name: Pull Remote Changes
-        run: git pull
       - name: Auto Commit
+        # Pull requests must not push data back to the repository.
+        if: github.event_name != 'pull_request'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Chore: latest user info Update"
-          file_pattern: "*.json *.md"
+          file_pattern: "user_info.json contributed_repos.json CONTRIBUTED_REPOS.md"
           repository: .
           skip_fetch: false

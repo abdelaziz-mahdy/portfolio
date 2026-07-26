@@ -2,9 +2,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meta_seo/meta_seo.dart';
+import 'package:portfolio/github/controller/portfolio_controller.dart';
+import 'package:portfolio/github/models/portfolio_data.dart';
 import 'package:portfolio/github/utils.dart';
-import 'package:simple_icons/simple_icons.dart';
+import 'package:portfolio/service_locator.dart';
 
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/constants/view/course_card.dart';
@@ -14,7 +17,6 @@ import 'package:portfolio/constants/view/profile_section.dart';
 import 'package:portfolio/constants/view/skills_card.dart';
 import 'package:portfolio/github/view/pull_requests/pull_requests_on_public_repos.dart';
 import 'package:portfolio/github/view/repos/repositories_list.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   // It is required to add the following to run the meta_seo package correctly
@@ -22,6 +24,10 @@ void main() {
   if (kIsWeb) {
     MetaSEO().config();
   }
+  setupServiceLocator();
+  // Start the fetch before the first frame so the data is often ready by the
+  // time the tree mounts.
+  getIt<PortfolioController>().load();
   runApp(const MyApp());
 }
 
@@ -80,58 +86,43 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = getIt<PortfolioController>();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Portfolio'),
         actions: [
           IconButton(
-            icon: Icon(SimpleIcons.gmail,
+            tooltip: 'Email',
+            icon: FaIcon(FontAwesomeIcons.envelope,
                 color: Theme.of(context).brightness == Brightness.dark
                     ? Colors.white
-                    : SimpleIconColors.gmail),
-            onPressed: () async {
-              final emailUri = Uri.parse('mailto:${Constants.email}');
-              if (await canLaunchUrl(emailUri)) {
-                await launchUrl(emailUri);
-              } else {
-                print('Could not launch $emailUri');
-              }
-            },
+                    : const Color(0xFFEA4335)),
+            onPressed: () =>
+                openExternalUrl(context, 'mailto:${Constants.email}'),
           ),
           const SizedBox(
             width: 10,
           ),
           IconButton(
-            icon: Icon(SimpleIcons.linkedin,
+            tooltip: 'LinkedIn',
+            icon: FaIcon(FontAwesomeIcons.linkedinIn,
                 color: Theme.of(context).brightness == Brightness.dark
                     ? Colors.white
-                    : SimpleIconColors.linkedin),
-            onPressed: () async {
-              Uri url = Uri.parse(Constants.linkedInUrl!);
-              if (await canLaunchUrl(url)) {
-                await launchUrl(url);
-              } else {
-                print('Could not launch ${Constants.linkedInUrl}');
-              }
-            },
+                    : const Color(0xFF0A66C2)),
+            onPressed: () => openExternalUrl(context, Constants.linkedInUrl),
           ),
           const SizedBox(
             width: 10,
           ),
           IconButton(
-            icon: Icon(SimpleIcons.github,
+            tooltip: 'GitHub',
+            icon: FaIcon(FontAwesomeIcons.github,
                 color: Theme.of(context).brightness == Brightness.dark
                     ? Colors.white
-                    : SimpleIconColors.github),
-            onPressed: () async {
-              final githubUrl =
-                  Uri.parse('https://github.com/${Constants.githubUsername}');
-              if (await canLaunchUrl(githubUrl)) {
-                await launchUrl(githubUrl);
-              } else {
-                print('Could not launch $githubUrl');
-              }
-            },
+                    : const Color(0xFF181717)),
+            onPressed: () => openExternalUrl(
+                context, 'https://github.com/${Constants.githubUsername}'),
           ),
           const SizedBox(
             width: 10,
@@ -145,32 +136,98 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding:
-              EdgeInsets.symmetric(horizontal: isPortrait(context) ? 10 : 30),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const ProfileSection(),
-              StaggeredGrid.count(
-                crossAxisCount: isPortrait(context) ? 1 : 2,
-                // childAspectRatio: (MediaQuery.of(context).size.width / 2) / 300,
-                children: [
-                  CourseCard(courses: Constants.courses),
-                  SkillsCard(skills: Constants.skills),
-                  ExperienceCard(experiences: Constants.experience),
-                  EducationCard(educations: Constants.education),
-                ],
-              ),
-              const PullRequestsOnPublicRepos(
-                cardWidth: StylingConstants.cardsWidth,
-              ), // Uncomment if these are to be included
-              const RepositoriesList(
-                cardWidth: StylingConstants.cardsWidth,
-              ), // Adjust layout or wrap with a fixed height Container if necessary
-            ],
-          ),
+      body: ListenableBuilder(
+        listenable: controller,
+        builder: (context, _) {
+          switch (controller.status) {
+            case PortfolioStatus.idle:
+            case PortfolioStatus.loading:
+              return const Center(child: CircularProgressIndicator());
+            case PortfolioStatus.error:
+              return _ErrorView(
+                error: controller.error,
+                onRetry: controller.refresh,
+              );
+            case PortfolioStatus.ready:
+              return _PortfolioBody(data: controller.data!);
+          }
+        },
+      ),
+    );
+  }
+}
+
+class _PortfolioBody extends StatelessWidget {
+  final PortfolioData data;
+
+  const _PortfolioBody({required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: isPortrait(context) ? 10 : 30),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ProfileSection(data: data),
+            StaggeredGrid.count(
+              crossAxisCount: isPortrait(context) ? 1 : 2,
+              children: [
+                CourseCard(courses: Constants.courses),
+                SkillsCard(skills: Constants.skills),
+                ExperienceCard(experiences: Constants.experience),
+                EducationCard(educations: Constants.education),
+              ],
+            ),
+            PullRequestsOnPublicRepos(
+              data: data,
+              cardWidth: StylingConstants.cardsWidth,
+            ),
+            RepositoriesList(
+              repositories: data.repositories,
+              cardWidth: StylingConstants.cardsWidth,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ErrorView extends StatelessWidget {
+  final Object? error;
+  final VoidCallback onRetry;
+
+  const _ErrorView({required this.error, required this.onRetry});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.cloud_off, size: 48),
+            const SizedBox(height: 16),
+            Text(
+              'Could not load GitHub data.',
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              '$error',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodySmall,
+            ),
+            const SizedBox(height: 16),
+            FilledButton.icon(
+              onPressed: onRetry,
+              icon: const Icon(Icons.refresh),
+              label: const Text('Retry'),
+            ),
+          ],
         ),
       ),
     );

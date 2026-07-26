@@ -1,41 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/github/models/github_issue.dart';
+import 'package:portfolio/github/models/portfolio_data.dart';
 import 'package:portfolio/github/utils.dart';
 import 'package:portfolio/github/view/pull_requests/github_issue_card.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class RepositoryCard extends StatelessWidget {
-  final String repositoryUrl;
-  final List<GithubIssue> issues;
+  final ContributedRepository contribution;
   final double cardWidth;
   final bool summary;
 
   const RepositoryCard({
     super.key,
-    required this.repositoryUrl,
-    required this.issues,
+    required this.contribution,
     required this.cardWidth,
     this.summary = true,
   });
 
-  Future<void> _launchURL(String url) async {
-    url = url.replaceFirst("api.github.com", "github.com");
-    url = url.replaceFirst("/repos/", "/");
-    if (await canLaunchUrl(Uri.parse(url))) {
-      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    Map<String, int> prStatesSummary = {};
-    for (var issue in issues) {
-      String state = issue.state ?? 'Unknown';
-      prStatesSummary[state] = (prStatesSummary[state] ?? 0) + 1;
-    }
-
     return Card(
       margin: const EdgeInsets.all(10.0),
       elevation: 4.0,
@@ -46,11 +27,11 @@ class RepositoryCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             TextButton(
-              onPressed: () => _launchURL(repositoryUrl),
+              onPressed: () => openExternalUrl(context, contribution.repoLink),
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: Text(
-                  repositoryUrl.split('/').last,
+                  contribution.name,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         decoration: TextDecoration.underline,
                       ),
@@ -58,11 +39,11 @@ class RepositoryCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            if (summary) ...[
+            if (summary)
               Wrap(
                 spacing: 8,
                 runSpacing: 8,
-                children: prStatesSummary.entries.map((entry) {
+                children: contribution.pullRequestStates.entries.map((entry) {
                   return Chip(
                     label: Text(
                       "${entry.key}: ${entry.value}",
@@ -74,12 +55,14 @@ class RepositoryCard extends StatelessWidget {
                     backgroundColor: getStateColor(entry.key),
                   );
                 }).toList(),
-              ),
-            ] else
-              ...issues.map((issue) => Container(
+              )
+            else
+              ...contribution.pullRequests.map((pullRequest) => Container(
                     margin: const EdgeInsets.symmetric(vertical: 4.0),
                     child: SizedBox(
-                        width: cardWidth, child: GithubIssueCard(issue: issue)),
+                      width: cardWidth,
+                      child: GithubIssueCard(pullRequest: pullRequest),
+                    ),
                   )),
           ],
         ),

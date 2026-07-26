@@ -1,125 +1,240 @@
-import os
-import requests
+"""Generate the portfolio's static GitHub dataset.
+
+The Flutter web app used to call api.github.com directly from the browser.
+Unauthenticated browser calls are capped at 60 requests/hour per visitor IP,
+so the portfolio rate-limited itself for anyone who reloaded a few times.
+
+This script runs in CI with a token (5000 requests/hour) and writes the result
+to user_info.json, which the app then reads as static data.
+
+Only PUBLIC data is ever written. Private repositories and pull requests
+against private repositories are excluded at the query level and again by a
+defensive filter before anything is serialised.
+"""
+
 import json
+import os
+from datetime import datetime, timezone
+
+import requests
 
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 HEADERS = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
 
+GRAPHQL_URL = 'https://api.github.com/graphql'
+
+
+class GraphQLError(Exception):
+    """Raised when the GraphQL endpoint reports errors in a 200 response."""
+
 
 def run_query(query):
-    """Sends a GraphQL query to the GitHub API and returns the JSON response."""
-    response = requests.post(
-        'https://api.github.com/graphql',
-        json={'query': query},
-        headers=HEADERS
-    )
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(
-            f"Query failed to run with code {response.status_code}. {query}"
+    """Send a GraphQL query and return its `data` payload.
+
+    GitHub answers GraphQL errors with HTTP 200 and an `errors` array, so the
+    status code alone is not enough to tell success from failure.
+    """
+    response = requests.post(GRAPHQL_URL, json={'query': query}, headers=HEADERS)
+
+    if response.status_code != 200:
+        raise GraphQLError(
+            f"Query failed with HTTP {response.status_code}: {response.text}"
         )
 
+    payload = response.json()
+    if payload.get('errors'):
+        raise GraphQLError(f"Query returned errors: {payload['errors']}")
 
-def fetch_all_repositories(username):
+    return payload.get('data') or {}
+
+
+def _repository_fields(with_deployments):
+    """Fields selected for every repository node.
+
+    `deployments` tells us whether GitHub Pages is live even when the repo has
+    no homepage set. Tokens without deployment read access make the whole query
+    fail, so callers can request the query without it and fall back.
     """
-    Fetch ALL (not just first 100) repositories owned by `username`
-    using GraphQL pagination.
+    deployments = """
+                deployments(first: 1, environments: ["github-pages"]) {
+                  totalCount
+                }
+    """ if with_deployments else ""
+
+    return f"""
+              name
+              nameWithOwner
+              url
+              description
+              isPrivate
+              isArchived
+              stargazerCount
+              forkCount
+              updatedAt
+              homepageUrl
+              owner {{ login }}
+              primaryLanguage {{ name }}
+              repositoryTopics(first: 6) {{
+                nodes {{ topic {{ name }} }}
+              }}
+              {deployments}
     """
-    all_repos = []
-    has_next_page = True
+
+
+def _paginate(query_builder, extract):
+    """Walk a GraphQL connection until `hasNextPage` is false."""
+    nodes = []
     after_cursor = None
 
-    while has_next_page:
-        # Notice the 'after' variable is passed as a GraphQL variable
-        # but must be represented as a string inside the query:
-        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+    while True:
+        data = run_query(query_builder(after_cursor))
+        connection = extract(data)
+        if connection is None:
+            break
 
-        query = f"""
+        nodes.extend(connection['nodes'])
+
+        page_info = connection['pageInfo']
+        if not page_info['hasNextPage']:
+            break
+        after_cursor = page_info['endCursor']
+
+    return nodes
+
+
+def fetch_user_repositories(username, with_deployments=True):
+    """All public, non-fork repositories owned by `username`."""
+
+    def build(after_cursor):
+        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+        return f"""
         {{
           user(login: "{username}") {{
             repositories(
               first: 100,
               isFork: false,
+              privacy: PUBLIC,
+              ownerAffiliations: [OWNER],
               orderBy: {{field: UPDATED_AT, direction: DESC}}
               {after_part}
             ) {{
-              pageInfo {{
-                hasNextPage
-                endCursor
-              }}
-              nodes {{
-                name
-                url
-                stargazerCount
-                description
-                updatedAt
-                object(expression: "HEAD:") {{
-                  ... on Tree {{
-                    entries {{
-                      name
-                      type
-                    }}
-                  }}
-                }}
-                homepageUrl
-              }}
+              pageInfo {{ hasNextPage endCursor }}
+              nodes {{ {_repository_fields(with_deployments)} }}
             }}
           }}
         }}
         """
 
-        result = run_query(query)
-        user_data = result.get('data', {}).get('user')
-        if not user_data:
-            break
+    return _paginate(
+        build,
+        lambda data: (data.get('user') or {}).get('repositories'),
+    )
 
-        repo_data = user_data['repositories']
-        # Add fetched nodes to all_repos
-        all_repos.extend(repo_data['nodes'])
 
-        # Update pagination info
-        has_next_page = repo_data['pageInfo']['hasNextPage']
-        after_cursor = repo_data['pageInfo']['endCursor']
+def fetch_organizations(username):
+    """Public organization memberships for `username`.
 
-    return all_repos
+    Only publicly visible memberships are returned, which is exactly what a
+    public portfolio should show.
+    """
+
+    def build(after_cursor):
+        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+        return f"""
+        {{
+          user(login: "{username}") {{
+            organizations(first: 100{after_part}) {{
+              pageInfo {{ hasNextPage endCursor }}
+              nodes {{ login }}
+            }}
+          }}
+        }}
+        """
+
+    nodes = _paginate(
+        build,
+        lambda data: (data.get('user') or {}).get('organizations'),
+    )
+    return [node['login'] for node in nodes]
+
+
+def fetch_organization_repositories(org_login, with_deployments=True):
+    """All public, non-fork repositories owned by `org_login`."""
+
+    def build(after_cursor):
+        after_part = f', after: "{after_cursor}"' if after_cursor else ''
+        return f"""
+        {{
+          organization(login: "{org_login}") {{
+            repositories(
+              first: 100,
+              isFork: false,
+              privacy: PUBLIC,
+              orderBy: {{field: UPDATED_AT, direction: DESC}}
+              {after_part}
+            ) {{
+              pageInfo {{ hasNextPage endCursor }}
+              nodes {{ {_repository_fields(with_deployments)} }}
+            }}
+          }}
+        }}
+        """
+
+    return _paginate(
+        build,
+        lambda data: (data.get('organization') or {}).get('repositories'),
+    )
+
+
+def fetch_all_repositories(username):
+    """Owned + public-org repositories, deduplicated by nameWithOwner.
+
+    Retries once without the `deployments` selection so a token that cannot
+    read deployments still produces a dataset.
+    """
+    for with_deployments in (True, False):
+        try:
+            repos = fetch_user_repositories(username, with_deployments)
+            for org_login in fetch_organizations(username):
+                repos.extend(
+                    fetch_organization_repositories(org_login, with_deployments)
+                )
+            return _deduplicate(repos, key=lambda repo: repo['nameWithOwner'])
+        except GraphQLError as error:
+            if not with_deployments:
+                raise
+            print(f"Retrying without deployments after: {error}")
+
+    return []
 
 
 def fetch_all_pull_requests(username):
-    """
-    Fetch ALL (not just first 100) pull requests created by `username`
-    using GraphQL pagination.
-    """
-    all_prs = []
-    has_next_page = True
-    after_cursor = None
+    """All pull requests authored by `username`."""
 
-    while has_next_page:
+    def build(after_cursor):
         after_part = f', after: "{after_cursor}"' if after_cursor else ''
-
-        query = f"""
+        return f"""
         {{
           user(login: "{username}") {{
             pullRequests(
-              first: 100
+              first: 100,
+              orderBy: {{field: CREATED_AT, direction: DESC}}
               {after_part}
             ) {{
-              pageInfo {{
-                hasNextPage
-                endCursor
-              }}
+              pageInfo {{ hasNextPage endCursor }}
               nodes {{
                 title
                 url
                 state
+                createdAt
+                mergedAt
                 baseRepository {{
                   nameWithOwner
-                  stargazerCount
                   url
                   description
-                  owner {{
-                    login
-                  }}
+                  isPrivate
+                  stargazerCount
+                  owner {{ login }}
                 }}
               }}
             }}
@@ -127,174 +242,179 @@ def fetch_all_pull_requests(username):
         }}
         """
 
-        result = run_query(query)
-        user_data = result.get('data', {}).get('user')
-        if not user_data:
-            break
+    return _paginate(
+        build,
+        lambda data: (data.get('user') or {}).get('pullRequests'),
+    )
 
-        pr_data = user_data['pullRequests']
-        all_prs.extend(pr_data['nodes'])
 
-        # Update pagination info
-        has_next_page = pr_data['pageInfo']['hasNextPage']
-        after_cursor = pr_data['pageInfo']['endCursor']
+def _deduplicate(items, key):
+    seen = set()
+    unique = []
+    for item in items:
+        item_key = key(item)
+        if item_key in seen:
+            continue
+        seen.add(item_key)
+        unique.append(item)
+    return unique
 
-    return all_prs
+
+def _demo_url(repo):
+    """Where a live demo lives, or None.
+
+    An explicit homepage wins. Otherwise a github-pages deployment implies the
+    conventional Pages URL.
+    """
+    if repo.get('homepageUrl'):
+        return repo['homepageUrl']
+
+    deployments = repo.get('deployments') or {}
+    if deployments.get('totalCount', 0) > 0:
+        return f"https://{repo['owner']['login']}.github.io/{repo['name']}/"
+
+    return None
+
+
+def build_repository_entry(repo, username):
+    return {
+        'name': repo['name'],
+        'full_name': repo['nameWithOwner'],
+        'owner': repo['owner']['login'],
+        'link': repo['url'],
+        'description': repo['description'],
+        'stars': repo['stargazerCount'],
+        'forks': repo['forkCount'],
+        'language': (repo.get('primaryLanguage') or {}).get('name'),
+        'topics': [
+            node['topic']['name']
+            for node in (repo.get('repositoryTopics') or {}).get('nodes', [])
+        ],
+        'updated_at': repo['updatedAt'],
+        'archived': repo.get('isArchived', False),
+        'is_organization': repo['owner']['login'].lower() != username.lower(),
+        'demo_url': _demo_url(repo),
+    }
 
 
 def get_user_info(username):
-    """
-    Combines the above pagination helpers to build
-    a cohesive 'user_info' dict with:
-      - username
-      - image_url
-      - repos (all repos)
-      - pull_requests (all PRs to external repos)
-    """
-    # -- You can also fetch the user's avatar if you want:
-    avatar_query = f"""
+    """Assemble the full public dataset for `username`."""
+    profile_data = run_query(f"""
     {{
       user(login: "{username}") {{
         login
+        name
         avatarUrl
+        url
+        bio
       }}
     }}
-    """
-    avatar_result = run_query(avatar_query)
-    user_data = avatar_result.get('data', {}).get('user')
-    if not user_data:
-        raise Exception(f"Failed to retrieve data for user '{username}'")
+    """)
 
-    # Fetch all repos and all PRs using pagination
-    repos = fetch_all_repositories(username)
-    prs = fetch_all_pull_requests(username)
+    user_data = profile_data.get('user')
+    if not user_data:
+        raise GraphQLError(f"Failed to retrieve data for user '{username}'")
 
     user_info = {
+        'generated_at': datetime.now(timezone.utc).isoformat(
+            timespec='seconds'
+        ),
         'username': user_data['login'],
+        'name': user_data.get('name') or user_data['login'],
+        'bio': user_data.get('bio'),
         'image_url': user_data['avatarUrl'],
+        'profile_url': user_data['url'],
         'repos': [],
-        'pull_requests': {}
+        'pull_requests': {},
     }
 
-    # Process owned repositories
-    for repo in repos:
-        repo_info = {
-            'name': repo['name'],
-            'stars': repo['stargazerCount'],
-            'link': repo['url'],
-            'description': repo['description'],
-            'updated_at': repo['updatedAt'],
-            'image': False,
-            'image_link': None,
-            'github_pages_link': repo['homepageUrl'] if repo['homepageUrl'] else None
-        }
+    for repo in fetch_all_repositories(username):
+        # Belt and braces: the query already asks for PUBLIC only.
+        if repo.get('isPrivate'):
+            continue
+        user_info['repos'].append(build_repository_entry(repo, username))
 
-        # Check if there's a blob that looks like an image or screenshot
-        if repo.get('object') and repo['object'].get('entries'):
-            for entry in repo['object']['entries']:
-                if (entry['type'] == 'blob' and
-                   ('screenshot' in entry['name'].lower() or 'image' in entry['name'].lower())):
-                    repo_info['image'] = True
-                    repo_info['image_link'] = (
-                        f"https://github.com/{username}/{
-                            repo['name']}/blob/main/{entry['name']}"
-                    )
-                    break
-
-        user_info['repos'].append(repo_info)
-
-    # Process pull requests to external repositories
-    for pr in prs:
-        base_repo = pr['baseRepository']
+    for pr in fetch_all_pull_requests(username):
+        base_repo = pr.get('baseRepository')
         if not base_repo:
             continue
+        # Never leak the existence of a private repo through a PR entry.
+        if base_repo.get('isPrivate'):
+            continue
+        # Only contributions to other people's repos belong in this section.
+        if base_repo['owner']['login'].lower() == username.lower():
+            continue
 
-        if base_repo['owner']['login'] != username:
-            base_repo_name = base_repo['nameWithOwner']
-            if base_repo_name not in user_info['pull_requests']:
-                user_info['pull_requests'][base_repo_name] = {
-                    'repo_stars': base_repo['stargazerCount'],
-                    'repo_link': base_repo['url'],
-                    'repo_description': base_repo['description'],
-                    'prs': []
-                }
-            pull_request_info = {
-                'title': pr['title'],
-                'link': pr['url'],
-                'state': pr['state']
-            }
-            user_info['pull_requests'][base_repo_name]['prs'].append(
-                pull_request_info)
+        repo_key = base_repo['nameWithOwner']
+        contribution = user_info['pull_requests'].setdefault(repo_key, {
+            'repo_stars': base_repo['stargazerCount'],
+            'repo_link': base_repo['url'],
+            'repo_description': base_repo['description'],
+            'prs': [],
+        })
+
+        # GraphQL reports OPEN/CLOSED/MERGED; the app matches on lowercase.
+        # A merged PR is reported as MERGED, but guard on mergedAt too so a
+        # closed-then-merged edge case still colours correctly.
+        state = 'merged' if pr.get('mergedAt') else pr['state'].lower()
+
+        contribution['prs'].append({
+            'title': pr['title'],
+            'link': pr['url'],
+            'state': state,
+            'created_at': pr['createdAt'],
+            'merged_at': pr.get('mergedAt'),
+        })
 
     return user_info
 
 
+def write_contributed_repos(user_info):
+    """Write the human-readable contribution index."""
+    owned = _deduplicate(
+        [
+            {'name': repo['full_name'], 'link': repo['link']}
+            for repo in user_info['repos']
+        ],
+        key=lambda repo: repo['name'],
+    )
+    external = _deduplicate(
+        [
+            {'name': name, 'link': info['repo_link']}
+            for name, info in user_info['pull_requests'].items()
+        ],
+        key=lambda repo: repo['name'],
+    )
+
+    with open('contributed_repos.json', 'w') as file:
+        json.dump({'owned': owned, 'external': external}, file, indent=4)
+
+    with open('CONTRIBUTED_REPOS.md', 'w') as file:
+        file.write("# Contributed Repositories\n\n")
+        file.write("## Owned\n\n")
+        for repo in owned:
+            file.write(f"- [{repo['name']}]({repo['link']})\n")
+        file.write("\n## External\n\n")
+        for repo in external:
+            file.write(f"- [{repo['name']}]({repo['link']})\n")
+
+
 if __name__ == '__main__':
-    # For example, if GITHUB_REPOSITORY is "octocat/Hello-World", 'owner' = "octocat"
-    repo_name = os.getenv('GITHUB_REPOSITORY')
-    owner, _ = repo_name.split('/')
-    try:
-        user_info = get_user_info(owner)
-        print(json.dumps(user_info, indent=4))
+    # GITHUB_REPOSITORY looks like "octocat/Hello-World"; the owner is the
+    # portfolio's subject unless PORTFOLIO_USERNAME overrides it.
+    username = os.getenv('PORTFOLIO_USERNAME')
+    if not username:
+        username = os.environ['GITHUB_REPOSITORY'].split('/')[0]
 
-        # Print user info in JSON format for cleaner readability
-        print(json.dumps(user_info, indent=4))
+    user_info = get_user_info(username)
 
-        # Separate 'owned' vs 'external' contributed repos
-        owned_repos = []
-        external_repos = []
+    with open('user_info.json', 'w') as file:
+        json.dump(user_info, file, indent=4)
 
-        # (a) User's own repos
-        for r in user_info['repos']:
-            owned_repos.append({
-                'name': r['name'],
-                'link': r['link']
-            })
+    write_contributed_repos(user_info)
 
-        # (b) External repos contributed to via PRs
-        for base_repo, info in user_info['pull_requests'].items():
-            external_repos.append({
-                'name': base_repo,
-                'link': info['repo_link']
-            })
-
-        # Deduplicate each category (just in case)
-        # (Though typically 'owned' should not appear in 'external')
-        def deduplicate_repos(repo_list):
-            unique = []
-            seen = set()
-            for repo in repo_list:
-                if repo['name'] not in seen:
-                    unique.append(repo)
-                    seen.add(repo['name'])
-            return unique
-
-        owned_repos = deduplicate_repos(owned_repos)
-        external_repos = deduplicate_repos(external_repos)
-
-        # Prepare final contributed_repos structure
-        contributed_repos = {
-            "owned": owned_repos,
-            "external": external_repos
-        }
-
-        # 1. Save the contributed repos (with sections) to JSON
-        with open('contributed_repos.json', 'w') as f:
-            json.dump(contributed_repos, f, indent=4)
-
-        # 2. Create a README with two distinct sections
-        with open('CONTRIBUTED_REPOS.md', 'w') as f:
-            f.write("# Contributed Repositories\n\n")
-
-            f.write("## Owned\n\n")
-            for repo in owned_repos:
-                f.write(f"- [{repo['name']}]({repo['link']})\n")
-
-            f.write("\n## External\n\n")
-            for repo in external_repos:
-                f.write(f"- [{repo['name']}]({repo['link']})\n")
-
-        print("Successfully saved 'contributed_repos.json' and 'CONTRIBUTED_REPOS.md' with two sections!")
-
-    except Exception as e:
-        print(f"Error: {e}")
+    print(
+        f"Wrote {len(user_info['repos'])} public repos and "
+        f"{sum(len(info['prs']) for info in user_info['pull_requests'].values())} "
+        f"pull requests across {len(user_info['pull_requests'])} external repos."
+    )

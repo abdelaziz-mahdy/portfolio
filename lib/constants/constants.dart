@@ -4,7 +4,18 @@ import 'package:portfolio/constants/models/experience.dart';
 
 class Constants {
   static String githubUsername = 'abdelaziz-mahdy';
-  static String? githubToken;
+
+  /// Repository holding the CI-generated `user_info.json` dataset.
+  static String githubDataRepository = 'portfolio';
+  static String githubDataBranch = 'main';
+
+  /// Served from a CDN with no rate limit, and refreshed by CI without a
+  /// redeploy, so this is preferred over the bundled copy.
+  static String get githubDataUrl =>
+      'https://raw.githubusercontent.com/$githubUsername/$githubDataRepository/$githubDataBranch/user_info.json';
+
+  /// Fallback shipped with the build, used when the network copy is unreachable.
+  static const String githubDataAsset = 'user_info.json';
 
   static String? linkedInUrl = "https://www.linkedin.com/in/abdelaziz-mahdy/";
   static String? email = "abdelaziz.h.mahdy@gmail.com";
