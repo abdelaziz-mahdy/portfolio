@@ -1,6 +1,10 @@
 {
     "owned": [
         {
+            "name": "abdelaziz-mahdy/portfolio",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
@@ -131,10 +135,6 @@
         {
             "name": "abdelaziz-mahdy/polars_dart",
             "link": "https://github.com/abdelaziz-mahdy/polars_dart"
-        },
-        {
-            "name": "abdelaziz-mahdy/portfolio",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
         {
             "name": "abdelaziz-mahdy/segmentation_renderer",

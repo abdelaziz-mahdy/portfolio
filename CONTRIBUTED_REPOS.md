@@ -2,6 +2,7 @@
 
 ## Owned
 
+- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
 - [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
 - [abdelaziz-mahdy/rewind](https://github.com/abdelaziz-mahdy/rewind)
@@ -35,7 +36,6 @@
 - [abdelaziz-mahdy/gpt-copy-helper](https://github.com/abdelaziz-mahdy/gpt-copy-helper)
 - [abdelaziz-mahdy/media_editor](https://github.com/abdelaziz-mahdy/media_editor)
 - [abdelaziz-mahdy/polars_dart](https://github.com/abdelaziz-mahdy/polars_dart)
-- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/segmentation_renderer](https://github.com/abdelaziz-mahdy/segmentation_renderer)
 - [abdelaziz-mahdy/bouncy_ball_physics](https://github.com/abdelaziz-mahdy/bouncy_ball_physics)
 - [abdelaziz-mahdy/rust_ndarray_dart](https://github.com/abdelaziz-mahdy/rust_ndarray_dart)
