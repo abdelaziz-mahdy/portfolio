@@ -4,55 +4,47 @@ on:
   push:
     branches:
       - main
-concurrency: 
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
   group: auto-deploy
   cancel-in-progress: true
 
 jobs:
   build_web:
-    name: Build Flutter Web, Take Screenshots and Deploy
+    name: Build Flutter Web and Deploy
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get the branch name
-        run: echo "Current branch name is ${{ github.ref_name }}"
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: "stable"
-          # channel: "master"
           cache: true
 
       - name: Install Flutter Dependencies
         run: flutter pub get
 
-        
+      - name: Analyze
+        run: flutter analyze
 
-      # - name: 🎯 Take screenshots
-      #   run: |
-      #     flutter test --update-goldens
-      
+      - name: Test
+        run: flutter test
+
+      # --base-href is required: the site is served from a subpath, so without
+      # it every asset resolves against the domain root and the page is blank.
+      # --web-renderer was removed in Flutter 3.44 and must not come back.
       - name: Build Flutter Web
-        run: flutter build web --release --base-href "/portfolio/" --web-renderer canvaskit
-      # - name: Build Flutter Web wasm
-      #   run: flutter build web --wasm --release --base-href "/portfolio/" --web-renderer canvaskit
+        run: flutter build web --release --base-href "/portfolio/"
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
-          # publish_dir: ./build/web_wasm
-      - name: Fetch and Merge Changes from Main
-        run: |
-          git fetch
-          git pull
-      # - name: Auto Commit
-      #   uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     commit_message: "Chore: update screenshot"
-      #     # file_pattern: "**/*.png"
-      #     repository: .
-      #     skip_fetch: false
