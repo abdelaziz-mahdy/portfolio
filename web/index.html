@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!--
@@ -19,20 +19,49 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- maximum-scale and user-scalable are deliberately absent: pinch-zoom must
+       stay available (WCAG 1.4.4). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Flutter app to Showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.">
+    content="Abdelaziz Mahdy — Flutter and full-stack developer. 488 pull requests merged into public repositories including flutter, dio, media-kit and executorch.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="portfolio">
+  <meta name="apple-mobile-web-app-title" content="Abdelaziz Mahdy">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
   <meta name="google-site-verification" content="QNHNTUIcgYe_21H6VmyE7FsuXb8AIM9xzVL_guXc--s" />
-  <title>portfolio</title>
+  <title>Abdelaziz Mahdy — Flutter &amp; Full-Stack Developer</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* The pre-boot block below is the only text a crawler, a reader-mode
+       parser, or a visitor without JavaScript can see: Flutter's CanvasKit
+       renderer paints the app itself into a canvas, leaving no DOM text.
+       It is removed once the Flutter app takes over. */
+    #pre-boot {
+      margin: 0 auto;
+      padding: 48px 24px;
+      max-width: 60ch;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1e;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #131316; }
+      #pre-boot { color: #ececf1; }
+      #pre-boot a { color: #a98be6; }
+    }
+
+    #pre-boot h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+    #pre-boot h2 { font-size: 1rem; margin: 2rem 0 .5rem; }
+    #pre-boot p { margin: 0 0 1rem; }
+    #pre-boot ul { margin: 0; padding-left: 1.2rem; }
+  </style>
 
   <script>
     // The value below is injected by flutter build, do not touch.
@@ -43,6 +72,28 @@
 </head>
 
 <body>
+  <div id="pre-boot">
+    <h1>Abdelaziz Mahdy</h1>
+    <p>Flutter and full-stack developer. Open-source contributor.</p>
+    <p>
+      488 pull requests merged across 42 public repositories, including
+      flutter, dio, media-kit and executorch. 73 public projects.
+    </p>
+
+    <h2>Selected projects</h2>
+    <ul>
+      <li><a href="https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer">flutter_meedu_videoplayer</a> — a video player for Flutter with a customisable UI</li>
+      <li><a href="https://github.com/abdelaziz-mahdy/pytorch_lite">pytorch_lite</a> — PyTorch Lite classification, YoloV5 and YoloV8 in Flutter</li>
+      <li><a href="https://github.com/abdelaziz-mahdy/executorch_flutter">executorch_flutter</a> — ExecuTorch bindings for Flutter</li>
+    </ul>
+
+    <h2>Elsewhere</h2>
+    <ul>
+      <li><a href="https://github.com/abdelaziz-mahdy">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/abdelaziz-mahdy/">LinkedIn</a></li>
+    </ul>
+  </div>
+
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
@@ -52,6 +103,10 @@
         },
         onEntrypointLoaded: function (engineInitializer) {
           engineInitializer.initializeEngine().then(function (appRunner) {
+            // Hand the page over to Flutter only once the engine is ready, so
+            // the static content stays visible for the whole boot.
+            var preBoot = document.getElementById('pre-boot');
+            if (preBoot) preBoot.remove();
             appRunner.runApp();
           });
         }

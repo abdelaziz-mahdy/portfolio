@@ -47,10 +47,12 @@ class PortfolioData {
       return (b.hasDemo ? 1 : 0) - (a.hasDemo ? 1 : 0);
     });
 
+    // Ranked by how much was contributed, not by how famous the repo is: the
+    // point of the section is the work, and star count breaks ties.
     contributions.sort((a, b) {
-      final byStars = b.repoStars.compareTo(a.repoStars);
-      if (byStars != 0) return byStars;
-      return b.pullRequests.length.compareTo(a.pullRequests.length);
+      final byVolume = b.pullRequests.length.compareTo(a.pullRequests.length);
+      if (byVolume != 0) return byVolume;
+      return b.repoStars.compareTo(a.repoStars);
     });
 
     return PortfolioData(

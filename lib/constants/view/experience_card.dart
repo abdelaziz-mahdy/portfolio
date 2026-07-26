@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/models/experience.dart';
 import 'package:portfolio/constants/view/build_card_with_title_and_children.dart';
+import 'package:portfolio/constants/view/info_entry.dart';
 
 class ExperienceCard extends StatelessWidget {
   final List<Experience> experiences;
@@ -10,40 +11,50 @@ class ExperienceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return buildCardWithTitleAndChildren(
-      "Experience",
-      experiences
-          .map((experience) => _buildExperienceContent(context, experience))
-          .toList(),
+      context,
+      'Experience',
+      [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: experiences
+                .map((experience) => _Experience(experience: experience))
+                .toList(),
+          ),
+        ),
+      ],
     );
   }
+}
 
-  Widget _buildExperienceContent(BuildContext context, Experience experience) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('${experience.title} at ${experience.company}',
-                style:
-                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            Text('Period: ${experience.period}',
-                style: const TextStyle(fontSize: 16)),
-            const SizedBox(height: 10),
-            const Text('Responsibilities:',
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            ...experience.responsibilities.map((item) =>
-                Text('• $item', style: const TextStyle(fontSize: 16))),
-            if (experience.extra != null && experience.extra!.isNotEmpty) ...[
-              const SizedBox(height: 10),
-              const Text('Achievements:',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              ...experience.extra!.map((item) =>
-                  Text('• $item', style: const TextStyle(fontSize: 16))),
-            ],
+class _Experience extends StatelessWidget {
+  final Experience experience;
+
+  const _Experience({required this.experience});
+
+  @override
+  Widget build(BuildContext context) {
+    final extra = experience.extra;
+
+    return InfoEntry(
+      title: '${experience.title}, ${experience.company}',
+      // "Jul 2022 - Present" is self-evidently a period; the "Period:" prefix
+      // was labelling something that needed no label.
+      meta: [experience.period],
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const EntryLabel('Responsibilities'),
+          BulletList(items: experience.responsibilities),
+          if (extra != null && extra.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            const EntryLabel('Achievements'),
+            BulletList(items: extra),
           ],
-        ),
+        ],
       ),
     );
   }

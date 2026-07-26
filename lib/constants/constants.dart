@@ -23,6 +23,9 @@ class Constants {
   static String profileName =
       'Abdelaziz Mahdy'; // Replace with your actual name
 
+  /// One line under the name, before the longer bio.
+  static String profileTagline = 'Flutter & Full-Stack Developer';
+
   static List<String> profile = [
     'Passionate CS graduate with a focus on mobile application development, especially in Flutter.',
     'Developed Multiple apps and contributed to packages like \'pytorch_lite\' and \'media-kit\'.',
@@ -92,9 +95,7 @@ class Constants {
   ];
 }
 
-class StylingConstants {
-  static const double cardsWidth = 400;
-
-  static const double profileSectionHeight = 400;
-  static const double listViewHeight = 550;
-}
+/// Fixed dimensions have been replaced by width-derived metrics in
+/// `lib/layout/breakpoints.dart`; nothing here should reintroduce a hard-coded
+/// card width or section height.
+class StylingConstants {}

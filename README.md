@@ -1,16 +1,98 @@
 # portfolio
 
-A new Flutter project.
+Personal portfolio for [abdelaziz-mahdy](https://github.com/abdelaziz-mahdy), built with
+Flutter web and deployed to GitHub Pages at
+<https://abdelaziz-mahdy.github.io/portfolio/>.
 
-## Getting Started
+## Building for the web
 
-This project is a starting point for a Flutter application.
+```bash
+flutter build web --release --base-href "/portfolio/"
+```
 
-A few resources to get you started if this is your first Flutter project:
+**`--base-href` is not optional.** The site is served from a subpath
+(`abdelaziz-mahdy.github.io/**portfolio/**`), not from a domain root. Without the flag
+Flutter writes `<base href="/">` and every asset request — `main.dart.js`,
+`assets/user_info.json`, the fonts, the CanvasKit payload — resolves against
+`abdelaziz-mahdy.github.io/` and 404s. The page loads to a blank screen with no
+obvious error. The value must start and end with a slash.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+`.github/workflows/deploy.yml` runs exactly this command on every push to `main`,
+so local builds and CI builds should match. Output lands in `build/web/`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To preview a release build locally, serve it from a directory where it sits under a
+`portfolio/` path, so the base href resolves the same way it does in production:
+
+```bash
+mkdir -p /tmp/serve && ln -sfn "$PWD/build/web" /tmp/serve/portfolio && (cd /tmp/serve && python3 -m http.server 8000)
+```
+
+Then open <http://localhost:8000/portfolio/>. Opening `build/web/index.html` directly,
+or serving `build/web` at a root, will not work — same base-href reason.
+
+## Developing
+
+```bash
+flutter run -d chrome
+```
+
+Hot reload with `r`, hot restart with `R`. No `--base-href` is needed here: the dev
+server serves from the root.
+
+## Checks
+
+```bash
+flutter analyze && flutter test
+```
+
+## Where the GitHub data comes from
+
+The app does **not** call `api.github.com` at runtime. Browser calls are
+unauthenticated, so every visitor shares a 60 requests/hour budget per IP and the
+page rate-limits itself after a few reloads.
+
+Instead, `python/github_user_info.py` runs in CI with a token (5000 requests/hour)
+and writes `user_info.json`. The app reads that file:
+
+1. from `raw.githubusercontent.com` at runtime — CDN-served, no rate limit, and
+   refreshed by CI without redeploying the site;
+2. falling back to the copy bundled as a Flutter asset when the network copy is
+   unreachable.
+
+`.github/workflows/get_user_info.yml` regenerates the dataset on every push to
+`main`, daily at 03:00 UTC, and on manual dispatch.
+
+### Only public data is ever written
+
+The generator asks for `privacy: PUBLIC` repositories, skips pull requests whose
+base repository is private, and drops anything still marked private before
+serialising. `user_info.json` is committed to a public repository, so a token
+carrying the `repo` scope must never be able to leak private repository names
+through it. If you change the GraphQL queries, keep all three guards.
+
+To run the generator locally:
+
+```bash
+GITHUB_TOKEN="$(gh auth token)" GITHUB_REPOSITORY="abdelaziz-mahdy/portfolio" python3 python/github_user_info.py
+```
+
+It writes `user_info.json`, `contributed_repos.json` and `CONTRIBUTED_REPOS.md` into
+the working directory.
+
+## Layout
+
+| Path | What lives there |
+| --- | --- |
+| `lib/theme/` | Colour tokens, text theme, and the theme-mode controller |
+| `lib/layout/breakpoints.dart` | Window size classes and width-derived layout metrics |
+| `lib/github/controller/` | The single owner of the loaded dataset |
+| `lib/github/data/` | Remote fetch with bundled-asset fallback |
+| `lib/github/models/` | `user_info.json` parsing |
+| `lib/github/view/` | Contribution and project sections |
+| `lib/constants/` | Biography content: courses, skills, experience, education |
+| `python/` | The CI data generator |
+
+Colours for pull request states and the star glyph come from the `PortfolioPalette`
+theme extension, not from `Colors.*` constants — hard-coded values cannot flip with
+the theme, and the pairings there are chosen to clear WCAG AA contrast in both
+modes.

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/models/course.dart';
 import 'package:portfolio/constants/view/build_card_with_title_and_children.dart';
-import 'package:portfolio/constants/view/custom_card.dart';
+import 'package:portfolio/constants/view/info_entry.dart';
 
 class CourseCard extends StatelessWidget {
   final List<Course> courses;
@@ -10,12 +10,24 @@ class CourseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Widget> courseWidgets = courses
-        .map((course) => CustomCard(
-              title: course.title,
-              items: [course.platform, course.period],
-            ))
-        .toList();
-    return buildCardWithTitleAndChildren("Courses", courseWidgets);
+    return buildCardWithTitleAndChildren(
+      context,
+      'Courses',
+      [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: courses
+                .map((course) => InfoEntry(
+                      title: course.title,
+                      meta: [course.platform, course.period],
+                    ))
+                .toList(),
+          ),
+        ),
+      ],
+    );
   }
 }
