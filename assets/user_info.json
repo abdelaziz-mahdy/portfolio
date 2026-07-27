@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-26T23:51:21+00:00",
+    "generated_at": "2026-07-27T02:45:30+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-07-26T23:51:13Z",
+            "updated_at": "2026-07-27T02:45:25Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -4694,7 +4694,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4830,
+            "repo_stars": 4831,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4988,7 +4988,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 177953,
+            "repo_stars": 177952,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5646,7 +5646,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1518,
+            "repo_stars": 1516,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -5751,7 +5751,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12836,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5877,7 +5877,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17715,
+            "repo_stars": 17714,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
