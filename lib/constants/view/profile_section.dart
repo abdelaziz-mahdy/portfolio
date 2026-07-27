@@ -1,46 +1,51 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/github/models/portfolio_data.dart';
 import 'package:portfolio/github/utils.dart';
 import 'package:portfolio/github/view/widgets/card_grid.dart';
 import 'package:portfolio/layout/breakpoints.dart';
+import 'package:portfolio/profile/models/profile.dart';
+import 'package:portfolio/widgets/linked_text.dart';
 
 /// The hero.
 ///
-/// Two changes from the previous version. It no longer sits inside a fixed
-/// 400px `SizedBox` padded out with `Spacer()`s — the content was about 180px
-/// tall, so roughly half the first screen was empty and could not shrink on a
-/// short viewport. And it now carries the numbers: 488 merged pull requests
-/// was previously plain 16px body text about 2,400px down the page, below the
-/// fold on every device.
+/// It no longer sits inside a fixed 400px box padded out with `Spacer()`s —
+/// the content was about 180px tall, so half the first screen was empty and
+/// could not shrink on a short viewport. And it now carries the numbers: 488
+/// merged pull requests was previously plain body text far below the fold.
 class ProfileSection extends StatelessWidget {
-  final PortfolioData data;
+  final Profile profile;
+  final PortfolioData githubData;
 
-  const ProfileSection({super.key, required this.data});
+  const ProfileSection({
+    super.key,
+    required this.profile,
+    required this.githubData,
+  });
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         final metrics = LayoutMetrics.of(constraints.maxWidth);
-        final identity = _Identity(data: data, metrics: metrics);
+        final identity = _Identity(profile: profile, metrics: metrics);
+        final isWide = metrics.breakpoint == Breakpoint.expanded ||
+            metrics.breakpoint == Breakpoint.large;
 
-        // On a wide window the bio stops at its readable measure well short
-        // of the right edge, which left the hero looking left-aligned against
+        // On a wide window the bio stops at its readable measure well short of
+        // the right edge, which left the hero looking left-aligned against the
         // full-width sections below it. Bringing the stats up alongside the
         // identity fills the row instead of padding it with empty space.
-        if (metrics.breakpoint == Breakpoint.expanded ||
-            metrics.breakpoint == Breakpoint.large) {
+        if (isWide) {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              _Avatar(imageUrl: data.imageUrl, radius: 64),
+              _Avatar(imageUrl: githubData.imageUrl, radius: 64),
               const SizedBox(width: 32),
               Expanded(child: identity),
               const SizedBox(width: 32),
               SizedBox(
                 width: 400,
-                child: _StatGrid(data: data, columns: 2),
+                child: _StatGrid(data: githubData, columns: 2),
               ),
             ],
           );
@@ -53,7 +58,7 @@ class ProfileSection extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _Avatar(imageUrl: data.imageUrl, radius: 44),
+                  _Avatar(imageUrl: githubData.imageUrl, radius: 44),
                   const SizedBox(height: 20),
                   identity,
                 ],
@@ -62,13 +67,13 @@ class ProfileSection extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  _Avatar(imageUrl: data.imageUrl, radius: 64),
+                  _Avatar(imageUrl: githubData.imageUrl, radius: 64),
                   const SizedBox(width: 32),
                   Expanded(child: identity),
                 ],
               ),
             const SizedBox(height: 28),
-            _StatGrid(data: data, columns: metrics.isCompact ? 2 : 4),
+            _StatGrid(data: githubData, columns: metrics.isCompact ? 2 : 4),
           ],
         );
       },
@@ -77,10 +82,10 @@ class ProfileSection extends StatelessWidget {
 }
 
 class _Identity extends StatelessWidget {
-  final PortfolioData data;
+  final Profile profile;
   final LayoutMetrics metrics;
 
-  const _Identity({required this.data, required this.metrics});
+  const _Identity({required this.profile, required this.metrics});
 
   @override
   Widget build(BuildContext context) {
@@ -95,23 +100,45 @@ class _Identity extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            Constants.profileName,
+            profile.name,
             style: metrics.isCompact
                 ? theme.textTheme.headlineSmall
                 : theme.textTheme.displaySmall,
           ),
           const SizedBox(height: 6),
-          Text(
-            Constants.profileTagline,
-            style: theme.textTheme.titleMedium?.copyWith(
-              color: theme.colorScheme.primary,
-            ),
+          Row(
+            children: [
+              Flexible(
+                child: Text(
+                  profile.tagline,
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    color: theme.colorScheme.primary,
+                  ),
+                ),
+              ),
+              if (profile.location != null) ...[
+                Text(
+                  '  ·  ',
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    color: theme.colorScheme.onSurfaceVariant,
+                  ),
+                ),
+                Flexible(
+                  child: Text(
+                    profile.location!,
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ),
+                ),
+              ],
+            ],
           ),
           const SizedBox(height: 14),
-          ...Constants.profile.map(
-            (detail) => Padding(
+          ...profile.summary.map(
+            (line) => Padding(
               padding: const EdgeInsets.only(bottom: 4),
-              child: Text(detail, style: theme.textTheme.bodyMedium),
+              child: LinkedText(line, style: theme.textTheme.bodyMedium),
             ),
           ),
         ],

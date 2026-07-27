@@ -45,6 +45,39 @@ server serves from the root.
 flutter analyze && flutter test
 ```
 
+## Updating your CV content — no code, no rebuild
+
+Everything a reader sees about you — name, tagline, location, summary, skills,
+experience, education, publications, certificates, awards, courses — lives in
+[`assets/profile.json`](assets/profile.json), not in Dart.
+
+The app fetches that file from `raw.githubusercontent.com` at runtime, so:
+
+```bash
+# edit assets/profile.json, then
+git commit -am "Update CV content" && git push
+```
+
+The live site picks it up on the next load. No `flutter build`, no deploy, no
+Dart. The copy bundled as an asset is only the offline fallback.
+
+Adding a job means appending an object to `experience`. Removing a whole
+section means emptying its array — the card disappears rather than rendering an
+empty box. Every optional field accepts `null`.
+
+### What must not go in it
+
+`assets/profile.json` is committed to a public repository and served from a CDN. Keep
+out phone numbers, home address, and anything about other people — a CV's
+referees are the usual trap, since their emails and phone numbers are not yours
+to publish. `test/profile_test.dart` fails the build if a phone number, a
+references section, or a second email address appears in the file.
+
+Employer detail deserves the same care: describe your role and the general
+domain, not internal architecture, client characteristics, or unreleased
+product specifics. A CV you hand to a recruiter and a page anyone can scrape
+are not the same audience.
+
 ## Where the GitHub data comes from
 
 The app does **not** call `api.github.com` at runtime. Browser calls are
@@ -52,7 +85,7 @@ unauthenticated, so every visitor shares a 60 requests/hour budget per IP and th
 page rate-limits itself after a few reloads.
 
 Instead, `python/github_user_info.py` runs in CI with a token (5000 requests/hour)
-and writes `user_info.json`. The app reads that file:
+and writes `assets/user_info.json`. The app reads that file:
 
 1. from `raw.githubusercontent.com` at runtime — CDN-served, no rate limit, and
    refreshed by CI without redeploying the site;
@@ -76,20 +109,25 @@ To run the generator locally:
 GITHUB_TOKEN="$(gh auth token)" GITHUB_REPOSITORY="abdelaziz-mahdy/portfolio" python3 python/github_user_info.py
 ```
 
-It writes `user_info.json`, `contributed_repos.json` and `CONTRIBUTED_REPOS.md` into
+It writes `assets/user_info.json`, plus `contributed_repos.json` and `CONTRIBUTED_REPOS.md`, relative to
 the working directory.
 
 ## Layout
 
 | Path | What lives there |
 | --- | --- |
+| `assets/profile.json` | All CV content — edit this, not Dart |
+| `assets/user_info.json` | CI-generated GitHub dataset — never edit by hand |
+| `lib/constants/constants.dart` | Wiring only: which repo, branch and JSON paths |
+| `lib/constants/view/` | Biography cards, rendering `profile.json` |
+| `lib/profile/models/` | `profile.json` parsing |
+| `lib/github/models/` | `user_info.json` parsing |
+| `lib/github/data/` | Remote fetch with bundled-asset fallback, for both documents |
+| `lib/github/controller/` | The single owner of both loaded documents |
+| `lib/github/view/` | Contribution and project sections |
 | `lib/theme/` | Colour tokens, text theme, and the theme-mode controller |
 | `lib/layout/breakpoints.dart` | Window size classes and width-derived layout metrics |
-| `lib/github/controller/` | The single owner of the loaded dataset |
-| `lib/github/data/` | Remote fetch with bundled-asset fallback |
-| `lib/github/models/` | `user_info.json` parsing |
-| `lib/github/view/` | Contribution and project sections |
-| `lib/constants/` | Biography content: courses, skills, experience, education |
+| `lib/widgets/linked_text.dart` | Renders inline `[label](url)` links from JSON content |
 | `python/` | The CI data generator |
 
 Colours for pull request states and the star glyph come from the `PortfolioPalette`

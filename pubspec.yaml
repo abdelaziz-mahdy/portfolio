@@ -62,11 +62,11 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # Offline fallback for the CI-generated GitHub dataset. The live copy is
-  # fetched from raw.githubusercontent.com at runtime; see
-  # Constants.githubDataUrl.
+  # Offline fallbacks for the two JSON documents. The live copies are fetched
+  # from raw.githubusercontent.com at runtime; see Constants. Declared as a
+  # whole directory so adding another document needs no pubspec change.
   assets:
-    - user_info.json
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

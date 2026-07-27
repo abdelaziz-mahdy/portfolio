@@ -5,7 +5,7 @@ Unauthenticated browser calls are capped at 60 requests/hour per visitor IP,
 so the portfolio rate-limited itself for anyone who reloaded a few times.
 
 This script runs in CI with a token (5000 requests/hour) and writes the result
-to user_info.json, which the app then reads as static data.
+to assets/user_info.json, which the app then reads as static data.
 
 Only PUBLIC data is ever written. Private repositories and pull requests
 against private repositories are excluded at the query level and again by a
@@ -22,6 +22,10 @@ GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 HEADERS = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
 
 GRAPHQL_URL = 'https://api.github.com/graphql'
+
+# The Flutter app bundles this directory and fetches the same paths from the
+# CDN, so the dataset has to land here rather than in the repo root.
+ASSET_DIR = 'assets'
 
 
 class GraphQLError(Exception):
@@ -408,7 +412,11 @@ if __name__ == '__main__':
 
     user_info = get_user_info(username)
 
-    with open('user_info.json', 'w') as file:
+    # Written into assets/ because the Flutter app bundles that directory and
+    # fetches the same path from raw.githubusercontent.com; writing it to the
+    # repo root would leave the app loading a stale bundled copy.
+    os.makedirs(ASSET_DIR, exist_ok=True)
+    with open(os.path.join(ASSET_DIR, 'user_info.json'), 'w') as file:
         json.dump(user_info, file, indent=4)
 
     write_contributed_repos(user_info)

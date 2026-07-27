@@ -15,9 +15,31 @@ Serving a release build locally requires the same subpath, so symlink `build/web
 `portfolio/` directory and serve the parent. Serving `build/web` at a root will not
 work.
 
-## Never write private GitHub data into `user_info.json`
+## CV content belongs in `assets/profile.json`, never in Dart
 
-`user_info.json` is committed to a public repository. `python/github_user_info.py` has
+Name, tagline, location, summary, skills, experience, education, publications,
+certificates, awards and courses are all in `assets/profile.json`, fetched from the CDN
+at runtime. Editing that file and pushing updates the live site with no rebuild.
+
+Do not move any of it back into `constants.dart` — that file holds wiring only
+(which repo, which branch, which JSON). Adding a content field means extending
+`Profile.fromJson`, not adding a constant.
+
+## Never publish private data through `assets/profile.json`
+
+It is committed to a public repository and served from a CDN. No phone numbers,
+no home address, and nothing belonging to other people — a CV's referees are the
+usual trap, since their contact details are not the author's to publish.
+`test/profile_test.dart` enforces this and runs in CI.
+
+Employer detail needs judgement the tests cannot apply: describe the role and
+the general domain, not internal architecture, client characteristics, or
+unreleased specifics. When copying from a CV, assume every bullet needs
+rewriting for a public audience rather than assuming it is safe.
+
+## Never write private GitHub data into `assets/user_info.json`
+
+`assets/user_info.json` is committed to a public repository. `python/github_user_info.py` has
 three independent guards: `privacy: PUBLIC` on the repository queries, a skip for pull
 requests against private base repositories, and a final `isPrivate` filter before
 serialising. A token with the `repo` scope will happily return private repositories, so

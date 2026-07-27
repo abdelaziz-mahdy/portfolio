@@ -1,101 +1,34 @@
-import 'package:portfolio/constants/models/course.dart';
-import 'package:portfolio/constants/models/education.dart';
-import 'package:portfolio/constants/models/experience.dart';
-
+/// Wiring, not content.
+///
+/// Everything a reader sees — name, bio, experience, education, skills,
+/// publications, certificates, awards, courses — lives in `profile.json` so it
+/// can be edited and published without touching Dart or rebuilding the app.
+/// Only the plumbing that says *where to find* that content belongs here.
 class Constants {
   static String githubUsername = 'abdelaziz-mahdy';
 
-  /// Repository holding the CI-generated `user_info.json` dataset.
+  /// Repository holding both JSON documents.
   static String githubDataRepository = 'portfolio';
   static String githubDataBranch = 'main';
 
-  /// Served from a CDN with no rate limit, and refreshed by CI without a
-  /// redeploy, so this is preferred over the bundled copy.
-  static String get githubDataUrl =>
-      'https://raw.githubusercontent.com/$githubUsername/$githubDataRepository/$githubDataBranch/user_info.json';
+  /// Both documents live in `assets/`, so the bundled path and the path on
+  /// `main` are the same string — one place to be wrong instead of two.
+  static const String _assetDir = 'assets';
 
-  /// Fallback shipped with the build, used when the network copy is unreachable.
-  static const String githubDataAsset = 'user_info.json';
+  static String _rawUrl(String file) =>
+      'https://raw.githubusercontent.com/$githubUsername/$githubDataRepository/$githubDataBranch/$_assetDir/$file';
 
-  static String? linkedInUrl = "https://www.linkedin.com/in/abdelaziz-mahdy/";
-  static String? email = "abdelaziz.h.mahdy@gmail.com";
-  static String profilePictureUrl = ''; // Replace with actual path or URL
-  static String profileName =
-      'Abdelaziz Mahdy'; // Replace with your actual name
+  /// CI-generated GitHub dataset. Served from a CDN with no rate limit and
+  /// refreshed by the workflow without a redeploy.
+  static String get githubDataUrl => _rawUrl('user_info.json');
+  static const String githubDataAsset = '$_assetDir/user_info.json';
 
-  /// One line under the name, before the longer bio.
-  static String profileTagline = 'Flutter & Full-Stack Developer';
+  /// Hand-edited biography content. Editing this file on `main` updates the
+  /// live site; no rebuild required.
+  static String get profileDataUrl => _rawUrl('profile.json');
+  static const String profileDataAsset = '$_assetDir/profile.json';
 
-  static List<String> profile = [
-    'Passionate CS graduate with a focus on mobile application development, especially in Flutter.',
-    'Developed Multiple apps and contributed to packages like \'pytorch_lite\' and \'media-kit\'.',
-    'Aiming to master full-stack development.',
-    'Active in open-source contributor.'
-  ];
-
-  static List<Education> education = [
-    Education(
-        degree: 'Bachelor\'s Degree in Computer Science',
-        institution: 'Nile University',
-        gradationProject: 'Smartphone medical diagnosis',
-        period: 'Sep 2018 - Sep 2022' // Placeholder for actual period
-        )
-  ];
-
-  static List<Experience> experience = [
-    Experience(
-        title: 'Full Stack Developer',
-        company: 'Intixel',
-        responsibilities: [
-          'Developed backend using Django.',
-          'Integrated blockchain and managed smart contracts in Solidity.',
-          'Implemented oblivious transfer in Dart & Python.',
-          'Set up gRPC server/client.',
-          'Crafted two Flutter apps one published (https://play.google.com/store/apps/details?id=com.intixel.hayaty).',
-          'Managed Docker deployment scripts.',
-          'Automated workflows with GitHub Actions.',
-        ],
-        extra: ['Employee of the year 2023'],
-        period: 'Jul 2022 - Present')
-  ];
-
-  static List<String> skills = [
-    'Flutter Development - Seamless mobile application creation',
-    'Data Analysis - Insightful data interpretation',
-    'Full Stack Development - Proficient in Dart, Python, JavaScript, TypeScript, SQL',
-    'Critical Thinking - Innovative problem-solving',
-    'Game Development - Experience with Unreal Engine 4 and Unity',
-    'Docker - Deployment using containerized environments',
-    'GitHub Actions - Workflow automation for productivity',
-    'gRPC - High-performance inter-service communication',
-    'Object-Oriented Programming - Adherence to best practices',
-    'Design Patterns - Solution implementation for complex challenges'
-  ];
-
-  static List<String> languages = ['Arabic', 'English'];
-
-  static List<Course> courses = [
-    Course(
-        title: 'Advanced full stack web development',
-        platform: 'Udacity',
-        period: '02/2022 - 04/2022'),
-    Course(
-        title:
-            'Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization',
-        platform: 'Coursera',
-        period: '09/2021 - 09/2021'),
-    Course(
-        title: 'Structuring Machine Learning Projects',
-        platform: 'Coursera',
-        period: '09/2021 - 09/2021'),
-    Course(
-        title: 'Neural Networks and Deep Learning',
-        platform: 'Coursera',
-        period: '08/2021 - 09/2021')
-  ];
+  /// Used for document metadata before `profile.json` has loaded. The same
+  /// name is in `web/index.html`, which is what crawlers actually read.
+  static const String fallbackName = 'Abdelaziz Mahdy';
 }
-
-/// Fixed dimensions have been replaced by width-derived metrics in
-/// `lib/layout/breakpoints.dart`; nothing here should reintroduce a hard-coded
-/// card width or section height.
-class StylingConstants {}

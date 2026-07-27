@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/view/build_card_with_title_and_children.dart';
+import 'package:portfolio/profile/models/profile.dart';
 
 class SkillsCard extends StatelessWidget {
-  final List<String> skills;
+  final List<Skill> skills;
 
   const SkillsCard({super.key, required this.skills});
 
@@ -25,25 +26,20 @@ class SkillsCard extends StatelessWidget {
   }
 }
 
-/// One skill: the name, then what it means.
+/// A skill category, then what's in it.
 ///
-/// Each of these used to be a rounded outlined container — a chip. Chips are an
-/// interactive affordance, and these are not interactive; the border promised a
-/// tap that never happened. The strings are also `"Name - Description"` pairs
-/// rendered as one undifferentiated run of text, so the skill and its blurb
-/// carried identical weight and neither could be scanned.
+/// These used to be rounded outlined containers — chips. A chip is an
+/// interactive affordance, and these are not interactive; the border promised
+/// a tap that never happened. The category and its contents also shared one
+/// weight, so neither could be scanned.
 class _SkillRow extends StatelessWidget {
-  final String skill;
+  final Skill skill;
 
   const _SkillRow({required this.skill});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-
-    final separator = skill.indexOf(' - ');
-    final name = separator == -1 ? skill : skill.substring(0, separator);
-    final detail = separator == -1 ? null : skill.substring(separator + 3);
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 7),
@@ -52,14 +48,14 @@ class _SkillRow extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            name,
+            skill.category,
             style: theme.textTheme.bodyMedium?.copyWith(
               fontWeight: FontWeight.w600,
             ),
           ),
-          if (detail != null)
+          if (skill.items.isNotEmpty)
             Text(
-              detail,
+              skill.items,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurfaceVariant,
               ),

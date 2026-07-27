@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/models/experience.dart';
 import 'package:portfolio/constants/view/build_card_with_title_and_children.dart';
 import 'package:portfolio/constants/view/info_entry.dart';
+import 'package:portfolio/profile/models/profile.dart';
 
 class ExperienceCard extends StatelessWidget {
   final List<Experience> experiences;
@@ -36,23 +36,23 @@ class _Experience extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final extra = experience.extra;
-
     return InfoEntry(
       title: '${experience.title}, ${experience.company}',
-      // "Jul 2022 - Present" is self-evidently a period; the "Period:" prefix
-      // was labelling something that needed no label.
-      meta: [experience.period],
+      // "05/2025 - Present" is self-evidently a period; the old "Period:"
+      // prefix labelled something that needed no label.
+      meta: [experience.period, experience.location],
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisSize: MainAxisSize.min,
         children: [
-          const EntryLabel('Responsibilities'),
-          BulletList(items: experience.responsibilities),
-          if (extra != null && extra.isNotEmpty) ...[
+          if (experience.responsibilities.isNotEmpty) ...[
+            const EntryLabel('Responsibilities'),
+            BulletList(items: experience.responsibilities),
+          ],
+          if (experience.extra.isNotEmpty) ...[
             const SizedBox(height: 12),
             const EntryLabel('Achievements'),
-            BulletList(items: extra),
+            BulletList(items: experience.extra),
           ],
         ],
       ),

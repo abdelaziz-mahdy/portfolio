@@ -46,6 +46,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Chore: latest user info Update"
-          file_pattern: "user_info.json contributed_repos.json CONTRIBUTED_REPOS.md"
+          file_pattern: "assets/user_info.json contributed_repos.json CONTRIBUTED_REPOS.md"
           repository: .
           skip_fetch: false
