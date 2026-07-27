@@ -1,0 +1,171 @@
+{
+  "name": "Abdelaziz Mahdy",
+  "tagline": "Software Developer",
+  "location": null,
+  "email": "abdelaziz.h.mahdy@gmail.com",
+  "linkedin_url": "https://www.linkedin.com/in/abdelaziz-mahdy/",
+  "github_url": "https://github.com/abdelaziz-mahdy",
+  "summary": [
+    "Software developer at Paytic, working across the stack on a card and payment operations platform.",
+    "Maintainer of [executorch_flutter](https://github.com/abdelaziz-mahdy/executorch_flutter), the successor to pytorch_lite, and contributor to flutter, dio and media-kit.",
+    "Published deep-learning research on automated dental diagnosis at MIUA 2022 and ICCES 2021."
+  ],
+  "languages": [
+    "Arabic",
+    "English"
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": "Flutter, Dart, Python, C#, JavaScript, TypeScript, SQL"
+    },
+    {
+      "category": "Mobile development",
+      "items": "Flutter, Dart, REST API, mobile app lifecycle, UI/UX design"
+    },
+    {
+      "category": "Flutter ecosystem",
+      "items": "Provider, Talker, Dio"
+    },
+    {
+      "category": "Backend development",
+      "items": "Django, PostgreSQL, gRPC"
+    },
+    {
+      "category": "Tools and platforms",
+      "items": "Docker, GitHub Actions, CI/CD, Google Cloud (GCP)"
+    },
+    {
+      "category": "Data analysis",
+      "items": "RapidMiner, Power BI, SQL, Excel"
+    },
+    {
+      "category": "Web3",
+      "items": "Solidity, smart contracts, Ethereum"
+    },
+    {
+      "category": "Frameworks",
+      "items": "FOAM3"
+    },
+    {
+      "category": "Version control",
+      "items": "Git, GitHub"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Paytic",
+      "period": "05/2025 - Present",
+      "location": null,
+      "responsibilities": [
+        "Full-stack feature development on a card and payment operations platform, across client-facing interfaces and server-side services.",
+        "Work spans onboarding, reconciliation and reporting areas of the product.",
+        "Cross-stack reliability and maintainability improvements."
+      ],
+      "extra": []
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Intixel",
+      "period": "06/2022 - 08/2024",
+      "location": "Cairo, Egypt",
+      "responsibilities": [
+        "Developed and deployed two mobile apps using Flutter and Django, one published on [Google Play](https://play.google.com/store/apps/details?id=com.intixel.hayaty).",
+        "Designed and deployed Solidity smart contracts via Go-Ethereum, securing decentralized operations and increasing transaction efficiency by 25%.",
+        "Built CI/CD pipelines that reduced deployment time by 30%, automating development, staging and demo environments.",
+        "Migrated backend infrastructure from MongoDB to Django ORM with PostgreSQL, reducing database query times by 40% and enhancing scalability."
+      ],
+      "extra": [
+        "Employee of the Year 2023, for contributions to app development, backend optimization and blockchain integration."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Data Analytics, Post Graduate Certificate",
+      "institution": "Holland College",
+      "period": "09/2024 - 05/2025",
+      "location": null,
+      "graduation_project": null,
+      "graduation_project_description": null
+    },
+    {
+      "degree": "Bachelor's Degree in Computer Science",
+      "institution": "Nile University",
+      "period": "2018 - 2022",
+      "location": "Giza, Egypt",
+      "graduation_project": "Smartphone Medical Diagnosis",
+      "graduation_project_description": "A self-diagnostic mobile application giving preliminary diagnosis of different diseases through object detection and image classification, built on the pytorch_lite package."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Oral Dental Diagnosis Using Deep Learning Techniques: A Review",
+      "venue": "MIUA 2022 · Lecture Notes in Computer Science, vol 13413, Springer",
+      "date": "07/2022",
+      "citation": "Elsayed, A., Mostafa, H., Tarek, R., Mohamed, K., Hossam, A., Selim, S. (2022). In: Yang, G., Aviles-Rivero, A., Roberts, M., Schönlieb, C.B. (eds) Medical Image Understanding and Analysis.",
+      "url": "https://doi.org/10.1007/978-3-031-12053-4_60"
+    },
+    {
+      "title": "Automated Dental Diagnosis using Deep Learning",
+      "venue": "ICCES 2021 · 16th International Conference on Computer Engineering and Systems",
+      "date": "12/2021",
+      "citation": "A. Hossam, K. Mohamed, R. Tarek, A. Elsayed, H. Mostafa and S. Selim, Cairo, Egypt, 2021, pp. 1-5.",
+      "url": "https://doi.org/10.1109/ICCES54031.2021.9686185"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Professional Cloud Architect",
+      "issuer": "Google Cloud",
+      "date": "09/2024"
+    },
+    {
+      "name": "Applications & Use Cases Master Certification",
+      "issuer": "Altair RapidMiner",
+      "date": "12/2024"
+    },
+    {
+      "name": "Applications & Use Cases Professional Certification",
+      "issuer": "Altair RapidMiner",
+      "date": "12/2024"
+    },
+    {
+      "name": "Advanced Full Stack Web Development",
+      "issuer": "Udacity",
+      "date": "04/2022"
+    }
+  ],
+  "awards": [
+    {
+      "title": "1st Place, Bachelor's Graduation Project, Media Track",
+      "issuer": "Nile University",
+      "date": "07/2022",
+      "description": null
+    },
+    {
+      "title": "1st Place in Industrial Research",
+      "issuer": "Nile University UGRF",
+      "date": "05/2022",
+      "description": "Awarded for the research behind Automated Dental Diagnosis using Deep Learning."
+    }
+  ],
+  "courses": [
+    {
+      "title": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+      "platform": "Coursera",
+      "period": "09/2021"
+    },
+    {
+      "title": "Structuring Machine Learning Projects",
+      "platform": "Coursera",
+      "period": "09/2021"
+    },
+    {
+      "title": "Neural Networks and Deep Learning",
+      "platform": "Coursera",
+      "period": "08/2021 - 09/2021"
+    }
+  ]
+}
