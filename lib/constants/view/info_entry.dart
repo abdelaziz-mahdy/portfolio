@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/widgets/linked_text.dart';
 
 /// One item inside a biography card: a title and its supporting lines.
 ///
@@ -86,7 +87,7 @@ class BulletList extends StatelessWidget {
                         )),
                     const SizedBox(width: 8),
                     Expanded(
-                      child: Text(item, style: theme.textTheme.bodyMedium),
+                      child: LinkedText(item, style: theme.textTheme.bodyMedium),
                     ),
                   ],
                 ),

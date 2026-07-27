@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/models/course.dart';
 import 'package:portfolio/constants/view/build_card_with_title_and_children.dart';
 import 'package:portfolio/constants/view/info_entry.dart';
+import 'package:portfolio/profile/models/profile.dart';
 
 class CourseCard extends StatelessWidget {
   final List<Course> courses;

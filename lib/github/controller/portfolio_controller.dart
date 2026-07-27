@@ -1,13 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:portfolio/github/data/portfolio_data_source.dart';
 import 'package:portfolio/github/models/portfolio_data.dart';
+import 'package:portfolio/profile/models/profile.dart';
 
 enum PortfolioStatus { idle, loading, ready, error }
 
-/// Single owner of the GitHub dataset for the whole app.
+/// Single owner of both documents the page renders: the CI-generated GitHub
+/// dataset and the hand-edited profile.
 ///
-/// Every section reads from this one instance, so the dataset is loaded once
-/// per session and the page shows a single loading state instead of one
+/// They load concurrently and the page has one loading state rather than one
 /// spinner per section.
 class PortfolioController extends ChangeNotifier {
   final PortfolioDataSource _dataSource;
@@ -15,17 +16,19 @@ class PortfolioController extends ChangeNotifier {
   PortfolioController(this._dataSource);
 
   PortfolioStatus _status = PortfolioStatus.idle;
-  PortfolioData? _data;
+  PortfolioData? _githubData;
+  Profile? _profile;
   Object? _error;
 
   PortfolioStatus get status => _status;
-  PortfolioData? get data => _data;
+  PortfolioData? get githubData => _githubData;
+  Profile? get profile => _profile;
   Object? get error => _error;
 
-  bool get hasData => _data != null;
+  bool get isReady => _status == PortfolioStatus.ready;
 
-  /// Loads the dataset. Repeat calls are ignored unless [force] is set, so
-  /// widgets can call this freely from `initState`.
+  /// Loads both documents. Repeat calls are ignored unless [force] is set, so
+  /// widgets can call this freely.
   Future<void> load({bool force = false}) async {
     if (!force &&
         (_status == PortfolioStatus.loading ||
@@ -38,13 +41,21 @@ class PortfolioController extends ChangeNotifier {
     notifyListeners();
 
     try {
-      _data = await _dataSource.fetch();
+      final results = await Future.wait([
+        _dataSource.fetchGithubData(),
+        _dataSource.fetchProfile(),
+      ]);
+
+      _githubData = results[0] as PortfolioData;
+      _profile = results[1] as Profile;
       _status = PortfolioStatus.ready;
     } catch (error) {
       _error = error;
-      // Keep any previously loaded data on screen; a failed refresh should not
-      // blank out a page that was already working.
-      _status = _data == null ? PortfolioStatus.error : PortfolioStatus.ready;
+      // Keep whatever was already loaded on screen; a failed refresh should
+      // not blank out a page that was working.
+      _status = _githubData == null && _profile == null
+          ? PortfolioStatus.error
+          : PortfolioStatus.ready;
     }
 
     notifyListeners();
