@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-27T06:22:33+00:00",
+    "generated_at": "2026-07-28T05:40:40+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-07-27T05:28:07Z",
+            "updated_at": "2026-07-28T03:41:53Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-07-27T02:45:53Z",
+            "updated_at": "2026-07-27T06:23:15Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1075,7 +1075,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1785,
+            "stars": 1784,
             "forks": 445,
             "language": "Dart",
             "topics": [
@@ -1086,7 +1086,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-07-25T04:12:32Z",
+            "updated_at": "2026-07-27T09:21:25Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -4694,7 +4694,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4832,
+            "repo_stars": 4837,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4988,7 +4988,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 177951,
+            "repo_stars": 177961,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5009,7 +5009,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1785,
+            "repo_stars": 1784,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5373,7 +5373,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 839,
+            "repo_stars": 840,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5415,7 +5415,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5268,
+            "repo_stars": 5266,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5485,7 +5485,7 @@
             ]
         },
         "Tienisto/rhttp": {
-            "repo_stars": 231,
+            "repo_stars": 232,
             "repo_link": "https://github.com/Tienisto/rhttp",
             "repo_description": "[Archived] Make HTTP requests using Rust from Flutter.",
             "prs": [
@@ -5576,7 +5576,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3232,
+            "repo_stars": 3233,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5751,7 +5751,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12836,
+            "repo_stars": 12835,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5779,7 +5779,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 417,
+            "repo_stars": 418,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
@@ -5877,7 +5877,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17714,
+            "repo_stars": 17713,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
