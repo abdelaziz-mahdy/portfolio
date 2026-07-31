@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-30T05:33:56+00:00",
+    "generated_at": "2026-07-31T06:04:01+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-07-30T02:28:42Z",
+            "updated_at": "2026-07-31T04:44:19Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 196,
+            "forks": 82,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-07-31T02:06:38Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "portfolio",
@@ -31,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-07-29T05:46:18Z",
+            "updated_at": "2026-07-30T05:34:13Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -87,21 +102,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 82,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-07-24T11:09:50Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "executorch_native",
@@ -1098,7 +1098,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 59,
-            "forks": 67,
+            "forks": 68,
             "language": "Nix",
             "topics": [
                 "build",
@@ -4694,7 +4694,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4840,
+            "repo_stars": 4846,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4988,7 +4988,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 177975,
+            "repo_stars": 178014,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5415,7 +5415,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5266,
+            "repo_stars": 5265,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5457,7 +5457,7 @@
             ]
         },
         "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1552,
+            "repo_stars": 1553,
             "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -5632,7 +5632,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1129,
+            "repo_stars": 1130,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -5751,7 +5751,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12835,
+            "repo_stars": 12836,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5877,7 +5877,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17714,
+            "repo_stars": 17713,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
