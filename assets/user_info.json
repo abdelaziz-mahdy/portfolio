@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-07-31T06:04:01+00:00",
+    "generated_at": "2026-08-01T05:49:24+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-07-31T04:44:19Z",
+            "updated_at": "2026-08-01T04:57:17Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -27,11 +27,11 @@
             "owner": "abdelaziz-mahdy",
             "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
             "description": "Cross-Platform Video Player for flutter",
-            "stars": 196,
-            "forks": 82,
+            "stars": 197,
+            "forks": 83,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-07-31T02:06:38Z",
+            "updated_at": "2026-07-31T19:52:17Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-07-30T05:34:13Z",
+            "updated_at": "2026-07-31T06:04:47Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1142,6 +1142,20 @@
             "repo_link": "https://github.com/kgrgreer/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "Perf: report real response sizes instead of zero",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5243",
+                    "state": "open",
+                    "created_at": "2026-08-01T02:25:15Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Add DAO and property gotchas guides",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5240",
+                    "state": "merged",
+                    "created_at": "2026-07-31T17:39:35Z",
+                    "merged_at": "2026-07-31T18:57:23Z"
+                },
                 {
                     "title": "Fix Not.partialEval mutating a shared predicate",
                     "link": "https://github.com/kgrgreer/foam3/pull/5224",
@@ -4554,7 +4568,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 351,
+            "repo_stars": 352,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -4694,7 +4708,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4846,
+            "repo_stars": 4849,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4988,7 +5002,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178014,
+            "repo_stars": 178035,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5415,7 +5429,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5265,
+            "repo_stars": 5266,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5576,7 +5590,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3234,
+            "repo_stars": 3235,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5632,7 +5646,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1130,
+            "repo_stars": 1131,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -5646,7 +5660,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1516,
+            "repo_stars": 1515,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -5737,7 +5751,7 @@
             ]
         },
         "ThexXTURBOXx/flutter_web_auth_2": {
-            "repo_stars": 78,
+            "repo_stars": 79,
             "repo_link": "https://github.com/ThexXTURBOXx/flutter_web_auth_2",
             "repo_description": "Flutter plugin for authenticating a user with a web service",
             "prs": [
@@ -5765,7 +5779,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 840,
+            "repo_stars": 841,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -5877,7 +5891,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17713,
+            "repo_stars": 17712,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
