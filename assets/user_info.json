@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-01T05:49:24+00:00",
+    "generated_at": "2026-08-02T05:50:19+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,40 +16,10 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-01T04:57:17Z",
+            "updated_at": "2026-08-02T04:06:00Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 83,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-07-31T19:52:17Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-07-31T06:04:47Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -68,10 +38,40 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-07-26T20:05:17Z",
+            "updated_at": "2026-08-02T01:20:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-01T05:49:50Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 197,
+            "forks": 83,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-07-31T19:52:17Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "dart_cast",
@@ -1075,7 +1075,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1787,
+            "stars": 1788,
             "forks": 446,
             "language": "Dart",
             "topics": [
@@ -1086,7 +1086,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-07-29T23:14:43Z",
+            "updated_at": "2026-08-01T11:40:20Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1098,7 +1098,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 59,
-            "forks": 68,
+            "forks": 69,
             "language": "Nix",
             "topics": [
                 "build",
@@ -4708,7 +4708,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4849,
+            "repo_stars": 4851,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5002,7 +5002,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178035,
+            "repo_stars": 178055,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5023,7 +5023,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1787,
+            "repo_stars": 1788,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5387,7 +5387,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 840,
+            "repo_stars": 841,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5471,7 +5471,7 @@
             ]
         },
         "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1553,
+            "repo_stars": 1554,
             "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -5590,7 +5590,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3235,
+            "repo_stars": 3236,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5765,7 +5765,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12836,
+            "repo_stars": 12837,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5779,7 +5779,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 841,
+            "repo_stars": 842,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
