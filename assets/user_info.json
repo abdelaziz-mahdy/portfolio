@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-08-03T06:14:28+00:00",
+    "generated_at": "2026-08-04T05:42:08+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "scrapheap-ascent",
-            "full_name": "abdelaziz-mahdy/scrapheap-ascent",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent",
-            "description": "A launch/altitude incremental built in Godot 4. You are the last mechanic in a junkyard at the end of the world, welding a rocket out of garbage. The debris you smash through on the way up is your parts supply.",
-            "stars": 0,
-            "forks": 0,
-            "language": "GDScript",
-            "topics": [],
-            "updated_at": "2026-08-03T05:10:10Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/scrapheap-ascent/"
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-03T04:38:55Z",
+            "updated_at": "2026-08-04T03:50:21Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "scrapheap-ascent",
+            "full_name": "abdelaziz-mahdy/scrapheap-ascent",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent",
+            "description": "A launch/altitude incremental built in Godot 4. You are the last mechanic in a junkyard at the end of the world, welding a rocket out of garbage. The debris you smash through on the way up is your parts supply.",
+            "stars": 0,
+            "forks": 0,
+            "language": "GDScript",
+            "topics": [],
+            "updated_at": "2026-08-04T02:42:39Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/scrapheap-ascent/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-03T06:16:17Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -57,21 +72,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-02T05:51:09Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1788,
-            "forks": 446,
+            "stars": 1789,
+            "forks": 447,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-01T11:40:20Z",
+            "updated_at": "2026-08-03T07:45:57Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1158,11 +1158,46 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "Skip the after-rule clone and deep compare when a DAO has no after rules",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5254",
+                    "state": "open",
+                    "created_at": "2026-08-03T22:58:00Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "HTTPResponse: release fetch bodies that nothing reads",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5253",
+                    "state": "open",
+                    "created_at": "2026-08-03T18:48:29Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "MDAO: skip an index already covered by an existing one",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5251",
+                    "state": "merged",
+                    "created_at": "2026-08-03T14:53:16Z",
+                    "merged_at": "2026-08-03T16:59:15Z"
+                },
+                {
+                    "title": "AScript: keep ordinary properties in the parser grammar",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5250",
+                    "state": "merged",
+                    "created_at": "2026-08-03T14:52:32Z",
+                    "merged_at": "2026-08-03T15:35:44Z"
+                },
+                {
+                    "title": "MDAO: skip index adds already covered by an existing index",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5249",
+                    "state": "closed",
+                    "created_at": "2026-08-03T14:04:02Z",
+                    "merged_at": null
+                },
+                {
                     "title": "Perf: report real response sizes instead of zero",
                     "link": "https://github.com/kgrgreer/foam3/pull/5243",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-01T02:25:15Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-03T14:29:46Z"
                 },
                 {
                     "title": "Add DAO and property gotchas guides",
@@ -4723,7 +4758,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4851,
+            "repo_stars": 4855,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5017,7 +5052,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178143,
+            "repo_stars": 178167,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5038,7 +5073,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1788,
+            "repo_stars": 1789,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5402,7 +5437,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 841,
+            "repo_stars": 842,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5675,7 +5710,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1515,
+            "repo_stars": 1517,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -5780,7 +5815,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
