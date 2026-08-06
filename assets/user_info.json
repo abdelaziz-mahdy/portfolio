@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-05T05:40:26+00:00",
+    "generated_at": "2026-08-06T05:41:51+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-05T03:35:49Z",
+            "updated_at": "2026-08-06T02:38:33Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-05T05:40:57Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -42,21 +57,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-04T05:42:47Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "scrapheap-ascent",
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1790,
-            "forks": 446,
+            "stars": 1792,
+            "forks": 447,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-04T10:10:23Z",
+            "updated_at": "2026-08-05T19:32:01Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1157,6 +1157,20 @@
             "repo_link": "https://github.com/kgrgreer/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-4496 fix(journal): write the full object when a put changes the class",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5259",
+                    "state": "merged",
+                    "created_at": "2026-08-05T17:37:43Z",
+                    "merged_at": "2026-08-06T01:25:41Z"
+                },
+                {
+                    "title": "Rule engine: propagate exceptions, fix the Date day floor, skip the idle after-rule clone",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5258",
+                    "state": "merged",
+                    "created_at": "2026-08-05T15:24:23Z",
+                    "merged_at": "2026-08-06T01:27:55Z"
+                },
                 {
                     "title": "Skip the after-rule clone and deep compare when a DAO has no after rules",
                     "link": "https://github.com/kgrgreer/foam3/pull/5254",
@@ -4758,7 +4772,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4863,
+            "repo_stars": 4864,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5052,7 +5066,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178198,
+            "repo_stars": 178234,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5073,7 +5087,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1790,
+            "repo_stars": 1792,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5437,7 +5451,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 842,
+            "repo_stars": 841,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5479,7 +5493,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5266,
+            "repo_stars": 5269,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5640,7 +5654,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3237,
+            "repo_stars": 3236,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5696,7 +5710,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1131,
+            "repo_stars": 1133,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -5815,7 +5829,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
