@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-06T05:41:51+00:00",
+    "generated_at": "2026-08-07T04:50:31+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-06T02:38:33Z",
+            "updated_at": "2026-08-07T02:42:12Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-05T05:40:57Z",
+            "updated_at": "2026-08-06T05:42:53Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1157,6 +1157,20 @@
             "repo_link": "https://github.com/kgrgreer/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "AScript: compare two properties, longest name first",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5272",
+                    "state": "merged",
+                    "created_at": "2026-08-06T19:54:49Z",
+                    "merged_at": "2026-08-06T20:06:43Z"
+                },
+                {
+                    "title": "Property autocomplete: try the longest property name first",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5271",
+                    "state": "merged",
+                    "created_at": "2026-08-06T19:54:39Z",
+                    "merged_at": "2026-08-06T20:07:10Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-4496 fix(journal): write the full object when a put changes the class",
                     "link": "https://github.com/kgrgreer/foam3/pull/5259",
@@ -4632,7 +4646,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 352,
+            "repo_stars": 353,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -4772,7 +4786,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4864,
+            "repo_stars": 4869,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5066,7 +5080,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178234,
+            "repo_stars": 178256,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5451,7 +5465,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 841,
+            "repo_stars": 840,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5654,7 +5668,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3236,
+            "repo_stars": 3237,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5829,7 +5843,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12838,
+            "repo_stars": 12839,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5843,7 +5857,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 842,
+            "repo_stars": 843,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
