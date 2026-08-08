@@ -1,11 +1,26 @@
 {
-    "generated_at": "2026-08-07T04:50:31+00:00",
+    "generated_at": "2026-08-08T04:07:40+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
+        {
+            "name": "executorch_flutter",
+            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
+            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
+            "stars": 28,
+            "forks": 3,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-08T03:06:18Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -16,7 +31,22 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-07T02:42:12Z",
+            "updated_at": "2026-08-08T02:44:23Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "executorch_native",
+            "full_name": "abdelaziz-mahdy/executorch_native",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
+            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
+            "stars": 1,
+            "forks": 1,
+            "language": "CMake",
+            "topics": [],
+            "updated_at": "2026-08-08T02:03:46Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-06T05:42:53Z",
+            "updated_at": "2026-08-07T04:51:02Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -99,36 +129,6 @@
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-07-25T21:56:09Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "executorch_flutter",
-            "full_name": "abdelaziz-mahdy/executorch_flutter",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
-            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 28,
-            "forks": 3,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-07-24T23:31:04Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
-        },
-        {
-            "name": "executorch_native",
-            "full_name": "abdelaziz-mahdy/executorch_native",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
-            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
-            "stars": 1,
-            "forks": 1,
-            "language": "CMake",
-            "topics": [],
-            "updated_at": "2026-07-24T02:58:45Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -1157,6 +1157,20 @@
             "repo_link": "https://github.com/kgrgreer/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-4520 Scope FilteredDAO.listen_ through predicateIn",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5274",
+                    "state": "open",
+                    "created_at": "2026-08-07T23:49:04Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Prefix PropertyBorder's per-property class",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5273",
+                    "state": "merged",
+                    "created_at": "2026-08-07T14:27:11Z",
+                    "merged_at": "2026-08-07T14:31:12Z"
+                },
                 {
                     "title": "AScript: compare two properties, longest name first",
                     "link": "https://github.com/kgrgreer/foam3/pull/5272",
@@ -4786,7 +4800,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4869,
+            "repo_stars": 4870,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5080,7 +5094,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178256,
+            "repo_stars": 178266,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5507,7 +5521,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5269,
+            "repo_stars": 5272,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5668,7 +5682,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3237,
+            "repo_stars": 3238,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5815,7 +5829,7 @@
             ]
         },
         "mrrhak/icons_launcher": {
-            "repo_stars": 176,
+            "repo_stars": 177,
             "repo_link": "https://github.com/mrrhak/icons_launcher",
             "repo_description": "Icons Launcher - A command-line tool that simplifies the task of updating your Flutter app's launcher icon. Full flexibility allows you to only update the launcher icon for specific platforms as needed.",
             "prs": [
@@ -5843,7 +5857,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12839,
+            "repo_stars": 12840,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
