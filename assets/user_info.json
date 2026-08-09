@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-08T04:07:40+00:00",
+    "generated_at": "2026-08-09T04:13:35+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -7,19 +7,19 @@
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
         {
-            "name": "executorch_flutter",
-            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "name": "executorch_native",
+            "full_name": "abdelaziz-mahdy/executorch_native",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
-            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 28,
-            "forks": 3,
-            "language": "Dart",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
+            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
+            "stars": 1,
+            "forks": 1,
+            "language": "CMake",
             "topics": [],
-            "updated_at": "2026-08-08T03:06:18Z",
+            "updated_at": "2026-08-09T02:45:38Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+            "demo_url": null
         },
         {
             "name": "anime_mapping",
@@ -31,40 +31,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-08T02:44:23Z",
+            "updated_at": "2026-08-09T01:48:10Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
         },
         {
-            "name": "executorch_native",
-            "full_name": "abdelaziz-mahdy/executorch_native",
+            "name": "executorch_flutter_models",
+            "full_name": "abdelaziz-mahdy/executorch_flutter_models",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
-            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
-            "stars": 1,
-            "forks": 1,
-            "language": "CMake",
-            "topics": [],
-            "updated_at": "2026-08-08T02:03:46Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models",
+            "description": "ExecuTorch Flutter pre-exported models (.pte files)",
             "stars": 1,
             "forks": 0,
-            "language": "Dart",
+            "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-07T04:51:02Z",
+            "updated_at": "2026-08-09T00:11:08Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
+            "demo_url": null
         },
         {
             "name": "rewind",
@@ -83,10 +68,40 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-08-05T00:55:39Z",
+            "updated_at": "2026-08-08T18:44:00Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
+        },
+        {
+            "name": "executorch_flutter",
+            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
+            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
+            "stars": 28,
+            "forks": 3,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-08T13:39:09Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-08T04:07:59Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "scrapheap-ascent",
@@ -177,21 +192,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/universal_video_controls/"
-        },
-        {
-            "name": "executorch_flutter_models",
-            "full_name": "abdelaziz-mahdy/executorch_flutter_models",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models",
-            "description": "ExecuTorch Flutter pre-exported models (.pte files)",
-            "stars": 1,
-            "forks": 0,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-06-18T20:08:28Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
         },
         {
             "name": "syami",
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1792,
-            "forks": 447,
+            "forks": 449,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1160,9 +1160,9 @@
                 {
                     "title": "PT-FIXES:DOS-4520 Scope FilteredDAO.listen_ through predicateIn",
                     "link": "https://github.com/kgrgreer/foam3/pull/5274",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-07T23:49:04Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-08T11:13:49Z"
                 },
                 {
                     "title": "Prefix PropertyBorder's per-property class",
@@ -4800,7 +4800,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4870,
+            "repo_stars": 4875,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5094,7 +5094,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178266,
+            "repo_stars": 178274,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5479,7 +5479,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 840,
+            "repo_stars": 841,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5521,7 +5521,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5272,
+            "repo_stars": 5273,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5682,7 +5682,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3238,
+            "repo_stars": 3237,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5752,7 +5752,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1517,
+            "repo_stars": 1518,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -5871,7 +5871,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 843,
+            "repo_stars": 842,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -5885,7 +5885,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 418,
+            "repo_stars": 417,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
@@ -5983,7 +5983,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
