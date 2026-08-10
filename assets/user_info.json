@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-08-09T04:13:35+00:00",
+    "generated_at": "2026-08-10T04:24:54+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "executorch_native",
-            "full_name": "abdelaziz-mahdy/executorch_native",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
-            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
-            "stars": 1,
-            "forks": 1,
-            "language": "CMake",
-            "topics": [],
-            "updated_at": "2026-08-09T02:45:38Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,10 +16,55 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-09T01:48:10Z",
+            "updated_at": "2026-08-10T03:00:28Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "executorch_flutter",
+            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
+            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
+            "stars": 28,
+            "forks": 3,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-09T14:47:20Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+        },
+        {
+            "name": "executorch_native",
+            "full_name": "abdelaziz-mahdy/executorch_native",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
+            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
+            "stars": 1,
+            "forks": 1,
+            "language": "CMake",
+            "topics": [],
+            "updated_at": "2026-08-09T13:39:51Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-09T04:13:55Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_flutter_models",
@@ -72,36 +102,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "executorch_flutter",
-            "full_name": "abdelaziz-mahdy/executorch_flutter",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
-            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 28,
-            "forks": 3,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-08T13:39:09Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-08T04:07:59Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "scrapheap-ascent",
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1792,
-            "forks": 449,
+            "forks": 450,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1113,7 +1113,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 59,
-            "forks": 69,
+            "forks": 70,
             "language": "Nix",
             "topics": [
                 "build",
@@ -4800,7 +4800,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4875,
+            "repo_stars": 4879,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4898,7 +4898,7 @@
             ]
         },
         "rainyl/opencv_dart": {
-            "repo_stars": 251,
+            "repo_stars": 252,
             "repo_link": "https://github.com/rainyl/opencv_dart",
             "repo_description": "OpenCV bindings for Dart language and Flutter. Support Asynchronous Now!",
             "prs": [
@@ -5094,7 +5094,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178274,
+            "repo_stars": 178284,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5521,7 +5521,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5273,
+            "repo_stars": 5274,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5857,7 +5857,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12842,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5983,7 +5983,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17709,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
