@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-14T04:44:30+00:00",
+    "generated_at": "2026-08-15T03:33:19+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,25 +16,10 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-14T02:01:00Z",
+            "updated_at": "2026-08-15T02:58:18Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-13T04:47:06Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_flutter",
@@ -46,7 +31,7 @@
             "forks": 3,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-11T00:40:45Z",
+            "updated_at": "2026-08-14T22:31:59Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
@@ -61,10 +46,25 @@
             "forks": 1,
             "language": "CMake",
             "topics": [],
-            "updated_at": "2026-08-10T21:02:03Z",
+            "updated_at": "2026-08-14T21:34:40Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-14T04:44:53Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_flutter_models",
@@ -1090,7 +1090,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1795,
+            "stars": 1796,
             "forks": 452,
             "language": "Dart",
             "topics": [
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-14T00:03:51Z",
+            "updated_at": "2026-08-14T19:24:06Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -4870,7 +4870,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4914,
+            "repo_stars": 4917,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5164,7 +5164,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178392,
+            "repo_stars": 178382,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5185,7 +5185,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1795,
+            "repo_stars": 1796,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5591,7 +5591,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5282,
+            "repo_stars": 5284,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5752,7 +5752,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3241,
+            "repo_stars": 3242,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6053,7 +6053,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17712,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
