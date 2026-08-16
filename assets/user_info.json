@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-15T03:33:19+00:00",
+    "generated_at": "2026-08-16T03:42:20+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-15T02:58:18Z",
+            "updated_at": "2026-08-16T01:49:27Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "scrapheap-ascent",
+            "full_name": "abdelaziz-mahdy/scrapheap-ascent",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent",
+            "description": "A launch/altitude incremental built in Godot 4. You are the last mechanic in a junkyard at the end of the world, welding a rocket out of garbage. The debris you smash through on the way up is your parts supply.",
+            "stars": 0,
+            "forks": 0,
+            "language": "GDScript",
+            "topics": [],
+            "updated_at": "2026-08-15T20:47:15Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/scrapheap-ascent/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-15T03:33:38Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_flutter",
@@ -50,21 +80,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-14T04:44:53Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_flutter_models",
@@ -102,21 +117,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "scrapheap-ascent",
-            "full_name": "abdelaziz-mahdy/scrapheap-ascent",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent",
-            "description": "A launch/altitude incremental built in Godot 4. You are the last mechanic in a junkyard at the end of the world, welding a rocket out of garbage. The debris you smash through on the way up is your parts supply.",
-            "stars": 0,
-            "forks": 0,
-            "language": "GDScript",
-            "topics": [],
-            "updated_at": "2026-08-04T02:42:39Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/scrapheap-ascent/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -1085,6 +1085,28 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "libmpv-darwin-build",
+            "full_name": "media-kit/libmpv-darwin-build",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/libmpv-darwin-build",
+            "description": "libmpv for macOS & iOS.",
+            "stars": 60,
+            "forks": 70,
+            "language": "Nix",
+            "topics": [
+                "build",
+                "libmpv",
+                "macos",
+                "mpv",
+                "ffmpeg",
+                "ios"
+            ],
+            "updated_at": "2026-08-16T03:26:41Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": null
+        },
+        {
             "name": "media-kit",
             "full_name": "media-kit/media-kit",
             "owner": "media-kit",
@@ -1105,28 +1127,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
-        },
-        {
-            "name": "libmpv-darwin-build",
-            "full_name": "media-kit/libmpv-darwin-build",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/libmpv-darwin-build",
-            "description": "libmpv for macOS & iOS.",
-            "stars": 59,
-            "forks": 70,
-            "language": "Nix",
-            "topics": [
-                "build",
-                "libmpv",
-                "macos",
-                "mpv",
-                "ffmpeg",
-                "ios"
-            ],
-            "updated_at": "2026-07-17T09:29:48Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": null
         },
         {
             "name": "media-kit-android-helper",
@@ -4730,7 +4730,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 355,
+            "repo_stars": 356,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -4870,7 +4870,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4917,
+            "repo_stars": 4918,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5164,7 +5164,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178382,
+            "repo_stars": 178404,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5794,7 +5794,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 341,
+            "repo_stars": 342,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -5927,7 +5927,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6053,7 +6053,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17712,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
