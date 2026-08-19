@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-18T03:39:02+00:00",
+    "generated_at": "2026-08-19T03:40:10+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-18T03:02:31Z",
+            "updated_at": "2026-08-19T03:05:33Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -38,7 +38,7 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-08-18T02:16:04Z",
+            "updated_at": "2026-08-19T02:25:54Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
@@ -53,7 +53,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-17T03:43:47Z",
+            "updated_at": "2026-08-18T03:39:21Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1795,
-            "forks": 452,
+            "forks": 453,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1158,18 +1158,25 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-4544 DoubleUnitValue export and input parity with UnitValue",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5303",
+                    "state": "open",
+                    "created_at": "2026-08-18T19:58:52Z",
+                    "merged_at": null
+                },
+                {
                     "title": "PT-FIXES:DOS-4625 fix(reflow): nest blocks and name the calls in the perf report",
                     "link": "https://github.com/kgrgreer/foam3/pull/5299",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-17T13:10:01Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-18T18:22:51Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4304 fix(reflow): scope loadPerf per-block buffer to the Console",
                     "link": "https://github.com/kgrgreer/foam3/pull/5297",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-17T11:47:18Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-18T18:22:50Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-3795 Partition load progress: status DAO, replay reporter, client toasts",
@@ -4884,7 +4891,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4925,
+            "repo_stars": 4932,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5178,7 +5185,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178435,
+            "repo_stars": 178471,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5647,7 +5654,7 @@
             ]
         },
         "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1557,
+            "repo_stars": 1558,
             "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -5766,7 +5773,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3243,
+            "repo_stars": 3244,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5822,7 +5829,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1134,
+            "repo_stars": 1135,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -5941,7 +5948,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12839,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -5969,7 +5976,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 417,
+            "repo_stars": 419,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
