@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-19T03:40:10+00:00",
+    "generated_at": "2026-08-20T03:40:44+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-19T03:05:33Z",
+            "updated_at": "2026-08-20T01:16:46Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -38,7 +38,7 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-08-19T02:25:54Z",
+            "updated_at": "2026-08-19T20:32:11Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
@@ -53,7 +53,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-18T03:39:21Z",
+            "updated_at": "2026-08-19T03:41:30Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,7 +1090,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1795,
+            "stars": 1796,
             "forks": 453,
             "language": "Dart",
             "topics": [
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-16T20:29:15Z",
+            "updated_at": "2026-08-19T10:09:08Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1157,6 +1157,13 @@
             "repo_link": "https://github.com/kgrgreer/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "fix(u2): pointer-event table column resize with edge auto-grow",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5309",
+                    "state": "open",
+                    "created_at": "2026-08-19T22:33:55Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-4544 DoubleUnitValue export and input parity with UnitValue",
                     "link": "https://github.com/kgrgreer/foam3/pull/5303",
@@ -4891,7 +4898,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4932,
+            "repo_stars": 4934,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -4961,7 +4968,7 @@
             ]
         },
         "dsc-uob/subtitle": {
-            "repo_stars": 13,
+            "repo_stars": 14,
             "repo_link": "https://github.com/dsc-uob/subtitle",
             "repo_description": "Subtitle decoder package, enables you to handle translation data smoothly.",
             "prs": [
@@ -5185,7 +5192,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178471,
+            "repo_stars": 178504,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5206,7 +5213,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1795,
+            "repo_stars": 1796,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5815,7 +5822,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 343,
+            "repo_stars": 344,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -5829,7 +5836,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1135,
+            "repo_stars": 1136,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -5976,7 +5983,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 419,
+            "repo_stars": 421,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
