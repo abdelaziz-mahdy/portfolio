@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-20T03:40:44+00:00",
+    "generated_at": "2026-08-21T03:44:38+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-20T01:16:46Z",
+            "updated_at": "2026-08-21T03:12:15Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-20T03:41:31Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -42,21 +57,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-19T03:41:30Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "dart_cast",
@@ -1113,7 +1113,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 69,
+            "forks": 70,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1158,11 +1158,32 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "fix(script): detail view stays stale after a script run finishes",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5314",
+                    "state": "merged",
+                    "created_at": "2026-08-20T21:58:30Z",
+                    "merged_at": "2026-08-20T22:12:09Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4649 Offer the current flow's collections in the DAO name grammar",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5311",
+                    "state": "open",
+                    "created_at": "2026-08-20T17:13:37Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4674 Case-insensitive option search in StringFilterView",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5310",
+                    "state": "merged",
+                    "created_at": "2026-08-20T13:36:14Z",
+                    "merged_at": "2026-08-20T15:41:13Z"
+                },
+                {
                     "title": "fix(u2): pointer-event table column resize with edge auto-grow",
                     "link": "https://github.com/kgrgreer/foam3/pull/5309",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-19T22:33:55Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-20T15:55:55Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4544 DoubleUnitValue export and input parity with UnitValue",
@@ -4758,7 +4779,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 357,
+            "repo_stars": 358,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -4898,7 +4919,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4934,
+            "repo_stars": 4939,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5192,7 +5213,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178504,
+            "repo_stars": 178539,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5619,7 +5640,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5287,
+            "repo_stars": 5288,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5661,7 +5682,7 @@
             ]
         },
         "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1558,
+            "repo_stars": 1559,
             "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -5780,7 +5801,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3244,
+            "repo_stars": 3248,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5927,7 +5948,7 @@
             ]
         },
         "mrrhak/icons_launcher": {
-            "repo_stars": 177,
+            "repo_stars": 178,
             "repo_link": "https://github.com/mrrhak/icons_launcher",
             "repo_description": "Icons Launcher - A command-line tool that simplifies the task of updating your Flutter app's launcher icon. Full flexibility allows you to only update the launcher icon for specific platforms as needed.",
             "prs": [
