@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-21T03:44:38+00:00",
+    "generated_at": "2026-08-22T03:36:09+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,25 +16,10 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-21T03:12:15Z",
+            "updated_at": "2026-08-22T03:01:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-20T03:41:31Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -53,10 +38,25 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-08-19T20:32:11Z",
+            "updated_at": "2026-08-21T05:37:06Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-21T03:45:00Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "dart_cast",
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1796,
-            "forks": 453,
+            "forks": 454,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1158,6 +1158,27 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-3795 One collapsible card for partition load progress",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5322",
+                    "state": "open",
+                    "created_at": "2026-08-22T01:27:21Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Render Date literals instead of empty text nodes",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5321",
+                    "state": "open",
+                    "created_at": "2026-08-22T00:59:06Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4039 Resolve IN through TreeIndex key lookups",
+                    "link": "https://github.com/kgrgreer/foam3/pull/5315",
+                    "state": "open",
+                    "created_at": "2026-08-21T13:11:44Z",
+                    "merged_at": null
+                },
+                {
                     "title": "fix(script): detail view stays stale after a script run finishes",
                     "link": "https://github.com/kgrgreer/foam3/pull/5314",
                     "state": "merged",
@@ -1188,9 +1209,9 @@
                 {
                     "title": "PT-FIXES:DOS-4544 DoubleUnitValue export and input parity with UnitValue",
                     "link": "https://github.com/kgrgreer/foam3/pull/5303",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-18T19:58:52Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-21T15:05:11Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4625 fix(reflow): nest blocks and name the calls in the perf report",
@@ -1209,9 +1230,9 @@
                 {
                     "title": "PT-FIXES:DOS-3795 Partition load progress: status DAO, replay reporter, client toasts",
                     "link": "https://github.com/kgrgreer/foam3/pull/5293",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-13T18:56:40Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-21T15:30:42Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-3795 Partition load progress: status DAO, replay reporter, client toasts",
@@ -4919,7 +4940,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4939,
+            "repo_stars": 4941,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5213,7 +5234,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178539,
+            "repo_stars": 178573,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5801,7 +5822,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3248,
+            "repo_stars": 3252,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5976,7 +5997,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12838,
+            "repo_stars": 12837,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6004,7 +6025,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 421,
+            "repo_stars": 422,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
