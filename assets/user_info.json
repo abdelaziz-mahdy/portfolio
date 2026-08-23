@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-22T03:36:09+00:00",
+    "generated_at": "2026-08-23T03:44:20+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-22T03:01:16Z",
+            "updated_at": "2026-08-23T01:54:58Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -38,7 +38,7 @@
                 "libobs",
                 "macos"
             ],
-            "updated_at": "2026-08-21T05:37:06Z",
+            "updated_at": "2026-08-22T21:28:05Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
@@ -53,7 +53,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-21T03:45:00Z",
+            "updated_at": "2026-08-22T03:36:50Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -5234,7 +5234,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178573,
+            "repo_stars": 178607,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5661,7 +5661,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5288,
+            "repo_stars": 5291,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6123,7 +6123,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17708,
+            "repo_stars": 17707,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
