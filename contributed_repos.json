@@ -5,16 +5,24 @@
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
-            "name": "abdelaziz-mahdy/rewind",
-            "link": "https://github.com/abdelaziz-mahdy/rewind"
+            "name": "abdelaziz-mahdy/dart_cast",
+            "link": "https://github.com/abdelaziz-mahdy/dart_cast"
+        },
+        {
+            "name": "abdelaziz-mahdy/universal_video_controls",
+            "link": "https://github.com/abdelaziz-mahdy/universal_video_controls"
+        },
+        {
+            "name": "abdelaziz-mahdy/bouncy_ball_physics",
+            "link": "https://github.com/abdelaziz-mahdy/bouncy_ball_physics"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
         {
-            "name": "abdelaziz-mahdy/dart_cast",
-            "link": "https://github.com/abdelaziz-mahdy/dart_cast"
+            "name": "abdelaziz-mahdy/rewind",
+            "link": "https://github.com/abdelaziz-mahdy/rewind"
         },
         {
             "name": "abdelaziz-mahdy/scrapheap-ascent",
@@ -43,10 +51,6 @@
         {
             "name": "abdelaziz-mahdy/space_shooter",
             "link": "https://github.com/abdelaziz-mahdy/space_shooter"
-        },
-        {
-            "name": "abdelaziz-mahdy/universal_video_controls",
-            "link": "https://github.com/abdelaziz-mahdy/universal_video_controls"
         },
         {
             "name": "abdelaziz-mahdy/syami",
@@ -143,10 +147,6 @@
         {
             "name": "abdelaziz-mahdy/segmentation_renderer",
             "link": "https://github.com/abdelaziz-mahdy/segmentation_renderer"
-        },
-        {
-            "name": "abdelaziz-mahdy/bouncy_ball_physics",
-            "link": "https://github.com/abdelaziz-mahdy/bouncy_ball_physics"
         },
         {
             "name": "abdelaziz-mahdy/rust_ndarray_dart",
@@ -299,8 +299,8 @@
     ],
     "external": [
         {
-            "name": "kgrgreer/foam3",
-            "link": "https://github.com/kgrgreer/foam3"
+            "name": "foam-foundation/foam3",
+            "link": "https://github.com/foam-foundation/foam3"
         },
         {
             "name": "wang-bin/fvp",

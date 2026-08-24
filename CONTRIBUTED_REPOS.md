@@ -3,9 +3,11 @@
 ## Owned
 
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
-- [abdelaziz-mahdy/rewind](https://github.com/abdelaziz-mahdy/rewind)
-- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
+- [abdelaziz-mahdy/universal_video_controls](https://github.com/abdelaziz-mahdy/universal_video_controls)
+- [abdelaziz-mahdy/bouncy_ball_physics](https://github.com/abdelaziz-mahdy/bouncy_ball_physics)
+- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
+- [abdelaziz-mahdy/rewind](https://github.com/abdelaziz-mahdy/rewind)
 - [abdelaziz-mahdy/scrapheap-ascent](https://github.com/abdelaziz-mahdy/scrapheap-ascent)
 - [abdelaziz-mahdy/executorch_flutter](https://github.com/abdelaziz-mahdy/executorch_flutter)
 - [abdelaziz-mahdy/executorch_native](https://github.com/abdelaziz-mahdy/executorch_native)
@@ -13,7 +15,6 @@
 - [abdelaziz-mahdy/flutter_meedu_videoplayer](https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer)
 - [abdelaziz-mahdy/quotes](https://github.com/abdelaziz-mahdy/quotes)
 - [abdelaziz-mahdy/space_shooter](https://github.com/abdelaziz-mahdy/space_shooter)
-- [abdelaziz-mahdy/universal_video_controls](https://github.com/abdelaziz-mahdy/universal_video_controls)
 - [abdelaziz-mahdy/syami](https://github.com/abdelaziz-mahdy/syami)
 - [abdelaziz-mahdy/pickerv2](https://github.com/abdelaziz-mahdy/pickerv2)
 - [abdelaziz-mahdy/ftp_server](https://github.com/abdelaziz-mahdy/ftp_server)
@@ -38,7 +39,6 @@
 - [abdelaziz-mahdy/media_editor](https://github.com/abdelaziz-mahdy/media_editor)
 - [abdelaziz-mahdy/polars_dart](https://github.com/abdelaziz-mahdy/polars_dart)
 - [abdelaziz-mahdy/segmentation_renderer](https://github.com/abdelaziz-mahdy/segmentation_renderer)
-- [abdelaziz-mahdy/bouncy_ball_physics](https://github.com/abdelaziz-mahdy/bouncy_ball_physics)
 - [abdelaziz-mahdy/rust_ndarray_dart](https://github.com/abdelaziz-mahdy/rust_ndarray_dart)
 - [abdelaziz-mahdy/video_player_dart_vlc](https://github.com/abdelaziz-mahdy/video_player_dart_vlc)
 - [abdelaziz-mahdy/desktop_screen_recorder](https://github.com/abdelaziz-mahdy/desktop_screen_recorder)
@@ -79,7 +79,7 @@
 
 ## External
 
-- [kgrgreer/foam3](https://github.com/kgrgreer/foam3)
+- [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
 - [wyrindev/flutter-media-session](https://github.com/wyrindev/flutter-media-session)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
