@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-24T03:48:38+00:00",
+    "generated_at": "2026-08-25T03:42:32+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-24T03:10:49Z",
+            "updated_at": "2026-08-25T03:07:05Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-24T03:48:58Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "dart_cast",
@@ -65,21 +80,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/bouncy_ball_physics/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-23T03:44:52Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -1090,7 +1090,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1796,
+            "stars": 1798,
             "forks": 455,
             "language": "Dart",
             "topics": [
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-19T10:09:08Z",
+            "updated_at": "2026-08-24T23:22:11Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1158,14 +1158,21 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
-                    "title": "PT-FIXES:DOS-3795 One collapsible card for partition load progress",
+                    "title": "PT-FIXES:DOS-4222 Store date property values in a long backing field",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5324",
+                    "state": "merged",
+                    "created_at": "2026-08-24T12:40:01Z",
+                    "merged_at": "2026-08-24T20:11:55Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4695 One collapsible progress card instead of a card per partition",
                     "link": "https://github.com/foam-foundation/foam3/pull/5322",
                     "state": "open",
                     "created_at": "2026-08-22T01:27:21Z",
                     "merged_at": null
                 },
                 {
-                    "title": "Render Date literals instead of empty text nodes",
+                    "title": "PT-FIXES:DOS-4696 Format literals in the text node, not at each call site",
                     "link": "https://github.com/foam-foundation/foam3/pull/5321",
                     "state": "open",
                     "created_at": "2026-08-22T00:59:06Z",
@@ -1188,9 +1195,9 @@
                 {
                     "title": "PT-FIXES:DOS-4649 Offer the current flow's collections in the DAO name grammar",
                     "link": "https://github.com/foam-foundation/foam3/pull/5311",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-20T17:13:37Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-24T14:12:03Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4674 Case-insensitive option search in StringFilterView",
@@ -4940,7 +4947,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4942,
+            "repo_stars": 4945,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5234,7 +5241,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178628,
+            "repo_stars": 178641,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5255,7 +5262,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1796,
+            "repo_stars": 1798,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5619,7 +5626,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 841,
+            "repo_stars": 842,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5983,7 +5990,7 @@
             ]
         },
         "ThexXTURBOXx/flutter_web_auth_2": {
-            "repo_stars": 79,
+            "repo_stars": 80,
             "repo_link": "https://github.com/ThexXTURBOXx/flutter_web_auth_2",
             "repo_description": "Flutter plugin for authenticating a user with a web service",
             "prs": [
@@ -5997,7 +6004,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
