@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-25T03:42:32+00:00",
+    "generated_at": "2026-08-26T03:48:09+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-25T03:07:05Z",
+            "updated_at": "2026-08-26T03:15:30Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-24T03:48:58Z",
+            "updated_at": "2026-08-25T03:43:13Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -43,7 +43,7 @@
             "link": "https://github.com/abdelaziz-mahdy/dart_cast",
             "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
             "stars": 8,
-            "forks": 4,
+            "forks": 5,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-08-24T01:22:44Z",
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1798,
-            "forks": 455,
+            "stars": 1797,
+            "forks": 456,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-24T23:22:11Z",
+            "updated_at": "2026-08-25T18:16:54Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1158,6 +1158,55 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-4222 Tree index: drop the key field from TreeNode",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5339",
+                    "state": "open",
+                    "created_at": "2026-08-25T21:25:29Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4222 Tree index: three ways to stop retaining a boxed key per node",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5337",
+                    "state": "closed",
+                    "created_at": "2026-08-25T19:25:03Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4222 Share the phase bench harness, and stop running benchmarks as tests",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5336",
+                    "state": "closed",
+                    "created_at": "2026-08-25T19:25:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4222 Assert a tree index answers as an un-indexed DAO does",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5335",
+                    "state": "closed",
+                    "created_at": "2026-08-25T19:24:59Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4222 Fix comparePropertyToObject on date properties",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5334",
+                    "state": "closed",
+                    "created_at": "2026-08-25T19:24:57Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4222 Tree index: three ways to stop retaining a boxed key per node",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5333",
+                    "state": "closed",
+                    "created_at": "2026-08-25T18:56:27Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4715 Client test runner waits on progress; BlobStore tmp-file race",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5332",
+                    "state": "merged",
+                    "created_at": "2026-08-25T16:27:17Z",
+                    "merged_at": "2026-08-26T01:55:09Z"
+                },
+                {
                     "title": "PT-FIXES:DOS-4222 Store date property values in a long backing field",
                     "link": "https://github.com/foam-foundation/foam3/pull/5324",
                     "state": "merged",
@@ -1167,9 +1216,9 @@
                 {
                     "title": "PT-FIXES:DOS-4695 One collapsible progress card instead of a card per partition",
                     "link": "https://github.com/foam-foundation/foam3/pull/5322",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-22T01:27:21Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-25T15:00:09Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4696 Format literals in the text node, not at each call site",
@@ -1650,9 +1699,9 @@
                 {
                     "title": "docs: add DAO events and refresh guide",
                     "link": "https://github.com/foam-foundation/foam3/pull/5145",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-06-18T14:43:41Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-25T12:56:45Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-3598 OrSchedule view: choose each delegate's schedule type",
@@ -1720,9 +1769,9 @@
                 {
                     "title": "Scope JShell context bridge per-run and close sessions",
                     "link": "https://github.com/foam-foundation/foam3/pull/5118",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-06-05T20:18:00Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-25T13:23:39Z"
                 },
                 {
                     "title": "feat(lsp): find-references finds this.Short usages in method bodies",
@@ -4947,7 +4996,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4945,
+            "repo_stars": 4946,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5241,7 +5290,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178641,
+            "repo_stars": 178660,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5262,7 +5311,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1798,
+            "repo_stars": 1797,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5626,7 +5675,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 842,
+            "repo_stars": 843,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5668,7 +5717,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5291,
+            "repo_stars": 5292,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5829,7 +5878,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3252,
+            "repo_stars": 3253,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6018,7 +6067,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 843,
+            "repo_stars": 844,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
