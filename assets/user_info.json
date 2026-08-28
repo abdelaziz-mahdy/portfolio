@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-27T13:30:18+00:00",
+    "generated_at": "2026-08-28T14:47:24+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-27T08:05:33Z",
+            "updated_at": "2026-08-28T12:07:15Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-27T13:43:11Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -42,21 +57,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-26T03:48:29Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "dart_cast",
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1799,
-            "forks": 457,
+            "stars": 1801,
+            "forks": 458,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-27T12:53:22Z",
+            "updated_at": "2026-08-28T14:12:39Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1157,6 +1157,20 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "Reflow: Graph mode for the Console",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5352",
+                    "state": "open",
+                    "created_at": "2026-08-28T01:07:47Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4723 Build a tree index from sorted rows instead of one put per row",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5349",
+                    "state": "open",
+                    "created_at": "2026-08-27T18:56:19Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Move view-builder patterns into an on-demand reference file",
                     "link": "https://github.com/foam-foundation/foam3/pull/5348",
@@ -5010,7 +5024,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4956,
+            "repo_stars": 4963,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5304,7 +5318,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178671,
+            "repo_stars": 178691,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5325,7 +5339,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1799,
+            "repo_stars": 1801,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5731,7 +5745,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5294,
+            "repo_stars": 5299,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5773,7 +5787,7 @@
             ]
         },
         "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1559,
+            "repo_stars": 1560,
             "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -5934,7 +5948,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 345,
+            "repo_stars": 346,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -6067,7 +6081,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12839,
+            "repo_stars": 12840,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6095,7 +6109,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 422,
+            "repo_stars": 423,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
@@ -6151,7 +6165,7 @@
             ]
         },
         "transistorsoft/flutter_background_fetch": {
-            "repo_stars": 598,
+            "repo_stars": 597,
             "repo_link": "https://github.com/transistorsoft/flutter_background_fetch",
             "repo_description": "Periodic callbacks in the background for both IOS and Android.  Includes Android Headless mechanism",
             "prs": [
