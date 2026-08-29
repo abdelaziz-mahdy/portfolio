@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-28T14:47:24+00:00",
+    "generated_at": "2026-08-29T09:38:07+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-28T12:07:15Z",
+            "updated_at": "2026-08-29T06:05:02Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-27T13:43:11Z",
+            "updated_at": "2026-08-28T14:54:52Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1801,
-            "forks": 458,
+            "forks": 457,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1158,7 +1158,21 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
-                    "title": "Reflow: Graph mode for the Console",
+                    "title": "Journal replay benchmark: re-baseline on current development",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5360",
+                    "state": "open",
+                    "created_at": "2026-08-28T18:55:14Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Reflow: Graph mode for the Console (canvas)",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5359",
+                    "state": "open",
+                    "created_at": "2026-08-28T18:04:04Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Reflow: Graph mode for the Console Using SVGS",
                     "link": "https://github.com/foam-foundation/foam3/pull/5352",
                     "state": "open",
                     "created_at": "2026-08-28T01:07:47Z",
@@ -2042,7 +2056,7 @@
                 {
                     "title": "Journal Replay Performance: Instrumentation, Jackson Fast Path, FOAM Parser Optimizations, and Benchmark Suite",
                     "link": "https://github.com/foam-foundation/foam3/pull/4969",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-04-15T01:18:26Z",
                     "merged_at": null
                 },
@@ -2098,7 +2112,7 @@
                 {
                     "title": "Journal Replay Performance: Per-Phase Instrumentation, Jackson Fast Path Parser, and Benchmark (RFC)",
                     "link": "https://github.com/foam-foundation/foam3/pull/4958",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-04-12T19:28:30Z",
                     "merged_at": null
                 },
@@ -5024,7 +5038,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4963,
+            "repo_stars": 4965,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5318,7 +5332,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178691,
+            "repo_stars": 178702,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5906,7 +5920,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3255,
+            "repo_stars": 3257,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6109,7 +6123,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 423,
+            "repo_stars": 422,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
