@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-29T09:38:07+00:00",
+    "generated_at": "2026-08-30T08:49:34+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-29T06:05:02Z",
+            "updated_at": "2026-08-30T07:32:33Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-28T14:54:52Z",
+            "updated_at": "2026-08-29T09:38:34Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1801,
-            "forks": 457,
+            "stars": 1802,
+            "forks": 459,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-28T14:12:39Z",
+            "updated_at": "2026-08-29T23:16:31Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5038,7 +5038,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4965,
+            "repo_stars": 4966,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5332,7 +5332,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178702,
+            "repo_stars": 178714,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5353,7 +5353,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1801,
+            "repo_stars": 1802,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
