@@ -9,12 +9,12 @@
             "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
-            "name": "abdelaziz-mahdy/rewind",
-            "link": "https://github.com/abdelaziz-mahdy/rewind"
-        },
-        {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
+            "name": "abdelaziz-mahdy/rewind",
+            "link": "https://github.com/abdelaziz-mahdy/rewind"
         },
         {
             "name": "abdelaziz-mahdy/dart_cast",
@@ -299,12 +299,12 @@
     ],
     "external": [
         {
-            "name": "wyrindev/flutter-media-session",
-            "link": "https://github.com/wyrindev/flutter-media-session"
-        },
-        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
+            "name": "wyrindev/flutter-media-session",
+            "link": "https://github.com/wyrindev/flutter-media-session"
         },
         {
             "name": "wang-bin/fvp",

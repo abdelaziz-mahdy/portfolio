@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-08-31T09:12:06+00:00",
+    "generated_at": "2026-09-01T08:11:34+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-08-31T07:34:31Z",
+            "updated_at": "2026-09-01T05:43:20Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,10 +31,25 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-08-31T04:44:21Z",
+            "updated_at": "2026-09-01T04:25:23Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-08-31T09:19:41Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -57,21 +72,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-30T08:50:43Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "dart_cast",
@@ -1091,7 +1091,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1805,
-            "forks": 459,
+            "forks": 463,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1113,7 +1113,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 73,
+            "forks": 74,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1152,88 +1152,46 @@
         }
     ],
     "pull_requests": {
-        "wyrindev/flutter-media-session": {
-            "repo_stars": 1,
-            "repo_link": "https://github.com/wyrindev/flutter-media-session",
-            "repo_description": "Flutter plugin for native media session & lock screen controls",
-            "prs": [
-                {
-                    "title": "fix(android): [v3] hold the foreground service while background keep-alive is enabled",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/36",
-                    "state": "merged",
-                    "created_at": "2026-08-30T15:43:25Z",
-                    "merged_at": "2026-08-31T00:51:12Z"
-                },
-                {
-                    "title": "fix(android): [v2] hold the foreground service while background keep-alive is enabled",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/35",
-                    "state": "closed",
-                    "created_at": "2026-08-30T15:43:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: [v3 / main] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/28",
-                    "state": "merged",
-                    "created_at": "2026-06-07T18:09:34Z",
-                    "merged_at": "2026-06-29T12:05:20Z"
-                },
-                {
-                    "title": "feat: [v2 / release-2.3.0] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/27",
-                    "state": "merged",
-                    "created_at": "2026-06-07T18:09:16Z",
-                    "merged_at": "2026-06-29T12:05:54Z"
-                },
-                {
-                    "title": "fix(android): expose playback state via accessor for outer service",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/16",
-                    "state": "merged",
-                    "created_at": "2026-04-19T22:59:15Z",
-                    "merged_at": "2026-04-20T00:07:38Z"
-                },
-                {
-                    "title": "Suggestion: opt-in audio focus / interruption handling on Android (#12)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/14",
-                    "state": "merged",
-                    "created_at": "2026-04-19T13:34:47Z",
-                    "merged_at": "2026-04-19T15:32:09Z"
-                },
-                {
-                    "title": "feat: add macOS and iOS platform support",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/13",
-                    "state": "merged",
-                    "created_at": "2026-04-12T15:12:20Z",
-                    "merged_at": "2026-04-19T14:46:08Z"
-                },
-                {
-                    "title": "fix: notification not appearing \u2014 addSession + startForegroundService",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/3",
-                    "state": "closed",
-                    "created_at": "2026-04-06T00:49:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: add updateAvailableActions to enable/disable media controls",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/2",
-                    "state": "closed",
-                    "created_at": "2026-04-05T21:26:13Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: pass seekTo position from native to Dart",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/1",
-                    "state": "merged",
-                    "created_at": "2026-04-05T21:08:58Z",
-                    "merged_at": "2026-04-06T05:40:44Z"
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 49,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "perf(json): hash property-name lookup in ModelParserFactory",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5370",
+                    "state": "open",
+                    "created_at": "2026-08-31T19:37:35Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4754 perf(util): replace String.intern in the parser with a weak interner",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5368",
+                    "state": "merged",
+                    "created_at": "2026-08-31T15:48:00Z",
+                    "merged_at": "2026-08-31T18:25:16Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4753 perf(json): bound the escape scan to the string's own span",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5366",
+                    "state": "merged",
+                    "created_at": "2026-08-31T13:58:54Z",
+                    "merged_at": "2026-08-31T18:26:20Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4752 perf(json): try bare epoch millis first in DateParser",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5365",
+                    "state": "merged",
+                    "created_at": "2026-08-31T13:29:39Z",
+                    "merged_at": "2026-08-31T18:27:09Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4751 fix(json): accept 1-9 fractional-second digits in DateParser",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5364",
+                    "state": "merged",
+                    "created_at": "2026-08-31T13:15:43Z",
+                    "merged_at": "2026-08-31T18:28:18Z"
+                },
                 {
                     "title": "Journal replay benchmark: re-baseline on current development",
                     "link": "https://github.com/foam-foundation/foam3/pull/5360",
@@ -1272,9 +1230,9 @@
                 {
                     "title": "Add foam-model-builder skill; document nested skill discovery",
                     "link": "https://github.com/foam-foundation/foam3/pull/5347",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-27T13:21:09Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-31T19:19:14Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4222 Tree index: drop the key field from TreeNode",
@@ -1349,9 +1307,9 @@
                 {
                     "title": "PT-FIXES:DOS-4039 Resolve IN through TreeIndex key lookups",
                     "link": "https://github.com/foam-foundation/foam3/pull/5315",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-21T13:11:44Z",
-                    "merged_at": null
+                    "merged_at": "2026-08-31T19:22:09Z"
                 },
                 {
                     "title": "fix(script): detail view stays stale after a script run finishes",
@@ -4974,6 +4932,83 @@
                 }
             ]
         },
+        "wyrindev/flutter-media-session": {
+            "repo_stars": 1,
+            "repo_link": "https://github.com/wyrindev/flutter-media-session",
+            "repo_description": "Flutter plugin for native media session & lock screen controls",
+            "prs": [
+                {
+                    "title": "fix(android): [v3] hold the foreground service while background keep-alive is enabled",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/36",
+                    "state": "merged",
+                    "created_at": "2026-08-30T15:43:25Z",
+                    "merged_at": "2026-08-31T00:51:12Z"
+                },
+                {
+                    "title": "fix(android): [v2] hold the foreground service while background keep-alive is enabled",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/35",
+                    "state": "closed",
+                    "created_at": "2026-08-30T15:43:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: [v3 / main] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/28",
+                    "state": "merged",
+                    "created_at": "2026-06-07T18:09:34Z",
+                    "merged_at": "2026-06-29T12:05:20Z"
+                },
+                {
+                    "title": "feat: [v2 / release-2.3.0] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/27",
+                    "state": "merged",
+                    "created_at": "2026-06-07T18:09:16Z",
+                    "merged_at": "2026-06-29T12:05:54Z"
+                },
+                {
+                    "title": "fix(android): expose playback state via accessor for outer service",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/16",
+                    "state": "merged",
+                    "created_at": "2026-04-19T22:59:15Z",
+                    "merged_at": "2026-04-20T00:07:38Z"
+                },
+                {
+                    "title": "Suggestion: opt-in audio focus / interruption handling on Android (#12)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/14",
+                    "state": "merged",
+                    "created_at": "2026-04-19T13:34:47Z",
+                    "merged_at": "2026-04-19T15:32:09Z"
+                },
+                {
+                    "title": "feat: add macOS and iOS platform support",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/13",
+                    "state": "merged",
+                    "created_at": "2026-04-12T15:12:20Z",
+                    "merged_at": "2026-04-19T14:46:08Z"
+                },
+                {
+                    "title": "fix: notification not appearing \u2014 addSession + startForegroundService",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/3",
+                    "state": "closed",
+                    "created_at": "2026-04-06T00:49:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: add updateAvailableActions to enable/disable media controls",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/2",
+                    "state": "closed",
+                    "created_at": "2026-04-05T21:26:13Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: pass seekTo position from native to Dart",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/1",
+                    "state": "merged",
+                    "created_at": "2026-04-05T21:08:58Z",
+                    "merged_at": "2026-04-06T05:40:44Z"
+                }
+            ]
+        },
         "wang-bin/fvp": {
             "repo_stars": 360,
             "repo_link": "https://github.com/wang-bin/fvp",
@@ -5052,7 +5087,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4970,
+            "repo_stars": 4977,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5346,7 +5381,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178728,
+            "repo_stars": 178738,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5934,7 +5969,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3259,
+            "repo_stars": 3260,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -5990,7 +6025,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1137,
+            "repo_stars": 1138,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6235,7 +6270,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17708,
+            "repo_stars": 17707,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
