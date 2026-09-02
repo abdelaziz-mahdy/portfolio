@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-01T08:11:34+00:00",
+    "generated_at": "2026-09-02T07:30:42+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-01T05:43:20Z",
+            "updated_at": "2026-09-02T06:22:33Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-01T04:25:23Z",
+            "updated_at": "2026-09-02T03:47:54Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "automated_attendance",
+            "full_name": "abdelaziz-mahdy/automated_attendance",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/automated_attendance",
+            "description": null,
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-02T02:46:21Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-08-31T09:19:41Z",
+            "updated_at": "2026-09-01T08:21:19Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -483,21 +498,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_media_kit/"
-        },
-        {
-            "name": "automated_attendance",
-            "full_name": "abdelaziz-mahdy/automated_attendance",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/automated_attendance",
-            "description": null,
-            "stars": 0,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2025-04-25T18:37:26Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
         },
         {
             "name": "video_player_media_kit",
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1805,
-            "forks": 463,
+            "stars": 1806,
+            "forks": 462,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-08-31T08:28:18Z",
+            "updated_at": "2026-09-01T10:20:25Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1158,7 +1158,49 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
-                    "title": "perf(json): hash property-name lookup in ModelParserFactory",
+                    "title": "RFC perf(json): ternary-search-tree property-key lookup \u2014 comparison PR for #5370",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5384",
+                    "state": "open",
+                    "created_at": "2026-09-01T21:10:15Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4768 Warn before deleting a block others depend on, and offer to take the group",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5381",
+                    "state": "open",
+                    "created_at": "2026-09-01T19:31:42Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4766 Scan Reflow block dependencies with a tokenizing scanner",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5380",
+                    "state": "open",
+                    "created_at": "2026-09-01T17:19:50Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4767 Warn when renaming a block other blocks reference, and offer to update them",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5379",
+                    "state": "open",
+                    "created_at": "2026-09-01T17:19:48Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4754 Wait on the outcome in the interner GC test, not on a round count",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5378",
+                    "state": "merged",
+                    "created_at": "2026-09-01T15:21:16Z",
+                    "merged_at": "2026-09-01T15:26:41Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4738 Reflow: a function block whose return value other blocks read by name",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5376",
+                    "state": "open",
+                    "created_at": "2026-09-01T14:07:57Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4759 perf(json): hash property-name lookup in ModelParserFactory",
                     "link": "https://github.com/foam-foundation/foam3/pull/5370",
                     "state": "open",
                     "created_at": "2026-08-31T19:37:35Z",
@@ -2054,7 +2096,7 @@
                     "merged_at": null
                 },
                 {
-                    "title": "feat(reflow): add in-memory history tracking for Flow edits",
+                    "title": "PT-FIXES:DOS-4769 feat(reflow): record Flow edit history per flow, loaded on demand",
                     "link": "https://github.com/foam-foundation/foam3/pull/4984",
                     "state": "open",
                     "created_at": "2026-04-17T18:47:40Z",
@@ -5087,7 +5129,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4977,
+            "repo_stars": 4979,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5381,7 +5423,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178738,
+            "repo_stars": 178742,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5402,7 +5444,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1805,
+            "repo_stars": 1806,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5766,7 +5808,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 843,
+            "repo_stars": 842,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5849,14 +5891,14 @@
                 }
             ]
         },
-        "miguelpruivo/flutter_file_picker": {
-            "repo_stars": 1561,
-            "repo_link": "https://github.com/miguelpruivo/flutter_file_picker",
+        "vicajilau/flutter_file_picker": {
+            "repo_stars": 1562,
+            "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
                 {
                     "title": "removing v1 embedding to fix compile on flutter 3.27",
-                    "link": "https://github.com/miguelpruivo/flutter_file_picker/pull/1644",
+                    "link": "https://github.com/vicajilau/flutter_file_picker/pull/1644",
                     "state": "merged",
                     "created_at": "2024-12-11T23:22:33Z",
                     "merged_at": "2024-12-16T16:01:25Z"
@@ -5969,7 +6011,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3260,
+            "repo_stars": 3261,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6144,7 +6186,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6270,7 +6312,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17707,
+            "repo_stars": 17708,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [

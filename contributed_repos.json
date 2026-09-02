@@ -9,6 +9,10 @@
             "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
+            "name": "abdelaziz-mahdy/automated_attendance",
+            "link": "https://github.com/abdelaziz-mahdy/automated_attendance"
+        },
+        {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
@@ -123,10 +127,6 @@
         {
             "name": "abdelaziz-mahdy/flutter_meedu_media_kit",
             "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_media_kit"
-        },
-        {
-            "name": "abdelaziz-mahdy/automated_attendance",
-            "link": "https://github.com/abdelaziz-mahdy/automated_attendance"
         },
         {
             "name": "abdelaziz-mahdy/video_player_media_kit",
@@ -347,8 +347,8 @@
             "link": "https://github.com/flutter/packages"
         },
         {
-            "name": "miguelpruivo/flutter_file_picker",
-            "link": "https://github.com/miguelpruivo/flutter_file_picker"
+            "name": "vicajilau/flutter_file_picker",
+            "link": "https://github.com/vicajilau/flutter_file_picker"
         },
         {
             "name": "rainyl/dartcv",
