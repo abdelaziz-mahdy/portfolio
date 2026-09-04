@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-03T07:37:29+00:00",
+    "generated_at": "2026-09-04T07:36:31+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-03T06:28:30Z",
+            "updated_at": "2026-09-04T06:28:57Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-03T03:46:54Z",
+            "updated_at": "2026-09-04T03:49:30Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-02T07:33:08Z",
+            "updated_at": "2026-09-03T07:38:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,7 +1090,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1806,
+            "stars": 1805,
             "forks": 465,
             "language": "Dart",
             "topics": [
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-02T21:29:05Z",
+            "updated_at": "2026-09-03T07:53:02Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1158,18 +1158,39 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-1580 Allow re-running an interrupted script",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5398",
+                    "state": "merged",
+                    "created_at": "2026-09-03T14:26:06Z",
+                    "merged_at": "2026-09-03T18:36:48Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4798 javaSparse: store a class's reference properties in one values array behind a shared shape",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5397",
+                    "state": "open",
+                    "created_at": "2026-09-03T14:02:46Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4797 javaPackIsSet: one long per 64 properties holds the isSet flags instead of a boolean each",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5396",
+                    "state": "open",
+                    "created_at": "2026-09-03T13:37:03Z",
+                    "merged_at": null
+                },
+                {
                     "title": "Add foam-design-patterns: the review rules as an Agent Skill",
                     "link": "https://github.com/foam-foundation/foam3/pull/5393",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-03T00:18:03Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-03T14:25:37Z"
                 },
                 {
                     "title": "feat(reflow): export a flow to PDF from the Console header",
                     "link": "https://github.com/foam-foundation/foam3/pull/5387",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-02T15:43:21Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-03T14:29:17Z"
                 },
                 {
                     "title": "fix(partition): fire listeners on PartitionedDAO put and remove",
@@ -1300,9 +1321,9 @@
                 {
                     "title": "PT-FIXES:DOS-4222 Tree index: drop the key field from TreeNode",
                     "link": "https://github.com/foam-foundation/foam3/pull/5339",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-25T21:25:29Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-03T19:38:00Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4222 Tree index: three ways to stop retaining a boxed key per node",
@@ -1452,11 +1473,11 @@
                     "merged_at": "2026-08-12T19:46:42Z"
                 },
                 {
-                    "title": "DNM: PT-FIXES:DOS-4373 feat(reflow): serialize Flow.script as JSON structure",
+                    "title": "PT-FIXES:DOS-4373 feat(reflow): serialize Flow.script as JSON structure",
                     "link": "https://github.com/foam-foundation/foam3/pull/5285",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-11T20:47:23Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-03T19:31:36Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4373 fix(json): triple-quote multiline strings in JSON/J export",
@@ -5073,7 +5094,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 360,
+            "repo_stars": 361,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5150,7 +5171,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4980,
+            "repo_stars": 4986,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5444,7 +5465,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178755,
+            "repo_stars": 178756,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5465,7 +5486,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1806,
+            "repo_stars": 1805,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5871,7 +5892,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5300,
+            "repo_stars": 5301,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6032,7 +6053,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3260,
+            "repo_stars": 3261,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6088,7 +6109,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1138,
+            "repo_stars": 1139,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6221,7 +6242,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 843,
+            "repo_stars": 845,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -6333,7 +6354,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17708,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
