@@ -80,6 +80,7 @@
 ## External
 
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
+- [agentcathq/webmcp-react](https://github.com/agentcathq/webmcp-react)
 - [wyrindev/flutter-media-session](https://github.com/wyrindev/flutter-media-session)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
 - [pytorch/executorch](https://github.com/pytorch/executorch)

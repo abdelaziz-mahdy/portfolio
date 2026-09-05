@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-04T07:36:31+00:00",
+    "generated_at": "2026-09-05T07:17:23+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-04T06:28:57Z",
+            "updated_at": "2026-09-05T05:32:43Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-04T03:49:30Z",
+            "updated_at": "2026-09-05T05:30:00Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-03T07:38:16Z",
+            "updated_at": "2026-09-04T07:37:19Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1805,
-            "forks": 465,
+            "stars": 1807,
+            "forks": 466,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-03T07:53:02Z",
+            "updated_at": "2026-09-05T01:50:06Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1157,6 +1157,55 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-4815 Lowercase the property name in column permission checks",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5422",
+                    "state": "merged",
+                    "created_at": "2026-09-04T18:39:25Z",
+                    "merged_at": "2026-09-04T18:47:49Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4811 Restore the pluralize expression on Model.plural",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5420",
+                    "state": "merged",
+                    "created_at": "2026-09-04T18:08:19Z",
+                    "merged_at": "2026-09-04T18:31:37Z"
+                },
+                {
+                    "title": "Fix inverted assert on updatePermissionRequired",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5417",
+                    "state": "merged",
+                    "created_at": "2026-09-04T17:12:25Z",
+                    "merged_at": "2026-09-04T17:31:01Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4723 Send a bulk load down cmd_ so the chain takes part",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5416",
+                    "state": "merged",
+                    "created_at": "2026-09-04T15:44:10Z",
+                    "merged_at": "2026-09-04T17:59:41Z"
+                },
+                {
+                    "title": "Reflow over WebMCP: drive the Console from an external AI tool",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5414",
+                    "state": "open",
+                    "created_at": "2026-09-04T12:39:20Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Reflow: show a running command, and give every failure the same block",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5413",
+                    "state": "open",
+                    "created_at": "2026-09-04T12:39:18Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Reflow markdown: wrapped paragraphs, and markdown inside an HTML block",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5412",
+                    "state": "merged",
+                    "created_at": "2026-09-04T12:39:15Z",
+                    "merged_at": "2026-09-04T13:21:34Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-1580 Allow re-running an interrupted script",
                     "link": "https://github.com/foam-foundation/foam3/pull/5398",
@@ -1237,9 +1286,9 @@
                 {
                     "title": "PT-FIXES:DOS-4738 Reflow: a function block whose return value other blocks read by name",
                     "link": "https://github.com/foam-foundation/foam3/pull/5376",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-01T14:07:57Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-04T19:52:27Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4759 perf(json): hash property-name lookup in ModelParserFactory",
@@ -1300,9 +1349,9 @@
                 {
                     "title": "PT-FIXES:DOS-4723 Build a tree index from sorted rows instead of one put per row",
                     "link": "https://github.com/foam-foundation/foam3/pull/5349",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-27T18:56:19Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-04T15:24:43Z"
                 },
                 {
                     "title": "Move view-builder patterns into an on-demand reference file",
@@ -5016,6 +5065,20 @@
                 }
             ]
         },
+        "agentcathq/webmcp-react": {
+            "repo_stars": 54,
+            "repo_link": "https://github.com/agentcathq/webmcp-react",
+            "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
+            "prs": [
+                {
+                    "title": "fix(extension): three ways a tab loses its tools",
+                    "link": "https://github.com/agentcathq/webmcp-react/pull/59",
+                    "state": "merged",
+                    "created_at": "2026-09-04T14:01:19Z",
+                    "merged_at": "2026-09-04T16:22:35Z"
+                }
+            ]
+        },
         "wyrindev/flutter-media-session": {
             "repo_stars": 1,
             "repo_link": "https://github.com/wyrindev/flutter-media-session",
@@ -5094,7 +5157,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 361,
+            "repo_stars": 363,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5171,7 +5234,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4986,
+            "repo_stars": 4989,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5269,7 +5332,7 @@
             ]
         },
         "rainyl/opencv_dart": {
-            "repo_stars": 251,
+            "repo_stars": 252,
             "repo_link": "https://github.com/rainyl/opencv_dart",
             "repo_description": "OpenCV bindings for Dart language and Flutter. Support Asynchronous Now!",
             "prs": [
@@ -5465,7 +5528,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178756,
+            "repo_stars": 178779,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5486,7 +5549,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1805,
+            "repo_stars": 1807,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5850,7 +5913,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 842,
+            "repo_stars": 843,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -5892,7 +5955,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5301,
+            "repo_stars": 5302,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -5934,7 +5997,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1562,
+            "repo_stars": 1564,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6053,7 +6116,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3261,
+            "repo_stars": 3262,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6256,7 +6319,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 422,
+            "repo_stars": 421,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
