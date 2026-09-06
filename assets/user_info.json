@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-05T07:17:23+00:00",
+    "generated_at": "2026-09-06T07:29:49+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-05T05:32:43Z",
+            "updated_at": "2026-09-06T04:25:42Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-05T05:30:00Z",
+            "updated_at": "2026-09-06T03:50:28Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-04T07:37:19Z",
+            "updated_at": "2026-09-05T07:17:41Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1807,
-            "forks": 466,
+            "stars": 1808,
+            "forks": 465,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-05T01:50:06Z",
+            "updated_at": "2026-09-05T11:44:36Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5157,7 +5157,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 363,
+            "repo_stars": 362,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5234,7 +5234,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4989,
+            "repo_stars": 4994,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5528,7 +5528,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178779,
+            "repo_stars": 178799,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5549,7 +5549,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1807,
+            "repo_stars": 1808,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -5955,7 +5955,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5302,
+            "repo_stars": 5303,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6221,7 +6221,7 @@
             ]
         },
         "polarby/render": {
-            "repo_stars": 59,
+            "repo_stars": 58,
             "repo_link": "https://github.com/polarby/render",
             "repo_description": "A package to render any native static and moving flutter widgets to exportable formats",
             "prs": [
@@ -6291,7 +6291,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
