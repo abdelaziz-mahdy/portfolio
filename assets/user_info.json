@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-06T07:29:49+00:00",
+    "generated_at": "2026-09-07T07:46:41+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-06T04:25:42Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-06T03:50:28Z",
+            "updated_at": "2026-09-07T03:50:18Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-06T16:08:42Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-05T07:17:41Z",
+            "updated_at": "2026-09-06T07:30:10Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1090,8 +1090,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1808,
-            "forks": 465,
+            "stars": 1809,
+            "forks": 467,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1101,7 +1101,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-05T11:44:36Z",
+            "updated_at": "2026-09-07T00:50:01Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1113,7 +1113,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 75,
+            "forks": 76,
             "language": "Nix",
             "topics": [
                 "build",
@@ -5066,7 +5066,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 54,
+            "repo_stars": 55,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5234,7 +5234,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 4994,
+            "repo_stars": 5000,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5528,7 +5528,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178799,
+            "repo_stars": 178823,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5549,7 +5549,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1808,
+            "repo_stars": 1809,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6116,7 +6116,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3262,
+            "repo_stars": 3263,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6172,7 +6172,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1139,
+            "repo_stars": 1140,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6417,7 +6417,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17709,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
