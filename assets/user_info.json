@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-07T07:46:41+00:00",
+    "generated_at": "2026-09-08T07:41:10+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,70 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-07T03:50:18Z",
+            "updated_at": "2026-09-08T07:06:23Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "iptv_player",
+            "full_name": "abdelaziz-mahdy/iptv_player",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/iptv_player",
+            "description": "IPTV player for Android (phone + TV) and desktop \u2014 Xtream Codes, M3U/M3U8, XMLTV EPG, libmpv (fvp) playback. Flutter.",
+            "stars": 0,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-07T18:51:29Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter_android_tv_text_field",
+            "full_name": "abdelaziz-mahdy/flutter_android_tv_text_field",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_android_tv_text_field",
+            "description": "Maintained fork of flutter_android_tv_text_field: builds on current Android toolchains, themable focus border. Native EditText for Android TV D-pad (flutter#147772).",
+            "stars": 0,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-07T15:05:36Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 198,
+            "forks": 83,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-07T10:30:35Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-07T07:47:08Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "anime_mapping",
@@ -35,21 +95,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-06T07:30:10Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "automated_attendance",
@@ -192,21 +237,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 83,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-07-31T19:52:17Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "quotes",
@@ -1090,7 +1120,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1809,
+            "stars": 1808,
             "forks": 467,
             "language": "Dart",
             "topics": [
@@ -1101,7 +1131,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-07T00:50:01Z",
+            "updated_at": "2026-09-07T17:04:21Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1152,6 +1182,90 @@
         }
     ],
     "pull_requests": {
+        "wyrindev/flutter-media-session": {
+            "repo_stars": 1,
+            "repo_link": "https://github.com/wyrindev/flutter-media-session",
+            "repo_description": "Flutter plugin for native media session & lock screen controls",
+            "prs": [
+                {
+                    "title": "fix(android): tear down the service when the app task is removed",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/41",
+                    "state": "closed",
+                    "created_at": "2026-09-07T14:52:36Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix(android): [v3] hold the foreground service while background keep-alive is enabled",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/36",
+                    "state": "merged",
+                    "created_at": "2026-08-30T15:43:25Z",
+                    "merged_at": "2026-08-31T00:51:12Z"
+                },
+                {
+                    "title": "fix(android): [v2] hold the foreground service while background keep-alive is enabled",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/35",
+                    "state": "closed",
+                    "created_at": "2026-08-30T15:43:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: [v3 / main] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/28",
+                    "state": "merged",
+                    "created_at": "2026-06-07T18:09:34Z",
+                    "merged_at": "2026-06-29T12:05:20Z"
+                },
+                {
+                    "title": "feat: [v2 / release-2.3.0] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/27",
+                    "state": "merged",
+                    "created_at": "2026-06-07T18:09:16Z",
+                    "merged_at": "2026-06-29T12:05:54Z"
+                },
+                {
+                    "title": "fix(android): expose playback state via accessor for outer service",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/16",
+                    "state": "merged",
+                    "created_at": "2026-04-19T22:59:15Z",
+                    "merged_at": "2026-04-20T00:07:38Z"
+                },
+                {
+                    "title": "Suggestion: opt-in audio focus / interruption handling on Android (#12)",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/14",
+                    "state": "merged",
+                    "created_at": "2026-04-19T13:34:47Z",
+                    "merged_at": "2026-04-19T15:32:09Z"
+                },
+                {
+                    "title": "feat: add macOS and iOS platform support",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/13",
+                    "state": "merged",
+                    "created_at": "2026-04-12T15:12:20Z",
+                    "merged_at": "2026-04-19T14:46:08Z"
+                },
+                {
+                    "title": "fix: notification not appearing \u2014 addSession + startForegroundService",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/3",
+                    "state": "closed",
+                    "created_at": "2026-04-06T00:49:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: add updateAvailableActions to enable/disable media controls",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/2",
+                    "state": "closed",
+                    "created_at": "2026-04-05T21:26:13Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "feat: pass seekTo position from native to Dart",
+                    "link": "https://github.com/wyrindev/flutter-media-session/pull/1",
+                    "state": "merged",
+                    "created_at": "2026-04-05T21:08:58Z",
+                    "merged_at": "2026-04-06T05:40:44Z"
+                }
+            ]
+        },
         "foam-foundation/foam3": {
             "repo_stars": 49,
             "repo_link": "https://github.com/foam-foundation/foam3",
@@ -5066,7 +5180,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 55,
+            "repo_stars": 56,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5079,85 +5193,8 @@
                 }
             ]
         },
-        "wyrindev/flutter-media-session": {
-            "repo_stars": 1,
-            "repo_link": "https://github.com/wyrindev/flutter-media-session",
-            "repo_description": "Flutter plugin for native media session & lock screen controls",
-            "prs": [
-                {
-                    "title": "fix(android): [v3] hold the foreground service while background keep-alive is enabled",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/36",
-                    "state": "merged",
-                    "created_at": "2026-08-30T15:43:25Z",
-                    "merged_at": "2026-08-31T00:51:12Z"
-                },
-                {
-                    "title": "fix(android): [v2] hold the foreground service while background keep-alive is enabled",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/35",
-                    "state": "closed",
-                    "created_at": "2026-08-30T15:43:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: [v3 / main] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/28",
-                    "state": "merged",
-                    "created_at": "2026-06-07T18:09:34Z",
-                    "merged_at": "2026-06-29T12:05:20Z"
-                },
-                {
-                    "title": "feat: [v2 / release-2.3.0] opt-in cross-platform background keep-alive (setBackgroundKeepAlive)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/27",
-                    "state": "merged",
-                    "created_at": "2026-06-07T18:09:16Z",
-                    "merged_at": "2026-06-29T12:05:54Z"
-                },
-                {
-                    "title": "fix(android): expose playback state via accessor for outer service",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/16",
-                    "state": "merged",
-                    "created_at": "2026-04-19T22:59:15Z",
-                    "merged_at": "2026-04-20T00:07:38Z"
-                },
-                {
-                    "title": "Suggestion: opt-in audio focus / interruption handling on Android (#12)",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/14",
-                    "state": "merged",
-                    "created_at": "2026-04-19T13:34:47Z",
-                    "merged_at": "2026-04-19T15:32:09Z"
-                },
-                {
-                    "title": "feat: add macOS and iOS platform support",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/13",
-                    "state": "merged",
-                    "created_at": "2026-04-12T15:12:20Z",
-                    "merged_at": "2026-04-19T14:46:08Z"
-                },
-                {
-                    "title": "fix: notification not appearing \u2014 addSession + startForegroundService",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/3",
-                    "state": "closed",
-                    "created_at": "2026-04-06T00:49:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: add updateAvailableActions to enable/disable media controls",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/2",
-                    "state": "closed",
-                    "created_at": "2026-04-05T21:26:13Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "feat: pass seekTo position from native to Dart",
-                    "link": "https://github.com/wyrindev/flutter-media-session/pull/1",
-                    "state": "merged",
-                    "created_at": "2026-04-05T21:08:58Z",
-                    "merged_at": "2026-04-06T05:40:44Z"
-                }
-            ]
-        },
         "wang-bin/fvp": {
-            "repo_stars": 362,
+            "repo_stars": 363,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5234,7 +5271,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5000,
+            "repo_stars": 5007,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5528,7 +5565,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178823,
+            "repo_stars": 178842,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5549,7 +5586,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1809,
+            "repo_stars": 1808,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6116,7 +6153,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3263,
+            "repo_stars": 3264,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6172,7 +6209,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1140,
+            "repo_stars": 1142,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6291,7 +6328,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12841,
+            "repo_stars": 12839,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6319,7 +6356,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 421,
+            "repo_stars": 422,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
@@ -6417,7 +6454,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17709,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
