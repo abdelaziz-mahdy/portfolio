@@ -1,11 +1,26 @@
 {
-    "generated_at": "2026-09-09T07:45:11+00:00",
+    "generated_at": "2026-09-10T07:45:38+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 198,
+            "forks": 83,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-10T07:13:19Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
+        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -16,7 +31,37 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-09T03:56:10Z",
+            "updated_at": "2026-09-10T03:55:35Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter-macos-backbuffer-repro",
+            "full_name": "abdelaziz-mahdy/flutter-macos-backbuffer-repro",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter-macos-backbuffer-repro",
+            "description": "Minimal macOS repro for flutter/flutter#185394 (Impeller SetupRenderPass null deref via FlutterBackBufferCache wrong-size surface)",
+            "stars": 0,
+            "forks": 0,
+            "language": "Swift",
+            "topics": [],
+            "updated_at": "2026-09-10T00:23:53Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-09T22:21:52Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +76,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-08T07:42:47Z",
+            "updated_at": "2026-09-09T07:45:35Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -62,36 +107,6 @@
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-09-07T15:05:36Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 198,
-            "forks": 83,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-07T10:30:35Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-06T16:08:42Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -1120,8 +1135,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1810,
-            "forks": 467,
+            "stars": 1811,
+            "forks": 469,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1131,7 +1146,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-09T03:34:24Z",
+            "updated_at": "2026-09-10T07:13:38Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1143,7 +1158,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 76,
+            "forks": 78,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1182,11 +1197,67 @@
         }
     ],
     "pull_requests": {
+        "flutter/flutter": {
+            "repo_stars": 178883,
+            "repo_link": "https://github.com/flutter/flutter",
+            "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+            "prs": [
+                {
+                    "title": "[macOS] Fix back buffer cache returning a wrong-size surface (Impeller null deref in Canvas::SetupRenderPass)",
+                    "link": "https://github.com/flutter/flutter/pull/192522",
+                    "state": "open",
+                    "created_at": "2026-09-10T00:23:40Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Pass EXCLUDED_ARCHS from Xcode project to xcodebuild for macOS builds",
+                    "link": "https://github.com/flutter/flutter/pull/176948",
+                    "state": "merged",
+                    "created_at": "2025-10-13T18:56:54Z",
+                    "merged_at": "2025-11-24T16:28:51Z"
+                },
+                {
+                    "title": "Enhance macOS build process to support architecture specification via dartDefines",
+                    "link": "https://github.com/flutter/flutter/pull/176606",
+                    "state": "closed",
+                    "created_at": "2025-10-06T23:42:52Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "foam-foundation/foam3": {
             "repo_stars": 49,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-4848 Reposition OverlayDropdown when an ancestor scrolls",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5441",
+                    "state": "closed",
+                    "created_at": "2026-09-09T22:01:31Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4787,DOS-4791 Dig CSV: UTF-8 BOM and ISO 8601 dates",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5438",
+                    "state": "merged",
+                    "created_at": "2026-09-09T18:51:03Z",
+                    "merged_at": "2026-09-10T01:54:32Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4787,DOS-4791 CSV export: ISO 8601 dates and a UTF-8 BOM",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5437",
+                    "state": "merged",
+                    "created_at": "2026-09-09T17:13:11Z",
+                    "merged_at": "2026-09-10T01:33:30Z"
+                },
+                {
+                    "title": "ViewReloader: pick up a .js edit without reloading the page (#5403)",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5436",
+                    "state": "open",
+                    "created_at": "2026-09-09T16:30:20Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Lowercase the section permission string",
                     "link": "https://github.com/foam-foundation/foam3/pull/5434",
@@ -1309,9 +1380,9 @@
                 {
                     "title": "PT-FIXES:DOS-4768 Warn before deleting a block others depend on, and offer to take the group",
                     "link": "https://github.com/foam-foundation/foam3/pull/5381",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-01T19:31:42Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-09T18:04:57Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4766 Scan Reflow block dependencies with a tokenizing scanner",
@@ -1323,9 +1394,9 @@
                 {
                     "title": "PT-FIXES:DOS-4767 Warn when renaming a block other blocks reference, and offer to update them",
                     "link": "https://github.com/foam-foundation/foam3/pull/5379",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-01T17:19:48Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-09T17:53:06Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4754 Wait on the outcome in the interner GC test, not on a round count",
@@ -1925,9 +1996,9 @@
                 {
                     "title": "Support arbitrary-depth nested FObjectProperty paths in SimpleQueryParser",
                     "link": "https://github.com/foam-foundation/foam3/pull/5151",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-06-22T13:59:52Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-09T13:05:25Z"
                 },
                 {
                     "title": "DOS-969 fix(column-picker): scope search to matching sub-columns",
@@ -5201,7 +5272,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 56,
+            "repo_stars": 57,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5292,7 +5363,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5009,
+            "repo_stars": 5013,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5585,29 +5656,8 @@
                 }
             ]
         },
-        "flutter/flutter": {
-            "repo_stars": 178866,
-            "repo_link": "https://github.com/flutter/flutter",
-            "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-            "prs": [
-                {
-                    "title": "Pass EXCLUDED_ARCHS from Xcode project to xcodebuild for macOS builds",
-                    "link": "https://github.com/flutter/flutter/pull/176948",
-                    "state": "merged",
-                    "created_at": "2025-10-13T18:56:54Z",
-                    "merged_at": "2025-11-24T16:28:51Z"
-                },
-                {
-                    "title": "Enhance macOS build process to support architecture specification via dartDefines",
-                    "link": "https://github.com/flutter/flutter/pull/176606",
-                    "state": "closed",
-                    "created_at": "2025-10-06T23:42:52Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "media-kit/media-kit": {
-            "repo_stars": 1810,
+            "repo_stars": 1811,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6013,7 +6063,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5303,
+            "repo_stars": 5304,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6174,7 +6224,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3266,
+            "repo_stars": 3267,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6244,7 +6294,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1522,
+            "repo_stars": 1523,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -6475,7 +6525,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
