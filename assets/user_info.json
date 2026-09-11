@@ -1,11 +1,71 @@
 {
-    "generated_at": "2026-09-10T07:45:38+00:00",
+    "generated_at": "2026-09-11T07:39:53+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-11T05:52:59Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-11T05:18:58Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "foam3-template",
+            "full_name": "abdelaziz-mahdy/foam3-template",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/foam3-template",
+            "description": "FOAM application template: ./build.sh -T+setup/Project output, deployable to Vercel with one click",
+            "stars": 0,
+            "forks": 0,
+            "language": "JavaScript",
+            "topics": [],
+            "updated_at": "2026-09-11T02:02:40Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-10T07:46:00Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
+        },
         {
             "name": "flutter_meedu_videoplayer",
             "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
@@ -22,21 +82,6 @@
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-10T03:55:35Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
             "name": "flutter-macos-backbuffer-repro",
             "full_name": "abdelaziz-mahdy/flutter-macos-backbuffer-repro",
             "owner": "abdelaziz-mahdy",
@@ -50,36 +95,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-09T22:21:52Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-09T07:45:35Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "iptv_player",
@@ -1197,39 +1212,25 @@
         }
     ],
     "pull_requests": {
-        "flutter/flutter": {
-            "repo_stars": 178883,
-            "repo_link": "https://github.com/flutter/flutter",
-            "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
-            "prs": [
-                {
-                    "title": "[macOS] Fix back buffer cache returning a wrong-size surface (Impeller null deref in Canvas::SetupRenderPass)",
-                    "link": "https://github.com/flutter/flutter/pull/192522",
-                    "state": "open",
-                    "created_at": "2026-09-10T00:23:40Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Pass EXCLUDED_ARCHS from Xcode project to xcodebuild for macOS builds",
-                    "link": "https://github.com/flutter/flutter/pull/176948",
-                    "state": "merged",
-                    "created_at": "2025-10-13T18:56:54Z",
-                    "merged_at": "2025-11-24T16:28:51Z"
-                },
-                {
-                    "title": "Enhance macOS build process to support architecture specification via dartDefines",
-                    "link": "https://github.com/flutter/flutter/pull/176606",
-                    "state": "closed",
-                    "created_at": "2025-10-06T23:42:52Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 49,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "Deploy a FOAM app to Vercel or Cloud Run from a template repo, with a Deploy button",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5449",
+                    "state": "open",
+                    "created_at": "2026-09-11T00:14:36Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Load non-lazy DAOs at boot again, and start framework services first",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5446",
+                    "state": "merged",
+                    "created_at": "2026-09-10T15:41:27Z",
+                    "merged_at": "2026-09-10T18:37:43Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-4848 Reposition OverlayDropdown when an ancestor scrolls",
                     "link": "https://github.com/foam-foundation/foam3/pull/5441",
@@ -5187,6 +5188,34 @@
                 }
             ]
         },
+        "flutter/flutter": {
+            "repo_stars": 178892,
+            "repo_link": "https://github.com/flutter/flutter",
+            "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+            "prs": [
+                {
+                    "title": "[macOS] Fix back buffer cache returning a wrong-size surface (Impeller null deref in Canvas::SetupRenderPass)",
+                    "link": "https://github.com/flutter/flutter/pull/192522",
+                    "state": "open",
+                    "created_at": "2026-09-10T00:23:40Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Pass EXCLUDED_ARCHS from Xcode project to xcodebuild for macOS builds",
+                    "link": "https://github.com/flutter/flutter/pull/176948",
+                    "state": "merged",
+                    "created_at": "2025-10-13T18:56:54Z",
+                    "merged_at": "2025-11-24T16:28:51Z"
+                },
+                {
+                    "title": "Enhance macOS build process to support architecture specification via dartDefines",
+                    "link": "https://github.com/flutter/flutter/pull/176606",
+                    "state": "closed",
+                    "created_at": "2025-10-06T23:42:52Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "wyrindev/flutter-media-session": {
             "repo_stars": 1,
             "repo_link": "https://github.com/wyrindev/flutter-media-session",
@@ -5272,7 +5301,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 57,
+            "repo_stars": 58,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5363,7 +5392,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5013,
+            "repo_stars": 5016,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6224,7 +6253,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3267,
+            "repo_stars": 3268,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6280,7 +6309,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1142,
+            "repo_stars": 1143,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6399,7 +6428,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12839,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
