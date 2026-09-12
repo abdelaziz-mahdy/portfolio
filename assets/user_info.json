@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-11T07:39:53+00:00",
+    "generated_at": "2026-09-12T07:34:20+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-11T05:52:59Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-11T05:18:58Z",
+            "updated_at": "2026-09-12T05:51:39Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-12T04:26:38Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-11T07:40:18Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "foam3-template",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-10T07:46:00Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1811,
-            "forks": 469,
+            "stars": 1812,
+            "forks": 471,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-10T07:13:38Z",
+            "updated_at": "2026-09-11T11:15:24Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1217,6 +1217,27 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-4884 In tests membership when the left side is a list",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5454",
+                    "state": "open",
+                    "created_at": "2026-09-11T19:56:54Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4887 Include precision in aggregation sink toString",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5452",
+                    "state": "merged",
+                    "created_at": "2026-09-11T19:30:39Z",
+                    "merged_at": "2026-09-11T19:39:02Z"
+                },
+                {
+                    "title": "Add a design-skill rule for reading a DAO whose of is a base class",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5450",
+                    "state": "open",
+                    "created_at": "2026-09-11T14:29:31Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Deploy a FOAM app to Vercel or Cloud Run from a template repo, with a Deploy button",
                     "link": "https://github.com/foam-foundation/foam3/pull/5449",
@@ -5189,7 +5210,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178892,
+            "repo_stars": 178905,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5301,7 +5322,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 58,
+            "repo_stars": 59,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5392,7 +5413,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5016,
+            "repo_stars": 5019,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5686,7 +5707,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1811,
+            "repo_stars": 1812,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6092,7 +6113,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5304,
+            "repo_stars": 5305,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6253,7 +6274,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3268,
+            "repo_stars": 3270,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6323,7 +6344,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1523,
+            "repo_stars": 1524,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -6554,7 +6575,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
