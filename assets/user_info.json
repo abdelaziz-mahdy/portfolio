@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-12T07:34:20+00:00",
+    "generated_at": "2026-09-13T07:54:09+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-12T05:51:39Z",
+            "updated_at": "2026-09-13T06:14:42Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,37 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-12T04:26:38Z",
+            "updated_at": "2026-09-13T05:48:37Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 197,
+            "forks": 83,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-12T18:13:32Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
+        },
+        {
+            "name": "flutter-macos-backbuffer-repro",
+            "full_name": "abdelaziz-mahdy/flutter-macos-backbuffer-repro",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter-macos-backbuffer-repro",
+            "description": "Minimal macOS repro for flutter/flutter#185394 (Impeller SetupRenderPass null deref via FlutterBackBufferCache wrong-size surface)",
+            "stars": 0,
+            "forks": 0,
+            "language": "Swift",
+            "topics": [],
+            "updated_at": "2026-09-12T13:51:14Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +76,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-11T07:40:18Z",
+            "updated_at": "2026-09-12T07:34:41Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -62,36 +92,6 @@
             "language": "JavaScript",
             "topics": [],
             "updated_at": "2026-09-11T02:02:40Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 198,
-            "forks": 83,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-10T07:13:19Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "flutter-macos-backbuffer-repro",
-            "full_name": "abdelaziz-mahdy/flutter-macos-backbuffer-repro",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter-macos-backbuffer-repro",
-            "description": "Minimal macOS repro for flutter/flutter#185394 (Impeller SetupRenderPass null deref via FlutterBackBufferCache wrong-size surface)",
-            "stars": 0,
-            "forks": 0,
-            "language": "Swift",
-            "topics": [],
-            "updated_at": "2026-09-10T00:23:53Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -1150,7 +1150,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1812,
+            "stars": 1813,
             "forks": 471,
             "language": "Dart",
             "topics": [
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-11T11:15:24Z",
+            "updated_at": "2026-09-12T18:13:33Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5210,7 +5210,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178905,
+            "repo_stars": 178921,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5336,7 +5336,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 363,
+            "repo_stars": 362,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5413,7 +5413,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5019,
+            "repo_stars": 5021,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5707,7 +5707,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1812,
+            "repo_stars": 1813,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6330,7 +6330,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1143,
+            "repo_stars": 1144,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6575,7 +6575,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
