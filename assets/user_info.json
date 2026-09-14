@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-13T07:54:09+00:00",
+    "generated_at": "2026-09-14T08:26:34+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-13T06:14:42Z",
+            "updated_at": "2026-09-14T07:00:34Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 198,
+            "forks": 84,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-14T06:46:19Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "abdelaziz-mahdy",
@@ -31,25 +46,25 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-13T05:48:37Z",
+            "updated_at": "2026-09-14T04:44:53Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
         },
         {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 83,
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-12T18:13:32Z",
+            "updated_at": "2026-09-13T07:54:30Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter-macos-backbuffer-repro",
@@ -65,21 +80,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-12T07:34:41Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "foam3-template",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 78,
+            "forks": 79,
             "language": "Nix",
             "topics": [
                 "build",
@@ -5210,7 +5210,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178921,
+            "repo_stars": 178936,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5413,7 +5413,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5021,
+            "repo_stars": 5026,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6113,7 +6113,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5305,
+            "repo_stars": 5307,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6155,7 +6155,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1564,
+            "repo_stars": 1565,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6274,7 +6274,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3270,
+            "repo_stars": 3273,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6344,7 +6344,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1524,
+            "repo_stars": 1525,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
