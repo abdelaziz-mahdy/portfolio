@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-14T08:26:34+00:00",
+    "generated_at": "2026-09-15T08:17:45+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,10 +16,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-14T07:00:34Z",
+            "updated_at": "2026-09-15T06:04:22Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-15T04:10:55Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-14T08:26:58Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -35,36 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-14T04:44:53Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-13T07:54:30Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter-macos-backbuffer-repro",
@@ -1145,6 +1145,28 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "libmpv-darwin-build",
+            "full_name": "media-kit/libmpv-darwin-build",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/libmpv-darwin-build",
+            "description": "libmpv for macOS & iOS.",
+            "stars": 60,
+            "forks": 79,
+            "language": "Nix",
+            "topics": [
+                "build",
+                "libmpv",
+                "macos",
+                "mpv",
+                "ffmpeg",
+                "ios"
+            ],
+            "updated_at": "2026-09-14T16:05:48Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": null
+        },
+        {
             "name": "media-kit",
             "full_name": "media-kit/media-kit",
             "owner": "media-kit",
@@ -1165,28 +1187,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
-        },
-        {
-            "name": "libmpv-darwin-build",
-            "full_name": "media-kit/libmpv-darwin-build",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/libmpv-darwin-build",
-            "description": "libmpv for macOS & iOS.",
-            "stars": 60,
-            "forks": 79,
-            "language": "Nix",
-            "topics": [
-                "build",
-                "libmpv",
-                "macos",
-                "mpv",
-                "ffmpeg",
-                "ios"
-            ],
-            "updated_at": "2026-08-16T03:26:41Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": null
         },
         {
             "name": "media-kit-android-helper",
@@ -1218,11 +1218,18 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
-                    "title": "PT-FIXES:DOS-4884 In tests membership when the left side is a list",
-                    "link": "https://github.com/foam-foundation/foam3/pull/5454",
+                    "title": "Accept a numeric UTC offset in JSON datetimes",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5457",
                     "state": "open",
-                    "created_at": "2026-09-11T19:56:54Z",
+                    "created_at": "2026-09-14T20:15:59Z",
                     "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4905 In tests membership when the left side is a list",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5454",
+                    "state": "merged",
+                    "created_at": "2026-09-11T19:56:54Z",
+                    "merged_at": "2026-09-14T21:56:41Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4887 Include precision in aggregation sink toString",
@@ -1395,7 +1402,7 @@
                 {
                     "title": "RFC perf(json): ternary-search-tree property-key lookup \u2014 comparison PR for #5370",
                     "link": "https://github.com/foam-foundation/foam3/pull/5384",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-01T21:10:15Z",
                     "merged_at": null
                 },
@@ -1486,7 +1493,7 @@
                 {
                     "title": "Reflow: Graph mode for the Console Using SVGS",
                     "link": "https://github.com/foam-foundation/foam3/pull/5352",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-08-28T01:07:47Z",
                     "merged_at": null
                 },
@@ -5210,7 +5217,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178936,
+            "repo_stars": 178946,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5336,7 +5343,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 362,
+            "repo_stars": 361,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -5413,7 +5420,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5026,
+            "repo_stars": 5028,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6155,7 +6162,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1565,
+            "repo_stars": 1566,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6274,7 +6281,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3273,
+            "repo_stars": 3274,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6330,7 +6337,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1144,
+            "repo_stars": 1145,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6449,7 +6456,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12838,
+            "repo_stars": 12836,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
