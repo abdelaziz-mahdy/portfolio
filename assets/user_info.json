@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-15T08:17:45+00:00",
+    "generated_at": "2026-09-16T08:10:54+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-15T06:04:22Z",
+            "updated_at": "2026-09-16T06:36:47Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-15T04:10:55Z",
+            "updated_at": "2026-09-16T05:49:33Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "foam3-template",
+            "full_name": "abdelaziz-mahdy/foam3-template",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/foam3-template",
+            "description": "FOAM application template: ./build.sh -T+setup/Project output, deployable to Vercel with one click",
+            "stars": 0,
+            "forks": 0,
+            "language": "Shell",
+            "topics": [],
+            "updated_at": "2026-09-15T22:59:00Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-14T08:26:58Z",
+            "updated_at": "2026-09-15T08:18:05Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -77,21 +92,6 @@
             "language": "Swift",
             "topics": [],
             "updated_at": "2026-09-12T13:51:14Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "foam3-template",
-            "full_name": "abdelaziz-mahdy/foam3-template",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/foam3-template",
-            "description": "FOAM application template: ./build.sh -T+setup/Project output, deployable to Vercel with one click",
-            "stars": 0,
-            "forks": 0,
-            "language": "JavaScript",
-            "topics": [],
-            "updated_at": "2026-09-11T02:02:40Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -1145,6 +1145,28 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "media-kit",
+            "full_name": "media-kit/media-kit",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/media-kit",
+            "description": "A cross-platform video player & audio player for Flutter & Dart.",
+            "stars": 1815,
+            "forks": 472,
+            "language": "Dart",
+            "topics": [
+                "dart",
+                "flutter",
+                "libmpv",
+                "c",
+                "cpp",
+                "media-player"
+            ],
+            "updated_at": "2026-09-15T11:37:41Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": "https://github.com/media-kit/media-kit"
+        },
+        {
             "name": "libmpv-darwin-build",
             "full_name": "media-kit/libmpv-darwin-build",
             "owner": "media-kit",
@@ -1165,28 +1187,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": null
-        },
-        {
-            "name": "media-kit",
-            "full_name": "media-kit/media-kit",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/media-kit",
-            "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1813,
-            "forks": 471,
-            "language": "Dart",
-            "topics": [
-                "dart",
-                "flutter",
-                "libmpv",
-                "c",
-                "cpp",
-                "media-player"
-            ],
-            "updated_at": "2026-09-12T18:13:33Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": "https://github.com/media-kit/media-kit"
         },
         {
             "name": "media-kit-android-helper",
@@ -1218,11 +1218,67 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "Keep the CSpec in the JDAO context when an unloadable DAO rebuilds",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5471",
+                    "state": "open",
+                    "created_at": "2026-09-16T03:48:09Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Add a VM setup script to generated projects, for Oracle Cloud Always Free and the like",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5469",
+                    "state": "open",
+                    "created_at": "2026-09-16T00:08:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Add a Dockerfile.vercel to generated projects, with a session.defaultUser switch for the demo",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5468",
+                    "state": "open",
+                    "created_at": "2026-09-15T22:58:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Add a Cloud Run Button app.json to generated projects",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5467",
+                    "state": "open",
+                    "created_at": "2026-09-15T22:58:14Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Generate a Dockerfile with every new project, and make a JAR install work as a container",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5466",
+                    "state": "open",
+                    "created_at": "2026-09-15T22:58:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Index a saved class file or pom so a class added after boot resolves",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5465",
+                    "state": "open",
+                    "created_at": "2026-09-15T22:18:33Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Add a setup guide for the FOAM LSP and its MCP server",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5464",
+                    "state": "open",
+                    "created_at": "2026-09-15T22:04:00Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4920 PartitionIndexDAO: route a query by a property the partitions are not keyed on",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5462",
+                    "state": "open",
+                    "created_at": "2026-09-15T18:02:38Z",
+                    "merged_at": null
+                },
+                {
                     "title": "Accept a numeric UTC offset in JSON datetimes",
                     "link": "https://github.com/foam-foundation/foam3/pull/5457",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-14T20:15:59Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-15T17:11:51Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4905 In tests membership when the left side is a list",
@@ -1246,9 +1302,9 @@
                     "merged_at": null
                 },
                 {
-                    "title": "Deploy a FOAM app to Vercel or Cloud Run from a template repo, with a Deploy button",
+                    "title": "Deploy a FOAM app to Cloud Run from a template repo, with a Deploy button",
                     "link": "https://github.com/foam-foundation/foam3/pull/5449",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-11T00:14:36Z",
                     "merged_at": null
                 },
@@ -5217,7 +5273,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178946,
+            "repo_stars": 178962,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5245,7 +5301,7 @@
             ]
         },
         "wyrindev/flutter-media-session": {
-            "repo_stars": 1,
+            "repo_stars": 2,
             "repo_link": "https://github.com/wyrindev/flutter-media-session",
             "repo_description": "Flutter plugin for native media session & lock screen controls",
             "prs": [
@@ -5420,7 +5476,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5028,
+            "repo_stars": 5029,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5714,7 +5770,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1813,
+            "repo_stars": 1815,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6120,7 +6176,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5307,
+            "repo_stars": 5310,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6281,7 +6337,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3274,
+            "repo_stars": 3281,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6337,7 +6393,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1145,
+            "repo_stars": 1146,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -6351,7 +6407,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1525,
+            "repo_stars": 1524,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -6456,7 +6512,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12836,
+            "repo_stars": 12837,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6582,7 +6638,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17712,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
