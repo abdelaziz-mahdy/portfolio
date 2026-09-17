@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-16T08:10:54+00:00",
+    "generated_at": "2026-09-17T08:17:32+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-16T06:36:47Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-16T05:49:33Z",
+            "updated_at": "2026-09-17T07:25:17Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-17T03:51:58Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-16T08:11:17Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "foam3-template",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-15T08:18:05Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -1218,11 +1218,116 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "docs(skills): browser-script",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5493",
+                    "state": "open",
+                    "created_at": "2026-09-16T22:49:22Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix(build): pass --log-level through to the JVM, and honour it in benchmarks",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5492",
+                    "state": "open",
+                    "created_at": "2026-09-16T22:44:00Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "docs(skills): foam-test-builder",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5491",
+                    "state": "open",
+                    "created_at": "2026-09-16T22:43:57Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4563 Point the Reflow download's XML at the table driver",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5490",
+                    "state": "open",
+                    "created_at": "2026-09-16T22:43:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "docs(skills): foam-benchmark-builder",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5489",
+                    "state": "open",
+                    "created_at": "2026-09-16T20:03:40Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Revert \"Generate a Dockerfile with every new project\" (#5466)",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5487",
+                    "state": "merged",
+                    "created_at": "2026-09-16T19:33:40Z",
+                    "merged_at": "2026-09-16T19:37:24Z"
+                },
+                {
+                    "title": "Generate a Dockerfile with every new project, and make a JAR install work as a container",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5486",
+                    "state": "open",
+                    "created_at": "2026-09-16T19:33:12Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "docs(skills): read the sink select returns",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5483",
+                    "state": "merged",
+                    "created_at": "2026-09-16T18:11:39Z",
+                    "merged_at": "2026-09-16T18:18:36Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4905 Keep IN in partialEval when the property is a list",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5482",
+                    "state": "merged",
+                    "created_at": "2026-09-16T17:07:03Z",
+                    "merged_at": "2026-09-16T19:21:32Z"
+                },
+                {
+                    "title": "perf(reflow): FlowNameParser selects flow names by projection",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5481",
+                    "state": "merged",
+                    "created_at": "2026-09-16T15:40:15Z",
+                    "merged_at": "2026-09-16T19:22:24Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4563 Rename the export addUnits flag to formattedValues",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5479",
+                    "state": "merged",
+                    "created_at": "2026-09-16T14:22:18Z",
+                    "merged_at": "2026-09-16T19:23:10Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4563 Export XML from the table columns, like CSV",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5478",
+                    "state": "merged",
+                    "created_at": "2026-09-16T14:21:43Z",
+                    "merged_at": "2026-09-16T19:23:09Z"
+                },
+                {
+                    "title": "Rename the export addUnits flag to formattedValues",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5477",
+                    "state": "closed",
+                    "created_at": "2026-09-16T14:18:39Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix(mlang): TopNGroupBy toString drops sortOrder and arg2's identity",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5476",
+                    "state": "merged",
+                    "created_at": "2026-09-16T14:15:14Z",
+                    "merged_at": "2026-09-16T17:39:00Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4563 Export XML from the table columns, like CSV",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5475",
+                    "state": "closed",
+                    "created_at": "2026-09-16T14:07:32Z",
+                    "merged_at": null
+                },
+                {
                     "title": "Keep the CSpec in the JDAO context when an unloadable DAO rebuilds",
                     "link": "https://github.com/foam-foundation/foam3/pull/5471",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T03:48:09Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-16T13:26:09Z"
                 },
                 {
                     "title": "Add a VM setup script to generated projects, for Oracle Cloud Always Free and the like",
@@ -1248,16 +1353,16 @@
                 {
                     "title": "Generate a Dockerfile with every new project, and make a JAR install work as a container",
                     "link": "https://github.com/foam-foundation/foam3/pull/5466",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-15T22:58:11Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-16T19:24:22Z"
                 },
                 {
                     "title": "Index a saved class file or pom so a class added after boot resolves",
                     "link": "https://github.com/foam-foundation/foam3/pull/5465",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-15T22:18:33Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-16T15:03:37Z"
                 },
                 {
                     "title": "Add a setup guide for the FOAM LSP and its MCP server",
@@ -1297,9 +1402,9 @@
                 {
                     "title": "Add a design-skill rule for reading a DAO whose of is a base class",
                     "link": "https://github.com/foam-foundation/foam3/pull/5450",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-11T14:29:31Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-16T19:41:53Z"
                 },
                 {
                     "title": "Deploy a FOAM app to Cloud Run from a template repo, with a Deploy button",
@@ -5273,7 +5378,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178962,
+            "repo_stars": 178980,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5476,7 +5581,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5029,
+            "repo_stars": 5032,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6134,7 +6239,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 844,
+            "repo_stars": 845,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -6176,7 +6281,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5310,
+            "repo_stars": 5309,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6337,7 +6442,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3281,
+            "repo_stars": 3283,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6512,7 +6617,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12836,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6638,7 +6743,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17712,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
