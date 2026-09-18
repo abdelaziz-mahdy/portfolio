@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-17T08:17:32+00:00",
+    "generated_at": "2026-09-18T07:51:33+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-17T07:25:17Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-17T03:51:58Z",
+            "updated_at": "2026-09-18T06:30:51Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-18T05:41:46Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-16T08:11:17Z",
+            "updated_at": "2026-09-17T08:17:56Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1218,18 +1218,95 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-4975 Date with a javaGetter keeps the base get__ for index reads",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5509",
+                    "state": "open",
+                    "created_at": "2026-09-17T22:12:44Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4974 Build the DateParser grammar once",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5508",
+                    "state": "open",
+                    "created_at": "2026-09-17T21:57:20Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4972 Replay progress log carries the percentage read and the time left",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5507",
+                    "state": "open",
+                    "created_at": "2026-09-17T21:23:53Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4966 fix(dao): client planner drops the order for an order-independent sink too",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5506",
+                    "state": "merged",
+                    "created_at": "2026-09-17T20:44:52Z",
+                    "merged_at": "2026-09-17T21:18:13Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4967 fix(dao): remove waitReplay:false, journal replay is always synchronous",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5505",
+                    "state": "open",
+                    "created_at": "2026-09-17T20:29:21Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4966 fix(dao): Sink.isOrderIndependent lets a Pivot select skip the sort",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5504",
+                    "state": "merged",
+                    "created_at": "2026-09-17T19:43:09Z",
+                    "merged_at": "2026-09-17T20:29:35Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4965 Report UNLOADED and READY when an unloadable dao unloads and reloads",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5503",
+                    "state": "open",
+                    "created_at": "2026-09-17T18:32:59Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4961 fix(index): DESC on an indexed property ignored when the select has no skip or limit",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5502",
+                    "state": "merged",
+                    "created_at": "2026-09-17T17:14:26Z",
+                    "merged_at": "2026-09-17T20:32:28Z"
+                },
+                {
+                    "title": "fix(dao): keep adding indexes after one is refused",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5501",
+                    "state": "open",
+                    "created_at": "2026-09-17T14:50:50Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4957 fix(reflow): FlowNameParser projects Flow.CATEGORY alongside NAME",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5499",
+                    "state": "merged",
+                    "created_at": "2026-09-17T12:58:41Z",
+                    "merged_at": "2026-09-17T15:22:38Z"
+                },
+                {
+                    "title": "Generate a Dockerfile with every new project, and make a JAR install work as a container",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5498",
+                    "state": "merged",
+                    "created_at": "2026-09-17T11:57:26Z",
+                    "merged_at": "2026-09-17T14:17:17Z"
+                },
+                {
                     "title": "docs(skills): browser-script",
                     "link": "https://github.com/foam-foundation/foam3/pull/5493",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T22:49:22Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-17T11:38:11Z"
                 },
                 {
                     "title": "fix(build): pass --log-level through to the JVM, and honour it in benchmarks",
                     "link": "https://github.com/foam-foundation/foam3/pull/5492",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T22:44:00Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-17T11:43:52Z"
                 },
                 {
                     "title": "docs(skills): foam-test-builder",
@@ -1262,9 +1339,9 @@
                 {
                     "title": "Generate a Dockerfile with every new project, and make a JAR install work as a container",
                     "link": "https://github.com/foam-foundation/foam3/pull/5486",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T19:33:12Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-17T11:26:34Z"
                 },
                 {
                     "title": "docs(skills): read the sink select returns",
@@ -5378,7 +5455,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178980,
+            "repo_stars": 178996,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5581,7 +5658,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5032,
+            "repo_stars": 5036,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5679,7 +5756,7 @@
             ]
         },
         "rainyl/opencv_dart": {
-            "repo_stars": 252,
+            "repo_stars": 253,
             "repo_link": "https://github.com/rainyl/opencv_dart",
             "repo_description": "OpenCV bindings for Dart language and Flutter. Support Asynchronous Now!",
             "prs": [
@@ -6281,7 +6358,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5309,
+            "repo_stars": 5310,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6442,7 +6519,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3283,
+            "repo_stars": 3285,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [

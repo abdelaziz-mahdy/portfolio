@@ -2,8 +2,8 @@
 
 ## Owned
 
-- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
+- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/foam3-template](https://github.com/abdelaziz-mahdy/foam3-template)
 - [abdelaziz-mahdy/flutter_meedu_videoplayer](https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer)
