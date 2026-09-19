@@ -4,6 +4,8 @@
 
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
 - [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
+- [abdelaziz-mahdy/executorch_flutter_models](https://github.com/abdelaziz-mahdy/executorch_flutter_models)
+- [abdelaziz-mahdy/executorch_native](https://github.com/abdelaziz-mahdy/executorch_native)
 - [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/foam3-template](https://github.com/abdelaziz-mahdy/foam3-template)
 - [abdelaziz-mahdy/flutter_meedu_videoplayer](https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer)
@@ -17,8 +19,6 @@
 - [abdelaziz-mahdy/bouncy_ball_physics](https://github.com/abdelaziz-mahdy/bouncy_ball_physics)
 - [abdelaziz-mahdy/scrapheap-ascent](https://github.com/abdelaziz-mahdy/scrapheap-ascent)
 - [abdelaziz-mahdy/executorch_flutter](https://github.com/abdelaziz-mahdy/executorch_flutter)
-- [abdelaziz-mahdy/executorch_native](https://github.com/abdelaziz-mahdy/executorch_native)
-- [abdelaziz-mahdy/executorch_flutter_models](https://github.com/abdelaziz-mahdy/executorch_flutter_models)
 - [abdelaziz-mahdy/quotes](https://github.com/abdelaziz-mahdy/quotes)
 - [abdelaziz-mahdy/space_shooter](https://github.com/abdelaziz-mahdy/space_shooter)
 - [abdelaziz-mahdy/syami](https://github.com/abdelaziz-mahdy/syami)

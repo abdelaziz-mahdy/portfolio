@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-18T07:51:33+00:00",
+    "generated_at": "2026-09-19T07:43:25+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-18T06:30:51Z",
+            "updated_at": "2026-09-19T06:41:03Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,37 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-18T05:41:46Z",
+            "updated_at": "2026-09-19T04:31:51Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "executorch_flutter_models",
+            "full_name": "abdelaziz-mahdy/executorch_flutter_models",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models",
+            "description": "ExecuTorch Flutter pre-exported models (.pte files)",
+            "stars": 1,
+            "forks": 0,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-19T01:30:36Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "executorch_native",
+            "full_name": "abdelaziz-mahdy/executorch_native",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
+            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
+            "stars": 1,
+            "forks": 1,
+            "language": "CMake",
+            "topics": [],
+            "updated_at": "2026-09-19T01:07:09Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +76,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-17T08:17:56Z",
+            "updated_at": "2026-09-18T07:51:54Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -237,36 +267,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
-        },
-        {
-            "name": "executorch_native",
-            "full_name": "abdelaziz-mahdy/executorch_native",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_native",
-            "description": "Native C/C++ library for ExecuTorch Flutter plugin - pre-built binaries and source build support",
-            "stars": 1,
-            "forks": 1,
-            "language": "CMake",
-            "topics": [],
-            "updated_at": "2026-08-14T21:34:40Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "executorch_flutter_models",
-            "full_name": "abdelaziz-mahdy/executorch_flutter_models",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models",
-            "description": "ExecuTorch Flutter pre-exported models (.pte files)",
-            "stars": 1,
-            "forks": 0,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-08-09T00:11:08Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
         },
         {
             "name": "quotes",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1815,
-            "forks": 472,
+            "stars": 1816,
+            "forks": 471,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-15T11:37:41Z",
+            "updated_at": "2026-09-18T08:29:55Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1218,25 +1218,81 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-4986 mergeFObject returns the merged row instead of copying it back into the delta",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5519",
+                    "state": "open",
+                    "created_at": "2026-09-18T23:42:03Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4985 Apply replay entries on every parse thread, sharded by id",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5516",
+                    "state": "open",
+                    "created_at": "2026-09-18T21:22:23Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4974 Build the DateParser grammar in a static initializer",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5515",
+                    "state": "open",
+                    "created_at": "2026-09-18T17:49:55Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Backport the Date index, DateParser and flow-list fixes to 3.28",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5514",
+                    "state": "merged",
+                    "created_at": "2026-09-18T14:52:50Z",
+                    "merged_at": "2026-09-18T17:29:00Z"
+                },
+                {
+                    "title": "Backport the Date index, DateParser and flow-list fixes to 3.27",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5513",
+                    "state": "closed",
+                    "created_at": "2026-09-18T14:41:34Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4979 fix(lang): a Date property casts a predicate constant to noon, so scan and index agree",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5512",
+                    "state": "open",
+                    "created_at": "2026-09-18T14:26:46Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4967 feat(dao): eventRecords and emailMessages on day partitions",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5511",
+                    "state": "open",
+                    "created_at": "2026-09-18T14:17:07Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4977 fix(index): DESC on the index property under a predicate walks backwards instead of sorting every match",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5510",
+                    "state": "open",
+                    "created_at": "2026-09-18T13:43:08Z",
+                    "merged_at": null
+                },
+                {
                     "title": "PT-FIXES:DOS-4975 Date with a javaGetter keeps the base get__ for index reads",
                     "link": "https://github.com/foam-foundation/foam3/pull/5509",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T22:12:44Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:14:38Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4974 Build the DateParser grammar once",
                     "link": "https://github.com/foam-foundation/foam3/pull/5508",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T21:57:20Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:22:32Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4972 Replay progress log carries the percentage read and the time left",
                     "link": "https://github.com/foam-foundation/foam3/pull/5507",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T21:23:53Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:04:15Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4966 fix(dao): client planner drops the order for an order-independent sink too",
@@ -1248,9 +1304,9 @@
                 {
                     "title": "PT-FIXES:DOS-4967 fix(dao): remove waitReplay:false, journal replay is always synchronous",
                     "link": "https://github.com/foam-foundation/foam3/pull/5505",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T20:29:21Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:22:55Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4966 fix(dao): Sink.isOrderIndependent lets a Pivot select skip the sort",
@@ -1262,9 +1318,9 @@
                 {
                     "title": "PT-FIXES:DOS-4965 Report UNLOADED and READY when an unloadable dao unloads and reloads",
                     "link": "https://github.com/foam-foundation/foam3/pull/5503",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T18:32:59Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T12:47:46Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4961 fix(index): DESC on an indexed property ignored when the select has no skip or limit",
@@ -1276,9 +1332,9 @@
                 {
                     "title": "fix(dao): keep adding indexes after one is refused",
                     "link": "https://github.com/foam-foundation/foam3/pull/5501",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-17T14:50:50Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:07:56Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4957 fix(reflow): FlowNameParser projects Flow.CATEGORY alongside NAME",
@@ -1311,23 +1367,23 @@
                 {
                     "title": "docs(skills): foam-test-builder",
                     "link": "https://github.com/foam-foundation/foam3/pull/5491",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T22:43:57Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:24:21Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4563 Point the Reflow download's XML at the table driver",
                     "link": "https://github.com/foam-foundation/foam3/pull/5490",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T22:43:01Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:24:54Z"
                 },
                 {
                     "title": "docs(skills): foam-benchmark-builder",
                     "link": "https://github.com/foam-foundation/foam3/pull/5489",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-16T20:03:40Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-18T13:16:57Z"
                 },
                 {
                     "title": "Revert \"Generate a Dockerfile with every new project\" (#5466)",
@@ -5455,7 +5511,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 178996,
+            "repo_stars": 179003,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5567,7 +5623,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 59,
+            "repo_stars": 64,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5952,7 +6008,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1815,
+            "repo_stars": 1816,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6316,7 +6372,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 845,
+            "repo_stars": 846,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -6358,7 +6414,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5310,
+            "repo_stars": 5311,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6519,7 +6575,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3285,
+            "repo_stars": 3290,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6820,7 +6876,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17708,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
