@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-19T07:43:25+00:00",
+    "generated_at": "2026-09-20T08:11:30+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-19T06:41:03Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,37 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-19T04:31:51Z",
+            "updated_at": "2026-09-20T05:55:13Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-20T05:18:23Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "iptv_player",
+            "full_name": "abdelaziz-mahdy/iptv_player",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/iptv_player",
+            "description": "IPTV player for Android (phone + TV) and desktop \u2014 Xtream Codes, M3U/M3U8, XMLTV EPG, libmpv (fvp) playback. Flutter.",
+            "stars": 0,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-20T01:55:08Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,10 +61,40 @@
             "forks": 0,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-19T01:30:36Z",
+            "updated_at": "2026-09-20T01:54:02Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "executorch_flutter",
+            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
+            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
+            "stars": 28,
+            "forks": 3,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-19T15:23:15Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-19T07:43:46Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "executorch_native",
@@ -65,21 +110,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-18T07:51:54Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "foam3-template",
@@ -122,21 +152,6 @@
             "language": "Swift",
             "topics": [],
             "updated_at": "2026-09-12T13:51:14Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "iptv_player",
-            "full_name": "abdelaziz-mahdy/iptv_player",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/iptv_player",
-            "description": "IPTV player for Android (phone + TV) and desktop \u2014 Xtream Codes, M3U/M3U8, XMLTV EPG, libmpv (fvp) playback. Flutter.",
-            "stars": 0,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-07T18:51:29Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -252,21 +267,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/scrapheap-ascent/"
-        },
-        {
-            "name": "executorch_flutter",
-            "full_name": "abdelaziz-mahdy/executorch_flutter",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
-            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 28,
-            "forks": 3,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-14T22:31:59Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
         },
         {
             "name": "quotes",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1816,
-            "forks": 471,
+            "stars": 1817,
+            "forks": 472,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-18T08:29:55Z",
+            "updated_at": "2026-09-19T11:44:35Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1212,6 +1212,97 @@
         }
     ],
     "pull_requests": {
+        "pytorch/executorch": {
+            "repo_stars": 5040,
+            "repo_link": "https://github.com/pytorch/executorch",
+            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
+            "prs": [
+                {
+                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
+                    "link": "https://github.com/pytorch/executorch/pull/22957",
+                    "state": "open",
+                    "created_at": "2026-09-20T02:04:08Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
+                    "link": "https://github.com/pytorch/executorch/pull/22954",
+                    "state": "open",
+                    "created_at": "2026-09-20T01:23:30Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: honor channels-last strides in conv2d",
+                    "link": "https://github.com/pytorch/executorch/pull/22952",
+                    "state": "open",
+                    "created_at": "2026-09-20T01:23:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
+                    "link": "https://github.com/pytorch/executorch/pull/19924",
+                    "state": "merged",
+                    "created_at": "2026-06-01T23:23:41Z",
+                    "merged_at": "2026-08-27T00:56:32Z"
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18699",
+                    "state": "closed",
+                    "created_at": "2026-04-04T03:45:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18697",
+                    "state": "closed",
+                    "created_at": "2026-04-04T02:40:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
+                    "link": "https://github.com/pytorch/executorch/pull/17468",
+                    "state": "closed",
+                    "created_at": "2026-02-15T03:26:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
+                    "link": "https://github.com/pytorch/executorch/pull/17467",
+                    "state": "closed",
+                    "created_at": "2026-02-14T23:02:07Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
+                    "link": "https://github.com/pytorch/executorch/pull/17361",
+                    "state": "open",
+                    "created_at": "2026-02-11T00:06:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Initial PowerVR GPU support for Vulkan backend",
+                    "link": "https://github.com/pytorch/executorch/pull/17323",
+                    "state": "closed",
+                    "created_at": "2026-02-10T03:33:24Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Fix Vulkan texture tensor UBO budget overflow",
+                    "link": "https://github.com/pytorch/executorch/pull/17294",
+                    "state": "merged",
+                    "created_at": "2026-02-08T00:04:58Z",
+                    "merged_at": "2026-02-09T21:06:04Z"
+                },
+                {
+                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
+                    "link": "https://github.com/pytorch/executorch/pull/16242",
+                    "state": "closed",
+                    "created_at": "2025-12-14T23:59:29Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "foam-foundation/foam3": {
             "repo_stars": 49,
             "repo_link": "https://github.com/foam-foundation/foam3",
@@ -5511,7 +5602,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179003,
+            "repo_stars": 179015,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5623,7 +5714,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 64,
+            "repo_stars": 67,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5709,76 +5800,6 @@
                     "link": "https://github.com/wang-bin/fvp/pull/12",
                     "state": "closed",
                     "created_at": "2023-08-21T16:22:02Z",
-                    "merged_at": null
-                }
-            ]
-        },
-        "pytorch/executorch": {
-            "repo_stars": 5036,
-            "repo_link": "https://github.com/pytorch/executorch",
-            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
-            "prs": [
-                {
-                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
-                    "link": "https://github.com/pytorch/executorch/pull/19924",
-                    "state": "merged",
-                    "created_at": "2026-06-01T23:23:41Z",
-                    "merged_at": "2026-08-27T00:56:32Z"
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18699",
-                    "state": "closed",
-                    "created_at": "2026-04-04T03:45:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18697",
-                    "state": "closed",
-                    "created_at": "2026-04-04T02:40:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
-                    "link": "https://github.com/pytorch/executorch/pull/17468",
-                    "state": "closed",
-                    "created_at": "2026-02-15T03:26:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
-                    "link": "https://github.com/pytorch/executorch/pull/17467",
-                    "state": "closed",
-                    "created_at": "2026-02-14T23:02:07Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
-                    "link": "https://github.com/pytorch/executorch/pull/17361",
-                    "state": "open",
-                    "created_at": "2026-02-11T00:06:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Initial PowerVR GPU support for Vulkan backend",
-                    "link": "https://github.com/pytorch/executorch/pull/17323",
-                    "state": "closed",
-                    "created_at": "2026-02-10T03:33:24Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Fix Vulkan texture tensor UBO budget overflow",
-                    "link": "https://github.com/pytorch/executorch/pull/17294",
-                    "state": "merged",
-                    "created_at": "2026-02-08T00:04:58Z",
-                    "merged_at": "2026-02-09T21:06:04Z"
-                },
-                {
-                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
-                    "link": "https://github.com/pytorch/executorch/pull/16242",
-                    "state": "closed",
-                    "created_at": "2025-12-14T23:59:29Z",
                     "merged_at": null
                 }
             ]
@@ -6008,7 +6029,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1816,
+            "repo_stars": 1817,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6414,7 +6435,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5311,
+            "repo_stars": 5310,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6617,7 +6638,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 346,
+            "repo_stars": 345,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [

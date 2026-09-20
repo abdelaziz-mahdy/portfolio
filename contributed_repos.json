@@ -1,24 +1,32 @@
 {
     "owned": [
         {
+            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+        },
+        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
-            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+            "name": "abdelaziz-mahdy/iptv_player",
+            "link": "https://github.com/abdelaziz-mahdy/iptv_player"
         },
         {
             "name": "abdelaziz-mahdy/executorch_flutter_models",
             "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models"
         },
         {
-            "name": "abdelaziz-mahdy/executorch_native",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_native"
+            "name": "abdelaziz-mahdy/executorch_flutter",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
+            "name": "abdelaziz-mahdy/executorch_native",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_native"
         },
         {
             "name": "abdelaziz-mahdy/foam3-template",
@@ -31,10 +39,6 @@
         {
             "name": "abdelaziz-mahdy/flutter-macos-backbuffer-repro",
             "link": "https://github.com/abdelaziz-mahdy/flutter-macos-backbuffer-repro"
-        },
-        {
-            "name": "abdelaziz-mahdy/iptv_player",
-            "link": "https://github.com/abdelaziz-mahdy/iptv_player"
         },
         {
             "name": "abdelaziz-mahdy/flutter_android_tv_text_field",
@@ -63,10 +67,6 @@
         {
             "name": "abdelaziz-mahdy/scrapheap-ascent",
             "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent"
-        },
-        {
-            "name": "abdelaziz-mahdy/executorch_flutter",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter"
         },
         {
             "name": "abdelaziz-mahdy/quotes",
@@ -315,6 +315,10 @@
     ],
     "external": [
         {
+            "name": "pytorch/executorch",
+            "link": "https://github.com/pytorch/executorch"
+        },
+        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
         },
@@ -333,10 +337,6 @@
         {
             "name": "wang-bin/fvp",
             "link": "https://github.com/wang-bin/fvp"
-        },
-        {
-            "name": "pytorch/executorch",
-            "link": "https://github.com/pytorch/executorch"
         },
         {
             "name": "dsc-uob/subtitle",
