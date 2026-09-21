@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-20T08:11:30+00:00",
+    "generated_at": "2026-09-21T08:28:10+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-20T05:55:13Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,10 +16,55 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-20T05:18:23Z",
+            "updated_at": "2026-09-21T05:21:15Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-21T04:45:46Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 197,
+            "forks": 84,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-20T10:00:50Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-20T08:11:47Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "iptv_player",
@@ -82,21 +112,6 @@
             "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
         },
         {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-19T07:43:46Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
-        },
-        {
             "name": "executorch_native",
             "full_name": "abdelaziz-mahdy/executorch_native",
             "owner": "abdelaziz-mahdy",
@@ -125,21 +140,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 198,
-            "forks": 84,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-14T06:46:19Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "flutter-macos-backbuffer-repro",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1817,
-            "forks": 472,
+            "stars": 1818,
+            "forks": 474,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-19T11:44:35Z",
+            "updated_at": "2026-09-20T17:14:09Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1213,7 +1213,7 @@
     ],
     "pull_requests": {
         "pytorch/executorch": {
-            "repo_stars": 5040,
+            "repo_stars": 5042,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -1304,7 +1304,7 @@
             ]
         },
         "foam-foundation/foam3": {
-            "repo_stars": 49,
+            "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
@@ -5602,7 +5602,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179015,
+            "repo_stars": 179030,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5714,7 +5714,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 67,
+            "repo_stars": 68,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6029,7 +6029,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1817,
+            "repo_stars": 1818,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6596,7 +6596,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3290,
+            "repo_stars": 3292,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6757,7 +6757,7 @@
             ]
         },
         "ThexXTURBOXx/flutter_web_auth_2": {
-            "repo_stars": 80,
+            "repo_stars": 81,
             "repo_link": "https://github.com/ThexXTURBOXx/flutter_web_auth_2",
             "repo_description": "Flutter plugin for authenticating a user with a web service",
             "prs": [
@@ -6771,7 +6771,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12836,
+            "repo_stars": 12837,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
