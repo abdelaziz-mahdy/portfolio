@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-21T08:28:10+00:00",
+    "generated_at": "2026-09-22T08:09:14+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-21T05:21:15Z",
+            "updated_at": "2026-09-22T05:02:56Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,10 +31,25 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-21T04:45:46Z",
+            "updated_at": "2026-09-22T04:22:03Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-21T08:28:33Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-20T08:11:47Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "iptv_player",
@@ -1150,7 +1150,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1818,
+            "stars": 1819,
             "forks": 474,
             "language": "Dart",
             "topics": [
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-20T17:14:09Z",
+            "updated_at": "2026-09-22T07:56:49Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 79,
+            "forks": 80,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1212,108 +1212,45 @@
         }
     ],
     "pull_requests": {
-        "pytorch/executorch": {
-            "repo_stars": 5042,
-            "repo_link": "https://github.com/pytorch/executorch",
-            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
-            "prs": [
-                {
-                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
-                    "link": "https://github.com/pytorch/executorch/pull/22957",
-                    "state": "open",
-                    "created_at": "2026-09-20T02:04:08Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
-                    "link": "https://github.com/pytorch/executorch/pull/22954",
-                    "state": "open",
-                    "created_at": "2026-09-20T01:23:30Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: honor channels-last strides in conv2d",
-                    "link": "https://github.com/pytorch/executorch/pull/22952",
-                    "state": "open",
-                    "created_at": "2026-09-20T01:23:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
-                    "link": "https://github.com/pytorch/executorch/pull/19924",
-                    "state": "merged",
-                    "created_at": "2026-06-01T23:23:41Z",
-                    "merged_at": "2026-08-27T00:56:32Z"
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18699",
-                    "state": "closed",
-                    "created_at": "2026-04-04T03:45:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18697",
-                    "state": "closed",
-                    "created_at": "2026-04-04T02:40:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
-                    "link": "https://github.com/pytorch/executorch/pull/17468",
-                    "state": "closed",
-                    "created_at": "2026-02-15T03:26:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
-                    "link": "https://github.com/pytorch/executorch/pull/17467",
-                    "state": "closed",
-                    "created_at": "2026-02-14T23:02:07Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
-                    "link": "https://github.com/pytorch/executorch/pull/17361",
-                    "state": "open",
-                    "created_at": "2026-02-11T00:06:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Initial PowerVR GPU support for Vulkan backend",
-                    "link": "https://github.com/pytorch/executorch/pull/17323",
-                    "state": "closed",
-                    "created_at": "2026-02-10T03:33:24Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Fix Vulkan texture tensor UBO budget overflow",
-                    "link": "https://github.com/pytorch/executorch/pull/17294",
-                    "state": "merged",
-                    "created_at": "2026-02-08T00:04:58Z",
-                    "merged_at": "2026-02-09T21:06:04Z"
-                },
-                {
-                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
-                    "link": "https://github.com/pytorch/executorch/pull/16242",
-                    "state": "closed",
-                    "created_at": "2025-12-14T23:59:29Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "fix(build): resolve the JDK instead of trusting PATH",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5559",
+                    "state": "closed",
+                    "created_at": "2026-09-22T00:13:47Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5015 Swap stored raw copies for their canonical once a replay completes",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5554",
+                    "state": "closed",
+                    "created_at": "2026-09-21T20:06:40Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5015 Intern parsed strings on second sight through the JVM string table",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5553",
+                    "state": "open",
+                    "created_at": "2026-09-21T19:44:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5015 Intern parsed strings through String.intern with a per-replay cache",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5552",
+                    "state": "closed",
+                    "created_at": "2026-09-21T19:09:24Z",
+                    "merged_at": null
+                },
+                {
                     "title": "PT-FIXES:DOS-4986 mergeFObject returns the merged row instead of copying it back into the delta",
                     "link": "https://github.com/foam-foundation/foam3/pull/5519",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-18T23:42:03Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T16:48:15Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4985 Apply replay entries on every parse thread, sharded by id",
@@ -1325,9 +1262,9 @@
                 {
                     "title": "PT-FIXES:DOS-4974 Build the DateParser grammar in a static initializer",
                     "link": "https://github.com/foam-foundation/foam3/pull/5515",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-18T17:49:55Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T18:26:13Z"
                 },
                 {
                     "title": "Backport the Date index, DateParser and flow-list fixes to 3.28",
@@ -1346,16 +1283,16 @@
                 {
                     "title": "PT-FIXES:DOS-4979 fix(lang): a Date property casts a predicate constant to noon, so scan and index agree",
                     "link": "https://github.com/foam-foundation/foam3/pull/5512",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-18T14:26:46Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T19:59:38Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4967 feat(dao): eventRecords and emailMessages on day partitions",
                     "link": "https://github.com/foam-foundation/foam3/pull/5511",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-18T14:17:07Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T16:45:05Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4977 fix(index): DESC on the index property under a predicate walks backwards instead of sorting every match",
@@ -1591,9 +1528,9 @@
                 {
                     "title": "Add a setup guide for the FOAM LSP and its MCP server",
                     "link": "https://github.com/foam-foundation/foam3/pull/5464",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-15T22:04:00Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T17:58:04Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4920 PartitionIndexDAO: route a query by a property the partitions are not keyed on",
@@ -1668,9 +1605,9 @@
                 {
                     "title": "ViewReloader: pick up a .js edit without reloading the page (#5403)",
                     "link": "https://github.com/foam-foundation/foam3/pull/5436",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-09T16:30:20Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T19:59:20Z"
                 },
                 {
                     "title": "Lowercase the section permission string",
@@ -1892,9 +1829,9 @@
                 {
                     "title": "Move view-builder patterns into an on-demand reference file",
                     "link": "https://github.com/foam-foundation/foam3/pull/5348",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-08-27T13:21:14Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-21T22:59:41Z"
                 },
                 {
                     "title": "Add foam-model-builder skill; document nested skill discovery",
@@ -5601,8 +5538,113 @@
                 }
             ]
         },
+        "pytorch/executorch": {
+            "repo_stars": 5044,
+            "repo_link": "https://github.com/pytorch/executorch",
+            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
+            "prs": [
+                {
+                    "title": "Metal backend: keep non-packed views in their parent's buffer",
+                    "link": "https://github.com/pytorch/executorch/pull/22984",
+                    "state": "open",
+                    "created_at": "2026-09-22T00:03:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: restore the thread qualifiers in the 4-bit matmul shader",
+                    "link": "https://github.com/pytorch/executorch/pull/22982",
+                    "state": "open",
+                    "created_at": "2026-09-22T00:02:44Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
+                    "link": "https://github.com/pytorch/executorch/pull/22957",
+                    "state": "open",
+                    "created_at": "2026-09-20T02:04:08Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
+                    "link": "https://github.com/pytorch/executorch/pull/22954",
+                    "state": "merged",
+                    "created_at": "2026-09-20T01:23:30Z",
+                    "merged_at": "2026-09-21T15:26:29Z"
+                },
+                {
+                    "title": "Metal backend: honor channels-last strides in conv2d",
+                    "link": "https://github.com/pytorch/executorch/pull/22952",
+                    "state": "open",
+                    "created_at": "2026-09-20T01:23:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
+                    "link": "https://github.com/pytorch/executorch/pull/19924",
+                    "state": "merged",
+                    "created_at": "2026-06-01T23:23:41Z",
+                    "merged_at": "2026-08-27T00:56:32Z"
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18699",
+                    "state": "closed",
+                    "created_at": "2026-04-04T03:45:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18697",
+                    "state": "closed",
+                    "created_at": "2026-04-04T02:40:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
+                    "link": "https://github.com/pytorch/executorch/pull/17468",
+                    "state": "closed",
+                    "created_at": "2026-02-15T03:26:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
+                    "link": "https://github.com/pytorch/executorch/pull/17467",
+                    "state": "closed",
+                    "created_at": "2026-02-14T23:02:07Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
+                    "link": "https://github.com/pytorch/executorch/pull/17361",
+                    "state": "open",
+                    "created_at": "2026-02-11T00:06:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Initial PowerVR GPU support for Vulkan backend",
+                    "link": "https://github.com/pytorch/executorch/pull/17323",
+                    "state": "closed",
+                    "created_at": "2026-02-10T03:33:24Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Fix Vulkan texture tensor UBO budget overflow",
+                    "link": "https://github.com/pytorch/executorch/pull/17294",
+                    "state": "merged",
+                    "created_at": "2026-02-08T00:04:58Z",
+                    "merged_at": "2026-02-09T21:06:04Z"
+                },
+                {
+                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
+                    "link": "https://github.com/pytorch/executorch/pull/16242",
+                    "state": "closed",
+                    "created_at": "2025-12-14T23:59:29Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "flutter/flutter": {
-            "repo_stars": 179030,
+            "repo_stars": 179039,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5714,7 +5756,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 68,
+            "repo_stars": 69,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6029,7 +6071,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1818,
+            "repo_stars": 1819,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6477,7 +6519,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1566,
+            "repo_stars": 1567,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6596,7 +6638,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3292,
+            "repo_stars": 3291,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6771,7 +6813,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12837,
+            "repo_stars": 12839,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6883,7 +6925,7 @@
             ]
         },
         "alexmercerind/dart_vlc": {
-            "repo_stars": 527,
+            "repo_stars": 526,
             "repo_link": "https://github.com/alexmercerind/dart_vlc",
             "repo_description": "Flutter bindings to libVLC.",
             "prs": [
@@ -6932,7 +6974,7 @@
             ]
         },
         "arcticfox1919/vlc-flutter": {
-            "repo_stars": 23,
+            "repo_stars": 22,
             "repo_link": "https://github.com/arcticfox1919/vlc-flutter",
             "repo_description": "Flutter plugin for vlc player",
             "prs": [
