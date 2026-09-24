@@ -279,8 +279,8 @@ class _Stat extends StatelessWidget {
                   if (onTap != null) ...[
                     const SizedBox(width: 4),
                     Icon(
-                      Icons.arrow_downward,
-                      size: 14,
+                      Icons.chevron_right,
+                      size: 16,
                       color: theme.colorScheme.onSurfaceVariant,
                     ),
                   ],
