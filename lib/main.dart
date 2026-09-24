@@ -60,7 +60,9 @@ class MyApp extends StatelessWidget {
     return ListenableBuilder(
       listenable: themeController,
       builder: (context, _) => MaterialApp(
-        title: '${Constants.fallbackName} — Software Developer',
+        // Matches the <title> in web/index.html, so the tab does not change
+        // name once the app boots.
+        title: '${Constants.fallbackName} — Flutter & Full-Stack Developer',
         theme: PortfolioTheme.light(),
         darkTheme: PortfolioTheme.dark(),
         themeMode: themeController.mode,
@@ -70,12 +72,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Sections the nav can jump to.
+/// Sections the nav can jump to, in page order.
+///
+/// The GitHub evidence comes straight after the hero: it is what sets this
+/// portfolio apart from a CV, and it used to sit below seven CV cards.
 enum _Section {
   profile('Profile'),
-  background('Background'),
   contributions('Contributions'),
-  projects('Projects');
+  projects('Projects'),
+  background('Background');
 
   final String label;
   const _Section(this.label);
@@ -178,11 +183,7 @@ class _HomeState extends State<Home> {
 
               return Scaffold(
                 appBar: AppBar(
-                  title: Text(
-                    metrics.isCompact
-                        ? 'Portfolio'
-                        : (profile?.name ?? Constants.fallbackName),
-                  ),
+                  title: Text(profile?.name ?? Constants.fallbackName),
                   actions: [
                     if (metrics.isCompact)
                       // The same jumps as the wide layout, folded into a menu
@@ -205,7 +206,10 @@ class _HomeState extends State<Home> {
                           child: Text(section.label),
                         ),
                     const SizedBox(width: 8),
-                    if (profile != null) _ContactActions(profile: profile),
+                    // On a phone these crowd out the name, and the hero right
+                    // below carries the same links as labelled buttons.
+                    if (profile != null && !metrics.isCompact)
+                      _ContactActions(profile: profile),
                     ThemeModeButton(controller: getIt<ThemeController>()),
                     const SizedBox(width: 8),
                   ],
@@ -230,6 +234,7 @@ class _HomeState extends State<Home> {
                       githubData: controller.githubData!,
                       scrollController: _scrollController,
                       sectionKeys: _sectionKeys,
+                      onJump: _jumpTo,
                     ),
                 },
               );
@@ -258,7 +263,8 @@ class _ContactActions extends StatelessWidget {
             tooltip: 'Email',
             icon: FaIcon(FontAwesomeIcons.envelope,
                 color: isDark ? Colors.white : const Color(0xFFC5221F)),
-            onPressed: () => openExternalUrl(context, 'mailto:${profile.email}'),
+            onPressed: () =>
+                openExternalUrl(context, 'mailto:${profile.email}'),
           ),
         if (profile.linkedInUrl != null)
           IconButton(
@@ -284,12 +290,14 @@ class _PortfolioBody extends StatelessWidget {
   final PortfolioData githubData;
   final ScrollController scrollController;
   final Map<_Section, GlobalKey> sectionKeys;
+  final ValueChanged<_Section> onJump;
 
   const _PortfolioBody({
     required this.profile,
     required this.githubData,
     required this.scrollController,
     required this.sectionKeys,
+    required this.onJump,
   });
 
   @override
@@ -298,31 +306,40 @@ class _PortfolioBody extends StatelessWidget {
       builder: (context, constraints) {
         final metrics = LayoutMetrics.of(constraints.maxWidth);
 
-        // Cards size to their content. Stretching them to a shared height only
-        // moves the imbalance inside the border, where empty space reads as a
-        // bug rather than as the content simply ending. Ordering long cards
-        // together and short ones together is what evens the rows out.
-        final background = <Widget>[
+        // Two independent columns rather than rows of pairs. Cards size to
+        // their content, and in rows every short card left a hole beside a
+        // tall one (Awards next to Certificates, Courses next to nothing).
+        // Stacking each column on its own lets them run to similar heights.
+        // On one column they interleave, so Skills still follows Experience
+        // instead of trailing every other card on a phone.
+        final leftColumn = <Widget>[
           if (profile.experience.isNotEmpty)
             ExperienceCard(experiences: profile.experience),
-          if (profile.skills.isNotEmpty) SkillsCard(skills: profile.skills),
-          if (profile.education.isNotEmpty)
-            EducationCard(educations: profile.education),
           if (profile.publications.isNotEmpty)
             PublicationsCard(publications: profile.publications),
           if (profile.awards.isNotEmpty) AwardsCard(awards: profile.awards),
+        ];
+        final rightColumn = <Widget>[
+          if (profile.skills.isNotEmpty) SkillsCard(skills: profile.skills),
+          if (profile.education.isNotEmpty)
+            EducationCard(educations: profile.education),
           if (profile.certificates.isNotEmpty)
             CertificatesCard(certificates: profile.certificates),
           if (profile.courses.isNotEmpty) CourseCard(courses: profile.courses),
         ];
+        final columns = metrics.columnsFor(minCardWidth: 420, max: 2);
 
         return Scrollbar(
           controller: scrollController,
           child: SingleChildScrollView(
             controller: scrollController,
-            padding: EdgeInsets.symmetric(
-              horizontal: metrics.pageGutter,
-              vertical: 32,
+            // The extra bottom inset keeps the back-to-top button off the
+            // footer once the page is scrolled to the end.
+            padding: EdgeInsets.fromLTRB(
+              metrics.pageGutter,
+              32,
+              metrics.pageGutter,
+              88,
             ),
             child: Center(
               child: ConstrainedBox(
@@ -336,15 +353,9 @@ class _PortfolioBody extends StatelessWidget {
                       child: ProfileSection(
                         profile: profile,
                         githubData: githubData,
-                      ),
-                    ),
-                    SizedBox(height: metrics.sectionGap),
-                    KeyedSubtree(
-                      key: sectionKeys[_Section.background],
-                      child: CardGrid(
-                        columns: metrics.columnsFor(minCardWidth: 420, max: 2),
-                        equalHeights: false,
-                        children: background,
+                        onShowContributions: () =>
+                            onJump(_Section.contributions),
+                        onShowProjects: () => onJump(_Section.projects),
                       ),
                     ),
                     SizedBox(height: metrics.sectionGap),
@@ -360,6 +371,42 @@ class _PortfolioBody extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: metrics.sectionGap),
+                    KeyedSubtree(
+                      key: sectionKeys[_Section.background],
+                      child: columns < 2
+                          ? CardGrid(
+                              columns: 1,
+                              children: [
+                                for (var i = 0;
+                                    i < leftColumn.length ||
+                                        i < rightColumn.length;
+                                    i++) ...[
+                                  if (i < leftColumn.length) leftColumn[i],
+                                  if (i < rightColumn.length) rightColumn[i],
+                                ],
+                              ],
+                            )
+                          : Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  child: CardGrid(
+                                    columns: 1,
+                                    children: leftColumn,
+                                  ),
+                                ),
+                                const SizedBox(width: 16),
+                                Expanded(
+                                  child: CardGrid(
+                                    columns: 1,
+                                    children: rightColumn,
+                                  ),
+                                ),
+                              ],
+                            ),
+                    ),
+                    SizedBox(height: metrics.sectionGap),
+                    _Footer(generatedAt: githubData.generatedAt),
                   ],
                 ),
               ),
@@ -367,6 +414,38 @@ class _PortfolioBody extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// Says where the numbers come from and how fresh they are, so a visitor
+/// can trust a stat like "601 merged" without wondering if it is hand-typed.
+class _Footer extends StatelessWidget {
+  final DateTime? generatedAt;
+
+  const _Footer({required this.generatedAt});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final date = generatedAt == null
+        ? null
+        : MaterialLocalizations.of(context)
+            .formatFullDate(generatedAt!.toLocal());
+
+    return Column(
+      children: [
+        const Divider(),
+        const SizedBox(height: 16),
+        Text(
+          'Open-source and project figures are pulled from GitHub daily'
+          '${date == null ? '.' : ' · last updated $date.'}',
+          textAlign: TextAlign.center,
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ],
     );
   }
 }

@@ -123,7 +123,8 @@ class PortfolioRepository {
       fullName: json['full_name'] as String? ?? json['name'] as String,
       owner: json['owner'] as String? ?? '',
       link: json['link'] as String,
-      description: json['description'] as String?,
+      description:
+          _cleanDescription(json['description'] as String?, capitalize: true),
       stars: json['stars'] as int? ?? 0,
       forks: json['forks'] as int? ?? 0,
       language: json['language'] as String?,
@@ -171,7 +172,7 @@ class ContributedRepository {
       fullName: fullName,
       repoStars: json['repo_stars'] as int? ?? 0,
       repoLink: json['repo_link'] as String? ?? 'https://github.com/$fullName',
-      repoDescription: json['repo_description'] as String?,
+      repoDescription: _cleanDescription(json['repo_description'] as String?),
       pullRequests: pullRequests,
     );
   }
@@ -213,4 +214,14 @@ class PortfolioPullRequest {
       mergedAt: DateTime.tryParse(json['merged_at'] as String? ?? ''),
     );
   }
+}
+
+/// GitHub descriptions arrive as typed: with stray leading spaces, or empty
+/// instead of absent. [capitalize] is only for the author's own repositories;
+/// other projects' descriptions are theirs to style.
+String? _cleanDescription(String? raw, {bool capitalize = false}) {
+  final text = raw?.trim() ?? '';
+  if (text.isEmpty) return null;
+  if (!capitalize) return text;
+  return text[0].toUpperCase() + text.substring(1);
 }

@@ -106,5 +106,36 @@ void main() {
       expect(data.repositories.single.fullName, 'legacy');
       expect(data.repositories.single.hasDemo, isFalse);
     });
+
+    test('tidies descriptions as typed on GitHub', () {
+      final data = PortfolioData.fromJson({
+        'username': 'octocat',
+        'image_url': '',
+        'repos': [
+          {
+            'name': 'padded',
+            'link': 'https://github.com/octocat/padded',
+            'description': '  a simple server ',
+          },
+          {
+            'name': 'blank',
+            'link': 'https://github.com/octocat/blank',
+            'description': '   ',
+          },
+        ],
+        'pull_requests': {
+          'other/project': {
+            'repo_description': ' lowercase by choice ',
+            'prs': <Map<String, dynamic>>[],
+          },
+        },
+      });
+
+      final byName = {for (final r in data.repositories) r.name: r};
+      expect(byName['padded']!.description, 'A simple server');
+      expect(byName['blank']!.description, isNull);
+      // Another project's description keeps its own casing.
+      expect(data.contributions.single.repoDescription, 'lowercase by choice');
+    });
   });
 }

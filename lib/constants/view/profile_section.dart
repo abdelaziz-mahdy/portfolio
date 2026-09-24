@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/github/models/portfolio_data.dart';
 import 'package:portfolio/github/utils.dart';
 import 'package:portfolio/github/view/widgets/card_grid.dart';
@@ -16,10 +17,17 @@ class ProfileSection extends StatelessWidget {
   final Profile profile;
   final PortfolioData githubData;
 
+  /// Where the stat tiles lead. Each number is a claim; tapping it jumps to
+  /// the section that backs it up.
+  final VoidCallback? onShowContributions;
+  final VoidCallback? onShowProjects;
+
   const ProfileSection({
     super.key,
     required this.profile,
     required this.githubData,
+    this.onShowContributions,
+    this.onShowProjects,
   });
 
   @override
@@ -45,7 +53,12 @@ class ProfileSection extends StatelessWidget {
               const SizedBox(width: 32),
               SizedBox(
                 width: 400,
-                child: _StatGrid(data: githubData, columns: 2),
+                child: _StatGrid(
+                  data: githubData,
+                  columns: 2,
+                  onShowContributions: onShowContributions,
+                  onShowProjects: onShowProjects,
+                ),
               ),
             ],
           );
@@ -73,7 +86,12 @@ class ProfileSection extends StatelessWidget {
                 ],
               ),
             const SizedBox(height: 28),
-            _StatGrid(data: githubData, columns: metrics.isCompact ? 2 : 4),
+            _StatGrid(
+              data: githubData,
+              columns: metrics.isCompact ? 2 : 4,
+              onShowContributions: onShowContributions,
+              onShowProjects: onShowProjects,
+            ),
           ],
         );
       },
@@ -141,6 +159,8 @@ class _Identity extends StatelessWidget {
               child: LinkedText(line, style: theme.textTheme.bodyMedium),
             ),
           ),
+          const SizedBox(height: 16),
+          _ContactButtons(profile: profile),
         ],
       ),
     );
@@ -172,7 +192,9 @@ class _Avatar extends StatelessWidget {
         // the avatar arrives.
         frameBuilder: (context, child, frame, wasSynchronouslyLoaded) {
           if (wasSynchronouslyLoaded || frame != null) return child;
-          return SizedBox(width: radius * 2, height: radius * 2);
+          // Same size as the photo, so nothing reflows when it arrives, but
+          // visibly a portrait rather than a hole beside the name.
+          return placeholder;
         },
         errorBuilder: (context, error, stackTrace) => placeholder,
       ),
@@ -184,8 +206,15 @@ class _Avatar extends StatelessWidget {
 class _StatGrid extends StatelessWidget {
   final PortfolioData data;
   final int columns;
+  final VoidCallback? onShowContributions;
+  final VoidCallback? onShowProjects;
 
-  const _StatGrid({required this.data, required this.columns});
+  const _StatGrid({
+    required this.data,
+    required this.columns,
+    this.onShowContributions,
+    this.onShowProjects,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -195,10 +224,14 @@ class _StatGrid extends StatelessWidget {
       columns: columns,
       spacing: 12,
       children: [
-        _Stat(formatCount(merged), 'Pull requests merged'),
-        _Stat('${data.contributions.length}', 'Repos contributed to'),
-        _Stat('${data.repositories.length}', 'Public projects'),
-        _Stat(formatCount(data.totalStars), 'Stars earned'),
+        _Stat(formatCount(merged), 'Pull requests merged',
+            onTap: onShowContributions),
+        _Stat('${data.contributions.length}', 'Repos contributed to',
+            onTap: onShowContributions),
+        _Stat('${data.repositories.length}', 'Public projects',
+            onTap: onShowProjects),
+        _Stat(formatCount(data.totalStars), 'Stars earned',
+            onTap: onShowProjects),
       ],
     );
   }
@@ -207,37 +240,93 @@ class _StatGrid extends StatelessWidget {
 class _Stat extends StatelessWidget {
   final String value;
   final String label;
+  final VoidCallback? onTap;
 
-  const _Stat(this.value, this.label);
+  const _Stat(this.value, this.label, {this.onTap});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              value,
-              style: theme.textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.w700,
-                fontFeatures: const [FontFeature.tabularFigures()],
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                value,
+                style: theme.textTheme.headlineMedium?.copyWith(
+                  fontWeight: FontWeight.w700,
+                  fontFeatures: const [FontFeature.tabularFigures()],
+                ),
               ),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              label,
-              style: theme.textTheme.labelMedium?.copyWith(
-                color: theme.colorScheme.onSurfaceVariant,
+              const SizedBox(height: 2),
+              Row(
+                children: [
+                  Flexible(
+                    child: Text(
+                      label,
+                      style: theme.textTheme.labelMedium?.copyWith(
+                        color: theme.colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ),
+                  if (onTap != null) ...[
+                    const SizedBox(width: 4),
+                    Icon(
+                      Icons.arrow_downward,
+                      size: 14,
+                      color: theme.colorScheme.onSurfaceVariant,
+                    ),
+                  ],
+                ],
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
+    );
+  }
+}
+
+/// The ways to get in touch, where a visitor who has just read the pitch is
+/// looking. They used to exist only as unlabeled icons in the app bar.
+class _ContactButtons extends StatelessWidget {
+  final Profile profile;
+
+  const _ContactButtons({required this.profile});
+
+  @override
+  Widget build(BuildContext context) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: [
+        if (profile.email != null)
+          FilledButton.icon(
+            onPressed: () =>
+                openExternalUrl(context, 'mailto:${profile.email}'),
+            icon: const FaIcon(FontAwesomeIcons.envelope, size: 16),
+            label: const Text('Email me'),
+          ),
+        if (profile.linkedInUrl != null)
+          OutlinedButton.icon(
+            onPressed: () => openExternalUrl(context, profile.linkedInUrl),
+            icon: const FaIcon(FontAwesomeIcons.linkedinIn, size: 16),
+            label: const Text('LinkedIn'),
+          ),
+        if (profile.githubUrl != null)
+          OutlinedButton.icon(
+            onPressed: () => openExternalUrl(context, profile.githubUrl),
+            icon: const FaIcon(FontAwesomeIcons.github, size: 16),
+            label: const Text('GitHub'),
+          ),
+      ],
     );
   }
 }
