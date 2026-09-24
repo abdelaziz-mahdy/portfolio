@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:meta_seo/meta_seo.dart';
@@ -129,14 +130,24 @@ class _HomeState extends State<Home> {
   }
 
   Future<void> _jumpTo(_Section section) async {
-    final target = _sectionKeys[section]?.currentContext;
-    if (target == null) return;
+    final target = _sectionKeys[section]?.currentContext?.findRenderObject();
+    if (target == null || !_scrollController.hasClients) return;
 
-    await Scrollable.ensureVisible(
-      target,
+    // Not Scrollable.ensureVisible: its alignment is a fraction of
+    // (viewport - target height), which goes negative for a section taller
+    // than the window and tucked the heading under the app bar. Aligning the
+    // section's top edge and then backing off a fixed gap works at any height.
+    const headingGap = 16.0;
+    final position = _scrollController.position;
+    final revealTop =
+        RenderAbstractViewport.of(target).getOffsetToReveal(target, 0).offset;
+    final offset = (revealTop - headingGap)
+        .clamp(position.minScrollExtent, position.maxScrollExtent);
+
+    await _scrollController.animateTo(
+      offset,
       duration: const Duration(milliseconds: 320),
       curve: Curves.easeOutCubic,
-      alignment: 0.05,
     );
   }
 
