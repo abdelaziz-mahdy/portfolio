@@ -1,11 +1,56 @@
 {
-    "generated_at": "2026-09-24T08:02:02+00:00",
+    "generated_at": "2026-09-24T22:47:27+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-24T22:47:21Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-24T22:10:44Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-24T17:00:18Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
         {
             "name": "rewind",
             "full_name": "abdelaziz-mahdy/rewind",
@@ -27,51 +72,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-24T03:59:17Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-24T03:36:03Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-23T08:11:37Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1824,
-            "forks": 474,
+            "forks": 476,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 80,
+            "forks": 81,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1218,6 +1218,69 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-5089 Keep DeDupDAO outside the journal, so a dedup DAO's replay is one bulk load",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5606",
+                    "state": "merged",
+                    "created_at": "2026-09-24T19:47:26Z",
+                    "merged_at": "2026-09-24T19:55:29Z"
+                },
+                {
+                    "title": "Build indexes a service script adds after build() in the replay's bulk load",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5605",
+                    "state": "merged",
+                    "created_at": "2026-09-24T19:31:54Z",
+                    "merged_at": "2026-09-24T19:59:40Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5083 Skip theme variants when the window has no matchMedia (3.28)",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5604",
+                    "state": "open",
+                    "created_at": "2026-09-24T19:04:25Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Build indexes added to a loaded MDAO together, once its service script returns",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5603",
+                    "state": "closed",
+                    "created_at": "2026-09-24T18:35:51Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Build an unloadable DAO's indexes in the replay's bulk load",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5602",
+                    "state": "merged",
+                    "created_at": "2026-09-24T17:42:34Z",
+                    "merged_at": "2026-09-24T19:13:38Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5079 Pass PURGE_CMD through QueryCachingDAO",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5599",
+                    "state": "merged",
+                    "created_at": "2026-09-24T15:27:04Z",
+                    "merged_at": "2026-09-24T15:35:59Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4985 Keep applying a replay batch after one entry throws",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5596",
+                    "state": "merged",
+                    "created_at": "2026-09-24T13:52:17Z",
+                    "merged_at": "2026-09-24T14:26:20Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-4985 Keep applying a replay batch after one entry throws",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5594",
+                    "state": "closed",
+                    "created_at": "2026-09-24T13:29:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4985 Keep applying a replay batch after one entry throws",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5593",
+                    "state": "merged",
+                    "created_at": "2026-09-24T13:29:01Z",
+                    "merged_at": "2026-09-24T13:52:12Z"
+                },
+                {
                     "title": "Reproduce a deleted row coming back after compaction and restart",
                     "link": "https://github.com/foam-foundation/foam3/pull/5580",
                     "state": "closed",
@@ -1227,9 +1290,9 @@
                 {
                     "title": "PT-FIXES:DOS-4985 Apply replay entries on one thread per id shard",
                     "link": "https://github.com/foam-foundation/foam3/pull/5578",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-23T00:51:57Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-24T15:38:55Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5037 Parse 7-digit YYYYDDD Julian dates",
@@ -1339,9 +1402,9 @@
                 {
                     "title": "PT-FIXES:DOS-4977 fix(index): DESC on the index property under a predicate walks backwards instead of sorting every match",
                     "link": "https://github.com/foam-foundation/foam3/pull/5510",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-18T13:43:08Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-24T20:24:35Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4975 Date with a javaGetter keeps the base get__ for index reads",
@@ -2704,9 +2767,9 @@
                 {
                     "title": "PT-FIXES:DOS-4769 feat(reflow): record Flow edit history per flow, loaded on demand",
                     "link": "https://github.com/foam-foundation/foam3/pull/4984",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-04-17T18:47:40Z",
-                    "merged_at": null
+                    "merged_at": "2026-09-24T20:22:18Z"
                 },
                 {
                     "title": "perf: journal replay parser optimizations \u2014 ~2x doubles/strings, exact values preserved",
@@ -5581,7 +5644,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5051,
+            "repo_stars": 5053,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5686,7 +5749,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179063,
+            "repo_stars": 179079,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6477,7 +6540,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 846,
+            "repo_stars": 847,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -6855,7 +6918,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6869,7 +6932,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 845,
+            "repo_stars": 846,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -6981,7 +7044,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17712,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
