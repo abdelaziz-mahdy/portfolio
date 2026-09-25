@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-24T22:57:31+00:00",
+    "generated_at": "2026-09-25T08:26:45+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -7,19 +7,19 @@
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
         {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-24T22:57:25Z",
+            "updated_at": "2026-09-25T07:35:57Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
+            "demo_url": null
         },
         {
             "name": "abdelaziz-mahdy",
@@ -31,25 +31,25 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-24T22:10:44Z",
+            "updated_at": "2026-09-25T07:24:50Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
         },
         {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-24T17:00:18Z",
+            "updated_at": "2026-09-24T22:57:55Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": null
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -1145,6 +1145,28 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "libmpv-darwin-build",
+            "full_name": "media-kit/libmpv-darwin-build",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/libmpv-darwin-build",
+            "description": "libmpv for macOS & iOS.",
+            "stars": 59,
+            "forks": 81,
+            "language": "Nix",
+            "topics": [
+                "build",
+                "libmpv",
+                "macos",
+                "mpv",
+                "ffmpeg",
+                "ios"
+            ],
+            "updated_at": "2026-09-25T05:54:08Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": null
+        },
+        {
             "name": "media-kit",
             "full_name": "media-kit/media-kit",
             "owner": "media-kit",
@@ -1165,28 +1187,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
-        },
-        {
-            "name": "libmpv-darwin-build",
-            "full_name": "media-kit/libmpv-darwin-build",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/libmpv-darwin-build",
-            "description": "libmpv for macOS & iOS.",
-            "stars": 60,
-            "forks": 81,
-            "language": "Nix",
-            "topics": [
-                "build",
-                "libmpv",
-                "macos",
-                "mpv",
-                "ffmpeg",
-                "ios"
-            ],
-            "updated_at": "2026-09-14T16:05:48Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": null
         },
         {
             "name": "media-kit-android-helper",
@@ -5749,7 +5749,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179079,
+            "repo_stars": 179082,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6582,7 +6582,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5310,
+            "repo_stars": 5311,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
