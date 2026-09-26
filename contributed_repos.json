@@ -1,12 +1,12 @@
 {
     "owned": [
         {
-            "name": "abdelaziz-mahdy/anime_mapping",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
-        },
-        {
             "name": "abdelaziz-mahdy/abdelaziz-mahdy",
             "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+        },
+        {
+            "name": "abdelaziz-mahdy/anime_mapping",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
@@ -301,12 +301,12 @@
             "link": "https://github.com/6Niners/Escape69"
         },
         {
-            "name": "media-kit/libmpv-darwin-build",
-            "link": "https://github.com/media-kit/libmpv-darwin-build"
-        },
-        {
             "name": "media-kit/media-kit",
             "link": "https://github.com/media-kit/media-kit"
+        },
+        {
+            "name": "media-kit/libmpv-darwin-build",
+            "link": "https://github.com/media-kit/libmpv-darwin-build"
         },
         {
             "name": "media-kit/media-kit-android-helper",

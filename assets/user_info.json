@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-25T08:26:45+00:00",
+    "generated_at": "2026-09-26T08:13:33+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-09-25T07:35:57Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-25T07:24:50Z",
+            "updated_at": "2026-09-26T07:20:33Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-09-26T05:04:25Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-24T22:57:55Z",
+            "updated_at": "2026-09-25T08:27:08Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1145,13 +1145,35 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "media-kit",
+            "full_name": "media-kit/media-kit",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/media-kit",
+            "description": "A cross-platform video player & audio player for Flutter & Dart.",
+            "stars": 1825,
+            "forks": 478,
+            "language": "Dart",
+            "topics": [
+                "dart",
+                "flutter",
+                "libmpv",
+                "c",
+                "cpp",
+                "media-player"
+            ],
+            "updated_at": "2026-09-25T13:58:40Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": "https://github.com/media-kit/media-kit"
+        },
+        {
             "name": "libmpv-darwin-build",
             "full_name": "media-kit/libmpv-darwin-build",
             "owner": "media-kit",
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 59,
-            "forks": 81,
+            "forks": 82,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1165,28 +1187,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": null
-        },
-        {
-            "name": "media-kit",
-            "full_name": "media-kit/media-kit",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/media-kit",
-            "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1824,
-            "forks": 476,
-            "language": "Dart",
-            "topics": [
-                "dart",
-                "flutter",
-                "libmpv",
-                "c",
-                "cpp",
-                "media-player"
-            ],
-            "updated_at": "2026-09-24T00:49:51Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": "https://github.com/media-kit/media-kit"
         },
         {
             "name": "media-kit-android-helper",
@@ -1217,6 +1217,27 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5015 StringInterner: keep the first instance on second sight, no String.intern",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5611",
+                    "state": "closed",
+                    "created_at": "2026-09-26T00:57:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5015 A shared LRU interner behind replays and live puts",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5610",
+                    "state": "open",
+                    "created_at": "2026-09-25T23:08:28Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Let a table disable selection per row",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5609",
+                    "state": "open",
+                    "created_at": "2026-09-25T20:07:17Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-5089 Keep DeDupDAO outside the journal, so a dedup DAO's replay is one bulk load",
                     "link": "https://github.com/foam-foundation/foam3/pull/5606",
@@ -1360,7 +1381,7 @@
                 {
                     "title": "PT-FIXES:DOS-4985 Apply replay entries on every parse thread, sharded by id",
                     "link": "https://github.com/foam-foundation/foam3/pull/5516",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-18T21:22:23Z",
                     "merged_at": null
                 },
@@ -5644,7 +5665,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5053,
+            "repo_stars": 5052,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5749,7 +5770,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179082,
+            "repo_stars": 179098,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5861,7 +5882,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 71,
+            "repo_stars": 73,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -5875,7 +5896,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 362,
+            "repo_stars": 364,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -6176,7 +6197,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1824,
+            "repo_stars": 1825,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6540,7 +6561,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 847,
+            "repo_stars": 846,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -6582,7 +6603,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5311,
+            "repo_stars": 5310,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6743,7 +6764,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3294,
+            "repo_stars": 3297,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6918,7 +6939,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12841,
+            "repo_stars": 12842,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -6932,7 +6953,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 846,
+            "repo_stars": 845,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -7044,7 +7065,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17712,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
