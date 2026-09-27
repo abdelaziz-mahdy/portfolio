@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-09-26T08:13:33+00:00",
+    "generated_at": "2026-09-27T08:50:19+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-09-26T07:20:33Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-26T05:04:25Z",
+            "updated_at": "2026-09-27T07:58:39Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-09-27T07:51:43Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-25T08:27:08Z",
+            "updated_at": "2026-09-26T08:13:55Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1825,
-            "forks": 478,
+            "stars": 1826,
+            "forks": 479,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-25T13:58:40Z",
+            "updated_at": "2026-09-26T15:12:51Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1172,7 +1172,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
-            "stars": 59,
+            "stars": 60,
             "forks": 82,
             "language": "Nix",
             "topics": [
@@ -1183,7 +1183,7 @@
                 "ffmpeg",
                 "ios"
             ],
-            "updated_at": "2026-09-25T05:54:08Z",
+            "updated_at": "2026-09-26T10:23:26Z",
             "archived": false,
             "is_organization": true,
             "demo_url": null
@@ -5665,7 +5665,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5052,
+            "repo_stars": 5055,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5770,7 +5770,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179098,
+            "repo_stars": 179122,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5882,7 +5882,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 73,
+            "repo_stars": 74,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6197,7 +6197,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1825,
+            "repo_stars": 1826,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6953,7 +6953,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 845,
+            "repo_stars": 846,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -7051,7 +7051,7 @@
             ]
         },
         "alexmercerind/dart_vlc": {
-            "repo_stars": 526,
+            "repo_stars": 527,
             "repo_link": "https://github.com/alexmercerind/dart_vlc",
             "repo_description": "Flutter bindings to libVLC.",
             "prs": [
@@ -7065,7 +7065,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17714,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
