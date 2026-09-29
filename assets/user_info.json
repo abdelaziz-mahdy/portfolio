@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-28T09:14:30+00:00",
+    "generated_at": "2026-09-29T09:22:25+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-28T06:32:05Z",
+            "updated_at": "2026-09-29T08:09:49Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,22 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-28T05:07:40Z",
+            "updated_at": "2026-09-29T05:30:58Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "dart_cast",
+            "full_name": "abdelaziz-mahdy/dart_cast",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
+            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
+            "stars": 9,
+            "forks": 5,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-09-28T09:38:14Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-27T08:50:40Z",
+            "updated_at": "2026-09-28T09:14:56Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -204,21 +219,6 @@
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-09-02T02:46:21Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "dart_cast",
-            "full_name": "abdelaziz-mahdy/dart_cast",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
-            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
-            "stars": 8,
-            "forks": 5,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-08-24T01:22:44Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1829,
-            "forks": 481,
+            "forks": 482,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-27T17:15:33Z",
+            "updated_at": "2026-09-29T02:18:05Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 83,
+            "forks": 84,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1218,6 +1218,20 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
             "prs": [
                 {
+                    "title": "fix(example): this.start() in an <example> renders into its output",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5626",
+                    "state": "closed",
+                    "created_at": "2026-09-28T13:28:14Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix(markdown): multi-line <example> blocks run their code again",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5625",
+                    "state": "merged",
+                    "created_at": "2026-09-28T12:51:02Z",
+                    "merged_at": "2026-09-28T13:17:33Z"
+                },
+                {
                     "title": "PT-FIXES:DOS-5015 StringInterner: keep the first instance on second sight, no String.intern",
                     "link": "https://github.com/foam-foundation/foam3/pull/5611",
                     "state": "closed",
@@ -1225,7 +1239,7 @@
                     "merged_at": null
                 },
                 {
-                    "title": "PT-FIXES:DOS-5015 A shared LRU interner behind replays and live puts",
+                    "title": "PT-FIXES:DOS-5129 A shared LRU interner behind replays and live puts",
                     "link": "https://github.com/foam-foundation/foam3/pull/5610",
                     "state": "open",
                     "created_at": "2026-09-25T23:08:28Z",
@@ -5665,7 +5679,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5056,
+            "repo_stars": 5062,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5770,7 +5784,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179134,
+            "repo_stars": 179142,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5882,7 +5896,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 76,
+            "repo_stars": 75,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6603,7 +6617,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5312,
+            "repo_stars": 5315,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6764,7 +6778,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3298,
+            "repo_stars": 3299,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6834,7 +6848,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1524,
+            "repo_stars": 1523,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
