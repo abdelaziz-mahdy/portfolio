@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-09-30T09:12:50+00:00",
+    "generated_at": "2026-10-01T09:40:22+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-09-30T06:28:44Z",
+            "updated_at": "2026-10-01T08:37:18Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-09-30T06:01:31Z",
+            "updated_at": "2026-10-01T07:42:10Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-29T09:22:50Z",
+            "updated_at": "2026-09-30T09:13:17Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1829,
-            "forks": 483,
+            "stars": 1830,
+            "forks": 484,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-29T02:18:05Z",
+            "updated_at": "2026-09-30T15:49:39Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1215,7 +1215,7 @@
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
-            "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3 (unstable)",
+            "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
                     "title": "PT-FIXES:DOS-5155 Stop caching flow history on the client",
@@ -5686,7 +5686,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5064,
+            "repo_stars": 5069,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5791,7 +5791,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179152,
+            "repo_stars": 179163,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6218,7 +6218,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1829,
+            "repo_stars": 1830,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6624,7 +6624,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5315,
+            "repo_stars": 5317,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6960,7 +6960,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12841,
+            "repo_stars": 12840,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7086,7 +7086,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17713,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
