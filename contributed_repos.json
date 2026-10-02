@@ -319,6 +319,10 @@
             "link": "https://github.com/foam-foundation/foam3"
         },
         {
+            "name": "foam-foundation/FOAM-LSP",
+            "link": "https://github.com/foam-foundation/FOAM-LSP"
+        },
+        {
             "name": "pytorch/executorch",
             "link": "https://github.com/pytorch/executorch"
         },

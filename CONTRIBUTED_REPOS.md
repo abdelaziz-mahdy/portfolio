@@ -84,6 +84,7 @@
 ## External
 
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
+- [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [flutter/flutter](https://github.com/flutter/flutter)
 - [wyrindev/flutter-media-session](https://github.com/wyrindev/flutter-media-session)

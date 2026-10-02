@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-01T09:40:22+00:00",
+    "generated_at": "2026-10-02T09:14:35+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-01T08:37:18Z",
+            "updated_at": "2026-10-02T08:12:34Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-01T07:42:10Z",
+            "updated_at": "2026-10-02T05:44:37Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-09-30T09:13:17Z",
+            "updated_at": "2026-10-01T09:40:47Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 84,
+            "forks": 86,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1217,6 +1217,34 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "DAOPrompt: rerun an autoRun block when a reaction sets its aql after a saved flow loads",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5667",
+                    "state": "open",
+                    "created_at": "2026-10-02T00:35:03Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Move the FOAM language server to its own repo",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5665",
+                    "state": "open",
+                    "created_at": "2026-10-01T23:41:18Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Return null from a PartitionedDAO find on an id with no partition",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5651",
+                    "state": "merged",
+                    "created_at": "2026-10-01T15:58:32Z",
+                    "merged_at": "2026-10-01T18:05:19Z"
+                },
+                {
+                    "title": "Send an added index to partitions already open in PartitionedDAO",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5650",
+                    "state": "merged",
+                    "created_at": "2026-10-01T15:52:14Z",
+                    "merged_at": "2026-10-01T17:59:15Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-5155 Stop caching flow history on the client",
                     "link": "https://github.com/foam-foundation/foam3/pull/5632",
@@ -1276,9 +1304,9 @@
                 {
                     "title": "PT-FIXES:DOS-5083 Skip theme variants when the window has no matchMedia (3.28)",
                     "link": "https://github.com/foam-foundation/foam3/pull/5604",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-24T19:04:25Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-01T13:58:32Z"
                 },
                 {
                     "title": "Build indexes added to a loaded MDAO together, once its service script returns",
@@ -5685,8 +5713,22 @@
                 }
             ]
         },
+        "foam-foundation/FOAM-LSP": {
+            "repo_stars": 0,
+            "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
+            "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
+            "prs": [
+                {
+                    "title": "Import the FOAM language server from foam3",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/1",
+                    "state": "open",
+                    "created_at": "2026-10-01T23:41:31Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "pytorch/executorch": {
-            "repo_stars": 5069,
+            "repo_stars": 5072,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5791,7 +5833,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179163,
+            "repo_stars": 179243,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5903,7 +5945,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 75,
+            "repo_stars": 76,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6785,7 +6827,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3299,
+            "repo_stars": 3301,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6855,7 +6897,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1524,
+            "repo_stars": 1526,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7044,7 +7086,7 @@
             ]
         },
         "transistorsoft/flutter_background_fetch": {
-            "repo_stars": 598,
+            "repo_stars": 597,
             "repo_link": "https://github.com/transistorsoft/flutter_background_fetch",
             "repo_description": "Periodic callbacks in the background for both IOS and Android.  Includes Android Headless mechanism",
             "prs": [
@@ -7086,7 +7128,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17713,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
