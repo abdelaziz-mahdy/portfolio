@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-02T09:14:35+00:00",
+    "generated_at": "2026-10-03T08:46:50+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-02T08:12:34Z",
+            "updated_at": "2026-10-03T06:14:45Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-02T05:44:37Z",
+            "updated_at": "2026-10-03T05:48:15Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-01T09:40:47Z",
+            "updated_at": "2026-10-02T09:14:58Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1830,
-            "forks": 484,
+            "forks": 485,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 86,
+            "forks": 87,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1218,7 +1218,28 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
-                    "title": "DAOPrompt: rerun an autoRun block when a reaction sets its aql after a saved flow loads",
+                    "title": "PT-FIXES:DOS-5221 DAOPrompt: a running flag a formula can wait on while a DAO block loads",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5675",
+                    "state": "open",
+                    "created_at": "2026-10-02T23:45:00Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5217 Reflow property picker: show a column named by NamedProperty, and keep an edit by name",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5672",
+                    "state": "open",
+                    "created_at": "2026-10-02T19:22:41Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5196 AScript: read nested paths, pick one array element by key, and format a date as text",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5669",
+                    "state": "open",
+                    "created_at": "2026-10-02T13:29:58Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5191 DAOPrompt: rerun an autoRun block when a reaction sets its aql after a saved flow loads",
                     "link": "https://github.com/foam-foundation/foam3/pull/5667",
                     "state": "open",
                     "created_at": "2026-10-02T00:35:03Z",
@@ -5728,7 +5749,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5072,
+            "repo_stars": 5074,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5833,7 +5854,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179243,
+            "repo_stars": 179273,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5945,7 +5966,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 76,
+            "repo_stars": 77,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6036,7 +6057,7 @@
             ]
         },
         "dsc-uob/subtitle": {
-            "repo_stars": 14,
+            "repo_stars": 13,
             "repo_link": "https://github.com/dsc-uob/subtitle",
             "repo_description": "Subtitle decoder package, enables you to handle translation data smoothly.",
             "prs": [
@@ -6666,7 +6687,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5317,
+            "repo_stars": 5315,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7002,7 +7023,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12840,
+            "repo_stars": 12839,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7128,7 +7149,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
