@@ -1,12 +1,20 @@
 {
     "owned": [
         {
-            "name": "abdelaziz-mahdy/anime_mapping",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
+            "name": "abdelaziz-mahdy/space_shooter",
+            "link": "https://github.com/abdelaziz-mahdy/space_shooter"
         },
         {
             "name": "abdelaziz-mahdy/abdelaziz-mahdy",
             "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+        },
+        {
+            "name": "abdelaziz-mahdy/anime_mapping",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
+        },
+        {
+            "name": "abdelaziz-mahdy/backend-benchmark",
+            "link": "https://github.com/abdelaziz-mahdy/backend-benchmark"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
@@ -73,10 +81,6 @@
             "link": "https://github.com/abdelaziz-mahdy/quotes"
         },
         {
-            "name": "abdelaziz-mahdy/space_shooter",
-            "link": "https://github.com/abdelaziz-mahdy/space_shooter"
-        },
-        {
             "name": "abdelaziz-mahdy/syami",
             "link": "https://github.com/abdelaziz-mahdy/syami"
         },
@@ -87,10 +91,6 @@
         {
             "name": "abdelaziz-mahdy/ftp_server",
             "link": "https://github.com/abdelaziz-mahdy/ftp_server"
-        },
-        {
-            "name": "abdelaziz-mahdy/backend-benchmark",
-            "link": "https://github.com/abdelaziz-mahdy/backend-benchmark"
         },
         {
             "name": "abdelaziz-mahdy/path_finding",
@@ -315,12 +315,12 @@
     ],
     "external": [
         {
-            "name": "foam-foundation/foam3",
-            "link": "https://github.com/foam-foundation/foam3"
-        },
-        {
             "name": "foam-foundation/FOAM-LSP",
             "link": "https://github.com/foam-foundation/FOAM-LSP"
+        },
+        {
+            "name": "foam-foundation/foam3",
+            "link": "https://github.com/foam-foundation/foam3"
         },
         {
             "name": "pytorch/executorch",

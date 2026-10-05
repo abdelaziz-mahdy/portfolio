@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-04T09:13:38+00:00",
+    "generated_at": "2026-10-05T09:53:47+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -7,19 +7,19 @@
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
         {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "name": "space_shooter",
+            "full_name": "abdelaziz-mahdy/space_shooter",
             "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
+            "link": "https://github.com/abdelaziz-mahdy/space_shooter",
+            "description": null,
+            "stars": 3,
+            "forks": 0,
+            "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-04T06:15:52Z",
+            "updated_at": "2026-10-05T09:10:18Z",
             "archived": false,
             "is_organization": false,
-            "demo_url": null
+            "demo_url": "https://abdelaziz-mahdy.github.io/space_shooter/"
         },
         {
             "name": "abdelaziz-mahdy",
@@ -31,10 +31,40 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-04T05:06:30Z",
+            "updated_at": "2026-10-05T06:42:37Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-10-05T04:33:30Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "backend-benchmark",
+            "full_name": "abdelaziz-mahdy/backend-benchmark",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/backend-benchmark",
+            "description": " This resource compares backend technologies with benchmarks on write/read operations and static endpoint requests, aiding in selecting the best framework based on speed and load handling.",
+            "stars": 8,
+            "forks": 1,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-05T02:30:50Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/backend-benchmark/"
         },
         {
             "name": "portfolio",
@@ -46,7 +76,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-03T08:47:09Z",
+            "updated_at": "2026-10-04T09:13:58Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -58,7 +88,7 @@
             "link": "https://github.com/abdelaziz-mahdy/dart_cast",
             "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
             "stars": 9,
-            "forks": 5,
+            "forks": 6,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-09-28T09:38:14Z",
@@ -95,7 +125,7 @@
             "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
             "description": "Cross-Platform Video Player for flutter",
             "stars": 197,
-            "forks": 84,
+            "forks": 85,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-09-20T10:00:50Z",
@@ -284,21 +314,6 @@
             "demo_url": null
         },
         {
-            "name": "space_shooter",
-            "full_name": "abdelaziz-mahdy/space_shooter",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/space_shooter",
-            "description": null,
-            "stars": 2,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-06-20T20:08:05Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/space_shooter/"
-        },
-        {
             "name": "syami",
             "full_name": "abdelaziz-mahdy/syami",
             "owner": "abdelaziz-mahdy",
@@ -342,21 +357,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "backend-benchmark",
-            "full_name": "abdelaziz-mahdy/backend-benchmark",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/backend-benchmark",
-            "description": " This resource compares backend technologies with benchmarks on write/read operations and static endpoint requests, aiding in selecting the best framework based on speed and load handling.",
-            "stars": 8,
-            "forks": 1,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-03-30T08:54:39Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/backend-benchmark/"
         },
         {
             "name": "path_finding",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1830,
-            "forks": 485,
+            "stars": 1831,
+            "forks": 486,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-09-30T15:49:39Z",
+            "updated_at": "2026-10-04T14:31:13Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1212,11 +1212,39 @@
         }
     ],
     "pull_requests": {
+        "foam-foundation/FOAM-LSP": {
+            "repo_stars": 0,
+            "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
+            "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
+            "prs": [
+                {
+                    "title": "Port foam-lint and the other LSP fixes that landed in foam3 after the import",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/2",
+                    "state": "open",
+                    "created_at": "2026-10-04T13:42:55Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Import the FOAM language server from foam3",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/1",
+                    "state": "merged",
+                    "created_at": "2026-10-01T23:41:31Z",
+                    "merged_at": "2026-10-04T13:16:54Z"
+                }
+            ]
+        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5164 FileDropZone: let an app show a view between the drop area and the file cards",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5684",
+                    "state": "open",
+                    "created_at": "2026-10-04T13:42:23Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-5221 DAOPrompt: a running flag a formula can wait on while a DAO block loads",
                     "link": "https://github.com/foam-foundation/foam3/pull/5675",
@@ -1248,9 +1276,9 @@
                 {
                     "title": "Move the FOAM language server to its own repo",
                     "link": "https://github.com/foam-foundation/foam3/pull/5665",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-01T23:41:18Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-04T14:06:47Z"
                 },
                 {
                     "title": "Return null from a PartitionedDAO find on an id with no partition",
@@ -5734,20 +5762,6 @@
                 }
             ]
         },
-        "foam-foundation/FOAM-LSP": {
-            "repo_stars": 0,
-            "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
-            "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
-            "prs": [
-                {
-                    "title": "Import the FOAM language server from foam3",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/1",
-                    "state": "open",
-                    "created_at": "2026-10-01T23:41:31Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "pytorch/executorch": {
             "repo_stars": 5078,
             "repo_link": "https://github.com/pytorch/executorch",
@@ -5854,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179326,
+            "repo_stars": 179347,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5980,7 +5994,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 365,
+            "repo_stars": 366,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -6281,7 +6295,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1830,
+            "repo_stars": 1831,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6687,7 +6701,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5315,
+            "repo_stars": 5317,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6848,7 +6862,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3301,
+            "repo_stars": 3303,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6890,7 +6904,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 345,
+            "repo_stars": 351,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7023,7 +7037,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12839,
+            "repo_stars": 12838,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7037,7 +7051,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 846,
+            "repo_stars": 847,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -7149,7 +7163,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
