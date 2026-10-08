@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-07T09:38:30+00:00",
+    "generated_at": "2026-10-08T09:48:44+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-07T08:23:40Z",
+            "updated_at": "2026-10-08T08:39:27Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,10 +31,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-07T04:48:05Z",
+            "updated_at": "2026-10-08T04:58:30Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 196,
+            "forks": 85,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-07T11:55:50Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "portfolio",
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-06T09:41:12Z",
+            "updated_at": "2026-10-07T09:38:55Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -117,21 +132,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 85,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-20T10:00:50Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "iptv_player",
@@ -1150,7 +1150,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1830,
+            "stars": 1831,
             "forks": 487,
             "language": "Dart",
             "topics": [
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-06T12:33:49Z",
+            "updated_at": "2026-10-07T13:09:39Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 87,
+            "forks": 88,
             "language": "Nix",
             "topics": [
                 "build",
@@ -5763,7 +5763,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5081,
+            "repo_stars": 5082,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5868,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179359,
+            "repo_stars": 179372,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5980,7 +5980,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 82,
+            "repo_stars": 83,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6295,7 +6295,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1830,
+            "repo_stars": 1831,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6701,7 +6701,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5318,
+            "repo_stars": 5319,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6827,7 +6827,7 @@
             ]
         },
         "aakashkondhalkar/external_path": {
-            "repo_stars": 12,
+            "repo_stars": 13,
             "repo_link": "https://github.com/aakashkondhalkar/external_path",
             "repo_description": "Flutter package",
             "prs": [
@@ -6862,7 +6862,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3303,
+            "repo_stars": 3304,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6904,7 +6904,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 351,
+            "repo_stars": 354,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7121,7 +7121,7 @@
             ]
         },
         "transistorsoft/flutter_background_fetch": {
-            "repo_stars": 597,
+            "repo_stars": 595,
             "repo_link": "https://github.com/transistorsoft/flutter_background_fetch",
             "repo_description": "Periodic callbacks in the background for both IOS and Android.  Includes Android Headless mechanism",
             "prs": [
@@ -7163,7 +7163,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
