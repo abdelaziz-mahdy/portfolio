@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-08T09:48:44+00:00",
+    "generated_at": "2026-10-09T09:53:14+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-08T08:39:27Z",
+            "updated_at": "2026-10-09T08:44:48Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,10 +31,25 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-08T04:58:30Z",
+            "updated_at": "2026-10-09T07:26:52Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-08T09:49:10Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-10-07T09:38:55Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "backend-benchmark",
@@ -88,7 +88,7 @@
             "link": "https://github.com/abdelaziz-mahdy/space_shooter",
             "description": null,
             "stars": 3,
-            "forks": 0,
+            "forks": 1,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-10-05T09:10:18Z",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1831,
-            "forks": 487,
+            "stars": 1836,
+            "forks": 488,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-07T13:09:39Z",
+            "updated_at": "2026-10-09T09:06:00Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5868,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179372,
+            "repo_stars": 179202,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6295,7 +6295,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1831,
+            "repo_stars": 1836,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6701,7 +6701,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5319,
+            "repo_stars": 5320,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6743,7 +6743,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1569,
+            "repo_stars": 1571,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6862,7 +6862,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3304,
+            "repo_stars": 3306,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6904,7 +6904,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 354,
+            "repo_stars": 355,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7037,7 +7037,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12841,
+            "repo_stars": 12842,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7051,7 +7051,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 847,
+            "repo_stars": 848,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -7163,7 +7163,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17708,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
