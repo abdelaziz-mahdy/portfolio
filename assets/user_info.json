@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-11T09:34:19+00:00",
+    "generated_at": "2026-10-12T10:05:22+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-11T08:33:43Z",
+            "updated_at": "2026-10-12T07:09:05Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-11T05:31:03Z",
+            "updated_at": "2026-10-12T06:24:19Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-10T09:17:44Z",
+            "updated_at": "2026-10-11T09:34:45Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1839,
-            "forks": 489,
+            "stars": 1840,
+            "forks": 490,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-11T09:10:05Z",
+            "updated_at": "2026-10-12T06:56:01Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5763,7 +5763,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5087,
+            "repo_stars": 5088,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5868,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 179694,
+            "repo_stars": 179865,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -5980,7 +5980,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 85,
+            "repo_stars": 86,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6295,7 +6295,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1839,
+            "repo_stars": 1840,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6743,7 +6743,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1571,
+            "repo_stars": 1572,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6862,7 +6862,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3307,
+            "repo_stars": 3308,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6904,7 +6904,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 356,
+            "repo_stars": 357,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -6932,7 +6932,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1525,
+            "repo_stars": 1526,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7065,7 +7065,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 424,
+            "repo_stars": 425,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
