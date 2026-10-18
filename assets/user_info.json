@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-17T07:24:52+00:00",
+    "generated_at": "2026-10-18T07:40:05+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-10-17T06:15:06Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-17T03:44:02Z",
+            "updated_at": "2026-10-18T05:36:56Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-10-18T04:14:05Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-16T07:47:55Z",
+            "updated_at": "2026-10-17T07:25:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1842,
-            "forks": 502,
+            "stars": 1844,
+            "forks": 501,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-16T21:20:08Z",
+            "updated_at": "2026-10-17T15:23:54Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -5763,7 +5763,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5101,
+            "repo_stars": 5104,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5868,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180245,
+            "repo_stars": 180261,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6295,7 +6295,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1842,
+            "repo_stars": 1844,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6701,7 +6701,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5323,
+            "repo_stars": 5324,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7037,7 +7037,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12843,
+            "repo_stars": 12844,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7163,7 +7163,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17709,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
