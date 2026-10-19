@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-18T07:40:05+00:00",
+    "generated_at": "2026-10-19T08:22:09+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-10-18T05:36:56Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,7 +16,59 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-18T04:14:05Z",
+            "updated_at": "2026-10-19T07:38:11Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-10-19T06:02:35Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "rewind",
+            "full_name": "abdelaziz-mahdy/rewind",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/rewind",
+            "description": "Open-source instant-replay & automatic game-clip capture for macOS and Windows \u2014 the ShadowPlay/Medal experience, GPLv3. Flutter UI + embedded libobs.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [
+                "flutter",
+                "game-capture",
+                "gplv3",
+                "instant-replay",
+                "libobs",
+                "macos"
+            ],
+            "updated_at": "2026-10-18T14:57:28Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
+        },
+        {
+            "name": "dart_cast",
+            "full_name": "abdelaziz-mahdy/dart_cast",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
+            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
+            "stars": 8,
+            "forks": 6,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-18T09:08:52Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +83,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-17T07:25:16Z",
+            "updated_at": "2026-10-18T07:40:30Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -95,43 +132,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/space_shooter/"
-        },
-        {
-            "name": "dart_cast",
-            "full_name": "abdelaziz-mahdy/dart_cast",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
-            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
-            "stars": 9,
-            "forks": 6,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-28T09:38:14Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
-            "name": "rewind",
-            "full_name": "abdelaziz-mahdy/rewind",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/rewind",
-            "description": "Open-source instant-replay & automatic game-clip capture for macOS and Windows \u2014 the ShadowPlay/Medal experience, GPLv3. Flutter UI + embedded libobs.",
-            "stars": 0,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [
-                "flutter",
-                "game-capture",
-                "gplv3",
-                "instant-replay",
-                "libobs",
-                "macos"
-            ],
-            "updated_at": "2026-09-24T07:39:37Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
         },
         {
             "name": "iptv_player",
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1844,
-            "forks": 501,
+            "forks": 502,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -5868,7 +5868,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180261,
+            "repo_stars": 180288,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6701,7 +6701,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5324,
+            "repo_stars": 5325,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6932,7 +6932,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1524,
+            "repo_stars": 1525,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7037,7 +7037,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12844,
+            "repo_stars": 12842,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7051,7 +7051,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 849,
+            "repo_stars": 850,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -7163,7 +7163,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17709,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
