@@ -9,16 +9,16 @@
             "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
+            "name": "abdelaziz-mahdy/portfolio",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
             "name": "abdelaziz-mahdy/rewind",
             "link": "https://github.com/abdelaziz-mahdy/rewind"
         },
         {
             "name": "abdelaziz-mahdy/dart_cast",
             "link": "https://github.com/abdelaziz-mahdy/dart_cast"
-        },
-        {
-            "name": "abdelaziz-mahdy/portfolio",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
         {
             "name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
@@ -315,12 +315,12 @@
     ],
     "external": [
         {
-            "name": "foam-foundation/FOAM-LSP",
-            "link": "https://github.com/foam-foundation/FOAM-LSP"
-        },
-        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
+            "name": "foam-foundation/FOAM-LSP",
+            "link": "https://github.com/foam-foundation/FOAM-LSP"
         },
         {
             "name": "pytorch/executorch",
