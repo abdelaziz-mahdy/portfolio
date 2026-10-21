@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-20T08:05:57+00:00",
+    "generated_at": "2026-10-21T08:11:14+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-20T04:37:27Z",
+            "updated_at": "2026-10-21T05:21:22Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-20T04:12:24Z",
+            "updated_at": "2026-10-21T04:01:47Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-19T08:22:32Z",
+            "updated_at": "2026-10-20T08:06:26Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -95,7 +95,7 @@
             "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
             "description": "Cross-Platform Video Player for flutter",
             "stars": 197,
-            "forks": 83,
+            "forks": 84,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-10-14T12:02:35Z",
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1844,
-            "forks": 503,
+            "stars": 1843,
+            "forks": 501,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-17T15:23:54Z",
+            "updated_at": "2026-10-20T16:52:00Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 88,
+            "forks": 89,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1217,6 +1217,27 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5406 Give each new record its own id in a nested PartitionedDAO",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5740",
+                    "state": "open",
+                    "created_at": "2026-10-21T06:56:22Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4385 Pass the model's requires through foam.QA2",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5737",
+                    "state": "merged",
+                    "created_at": "2026-10-20T14:39:27Z",
+                    "merged_at": "2026-10-20T19:04:15Z"
+                },
+                {
+                    "title": "Fix StringInterner race between intern() and release()",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5736",
+                    "state": "merged",
+                    "created_at": "2026-10-20T09:09:04Z",
+                    "merged_at": "2026-10-20T11:47:33Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-5278 Hide FObjectArray properties from the filter picker",
                     "link": "https://github.com/foam-foundation/foam3/pull/5733",
@@ -5770,7 +5791,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5107,
+            "repo_stars": 5108,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5875,7 +5896,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180304,
+            "repo_stars": 180321,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6302,7 +6323,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1844,
+            "repo_stars": 1843,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6708,7 +6729,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5325,
+            "repo_stars": 5324,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6750,7 +6771,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1572,
+            "repo_stars": 1571,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -6869,7 +6890,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3313,
+            "repo_stars": 3314,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -7170,7 +7191,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17711,
+            "repo_stars": 17710,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
