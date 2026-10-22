@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-10-21T08:11:14+00:00",
+    "generated_at": "2026-10-22T08:12:45+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-21T05:21:22Z",
+            "updated_at": "2026-10-22T06:31:12Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,7 +31,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-21T04:01:47Z",
+            "updated_at": "2026-10-22T04:01:39Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-20T08:06:26Z",
+            "updated_at": "2026-10-21T08:11:39Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -260,7 +260,7 @@
             "link": "https://github.com/abdelaziz-mahdy/universal_video_controls",
             "description": "video controls that can be universally applied to various video players",
             "stars": 7,
-            "forks": 3,
+            "forks": 4,
             "language": "Dart",
             "topics": [],
             "updated_at": "2026-08-23T17:02:11Z",
@@ -1150,7 +1150,7 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1843,
+            "stars": 1845,
             "forks": 501,
             "language": "Dart",
             "topics": [
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-20T16:52:00Z",
+            "updated_at": "2026-10-22T03:15:23Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1220,9 +1220,9 @@
                 {
                     "title": "PT-FIXES:DOS-5406 Give each new record its own id in a nested PartitionedDAO",
                     "link": "https://github.com/foam-foundation/foam3/pull/5740",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-21T06:56:22Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-21T11:39:12Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-4385 Pass the model's requires through foam.QA2",
@@ -5791,7 +5791,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5108,
+            "repo_stars": 5113,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5896,7 +5896,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180321,
+            "repo_stars": 180328,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6323,7 +6323,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1843,
+            "repo_stars": 1845,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6687,7 +6687,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 844,
+            "repo_stars": 843,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -7065,7 +7065,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12842,
+            "repo_stars": 12843,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7093,7 +7093,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 425,
+            "repo_stars": 426,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
@@ -7191,7 +7191,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17710,
+            "repo_stars": 17712,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
