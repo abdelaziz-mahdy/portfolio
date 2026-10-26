@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-25T08:00:41+00:00",
+    "generated_at": "2026-10-26T08:22:29+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-10-25T07:28:46Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,7 +16,37 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-25T04:48:30Z",
+            "updated_at": "2026-10-26T05:24:25Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-10-26T04:03:13Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "iptv_player",
+            "full_name": "abdelaziz-mahdy/iptv_player",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/iptv_player",
+            "description": "IPTV player for Android (phone + TV) and desktop \u2014 Xtream Codes, M3U/M3U8, XMLTV EPG, libmpv (fvp) playback. Flutter.",
+            "stars": 0,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-25T17:58:56Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-24T07:48:59Z",
+            "updated_at": "2026-10-25T08:01:04Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -132,21 +147,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/space_shooter/"
-        },
-        {
-            "name": "iptv_player",
-            "full_name": "abdelaziz-mahdy/iptv_player",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/iptv_player",
-            "description": "IPTV player for Android (phone + TV) and desktop \u2014 Xtream Codes, M3U/M3U8, XMLTV EPG, libmpv (fvp) playback. Flutter.",
-            "stars": 0,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-20T01:55:08Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
         },
         {
             "name": "executorch_flutter_models",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1845,
-            "forks": 505,
+            "forks": 506,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -5798,7 +5798,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5121,
+            "repo_stars": 5126,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5903,7 +5903,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180364,
+            "repo_stars": 180381,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6015,7 +6015,7 @@
             ]
         },
         "agentcathq/webmcp-react": {
-            "repo_stars": 91,
+            "repo_stars": 92,
             "repo_link": "https://github.com/agentcathq/webmcp-react",
             "repo_description": "React hooks for exposing your app's functionality as WebMCP tools - transport-agnostic, SSR-safe, Strict Mode safe, W3C spec-aligned",
             "prs": [
@@ -6736,7 +6736,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5327,
+            "repo_stars": 5328,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6897,7 +6897,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3316,
+            "repo_stars": 3317,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -7072,7 +7072,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12842,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7198,7 +7198,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17714,
+            "repo_stars": 17715,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
