@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-26T08:22:29+00:00",
+    "generated_at": "2026-10-27T08:33:02+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-10-26T05:24:25Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-26T04:03:13Z",
+            "updated_at": "2026-10-27T07:34:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-10-27T06:45:41Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-26T08:22:54Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "iptv_player",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-10-25T08:01:04Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "rewind",
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 61,
-            "forks": 91,
+            "forks": 92,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1218,11 +1218,25 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
+                    "title": "Document per-item list redraws, forced escape for code strings, and the unset-Enum trap on the server",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5751",
+                    "state": "open",
+                    "created_at": "2026-10-26T16:05:10Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Remove the VS Code build output that #5687 re-added under tools/lsp",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5749",
+                    "state": "merged",
+                    "created_at": "2026-10-26T13:04:11Z",
+                    "merged_at": "2026-10-26T13:50:48Z"
+                },
+                {
                     "title": "Send Microsoft email through Graph sendMail instead of EWS",
                     "link": "https://github.com/foam-foundation/foam3/pull/5744",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-24T12:56:31Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-26T13:50:08Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5406 Give each new record its own id in a nested PartitionedDAO",
@@ -5784,9 +5798,9 @@
                 {
                     "title": "Port foam-lint and the other LSP fixes that landed in foam3 after the import",
                     "link": "https://github.com/foam-foundation/FOAM-LSP/pull/2",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-04T13:42:55Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-26T13:10:53Z"
                 },
                 {
                     "title": "Import the FOAM language server from foam3",
@@ -5798,7 +5812,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5126,
+            "repo_stars": 5131,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5903,7 +5917,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180381,
+            "repo_stars": 180386,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6897,7 +6911,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3317,
+            "repo_stars": 3318,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6967,7 +6981,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1527,
+            "repo_stars": 1526,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
