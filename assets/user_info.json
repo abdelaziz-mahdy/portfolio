@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-27T08:33:02+00:00",
+    "generated_at": "2026-10-28T09:12:28+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-10-27T07:34:16Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-27T06:45:41Z",
+            "updated_at": "2026-10-28T08:14:27Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-10-28T04:55:05Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "flutter_meedu_videoplayer",
+            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
+            "description": "Cross-Platform Video Player for flutter",
+            "stars": 198,
+            "forks": 84,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-27T10:29:26Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "portfolio",
@@ -46,7 +61,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-26T08:22:54Z",
+            "updated_at": "2026-10-27T08:33:27Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -102,21 +117,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "flutter_meedu_videoplayer",
-            "full_name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer",
-            "description": "Cross-Platform Video Player for flutter",
-            "stars": 197,
-            "forks": 84,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-10-14T12:02:35Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
         },
         {
             "name": "backend-benchmark",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1845,
-            "forks": 506,
+            "forks": 509,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1217,6 +1217,62 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5459 Let llmService callers give the model tools, and let an agent run Reflow commands as one tool",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5769",
+                    "state": "open",
+                    "created_at": "2026-10-27T23:05:16Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5577 Remove jstl and update commons-lang3, pdfbox, bouncycastle and batik",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5766",
+                    "state": "merged",
+                    "created_at": "2026-10-27T19:10:56Z",
+                    "merged_at": "2026-10-27T19:12:29Z"
+                },
+                {
+                    "title": "(DOS-5551) Fix the PostgresDAO example in the postgres deployment README",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5765",
+                    "state": "merged",
+                    "created_at": "2026-10-27T19:09:03Z",
+                    "merged_at": "2026-10-27T19:11:21Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5576 Upgrade google-api-client to 2.9.2 to drop guava-jdk5",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5764",
+                    "state": "merged",
+                    "created_at": "2026-10-27T18:59:01Z",
+                    "merged_at": "2026-10-27T19:01:10Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5575 Align netty on 4.1.136",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5763",
+                    "state": "merged",
+                    "created_at": "2026-10-27T18:27:30Z",
+                    "merged_at": "2026-10-27T18:33:31Z"
+                },
+                {
+                    "title": "Remove the stray comma in src/pom.js that leaves an empty slot in its files list",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5761",
+                    "state": "merged",
+                    "created_at": "2026-10-27T17:59:47Z",
+                    "merged_at": "2026-10-27T18:07:16Z"
+                },
+                {
+                    "title": "DOS-5571 Drop commons-lang 2.6",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5760",
+                    "state": "merged",
+                    "created_at": "2026-10-27T17:54:21Z",
+                    "merged_at": "2026-10-27T17:59:22Z"
+                },
+                {
+                    "title": "Send email bodies as UTF-8 so non-ASCII text arrives intact",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5758",
+                    "state": "merged",
+                    "created_at": "2026-10-27T17:17:34Z",
+                    "merged_at": "2026-10-27T17:22:10Z"
+                },
                 {
                     "title": "Document per-item list redraws, forced escape for code strings, and the unset-Enum trap on the server",
                     "link": "https://github.com/foam-foundation/foam3/pull/5751",
@@ -5796,6 +5852,20 @@
             "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
             "prs": [
                 {
+                    "title": "Record the pom file a class is listed in, not <location>/pom.js",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/20",
+                    "state": "merged",
+                    "created_at": "2026-10-27T20:03:24Z",
+                    "merged_at": "2026-10-27T20:09:38Z"
+                },
+                {
+                    "title": "Skip empty slots in a pom's files list at boot, so a stray comma no longer stops the server from starting",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/19",
+                    "state": "merged",
+                    "created_at": "2026-10-27T17:59:05Z",
+                    "merged_at": "2026-10-27T20:14:48Z"
+                },
+                {
                     "title": "Port foam-lint and the other LSP fixes that landed in foam3 after the import",
                     "link": "https://github.com/foam-foundation/FOAM-LSP/pull/2",
                     "state": "merged",
@@ -5812,7 +5882,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5131,
+            "repo_stars": 5133,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5917,7 +5987,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180386,
+            "repo_stars": 180504,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6750,7 +6820,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5328,
+            "repo_stars": 5330,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -6911,7 +6981,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3318,
+            "repo_stars": 3321,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6967,7 +7037,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1147,
+            "repo_stars": 1146,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
