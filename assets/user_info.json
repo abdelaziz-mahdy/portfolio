@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-28T09:12:28+00:00",
+    "generated_at": "2026-10-29T09:12:23+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-10-28T08:14:27Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,10 +16,40 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-10-28T04:55:05Z",
+            "updated_at": "2026-10-29T05:03:40Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-10-29T04:46:11Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-10-28T09:12:55Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -50,21 +65,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/flutter_meedu_videoplayer/"
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-10-27T08:33:27Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "iptv_player",
@@ -1173,7 +1173,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1845,
-            "forks": 509,
+            "forks": 508,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1218,9 +1218,44 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-5584 Add a Dock where any long task or agent shows a card on every screen",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5776",
+                    "state": "open",
+                    "created_at": "2026-10-28T13:18:49Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5585 Keep the Console's conversation with the model to its own commands",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5775",
+                    "state": "open",
+                    "created_at": "2026-10-28T13:18:35Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5560 Let an AI agent run Reflow commands through one tool",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5774",
+                    "state": "open",
+                    "created_at": "2026-10-28T13:18:32Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5459 Let llmService callers give the model tools, and stream and retry every reply",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5773",
+                    "state": "open",
+                    "created_at": "2026-10-28T13:18:15Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Re-read client DAOs without a cache on pollingInterval",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5772",
+                    "state": "closed",
+                    "created_at": "2026-10-28T12:43:22Z",
+                    "merged_at": null
+                },
+                {
                     "title": "PT-FIXES:DOS-5459 Let llmService callers give the model tools, and let an agent run Reflow commands as one tool",
                     "link": "https://github.com/foam-foundation/foam3/pull/5769",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-10-27T23:05:16Z",
                     "merged_at": null
                 },
@@ -5882,7 +5917,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5133,
+            "repo_stars": 5140,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -5987,7 +6022,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180504,
+            "repo_stars": 180518,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7037,7 +7072,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1146,
+            "repo_stars": 1147,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7282,7 +7317,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17715,
+            "repo_stars": 17713,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
