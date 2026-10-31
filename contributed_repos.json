@@ -1,12 +1,12 @@
 {
     "owned": [
         {
-            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
-        },
-        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
+        },
+        {
+            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
@@ -315,12 +315,12 @@
     ],
     "external": [
         {
-            "name": "foam-foundation/FOAM-LSP",
-            "link": "https://github.com/foam-foundation/FOAM-LSP"
-        },
-        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
+            "name": "foam-foundation/FOAM-LSP",
+            "link": "https://github.com/foam-foundation/FOAM-LSP"
         },
         {
             "name": "pytorch/executorch",

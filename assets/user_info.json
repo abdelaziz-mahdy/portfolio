@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-10-30T09:25:29+00:00",
+    "generated_at": "2026-10-31T09:10:05+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "abdelaziz-mahdy",
-            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
-            "description": null,
-            "stars": 0,
-            "forks": 1,
-            "language": null,
-            "topics": [],
-            "updated_at": "2026-10-30T05:03:01Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-10-30T04:45:58Z",
+            "updated_at": "2026-10-31T06:52:29Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "abdelaziz-mahdy",
+            "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy",
+            "description": null,
+            "stars": 0,
+            "forks": 1,
+            "language": null,
+            "topics": [],
+            "updated_at": "2026-10-31T02:09:58Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-10-29T09:12:46Z",
+            "updated_at": "2026-10-30T09:25:53Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1150,8 +1150,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1846,
-            "forks": 508,
+            "stars": 1847,
+            "forks": 509,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1161,7 +1161,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-10-29T11:22:39Z",
+            "updated_at": "2026-10-30T20:23:03Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1212,151 +1212,32 @@
         }
     ],
     "pull_requests": {
-        "foam-foundation/FOAM-LSP": {
-            "repo_stars": 0,
-            "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
-            "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
-            "prs": [
-                {
-                    "title": "Mark u2 builder calls by intent in semantic tokens so start/end read as a pair",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/35",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:27Z",
-                    "merged_at": "2026-10-29T23:18:38Z"
-                },
-                {
-                    "title": "Treat a relationship's sourceProperty and targetProperty as property definitions",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/34",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:22Z",
-                    "merged_at": "2026-10-29T23:22:13Z"
-                },
-                {
-                    "title": "Document that Zed's TypeScript server offers \"Move to a new file\" in models",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/33",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:19Z",
-                    "merged_at": "2026-10-29T23:24:40Z"
-                },
-                {
-                    "title": "Sync changed files before foam_lint, so it stops flagging classes the agent just wrote",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/32",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:15Z",
-                    "merged_at": "2026-10-29T23:10:48Z"
-                },
-                {
-                    "title": "Decide pom membership from the pom's own entries, so a class file saved this session still shows as unlisted",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/31",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:11Z",
-                    "merged_at": "2026-10-29T23:10:57Z"
-                },
-                {
-                    "title": "Run foam/lint off the JSON-RPC thread and share the index's journal walk",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/30",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:07Z",
-                    "merged_at": "2026-10-29T23:14:55Z"
-                },
-                {
-                    "title": "Check the whole subclass tree in the strategy-ref lint, so subclasses of an implementor are no longer skipped",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/29",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:04Z",
-                    "merged_at": "2026-10-29T23:11:01Z"
-                },
-                {
-                    "title": "Make lint-cli output complete, --diff work from a repo subdirectory, and a bad ref exit 2",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/28",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:05:00Z",
-                    "merged_at": "2026-10-29T23:11:06Z"
-                },
-                {
-                    "title": "Keep journal class-id completion working after a dot in the class value",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/27",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:56Z",
-                    "merged_at": "2026-10-29T23:18:43Z"
-                },
-                {
-                    "title": "Clear the implementor, requirer and of-user caches on save so lookups stop returning stale classes",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/26",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:52Z",
-                    "merged_at": "2026-10-29T23:10:53Z"
-                },
-                {
-                    "title": "Mark deprecated properties in completion, hover and journal rows so people stop copying them",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/25",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:48Z",
-                    "merged_at": "2026-10-29T23:24:36Z"
-                },
-                {
-                    "title": "Highlight FOAM << css selectors in VS Code with one injected TextMate rule",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/24",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:44Z",
-                    "merged_at": "2026-10-29T23:15:04Z"
-                },
-                {
-                    "title": "Pick a model's css block from the grammar's cssBlock records",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/23",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:41Z",
-                    "merged_at": "2026-10-29T23:15:00Z"
-                },
-                {
-                    "title": "List every matching class id in journal class-value completion",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/22",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:37Z",
-                    "merged_at": "2026-10-29T23:22:09Z"
-                },
-                {
-                    "title": "Read a class-less journal row as its DAO's of, so foam-lint stops skipping it",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/21",
-                    "state": "merged",
-                    "created_at": "2026-10-29T23:04:33Z",
-                    "merged_at": "2026-10-29T23:10:33Z"
-                },
-                {
-                    "title": "Record the pom file a class is listed in, not <location>/pom.js",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/20",
-                    "state": "merged",
-                    "created_at": "2026-10-27T20:03:24Z",
-                    "merged_at": "2026-10-27T20:09:38Z"
-                },
-                {
-                    "title": "Skip empty slots in a pom's files list at boot, so a stray comma no longer stops the server from starting",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/19",
-                    "state": "merged",
-                    "created_at": "2026-10-27T17:59:05Z",
-                    "merged_at": "2026-10-27T20:14:48Z"
-                },
-                {
-                    "title": "Port foam-lint and the other LSP fixes that landed in foam3 after the import",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/2",
-                    "state": "merged",
-                    "created_at": "2026-10-04T13:42:55Z",
-                    "merged_at": "2026-10-26T13:10:53Z"
-                },
-                {
-                    "title": "Import the FOAM language server from foam3",
-                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/1",
-                    "state": "merged",
-                    "created_at": "2026-10-01T23:41:31Z",
-                    "merged_at": "2026-10-04T13:16:54Z"
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5667 Close the search, sort and nested FScript permission gaps",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5791",
+                    "state": "open",
+                    "created_at": "2026-10-31T02:59:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5319 Tabs and steppers in markdown, and markdown inside quotes and table headers",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5789",
+                    "state": "merged",
+                    "created_at": "2026-10-30T19:48:21Z",
+                    "merged_at": "2026-10-30T21:20:28Z"
+                },
+                {
+                    "title": "PT-FIXES:OPS-556 Review fixes for partitioned upload removal",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5785",
+                    "state": "open",
+                    "created_at": "2026-10-30T14:52:36Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Keep tooltips as plain text, list form errors one per line",
                     "link": "https://github.com/foam-foundation/foam3/pull/5781",
@@ -1379,11 +1260,11 @@
                     "merged_at": null
                 },
                 {
-                    "title": "PT-FIXES:DOS-5585 Keep the Console's conversation with the model to its own commands",
+                    "title": "PT-FIXES:DOS-5585 Let a call skip the Console's conversation history",
                     "link": "https://github.com/foam-foundation/foam3/pull/5775",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-28T13:18:35Z",
-                    "merged_at": null
+                    "merged_at": "2026-10-30T20:53:30Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5560 Let an AI agent run Reflow commands through one tool",
@@ -6035,8 +5916,148 @@
                 }
             ]
         },
+        "foam-foundation/FOAM-LSP": {
+            "repo_stars": 0,
+            "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
+            "repo_description": " Language Server Protocol (LSP) for editing FOAM Source Code",
+            "prs": [
+                {
+                    "title": "Mark u2 builder calls by intent in semantic tokens so start/end read as a pair",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/35",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:27Z",
+                    "merged_at": "2026-10-29T23:18:38Z"
+                },
+                {
+                    "title": "Treat a relationship's sourceProperty and targetProperty as property definitions",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/34",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:22Z",
+                    "merged_at": "2026-10-29T23:22:13Z"
+                },
+                {
+                    "title": "Document that Zed's TypeScript server offers \"Move to a new file\" in models",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/33",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:19Z",
+                    "merged_at": "2026-10-29T23:24:40Z"
+                },
+                {
+                    "title": "Sync changed files before foam_lint, so it stops flagging classes the agent just wrote",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/32",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:15Z",
+                    "merged_at": "2026-10-29T23:10:48Z"
+                },
+                {
+                    "title": "Decide pom membership from the pom's own entries, so a class file saved this session still shows as unlisted",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/31",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:11Z",
+                    "merged_at": "2026-10-29T23:10:57Z"
+                },
+                {
+                    "title": "Run foam/lint off the JSON-RPC thread and share the index's journal walk",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/30",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:07Z",
+                    "merged_at": "2026-10-29T23:14:55Z"
+                },
+                {
+                    "title": "Check the whole subclass tree in the strategy-ref lint, so subclasses of an implementor are no longer skipped",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/29",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:04Z",
+                    "merged_at": "2026-10-29T23:11:01Z"
+                },
+                {
+                    "title": "Make lint-cli output complete, --diff work from a repo subdirectory, and a bad ref exit 2",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/28",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:05:00Z",
+                    "merged_at": "2026-10-29T23:11:06Z"
+                },
+                {
+                    "title": "Keep journal class-id completion working after a dot in the class value",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/27",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:56Z",
+                    "merged_at": "2026-10-29T23:18:43Z"
+                },
+                {
+                    "title": "Clear the implementor, requirer and of-user caches on save so lookups stop returning stale classes",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/26",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:52Z",
+                    "merged_at": "2026-10-29T23:10:53Z"
+                },
+                {
+                    "title": "Mark deprecated properties in completion, hover and journal rows so people stop copying them",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/25",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:48Z",
+                    "merged_at": "2026-10-29T23:24:36Z"
+                },
+                {
+                    "title": "Highlight FOAM << css selectors in VS Code with one injected TextMate rule",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/24",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:44Z",
+                    "merged_at": "2026-10-29T23:15:04Z"
+                },
+                {
+                    "title": "Pick a model's css block from the grammar's cssBlock records",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/23",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:41Z",
+                    "merged_at": "2026-10-29T23:15:00Z"
+                },
+                {
+                    "title": "List every matching class id in journal class-value completion",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/22",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:37Z",
+                    "merged_at": "2026-10-29T23:22:09Z"
+                },
+                {
+                    "title": "Read a class-less journal row as its DAO's of, so foam-lint stops skipping it",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/21",
+                    "state": "merged",
+                    "created_at": "2026-10-29T23:04:33Z",
+                    "merged_at": "2026-10-29T23:10:33Z"
+                },
+                {
+                    "title": "Record the pom file a class is listed in, not <location>/pom.js",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/20",
+                    "state": "merged",
+                    "created_at": "2026-10-27T20:03:24Z",
+                    "merged_at": "2026-10-27T20:09:38Z"
+                },
+                {
+                    "title": "Skip empty slots in a pom's files list at boot, so a stray comma no longer stops the server from starting",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/19",
+                    "state": "merged",
+                    "created_at": "2026-10-27T17:59:05Z",
+                    "merged_at": "2026-10-27T20:14:48Z"
+                },
+                {
+                    "title": "Port foam-lint and the other LSP fixes that landed in foam3 after the import",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/2",
+                    "state": "merged",
+                    "created_at": "2026-10-04T13:42:55Z",
+                    "merged_at": "2026-10-26T13:10:53Z"
+                },
+                {
+                    "title": "Import the FOAM language server from foam3",
+                    "link": "https://github.com/foam-foundation/FOAM-LSP/pull/1",
+                    "state": "merged",
+                    "created_at": "2026-10-01T23:41:31Z",
+                    "merged_at": "2026-10-04T13:16:54Z"
+                }
+            ]
+        },
         "pytorch/executorch": {
-            "repo_stars": 5143,
+            "repo_stars": 5142,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6141,7 +6162,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 180662,
+            "repo_stars": 180769,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6568,7 +6589,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1846,
+            "repo_stars": 1847,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "A cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -6974,7 +6995,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5330,
+            "repo_stars": 5327,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7177,7 +7198,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 359,
+            "repo_stars": 360,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7191,7 +7212,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1148,
+            "repo_stars": 1149,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7205,7 +7226,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1527,
+            "repo_stars": 1528,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7310,7 +7331,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12842,
+            "repo_stars": 12841,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7436,7 +7457,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17712,
+            "repo_stars": 17713,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
