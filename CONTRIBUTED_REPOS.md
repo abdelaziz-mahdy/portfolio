@@ -83,6 +83,7 @@
 
 ## External
 
+- [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
@@ -91,7 +92,6 @@
 - [agentcathq/webmcp-react](https://github.com/agentcathq/webmcp-react)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
 - [dsc-uob/subtitle](https://github.com/dsc-uob/subtitle)
-- [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)
 - [Sakkary/Auto-Angles-finder](https://github.com/Sakkary/Auto-Angles-finder)
 - [Sakkary/Movie-Picker](https://github.com/Sakkary/Movie-Picker)
 - [media-kit/media-kit](https://github.com/media-kit/media-kit)

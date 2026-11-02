@@ -315,6 +315,10 @@
     ],
     "external": [
         {
+            "name": "rainyl/opencv_dart",
+            "link": "https://github.com/rainyl/opencv_dart"
+        },
+        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
         },
@@ -345,10 +349,6 @@
         {
             "name": "dsc-uob/subtitle",
             "link": "https://github.com/dsc-uob/subtitle"
-        },
-        {
-            "name": "rainyl/opencv_dart",
-            "link": "https://github.com/rainyl/opencv_dart"
         },
         {
             "name": "Sakkary/Auto-Angles-finder",
