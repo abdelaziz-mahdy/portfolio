@@ -83,8 +83,8 @@
 
 ## External
 
-- [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
+- [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)
 - [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [flutter/flutter](https://github.com/flutter/flutter)
