@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-11-03T10:22:40+00:00",
+    "generated_at": "2026-11-04T10:17:23+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-11-03T09:22:07Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-11-03T02:50:47Z",
+            "updated_at": "2026-11-04T05:34:22Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-11-04T05:13:14Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-11-02T10:25:35Z",
+            "updated_at": "2026-11-03T10:23:07Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1151,7 +1151,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "A cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1848,
-            "forks": 515,
+            "forks": 514,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1218,6 +1218,13 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-4095 Stream JSON/J and CSV/Sheets dig output row by row",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5800",
+                    "state": "merged",
+                    "created_at": "2026-11-03T20:07:39Z",
+                    "merged_at": "2026-11-03T20:37:27Z"
+                },
+                {
                     "title": "PT-FIXES:DOS-5688 Drop a finished request before setting up a session",
                     "link": "https://github.com/foam-foundation/foam3/pull/5797",
                     "state": "merged",
@@ -1234,9 +1241,9 @@
                 {
                     "title": "PT-FIXES:DOS-5667 Add \"use the value you hold\" to foam-design-patterns",
                     "link": "https://github.com/foam-foundation/foam3/pull/5793",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-02T18:02:21Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-03T13:53:11Z"
                 },
                 {
                     "title": "foam-test-builder: show how to print warnings in server tests",
@@ -1514,7 +1521,7 @@
                 {
                     "title": "Let a table disable selection per row",
                     "link": "https://github.com/foam-foundation/foam3/pull/5609",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-25T20:07:17Z",
                     "merged_at": null
                 },
@@ -1899,21 +1906,21 @@
                 {
                     "title": "Add a VM setup script to generated projects, for Oracle Cloud Always Free and the like",
                     "link": "https://github.com/foam-foundation/foam3/pull/5469",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-16T00:08:26Z",
                     "merged_at": null
                 },
                 {
                     "title": "Add a Dockerfile.vercel to generated projects, with a session.defaultUser switch for the demo",
                     "link": "https://github.com/foam-foundation/foam3/pull/5468",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-15T22:58:17Z",
                     "merged_at": null
                 },
                 {
                     "title": "Add a Cloud Run Button app.json to generated projects",
                     "link": "https://github.com/foam-foundation/foam3/pull/5467",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-15T22:58:14Z",
                     "merged_at": null
                 },
@@ -2095,14 +2102,14 @@
                 {
                     "title": "PT-FIXES:DOS-4798 javaSparse: store a class's reference properties in one values array behind a shared shape",
                     "link": "https://github.com/foam-foundation/foam3/pull/5397",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-03T14:02:46Z",
                     "merged_at": null
                 },
                 {
                     "title": "PT-FIXES:DOS-4797 javaPackIsSet: one long per 64 properties holds the isSet flags instead of a boolean each",
                     "link": "https://github.com/foam-foundation/foam3/pull/5396",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-09-03T13:37:03Z",
                     "merged_at": null
                 },
@@ -2207,7 +2214,7 @@
                 {
                     "title": "Journal replay benchmark: re-baseline on current development",
                     "link": "https://github.com/foam-foundation/foam3/pull/5360",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-08-28T18:55:14Z",
                     "merged_at": null
                 },
@@ -2996,11 +3003,11 @@
                     "merged_at": "2026-06-11T19:36:04Z"
                 },
                 {
-                    "title": "[DO_NOT_MERGE] Refactor dashboard chart agents to displaySink composition",
+                    "title": "Refactor dashboard chart agents to displaySink composition",
                     "link": "https://github.com/foam-foundation/foam3/pull/5041",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-05-04T22:17:07Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-03T23:30:41Z"
                 },
                 {
                     "title": "feat(lsp): enum hovers, per-class CSS tokens, class-aware completions, nested JRL validation",
@@ -6267,7 +6274,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5151,
+            "repo_stars": 5152,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6372,7 +6379,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181020,
+            "repo_stars": 181038,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7198,7 +7205,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3327,
+            "repo_stars": 3328,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -7240,7 +7247,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 358,
+            "repo_stars": 359,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7254,7 +7261,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1148,
+            "repo_stars": 1149,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7485,7 +7492,7 @@
             ]
         },
         "alexmercerind/dart_vlc": {
-            "repo_stars": 527,
+            "repo_stars": 526,
             "repo_link": "https://github.com/alexmercerind/dart_vlc",
             "repo_description": "Flutter bindings to libVLC.",
             "prs": [
@@ -7499,7 +7506,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17714,
+            "repo_stars": 17711,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
