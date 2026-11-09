@@ -2,8 +2,11 @@
 
 ## Owned
 
-- [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
 - [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
+- [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
+- [abdelaziz-mahdy/ftp_server](https://github.com/abdelaziz-mahdy/ftp_server)
+- [abdelaziz-mahdy/dart_mal_api](https://github.com/abdelaziz-mahdy/dart_mal_api)
+- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/flutter_meedu_videoplayer](https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer)
 - [abdelaziz-mahdy/connect4_python](https://github.com/abdelaziz-mahdy/connect4_python)
 - [abdelaziz-mahdy/all_mountains](https://github.com/abdelaziz-mahdy/all_mountains)
@@ -32,13 +35,11 @@
 - [abdelaziz-mahdy/automated_attendance](https://github.com/abdelaziz-mahdy/automated_attendance)
 - [abdelaziz-mahdy/marketing_site_tester](https://github.com/abdelaziz-mahdy/marketing_site_tester)
 - [abdelaziz-mahdy/Nearby-Roulette](https://github.com/abdelaziz-mahdy/Nearby-Roulette)
-- [abdelaziz-mahdy/dart_mal_api](https://github.com/abdelaziz-mahdy/dart_mal_api)
 - [abdelaziz-mahdy/space_shooter](https://github.com/abdelaziz-mahdy/space_shooter)
 - [abdelaziz-mahdy/dicom_rs](https://github.com/abdelaziz-mahdy/dicom_rs)
 - [abdelaziz-mahdy/pickerv2](https://github.com/abdelaziz-mahdy/pickerv2)
 - [abdelaziz-mahdy/syami](https://github.com/abdelaziz-mahdy/syami)
 - [abdelaziz-mahdy/quotes](https://github.com/abdelaziz-mahdy/quotes)
-- [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
 - [abdelaziz-mahdy/iptv_player](https://github.com/abdelaziz-mahdy/iptv_player)
 - [abdelaziz-mahdy/rewind](https://github.com/abdelaziz-mahdy/rewind)
 - [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
@@ -52,7 +53,6 @@
 - [abdelaziz-mahdy/universal_video_controls](https://github.com/abdelaziz-mahdy/universal_video_controls)
 - [abdelaziz-mahdy/bouncy_ball_physics](https://github.com/abdelaziz-mahdy/bouncy_ball_physics)
 - [abdelaziz-mahdy/scrapheap-ascent](https://github.com/abdelaziz-mahdy/scrapheap-ascent)
-- [abdelaziz-mahdy/ftp_server](https://github.com/abdelaziz-mahdy/ftp_server)
 - [abdelaziz-mahdy/path_finding](https://github.com/abdelaziz-mahdy/path_finding)
 - [abdelaziz-mahdy/drive-sync](https://github.com/abdelaziz-mahdy/drive-sync)
 - [abdelaziz-mahdy/parler](https://github.com/abdelaziz-mahdy/parler)
@@ -83,10 +83,12 @@
 
 ## External
 
+- [pytorch/executorch](https://github.com/pytorch/executorch)
+- [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
+- [kekko7072/flutter_local_ai](https://github.com/kekko7072/flutter_local_ai)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
 - [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)
-- [pytorch/executorch](https://github.com/pytorch/executorch)
 - [flutter/flutter](https://github.com/flutter/flutter)
 - [wyrindev/flutter-media-session](https://github.com/wyrindev/flutter-media-session)
 - [agentcathq/webmcp-react](https://github.com/agentcathq/webmcp-react)

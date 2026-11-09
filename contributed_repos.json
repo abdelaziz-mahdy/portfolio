@@ -1,12 +1,24 @@
 {
     "owned": [
         {
+            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+        },
+        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
-            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
+            "name": "abdelaziz-mahdy/ftp_server",
+            "link": "https://github.com/abdelaziz-mahdy/ftp_server"
+        },
+        {
+            "name": "abdelaziz-mahdy/dart_mal_api",
+            "link": "https://github.com/abdelaziz-mahdy/dart_mal_api"
+        },
+        {
+            "name": "abdelaziz-mahdy/portfolio",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
         {
             "name": "abdelaziz-mahdy/flutter_meedu_videoplayer",
@@ -121,10 +133,6 @@
             "link": "https://github.com/abdelaziz-mahdy/Nearby-Roulette"
         },
         {
-            "name": "abdelaziz-mahdy/dart_mal_api",
-            "link": "https://github.com/abdelaziz-mahdy/dart_mal_api"
-        },
-        {
             "name": "abdelaziz-mahdy/space_shooter",
             "link": "https://github.com/abdelaziz-mahdy/space_shooter"
         },
@@ -143,10 +151,6 @@
         {
             "name": "abdelaziz-mahdy/quotes",
             "link": "https://github.com/abdelaziz-mahdy/quotes"
-        },
-        {
-            "name": "abdelaziz-mahdy/portfolio",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio"
         },
         {
             "name": "abdelaziz-mahdy/iptv_player",
@@ -199,10 +203,6 @@
         {
             "name": "abdelaziz-mahdy/scrapheap-ascent",
             "link": "https://github.com/abdelaziz-mahdy/scrapheap-ascent"
-        },
-        {
-            "name": "abdelaziz-mahdy/ftp_server",
-            "link": "https://github.com/abdelaziz-mahdy/ftp_server"
         },
         {
             "name": "abdelaziz-mahdy/path_finding",
@@ -315,6 +315,18 @@
     ],
     "external": [
         {
+            "name": "pytorch/executorch",
+            "link": "https://github.com/pytorch/executorch"
+        },
+        {
+            "name": "simolus3/sqlite3.dart",
+            "link": "https://github.com/simolus3/sqlite3.dart"
+        },
+        {
+            "name": "kekko7072/flutter_local_ai",
+            "link": "https://github.com/kekko7072/flutter_local_ai"
+        },
+        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
         },
@@ -325,10 +337,6 @@
         {
             "name": "rainyl/opencv_dart",
             "link": "https://github.com/rainyl/opencv_dart"
-        },
-        {
-            "name": "pytorch/executorch",
-            "link": "https://github.com/pytorch/executorch"
         },
         {
             "name": "flutter/flutter",
