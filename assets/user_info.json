@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-09T10:46:28+00:00",
+    "generated_at": "2026-11-10T10:40:11+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -16,7 +16,7 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-11-09T07:47:10Z",
+            "updated_at": "2026-11-10T09:31:07Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -31,10 +31,40 @@
             "forks": 1,
             "language": "Python",
             "topics": [],
-            "updated_at": "2026-11-09T05:01:51Z",
+            "updated_at": "2026-11-10T06:19:35Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
+        },
+        {
+            "name": "dart_cast",
+            "full_name": "abdelaziz-mahdy/dart_cast",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
+            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
+            "stars": 9,
+            "forks": 6,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-11-10T02:43:08Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "portfolio",
+            "full_name": "abdelaziz-mahdy/portfolio",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/portfolio",
+            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
+            "stars": 1,
+            "forks": 0,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-11-09T10:46:52Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "ftp_server",
@@ -69,21 +99,6 @@
             "archived": false,
             "is_organization": false,
             "demo_url": null
-        },
-        {
-            "name": "portfolio",
-            "full_name": "abdelaziz-mahdy/portfolio",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/portfolio",
-            "description": "showcase your professional journey with our customizable portfolio, designed for tech enthusiasts. It smartly integrates personal achievements and GitHub projects, highlighting your skills and experiences in a sleek presentation.",
-            "stars": 1,
-            "forks": 0,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-11-08T09:46:28Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
         },
         {
             "name": "flutter_meedu_videoplayer",
@@ -645,21 +660,6 @@
             "demo_url": "https://abdelaziz-mahdy.github.io/rewind/"
         },
         {
-            "name": "dart_cast",
-            "full_name": "abdelaziz-mahdy/dart_cast",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/dart_cast",
-            "description": "A pure Dart cross-platform casting package supporting Chromecast (CASTV2), AirPlay, and DLNA with built-in HTTP proxy for header injection.",
-            "stars": 8,
-            "forks": 6,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-10-18T09:08:52Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
-        {
             "name": "backend-benchmark",
             "full_name": "abdelaziz-mahdy/backend-benchmark",
             "owner": "abdelaziz-mahdy",
@@ -1204,7 +1204,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 61,
-            "forks": 94,
+            "forks": 95,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1243,150 +1243,24 @@
         }
     ],
     "pull_requests": {
-        "pytorch/executorch": {
-            "repo_stars": 5164,
-            "repo_link": "https://github.com/pytorch/executorch",
-            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
-            "prs": [
-                {
-                    "title": "Metal backend: free only the destroyed delegate's memory",
-                    "link": "https://github.com/pytorch/executorch/pull/24782",
-                    "state": "open",
-                    "created_at": "2026-11-08T21:54:51Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-WebGPU] Keep fp16 elementwise ops on CPU",
-                    "link": "https://github.com/pytorch/executorch/pull/24781",
-                    "state": "open",
-                    "created_at": "2026-11-08T19:37:27Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: keep non-packed views in their parent's buffer",
-                    "link": "https://github.com/pytorch/executorch/pull/22984",
-                    "state": "open",
-                    "created_at": "2026-09-22T00:03:01Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: restore the thread qualifiers in the 4-bit matmul shader",
-                    "link": "https://github.com/pytorch/executorch/pull/22982",
-                    "state": "merged",
-                    "created_at": "2026-09-22T00:02:44Z",
-                    "merged_at": "2026-09-22T14:59:54Z"
-                },
-                {
-                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
-                    "link": "https://github.com/pytorch/executorch/pull/22957",
-                    "state": "open",
-                    "created_at": "2026-09-20T02:04:08Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
-                    "link": "https://github.com/pytorch/executorch/pull/22954",
-                    "state": "merged",
-                    "created_at": "2026-09-20T01:23:30Z",
-                    "merged_at": "2026-09-21T15:26:29Z"
-                },
-                {
-                    "title": "Metal backend: honor channels-last strides in conv2d",
-                    "link": "https://github.com/pytorch/executorch/pull/22952",
-                    "state": "merged",
-                    "created_at": "2026-09-20T01:23:17Z",
-                    "merged_at": "2026-09-23T16:27:05Z"
-                },
-                {
-                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
-                    "link": "https://github.com/pytorch/executorch/pull/19924",
-                    "state": "merged",
-                    "created_at": "2026-06-01T23:23:41Z",
-                    "merged_at": "2026-08-27T00:56:32Z"
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18699",
-                    "state": "closed",
-                    "created_at": "2026-04-04T03:45:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18697",
-                    "state": "closed",
-                    "created_at": "2026-04-04T02:40:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
-                    "link": "https://github.com/pytorch/executorch/pull/17468",
-                    "state": "closed",
-                    "created_at": "2026-02-15T03:26:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
-                    "link": "https://github.com/pytorch/executorch/pull/17467",
-                    "state": "closed",
-                    "created_at": "2026-02-14T23:02:07Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
-                    "link": "https://github.com/pytorch/executorch/pull/17361",
-                    "state": "open",
-                    "created_at": "2026-02-11T00:06:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Initial PowerVR GPU support for Vulkan backend",
-                    "link": "https://github.com/pytorch/executorch/pull/17323",
-                    "state": "closed",
-                    "created_at": "2026-02-10T03:33:24Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Fix Vulkan texture tensor UBO budget overflow",
-                    "link": "https://github.com/pytorch/executorch/pull/17294",
-                    "state": "merged",
-                    "created_at": "2026-02-08T00:04:58Z",
-                    "merged_at": "2026-02-09T21:06:04Z"
-                },
-                {
-                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
-                    "link": "https://github.com/pytorch/executorch/pull/16242",
-                    "state": "closed",
-                    "created_at": "2025-12-14T23:59:29Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "simolus3/sqlite3.dart": {
             "repo_stars": 304,
             "repo_link": "https://github.com/simolus3/sqlite3.dart",
             "repo_description": "sqlite3 bindings for Dart",
             "prs": [
                 {
+                    "title": "Skip the isolate kill test until the Dart VM crash is fixed",
+                    "link": "https://github.com/simolus3/sqlite3.dart/pull/440",
+                    "state": "merged",
+                    "created_at": "2026-11-10T03:28:43Z",
+                    "merged_at": "2026-11-10T10:12:39Z"
+                },
+                {
                     "title": "Detach native finalizers before releasing statements and databases",
                     "link": "https://github.com/simolus3/sqlite3.dart/pull/438",
-                    "state": "open",
-                    "created_at": "2026-11-08T19:44:03Z",
-                    "merged_at": null
-                }
-            ]
-        },
-        "kekko7072/flutter_local_ai": {
-            "repo_stars": 49,
-            "repo_link": "https://github.com/kekko7072/flutter_local_ai",
-            "repo_description": "Flutter package for local AI inference using native OS APIs - iOS Foundation Models, Android   ML Kit GenAI, and Windows AI APIs. Zero model downloads required.",
-            "prs": [
-                {
-                    "title": "fix(apple): box GenerationOptions so listing classes cannot crash below OS 26",
-                    "link": "https://github.com/kekko7072/flutter_local_ai/pull/37",
                     "state": "merged",
-                    "created_at": "2026-11-08T17:16:45Z",
-                    "merged_at": "2026-11-09T09:27:37Z"
+                    "created_at": "2026-11-08T19:44:03Z",
+                    "merged_at": "2026-11-09T10:51:31Z"
                 }
             ]
         },
@@ -1395,6 +1269,13 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5766 Keep one FScript parse cache per parser",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5835",
+                    "state": "open",
+                    "created_at": "2026-11-09T19:20:17Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Cap notification polling backoff at 5 minutes",
                     "link": "https://github.com/foam-foundation/foam3/pull/5822",
@@ -6164,6 +6045,139 @@
                 }
             ]
         },
+        "pytorch/executorch": {
+            "repo_stars": 5168,
+            "repo_link": "https://github.com/pytorch/executorch",
+            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
+            "prs": [
+                {
+                    "title": "Metal backend: free only the destroyed delegate's memory",
+                    "link": "https://github.com/pytorch/executorch/pull/24782",
+                    "state": "open",
+                    "created_at": "2026-11-08T21:54:51Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-WebGPU] Keep fp16 elementwise ops on CPU",
+                    "link": "https://github.com/pytorch/executorch/pull/24781",
+                    "state": "open",
+                    "created_at": "2026-11-08T19:37:27Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: keep non-packed views in their parent's buffer",
+                    "link": "https://github.com/pytorch/executorch/pull/22984",
+                    "state": "open",
+                    "created_at": "2026-09-22T00:03:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: restore the thread qualifiers in the 4-bit matmul shader",
+                    "link": "https://github.com/pytorch/executorch/pull/22982",
+                    "state": "merged",
+                    "created_at": "2026-09-22T00:02:44Z",
+                    "merged_at": "2026-09-22T14:59:54Z"
+                },
+                {
+                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
+                    "link": "https://github.com/pytorch/executorch/pull/22957",
+                    "state": "open",
+                    "created_at": "2026-09-20T02:04:08Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
+                    "link": "https://github.com/pytorch/executorch/pull/22954",
+                    "state": "merged",
+                    "created_at": "2026-09-20T01:23:30Z",
+                    "merged_at": "2026-09-21T15:26:29Z"
+                },
+                {
+                    "title": "Metal backend: honor channels-last strides in conv2d",
+                    "link": "https://github.com/pytorch/executorch/pull/22952",
+                    "state": "merged",
+                    "created_at": "2026-09-20T01:23:17Z",
+                    "merged_at": "2026-09-23T16:27:05Z"
+                },
+                {
+                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
+                    "link": "https://github.com/pytorch/executorch/pull/19924",
+                    "state": "merged",
+                    "created_at": "2026-06-01T23:23:41Z",
+                    "merged_at": "2026-08-27T00:56:32Z"
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18699",
+                    "state": "closed",
+                    "created_at": "2026-04-04T03:45:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18697",
+                    "state": "closed",
+                    "created_at": "2026-04-04T02:40:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
+                    "link": "https://github.com/pytorch/executorch/pull/17468",
+                    "state": "closed",
+                    "created_at": "2026-02-15T03:26:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
+                    "link": "https://github.com/pytorch/executorch/pull/17467",
+                    "state": "closed",
+                    "created_at": "2026-02-14T23:02:07Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
+                    "link": "https://github.com/pytorch/executorch/pull/17361",
+                    "state": "open",
+                    "created_at": "2026-02-11T00:06:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Initial PowerVR GPU support for Vulkan backend",
+                    "link": "https://github.com/pytorch/executorch/pull/17323",
+                    "state": "closed",
+                    "created_at": "2026-02-10T03:33:24Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Fix Vulkan texture tensor UBO budget overflow",
+                    "link": "https://github.com/pytorch/executorch/pull/17294",
+                    "state": "merged",
+                    "created_at": "2026-02-08T00:04:58Z",
+                    "merged_at": "2026-02-09T21:06:04Z"
+                },
+                {
+                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
+                    "link": "https://github.com/pytorch/executorch/pull/16242",
+                    "state": "closed",
+                    "created_at": "2025-12-14T23:59:29Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "kekko7072/flutter_local_ai": {
+            "repo_stars": 49,
+            "repo_link": "https://github.com/kekko7072/flutter_local_ai",
+            "repo_description": "Flutter package for local AI inference using native OS APIs - iOS Foundation Models, Android   ML Kit GenAI, and Windows AI APIs. Zero model downloads required.",
+            "prs": [
+                {
+                    "title": "fix(apple): box GenerationOptions so listing classes cannot crash below OS 26",
+                    "link": "https://github.com/kekko7072/flutter_local_ai/pull/37",
+                    "state": "merged",
+                    "created_at": "2026-11-08T17:16:45Z",
+                    "merged_at": "2026-11-09T09:27:37Z"
+                }
+            ]
+        },
         "foam-foundation/FOAM-LSP": {
             "repo_stars": 0,
             "repo_link": "https://github.com/foam-foundation/FOAM-LSP",
@@ -6494,7 +6508,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181093,
+            "repo_stars": 181101,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7523,7 +7537,7 @@
             ]
         },
         "Hexer10/youtube_explode_dart": {
-            "repo_stars": 426,
+            "repo_stars": 425,
             "repo_link": "https://github.com/Hexer10/youtube_explode_dart",
             "repo_description": "Dart library to interact with many Youtube APIs",
             "prs": [
