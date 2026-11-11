@@ -1,20 +1,20 @@
 {
     "owned": [
         {
-            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
-        },
-        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
-            "name": "abdelaziz-mahdy/dart_cast",
-            "link": "https://github.com/abdelaziz-mahdy/dart_cast"
+            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
+            "name": "abdelaziz-mahdy/dart_cast",
+            "link": "https://github.com/abdelaziz-mahdy/dart_cast"
         },
         {
             "name": "abdelaziz-mahdy/ftp_server",
@@ -315,12 +315,12 @@
     ],
     "external": [
         {
-            "name": "simolus3/sqlite3.dart",
-            "link": "https://github.com/simolus3/sqlite3.dart"
-        },
-        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
+            "name": "simolus3/sqlite3.dart",
+            "link": "https://github.com/simolus3/sqlite3.dart"
         },
         {
             "name": "pytorch/executorch",

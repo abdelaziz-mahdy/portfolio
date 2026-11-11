@@ -2,10 +2,10 @@
 
 ## Owned
 
-- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
-- [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
+- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
+- [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
 - [abdelaziz-mahdy/ftp_server](https://github.com/abdelaziz-mahdy/ftp_server)
 - [abdelaziz-mahdy/dart_mal_api](https://github.com/abdelaziz-mahdy/dart_mal_api)
 - [abdelaziz-mahdy/flutter_meedu_videoplayer](https://github.com/abdelaziz-mahdy/flutter_meedu_videoplayer)
@@ -83,8 +83,8 @@
 
 ## External
 
-- [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
+- [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [kekko7072/flutter_local_ai](https://github.com/kekko7072/flutter_local_ai)
 - [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
