@@ -1,26 +1,11 @@
 {
-    "generated_at": "2026-11-11T10:09:32+00:00",
+    "generated_at": "2026-11-12T10:31:46+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
-        {
-            "name": "anime_mapping",
-            "full_name": "abdelaziz-mahdy/anime_mapping",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
-            "description": "a repo having new data for animes using GitHub actions",
-            "stars": 0,
-            "forks": 1,
-            "language": "Python",
-            "topics": [],
-            "updated_at": "2026-11-11T08:13:09Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": null
-        },
         {
             "name": "abdelaziz-mahdy",
             "full_name": "abdelaziz-mahdy/abdelaziz-mahdy",
@@ -31,7 +16,22 @@
             "forks": 1,
             "language": null,
             "topics": [],
-            "updated_at": "2026-11-11T02:44:45Z",
+            "updated_at": "2026-11-12T09:32:37Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": null
+        },
+        {
+            "name": "anime_mapping",
+            "full_name": "abdelaziz-mahdy/anime_mapping",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/anime_mapping",
+            "description": "a repo having new data for animes using GitHub actions",
+            "stars": 0,
+            "forks": 1,
+            "language": "Python",
+            "topics": [],
+            "updated_at": "2026-11-12T07:08:16Z",
             "archived": false,
             "is_organization": false,
             "demo_url": null
@@ -46,7 +46,7 @@
             "forks": 0,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-11-10T10:40:35Z",
+            "updated_at": "2026-11-11T11:09:59Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/portfolio/"
@@ -1204,7 +1204,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 61,
-            "forks": 94,
+            "forks": 93,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1226,7 +1226,7 @@
             "link": "https://github.com/media-kit/media-kit-android-helper",
             "description": "JNI based Android helper for package:media_kit.",
             "stars": 4,
-            "forks": 6,
+            "forks": 5,
             "language": "C++",
             "topics": [
                 "android",
@@ -1251,16 +1251,16 @@
                 {
                     "title": "PT-FIXES:DOS-5789 Render text in angle brackets and keep markdown links inside the page",
                     "link": "https://github.com/foam-foundation/foam3/pull/5843",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-10T21:41:11Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-11T19:45:53Z"
                 },
                 {
                     "title": "Use --test-suites in the test skill and the testing guide",
                     "link": "https://github.com/foam-foundation/foam3/pull/5842",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-10T21:36:40Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-11T12:10:50Z"
                 },
                 {
                     "title": "Add import packages, clean cases and client-test file copy to the skills",
@@ -6074,7 +6074,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5169,
+            "repo_stars": 5173,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6193,7 +6193,7 @@
             ]
         },
         "kekko7072/flutter_local_ai": {
-            "repo_stars": 49,
+            "repo_stars": 50,
             "repo_link": "https://github.com/kekko7072/flutter_local_ai",
             "repo_description": "Flutter package for local AI inference using native OS APIs - iOS Foundation Models, Android   ML Kit GenAI, and Windows AI APIs. Zero model downloads required.",
             "prs": [
@@ -6536,7 +6536,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181175,
+            "repo_stars": 181243,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7201,7 +7201,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5336,
+            "repo_stars": 5339,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7362,7 +7362,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3332,
+            "repo_stars": 3333,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -7404,7 +7404,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 361,
+            "repo_stars": 363,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7663,7 +7663,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17703,
+            "repo_stars": 17702,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
