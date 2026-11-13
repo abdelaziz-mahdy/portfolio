@@ -1,16 +1,16 @@
 {
     "owned": [
         {
-            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
-        },
-        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
         {
             "name": "abdelaziz-mahdy/portfolio",
             "link": "https://github.com/abdelaziz-mahdy/portfolio"
+        },
+        {
+            "name": "abdelaziz-mahdy/abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/abdelaziz-mahdy"
         },
         {
             "name": "abdelaziz-mahdy/dart_cast",
@@ -315,6 +315,18 @@
     ],
     "external": [
         {
+            "name": "serverpod/relic",
+            "link": "https://github.com/serverpod/relic"
+        },
+        {
+            "name": "isoos/postgresql-dart",
+            "link": "https://github.com/isoos/postgresql-dart"
+        },
+        {
+            "name": "serverpod/serverpod",
+            "link": "https://github.com/serverpod/serverpod"
+        },
+        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
         },
@@ -405,10 +417,6 @@
         {
             "name": "rainyl/opencv.full",
             "link": "https://github.com/rainyl/opencv.full"
-        },
-        {
-            "name": "serverpod/serverpod",
-            "link": "https://github.com/serverpod/serverpod"
         },
         {
             "name": "prabhuc94/desktop_screenshot",

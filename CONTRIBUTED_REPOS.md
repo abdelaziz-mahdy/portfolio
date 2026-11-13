@@ -2,9 +2,9 @@
 
 ## Owned
 
-- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/anime_mapping](https://github.com/abdelaziz-mahdy/anime_mapping)
 - [abdelaziz-mahdy/portfolio](https://github.com/abdelaziz-mahdy/portfolio)
+- [abdelaziz-mahdy/abdelaziz-mahdy](https://github.com/abdelaziz-mahdy/abdelaziz-mahdy)
 - [abdelaziz-mahdy/dart_cast](https://github.com/abdelaziz-mahdy/dart_cast)
 - [abdelaziz-mahdy/ftp_server](https://github.com/abdelaziz-mahdy/ftp_server)
 - [abdelaziz-mahdy/dart_mal_api](https://github.com/abdelaziz-mahdy/dart_mal_api)
@@ -83,6 +83,9 @@
 
 ## External
 
+- [serverpod/relic](https://github.com/serverpod/relic)
+- [isoos/postgresql-dart](https://github.com/isoos/postgresql-dart)
+- [serverpod/serverpod](https://github.com/serverpod/serverpod)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
@@ -106,7 +109,6 @@
 - [Flutter-Bounty-Hunters/cutting_room](https://github.com/Flutter-Bounty-Hunters/cutting_room)
 - [aakashkondhalkar/external_path](https://github.com/aakashkondhalkar/external_path)
 - [rainyl/opencv.full](https://github.com/rainyl/opencv.full)
-- [serverpod/serverpod](https://github.com/serverpod/serverpod)
 - [prabhuc94/desktop_screenshot](https://github.com/prabhuc94/desktop_screenshot)
 - [kodjodevf/mangayomi-extensions](https://github.com/kodjodevf/mangayomi-extensions)
 - [fastforgedev/fastforge](https://github.com/fastforgedev/fastforge)
