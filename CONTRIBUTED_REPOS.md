@@ -83,10 +83,10 @@
 
 ## External
 
+- [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [serverpod/relic](https://github.com/serverpod/relic)
 - [isoos/postgresql-dart](https://github.com/isoos/postgresql-dart)
 - [serverpod/serverpod](https://github.com/serverpod/serverpod)
-- [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [kekko7072/flutter_local_ai](https://github.com/kekko7072/flutter_local_ai)

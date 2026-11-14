@@ -315,6 +315,10 @@
     ],
     "external": [
         {
+            "name": "foam-foundation/foam3",
+            "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
             "name": "serverpod/relic",
             "link": "https://github.com/serverpod/relic"
         },
@@ -325,10 +329,6 @@
         {
             "name": "serverpod/serverpod",
             "link": "https://github.com/serverpod/serverpod"
-        },
-        {
-            "name": "foam-foundation/foam3",
-            "link": "https://github.com/foam-foundation/foam3"
         },
         {
             "name": "simolus3/sqlite3.dart",
