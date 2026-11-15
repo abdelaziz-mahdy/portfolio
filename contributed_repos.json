@@ -1,6 +1,10 @@
 {
     "owned": [
         {
+            "name": "abdelaziz-mahdy/executorch_flutter",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter"
+        },
+        {
             "name": "abdelaziz-mahdy/anime_mapping",
             "link": "https://github.com/abdelaziz-mahdy/anime_mapping"
         },
@@ -173,10 +177,6 @@
             "link": "https://github.com/abdelaziz-mahdy/executorch_flutter_models"
         },
         {
-            "name": "abdelaziz-mahdy/executorch_flutter",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter"
-        },
-        {
             "name": "abdelaziz-mahdy/executorch_native",
             "link": "https://github.com/abdelaziz-mahdy/executorch_native"
         },
@@ -301,12 +301,12 @@
             "link": "https://github.com/6Niners/Escape69"
         },
         {
-            "name": "media-kit/media-kit",
-            "link": "https://github.com/media-kit/media-kit"
-        },
-        {
             "name": "media-kit/libmpv-darwin-build",
             "link": "https://github.com/media-kit/libmpv-darwin-build"
+        },
+        {
+            "name": "media-kit/media-kit",
+            "link": "https://github.com/media-kit/media-kit"
         },
         {
             "name": "media-kit/media-kit-android-helper",
@@ -314,6 +314,18 @@
         }
     ],
     "external": [
+        {
+            "name": "google/XNNPACK",
+            "link": "https://github.com/google/XNNPACK"
+        },
+        {
+            "name": "wang-bin/fvp",
+            "link": "https://github.com/wang-bin/fvp"
+        },
+        {
+            "name": "serverpod/serverpod",
+            "link": "https://github.com/serverpod/serverpod"
+        },
         {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
@@ -325,10 +337,6 @@
         {
             "name": "isoos/postgresql-dart",
             "link": "https://github.com/isoos/postgresql-dart"
-        },
-        {
-            "name": "serverpod/serverpod",
-            "link": "https://github.com/serverpod/serverpod"
         },
         {
             "name": "simolus3/sqlite3.dart",
@@ -361,10 +369,6 @@
         {
             "name": "agentcathq/webmcp-react",
             "link": "https://github.com/agentcathq/webmcp-react"
-        },
-        {
-            "name": "wang-bin/fvp",
-            "link": "https://github.com/wang-bin/fvp"
         },
         {
             "name": "dsc-uob/subtitle",

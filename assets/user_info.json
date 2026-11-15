@@ -1,11 +1,26 @@
 {
-    "generated_at": "2026-11-14T09:43:04+00:00",
+    "generated_at": "2026-11-15T10:16:02+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
     "image_url": "https://avatars.githubusercontent.com/u/25157308?u=c38336b33da17ac441897b8095c9a1d338576458&v=4",
     "profile_url": "https://github.com/abdelaziz-mahdy",
     "repos": [
+        {
+            "name": "executorch_flutter",
+            "full_name": "abdelaziz-mahdy/executorch_flutter",
+            "owner": "abdelaziz-mahdy",
+            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
+            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
+            "stars": 29,
+            "forks": 3,
+            "language": "Dart",
+            "topics": [],
+            "updated_at": "2026-11-15T02:45:36Z",
+            "archived": false,
+            "is_organization": false,
+            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
+        },
         {
             "name": "anime_mapping",
             "full_name": "abdelaziz-mahdy/anime_mapping",
@@ -690,21 +705,6 @@
             "demo_url": null
         },
         {
-            "name": "executorch_flutter",
-            "full_name": "abdelaziz-mahdy/executorch_flutter",
-            "owner": "abdelaziz-mahdy",
-            "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
-            "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 28,
-            "forks": 3,
-            "language": "Dart",
-            "topics": [],
-            "updated_at": "2026-09-19T15:23:15Z",
-            "archived": false,
-            "is_organization": false,
-            "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
-        },
-        {
             "name": "executorch_native",
             "full_name": "abdelaziz-mahdy/executorch_native",
             "owner": "abdelaziz-mahdy",
@@ -1176,13 +1176,35 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "libmpv-darwin-build",
+            "full_name": "media-kit/libmpv-darwin-build",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/libmpv-darwin-build",
+            "description": "libmpv for macOS & iOS.",
+            "stars": 60,
+            "forks": 94,
+            "language": "Nix",
+            "topics": [
+                "build",
+                "libmpv",
+                "macos",
+                "mpv",
+                "ffmpeg",
+                "ios"
+            ],
+            "updated_at": "2026-11-14T12:53:37Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": null
+        },
+        {
             "name": "media-kit",
             "full_name": "media-kit/media-kit",
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1853,
-            "forks": 519,
+            "forks": 521,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1196,28 +1218,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
-        },
-        {
-            "name": "libmpv-darwin-build",
-            "full_name": "media-kit/libmpv-darwin-build",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/libmpv-darwin-build",
-            "description": "libmpv for macOS & iOS.",
-            "stars": 61,
-            "forks": 93,
-            "language": "Nix",
-            "topics": [
-                "build",
-                "libmpv",
-                "macos",
-                "mpv",
-                "ffmpeg",
-                "ios"
-            ],
-            "updated_at": "2026-10-23T20:45:17Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": null
         },
         {
             "name": "media-kit-android-helper",
@@ -1243,6 +1243,167 @@
         }
     ],
     "pull_requests": {
+        "google/XNNPACK": {
+            "repo_stars": 2495,
+            "repo_link": "https://github.com/google/XNNPACK",
+            "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
+            "prs": [
+                {
+                    "title": "Count tensor sizes in bytes so 32-bit targets accept tensors over 512 MiB",
+                    "link": "https://github.com/google/XNNPACK/pull/12038",
+                    "state": "open",
+                    "created_at": "2026-11-15T02:49:33Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "wang-bin/fvp": {
+            "repo_stars": 371,
+            "repo_link": "https://github.com/wang-bin/fvp",
+            "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
+            "prs": [
+                {
+                    "title": "ci: build the example with current Flutter and Xcode",
+                    "link": "https://github.com/wang-bin/fvp/pull/419",
+                    "state": "merged",
+                    "created_at": "2026-11-15T02:23:29Z",
+                    "merged_at": "2026-11-15T09:00:58Z"
+                },
+                {
+                    "title": "android: don't touch a deleted player from surfaceDestroyed",
+                    "link": "https://github.com/wang-bin/fvp/pull/418",
+                    "state": "open",
+                    "created_at": "2026-11-15T02:00:15Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: 8bit render target fallback when rgb10a2 window configs are non-conformant (#374)",
+                    "link": "https://github.com/wang-bin/fvp/pull/385",
+                    "state": "open",
+                    "created_at": "2026-07-18T14:28:20Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "expose audioBackends option in registerWith",
+                    "link": "https://github.com/wang-bin/fvp/pull/383",
+                    "state": "closed",
+                    "created_at": "2026-07-18T14:22:09Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: probe rgb10a2 cross-context sampling, force 8-bit when broken (#374)",
+                    "link": "https://github.com/wang-bin/fvp/pull/380",
+                    "state": "open",
+                    "created_at": "2026-07-11T18:38:21Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: implement VideoViewType.platformView with SurfaceView output",
+                    "link": "https://github.com/wang-bin/fvp/pull/379",
+                    "state": "merged",
+                    "created_at": "2026-07-11T14:21:25Z",
+                    "merged_at": "2026-07-28T09:51:29Z"
+                },
+                {
+                    "title": "fix(darwin): ship PrivacyInfo.xcprivacy as a real file for SwiftPM",
+                    "link": "https://github.com/wang-bin/fvp/pull/373",
+                    "state": "merged",
+                    "created_at": "2026-06-27T21:09:22Z",
+                    "merged_at": "2026-06-28T05:27:21Z"
+                },
+                {
+                    "title": "fix(windows): extract mdk-sdk via realpath to avoid CMake symlink rejection",
+                    "link": "https://github.com/wang-bin/fvp/pull/367",
+                    "state": "merged",
+                    "created_at": "2026-06-20T21:52:21Z",
+                    "merged_at": "2026-06-20T22:48:32Z"
+                },
+                {
+                    "title": "fix warning on android",
+                    "link": "https://github.com/wang-bin/fvp/pull/191",
+                    "state": "merged",
+                    "created_at": "2024-12-12T02:35:39Z",
+                    "merged_at": "2024-12-12T15:25:42Z"
+                },
+                {
+                    "title": "revert impeller",
+                    "link": "https://github.com/wang-bin/fvp/pull/102",
+                    "state": "closed",
+                    "created_at": "2024-06-22T21:36:10Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix path for android FindMDK.cmake",
+                    "link": "https://github.com/wang-bin/fvp/pull/13",
+                    "state": "merged",
+                    "created_at": "2023-08-21T17:08:39Z",
+                    "merged_at": "2023-08-22T05:14:16Z"
+                },
+                {
+                    "title": "fix: android compilation",
+                    "link": "https://github.com/wang-bin/fvp/pull/12",
+                    "state": "closed",
+                    "created_at": "2023-08-21T16:22:02Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "serverpod/serverpod": {
+            "repo_stars": 3335,
+            "repo_link": "https://github.com/serverpod/serverpod",
+            "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
+            "prs": [
+                {
+                    "title": "test: Fix two flaky database integration tests",
+                    "link": "https://github.com/serverpod/serverpod/pull/6013",
+                    "state": "open",
+                    "created_at": "2026-11-14T13:53:49Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Skip session work that is only needed when a session is logged",
+                    "link": "https://github.com/serverpod/serverpod/pull/6005",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:05Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Build ORM query strings and result rows once",
+                    "link": "https://github.com/serverpod/serverpod/pull/6004",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:03Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Stop capturing a stack trace for every database query",
+                    "link": "https://github.com/serverpod/serverpod/pull/6003",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix: Migrate from dart:html to package:web for WASM support.",
+                    "link": "https://github.com/serverpod/serverpod/pull/2596",
+                    "state": "merged",
+                    "created_at": "2024-08-12T20:24:07Z",
+                    "merged_at": "2024-08-14T14:26:39Z"
+                },
+                {
+                    "title": "adding client true after serverpod create",
+                    "link": "https://github.com/serverpod/serverpod/pull/2209",
+                    "state": "merged",
+                    "created_at": "2024-05-05T21:22:24Z",
+                    "merged_at": "2024-05-17T09:50:10Z"
+                },
+                {
+                    "title": "fix: endpoint classes conflict",
+                    "link": "https://github.com/serverpod/serverpod/pull/2185",
+                    "state": "merged",
+                    "created_at": "2024-04-27T14:53:20Z",
+                    "merged_at": "2024-05-16T13:20:21Z"
+                }
+            ]
+        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
@@ -6136,57 +6297,8 @@
                 }
             ]
         },
-        "serverpod/serverpod": {
-            "repo_stars": 3333,
-            "repo_link": "https://github.com/serverpod/serverpod",
-            "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
-            "prs": [
-                {
-                    "title": "perf: Skip session work that is only needed when a session is logged",
-                    "link": "https://github.com/serverpod/serverpod/pull/6005",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:05Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Build ORM query strings and result rows once",
-                    "link": "https://github.com/serverpod/serverpod/pull/6004",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:03Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Stop capturing a stack trace for every database query",
-                    "link": "https://github.com/serverpod/serverpod/pull/6003",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:01Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "fix: Migrate from dart:html to package:web for WASM support.",
-                    "link": "https://github.com/serverpod/serverpod/pull/2596",
-                    "state": "merged",
-                    "created_at": "2024-08-12T20:24:07Z",
-                    "merged_at": "2024-08-14T14:26:39Z"
-                },
-                {
-                    "title": "adding client true after serverpod create",
-                    "link": "https://github.com/serverpod/serverpod/pull/2209",
-                    "state": "merged",
-                    "created_at": "2024-05-05T21:22:24Z",
-                    "merged_at": "2024-05-17T09:50:10Z"
-                },
-                {
-                    "title": "fix: endpoint classes conflict",
-                    "link": "https://github.com/serverpod/serverpod/pull/2185",
-                    "state": "merged",
-                    "created_at": "2024-04-27T14:53:20Z",
-                    "merged_at": "2024-05-16T13:20:21Z"
-                }
-            ]
-        },
         "simolus3/sqlite3.dart": {
-            "repo_stars": 304,
+            "repo_stars": 305,
             "repo_link": "https://github.com/simolus3/sqlite3.dart",
             "repo_description": "sqlite3 bindings for Dart",
             "prs": [
@@ -6214,7 +6326,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5177,
+            "repo_stars": 5178,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6676,7 +6788,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181262,
+            "repo_stars": 181277,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -6798,83 +6910,6 @@
                     "state": "merged",
                     "created_at": "2026-09-04T14:01:19Z",
                     "merged_at": "2026-09-04T16:22:35Z"
-                }
-            ]
-        },
-        "wang-bin/fvp": {
-            "repo_stars": 370,
-            "repo_link": "https://github.com/wang-bin/fvp",
-            "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
-            "prs": [
-                {
-                    "title": "android: 8bit render target fallback when rgb10a2 window configs are non-conformant (#374)",
-                    "link": "https://github.com/wang-bin/fvp/pull/385",
-                    "state": "open",
-                    "created_at": "2026-07-18T14:28:20Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "expose audioBackends option in registerWith",
-                    "link": "https://github.com/wang-bin/fvp/pull/383",
-                    "state": "closed",
-                    "created_at": "2026-07-18T14:22:09Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "android: probe rgb10a2 cross-context sampling, force 8-bit when broken (#374)",
-                    "link": "https://github.com/wang-bin/fvp/pull/380",
-                    "state": "open",
-                    "created_at": "2026-07-11T18:38:21Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "android: implement VideoViewType.platformView with SurfaceView output",
-                    "link": "https://github.com/wang-bin/fvp/pull/379",
-                    "state": "merged",
-                    "created_at": "2026-07-11T14:21:25Z",
-                    "merged_at": "2026-07-28T09:51:29Z"
-                },
-                {
-                    "title": "fix(darwin): ship PrivacyInfo.xcprivacy as a real file for SwiftPM",
-                    "link": "https://github.com/wang-bin/fvp/pull/373",
-                    "state": "merged",
-                    "created_at": "2026-06-27T21:09:22Z",
-                    "merged_at": "2026-06-28T05:27:21Z"
-                },
-                {
-                    "title": "fix(windows): extract mdk-sdk via realpath to avoid CMake symlink rejection",
-                    "link": "https://github.com/wang-bin/fvp/pull/367",
-                    "state": "merged",
-                    "created_at": "2026-06-20T21:52:21Z",
-                    "merged_at": "2026-06-20T22:48:32Z"
-                },
-                {
-                    "title": "fix warning on android",
-                    "link": "https://github.com/wang-bin/fvp/pull/191",
-                    "state": "merged",
-                    "created_at": "2024-12-12T02:35:39Z",
-                    "merged_at": "2024-12-12T15:25:42Z"
-                },
-                {
-                    "title": "revert impeller",
-                    "link": "https://github.com/wang-bin/fvp/pull/102",
-                    "state": "closed",
-                    "created_at": "2024-06-22T21:36:10Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "fix path for android FindMDK.cmake",
-                    "link": "https://github.com/wang-bin/fvp/pull/13",
-                    "state": "merged",
-                    "created_at": "2023-08-21T17:08:39Z",
-                    "merged_at": "2023-08-22T05:14:16Z"
-                },
-                {
-                    "title": "fix: android compilation",
-                    "link": "https://github.com/wang-bin/fvp/pull/12",
-                    "state": "closed",
-                    "created_at": "2023-08-21T16:22:02Z",
-                    "merged_at": null
                 }
             ]
         },
@@ -7341,7 +7376,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5341,
+            "repo_stars": 5342,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7516,7 +7551,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 363,
+            "repo_stars": 364,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7775,7 +7810,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17701,
+            "repo_stars": 17700,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
