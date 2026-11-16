@@ -77,20 +77,20 @@
 - [6Niners/Purr](https://github.com/6Niners/Purr)
 - [6Niners/Smart-Customer-Care](https://github.com/6Niners/Smart-Customer-Care)
 - [6Niners/Escape69](https://github.com/6Niners/Escape69)
-- [media-kit/libmpv-darwin-build](https://github.com/media-kit/libmpv-darwin-build)
 - [media-kit/media-kit](https://github.com/media-kit/media-kit)
+- [media-kit/libmpv-darwin-build](https://github.com/media-kit/libmpv-darwin-build)
 - [media-kit/media-kit-android-helper](https://github.com/media-kit/media-kit-android-helper)
 
 ## External
 
-- [google/XNNPACK](https://github.com/google/XNNPACK)
+- [pytorch/executorch](https://github.com/pytorch/executorch)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
+- [google/XNNPACK](https://github.com/google/XNNPACK)
 - [serverpod/serverpod](https://github.com/serverpod/serverpod)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [serverpod/relic](https://github.com/serverpod/relic)
 - [isoos/postgresql-dart](https://github.com/isoos/postgresql-dart)
 - [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
-- [pytorch/executorch](https://github.com/pytorch/executorch)
 - [kekko7072/flutter_local_ai](https://github.com/kekko7072/flutter_local_ai)
 - [foam-foundation/FOAM-LSP](https://github.com/foam-foundation/FOAM-LSP)
 - [rainyl/opencv_dart](https://github.com/rainyl/opencv_dart)

@@ -301,12 +301,12 @@
             "link": "https://github.com/6Niners/Escape69"
         },
         {
-            "name": "media-kit/libmpv-darwin-build",
-            "link": "https://github.com/media-kit/libmpv-darwin-build"
-        },
-        {
             "name": "media-kit/media-kit",
             "link": "https://github.com/media-kit/media-kit"
+        },
+        {
+            "name": "media-kit/libmpv-darwin-build",
+            "link": "https://github.com/media-kit/libmpv-darwin-build"
         },
         {
             "name": "media-kit/media-kit-android-helper",
@@ -315,12 +315,16 @@
     ],
     "external": [
         {
-            "name": "google/XNNPACK",
-            "link": "https://github.com/google/XNNPACK"
+            "name": "pytorch/executorch",
+            "link": "https://github.com/pytorch/executorch"
         },
         {
             "name": "wang-bin/fvp",
             "link": "https://github.com/wang-bin/fvp"
+        },
+        {
+            "name": "google/XNNPACK",
+            "link": "https://github.com/google/XNNPACK"
         },
         {
             "name": "serverpod/serverpod",
@@ -341,10 +345,6 @@
         {
             "name": "simolus3/sqlite3.dart",
             "link": "https://github.com/simolus3/sqlite3.dart"
-        },
-        {
-            "name": "pytorch/executorch",
-            "link": "https://github.com/pytorch/executorch"
         },
         {
             "name": "kekko7072/flutter_local_ai",
