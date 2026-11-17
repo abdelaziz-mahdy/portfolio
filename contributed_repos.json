@@ -315,6 +315,10 @@
     ],
     "external": [
         {
+            "name": "foam-foundation/foam3",
+            "link": "https://github.com/foam-foundation/foam3"
+        },
+        {
             "name": "pytorch/executorch",
             "link": "https://github.com/pytorch/executorch"
         },
@@ -329,10 +333,6 @@
         {
             "name": "serverpod/serverpod",
             "link": "https://github.com/serverpod/serverpod"
-        },
-        {
-            "name": "foam-foundation/foam3",
-            "link": "https://github.com/foam-foundation/foam3"
         },
         {
             "name": "serverpod/relic",

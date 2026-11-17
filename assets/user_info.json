@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-16T10:29:38+00:00",
+    "generated_at": "2026-11-17T11:24:17+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1243,312 +1243,39 @@
         }
     ],
     "pull_requests": {
-        "pytorch/executorch": {
-            "repo_stars": 5180,
-            "repo_link": "https://github.com/pytorch/executorch",
-            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
-            "prs": [
-                {
-                    "title": "[Wasm] Let the tokenizer bindings load HF and Tekken tokenizers",
-                    "link": "https://github.com/pytorch/executorch/pull/25103",
-                    "state": "open",
-                    "created_at": "2026-11-15T14:17:13Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[LLM runner] Keep stop() requests made during prefill",
-                    "link": "https://github.com/pytorch/executorch/pull/25101",
-                    "state": "open",
-                    "created_at": "2026-11-15T14:12:04Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: free only the destroyed delegate's memory",
-                    "link": "https://github.com/pytorch/executorch/pull/24782",
-                    "state": "open",
-                    "created_at": "2026-11-08T21:54:51Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-WebGPU] Keep fp16 elementwise ops on CPU",
-                    "link": "https://github.com/pytorch/executorch/pull/24781",
-                    "state": "open",
-                    "created_at": "2026-11-08T19:37:27Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: keep non-packed views in their parent's buffer",
-                    "link": "https://github.com/pytorch/executorch/pull/22984",
-                    "state": "open",
-                    "created_at": "2026-09-22T00:03:01Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: restore the thread qualifiers in the 4-bit matmul shader",
-                    "link": "https://github.com/pytorch/executorch/pull/22982",
-                    "state": "merged",
-                    "created_at": "2026-09-22T00:02:44Z",
-                    "merged_at": "2026-09-22T14:59:54Z"
-                },
-                {
-                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
-                    "link": "https://github.com/pytorch/executorch/pull/22957",
-                    "state": "open",
-                    "created_at": "2026-09-20T02:04:08Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
-                    "link": "https://github.com/pytorch/executorch/pull/22954",
-                    "state": "merged",
-                    "created_at": "2026-09-20T01:23:30Z",
-                    "merged_at": "2026-09-21T15:26:29Z"
-                },
-                {
-                    "title": "Metal backend: honor channels-last strides in conv2d",
-                    "link": "https://github.com/pytorch/executorch/pull/22952",
-                    "state": "merged",
-                    "created_at": "2026-09-20T01:23:17Z",
-                    "merged_at": "2026-09-23T16:27:05Z"
-                },
-                {
-                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
-                    "link": "https://github.com/pytorch/executorch/pull/19924",
-                    "state": "merged",
-                    "created_at": "2026-06-01T23:23:41Z",
-                    "merged_at": "2026-08-27T00:56:32Z"
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18699",
-                    "state": "closed",
-                    "created_at": "2026-04-04T03:45:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
-                    "link": "https://github.com/pytorch/executorch/pull/18697",
-                    "state": "closed",
-                    "created_at": "2026-04-04T02:40:11Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
-                    "link": "https://github.com/pytorch/executorch/pull/17468",
-                    "state": "closed",
-                    "created_at": "2026-02-15T03:26:17Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
-                    "link": "https://github.com/pytorch/executorch/pull/17467",
-                    "state": "closed",
-                    "created_at": "2026-02-14T23:02:07Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
-                    "link": "https://github.com/pytorch/executorch/pull/17361",
-                    "state": "open",
-                    "created_at": "2026-02-11T00:06:26Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Initial PowerVR GPU support for Vulkan backend",
-                    "link": "https://github.com/pytorch/executorch/pull/17323",
-                    "state": "closed",
-                    "created_at": "2026-02-10T03:33:24Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "Fix Vulkan texture tensor UBO budget overflow",
-                    "link": "https://github.com/pytorch/executorch/pull/17294",
-                    "state": "merged",
-                    "created_at": "2026-02-08T00:04:58Z",
-                    "merged_at": "2026-02-09T21:06:04Z"
-                },
-                {
-                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
-                    "link": "https://github.com/pytorch/executorch/pull/16242",
-                    "state": "closed",
-                    "created_at": "2025-12-14T23:59:29Z",
-                    "merged_at": null
-                }
-            ]
-        },
-        "wang-bin/fvp": {
-            "repo_stars": 371,
-            "repo_link": "https://github.com/wang-bin/fvp",
-            "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
-            "prs": [
-                {
-                    "title": "feat: open at a `#t=` media fragment start time",
-                    "link": "https://github.com/wang-bin/fvp/pull/421",
-                    "state": "closed",
-                    "created_at": "2026-11-15T13:06:37Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "ci: build the example with current Flutter and Xcode",
-                    "link": "https://github.com/wang-bin/fvp/pull/419",
-                    "state": "merged",
-                    "created_at": "2026-11-15T02:23:29Z",
-                    "merged_at": "2026-11-15T09:00:58Z"
-                },
-                {
-                    "title": "android: don't touch a deleted player from surfaceDestroyed",
-                    "link": "https://github.com/wang-bin/fvp/pull/418",
-                    "state": "open",
-                    "created_at": "2026-11-15T02:00:15Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "android: 8bit render target fallback when rgb10a2 window configs are non-conformant (#374)",
-                    "link": "https://github.com/wang-bin/fvp/pull/385",
-                    "state": "open",
-                    "created_at": "2026-07-18T14:28:20Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "expose audioBackends option in registerWith",
-                    "link": "https://github.com/wang-bin/fvp/pull/383",
-                    "state": "closed",
-                    "created_at": "2026-07-18T14:22:09Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "android: probe rgb10a2 cross-context sampling, force 8-bit when broken (#374)",
-                    "link": "https://github.com/wang-bin/fvp/pull/380",
-                    "state": "open",
-                    "created_at": "2026-07-11T18:38:21Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "android: implement VideoViewType.platformView with SurfaceView output",
-                    "link": "https://github.com/wang-bin/fvp/pull/379",
-                    "state": "merged",
-                    "created_at": "2026-07-11T14:21:25Z",
-                    "merged_at": "2026-07-28T09:51:29Z"
-                },
-                {
-                    "title": "fix(darwin): ship PrivacyInfo.xcprivacy as a real file for SwiftPM",
-                    "link": "https://github.com/wang-bin/fvp/pull/373",
-                    "state": "merged",
-                    "created_at": "2026-06-27T21:09:22Z",
-                    "merged_at": "2026-06-28T05:27:21Z"
-                },
-                {
-                    "title": "fix(windows): extract mdk-sdk via realpath to avoid CMake symlink rejection",
-                    "link": "https://github.com/wang-bin/fvp/pull/367",
-                    "state": "merged",
-                    "created_at": "2026-06-20T21:52:21Z",
-                    "merged_at": "2026-06-20T22:48:32Z"
-                },
-                {
-                    "title": "fix warning on android",
-                    "link": "https://github.com/wang-bin/fvp/pull/191",
-                    "state": "merged",
-                    "created_at": "2024-12-12T02:35:39Z",
-                    "merged_at": "2024-12-12T15:25:42Z"
-                },
-                {
-                    "title": "revert impeller",
-                    "link": "https://github.com/wang-bin/fvp/pull/102",
-                    "state": "closed",
-                    "created_at": "2024-06-22T21:36:10Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "fix path for android FindMDK.cmake",
-                    "link": "https://github.com/wang-bin/fvp/pull/13",
-                    "state": "merged",
-                    "created_at": "2023-08-21T17:08:39Z",
-                    "merged_at": "2023-08-22T05:14:16Z"
-                },
-                {
-                    "title": "fix: android compilation",
-                    "link": "https://github.com/wang-bin/fvp/pull/12",
-                    "state": "closed",
-                    "created_at": "2023-08-21T16:22:02Z",
-                    "merged_at": null
-                }
-            ]
-        },
-        "google/XNNPACK": {
-            "repo_stars": 2497,
-            "repo_link": "https://github.com/google/XNNPACK",
-            "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
-            "prs": [
-                {
-                    "title": "Count tensor sizes in bytes so 32-bit targets accept tensors over 512 MiB",
-                    "link": "https://github.com/google/XNNPACK/pull/12038",
-                    "state": "open",
-                    "created_at": "2026-11-15T02:49:33Z",
-                    "merged_at": null
-                }
-            ]
-        },
-        "serverpod/serverpod": {
-            "repo_stars": 3337,
-            "repo_link": "https://github.com/serverpod/serverpod",
-            "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
-            "prs": [
-                {
-                    "title": "test: Fix two flaky database integration tests",
-                    "link": "https://github.com/serverpod/serverpod/pull/6013",
-                    "state": "open",
-                    "created_at": "2026-11-14T13:53:49Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Skip session work that is only needed when a session is logged",
-                    "link": "https://github.com/serverpod/serverpod/pull/6005",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:05Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Build ORM query strings and result rows once",
-                    "link": "https://github.com/serverpod/serverpod/pull/6004",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:03Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Stop capturing a stack trace for every database query",
-                    "link": "https://github.com/serverpod/serverpod/pull/6003",
-                    "state": "open",
-                    "created_at": "2026-11-13T03:39:01Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "fix: Migrate from dart:html to package:web for WASM support.",
-                    "link": "https://github.com/serverpod/serverpod/pull/2596",
-                    "state": "merged",
-                    "created_at": "2024-08-12T20:24:07Z",
-                    "merged_at": "2024-08-14T14:26:39Z"
-                },
-                {
-                    "title": "adding client true after serverpod create",
-                    "link": "https://github.com/serverpod/serverpod/pull/2209",
-                    "state": "merged",
-                    "created_at": "2024-05-05T21:22:24Z",
-                    "merged_at": "2024-05-17T09:50:10Z"
-                },
-                {
-                    "title": "fix: endpoint classes conflict",
-                    "link": "https://github.com/serverpod/serverpod/pull/2185",
-                    "state": "merged",
-                    "created_at": "2024-04-27T14:53:20Z",
-                    "merged_at": "2024-05-16T13:20:21Z"
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5865 Key the select cache by sink class too",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5877",
+                    "state": "merged",
+                    "created_at": "2026-11-16T20:03:53Z",
+                    "merged_at": "2026-11-16T20:13:42Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5865 Show why a dashboard chart cannot run",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5876",
+                    "state": "merged",
+                    "created_at": "2026-11-16T19:14:55Z",
+                    "merged_at": "2026-11-16T19:24:04Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5865 Let dashboard charts run again after the move to displaySink",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5874",
+                    "state": "merged",
+                    "created_at": "2026-11-16T17:08:19Z",
+                    "merged_at": "2026-11-16T19:21:57Z"
+                },
+                {
+                    "title": "Fix the GitHub Pages build broken by Liquid tags in KnowledgeBaseDocs",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5872",
+                    "state": "merged",
+                    "created_at": "2026-11-16T15:13:37Z",
+                    "merged_at": "2026-11-16T16:36:30Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-5844 Only the creator or an admin deletes a Flow; Console restore keeps stored access",
                     "link": "https://github.com/foam-foundation/foam3/pull/5867",
@@ -1587,9 +1314,9 @@
                 {
                     "title": "Add extend-without-being-specific to foam-design-patterns",
                     "link": "https://github.com/foam-foundation/foam3/pull/5853",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-12T20:56:09Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-16T21:11:32Z"
                 },
                 {
                     "title": "Add markdown document rules to foam-design-patterns",
@@ -6402,8 +6129,309 @@
                 }
             ]
         },
+        "pytorch/executorch": {
+            "repo_stars": 5180,
+            "repo_link": "https://github.com/pytorch/executorch",
+            "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
+            "prs": [
+                {
+                    "title": "[Wasm] Let the tokenizer bindings load HF and Tekken tokenizers",
+                    "link": "https://github.com/pytorch/executorch/pull/25103",
+                    "state": "open",
+                    "created_at": "2026-11-15T14:17:13Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[LLM runner] Keep stop() requests made during prefill",
+                    "link": "https://github.com/pytorch/executorch/pull/25101",
+                    "state": "open",
+                    "created_at": "2026-11-15T14:12:04Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: free only the destroyed delegate's memory",
+                    "link": "https://github.com/pytorch/executorch/pull/24782",
+                    "state": "open",
+                    "created_at": "2026-11-08T21:54:51Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-WebGPU] Keep fp16 elementwise ops on CPU",
+                    "link": "https://github.com/pytorch/executorch/pull/24781",
+                    "state": "open",
+                    "created_at": "2026-11-08T19:37:27Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: keep non-packed views in their parent's buffer",
+                    "link": "https://github.com/pytorch/executorch/pull/22984",
+                    "state": "open",
+                    "created_at": "2026-09-22T00:03:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: restore the thread qualifiers in the 4-bit matmul shader",
+                    "link": "https://github.com/pytorch/executorch/pull/22982",
+                    "state": "merged",
+                    "created_at": "2026-09-22T00:02:44Z",
+                    "merged_at": "2026-09-22T14:59:54Z"
+                },
+                {
+                    "title": "Metal backend: bind offset views to their parent's buffer instead of aliasing it",
+                    "link": "https://github.com/pytorch/executorch/pull/22957",
+                    "state": "open",
+                    "created_at": "2026-09-20T02:04:08Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Metal backend: stop tracking blob memory once a model is destroyed",
+                    "link": "https://github.com/pytorch/executorch/pull/22954",
+                    "state": "merged",
+                    "created_at": "2026-09-20T01:23:30Z",
+                    "merged_at": "2026-09-21T15:26:29Z"
+                },
+                {
+                    "title": "Metal backend: honor channels-last strides in conv2d",
+                    "link": "https://github.com/pytorch/executorch/pull/22952",
+                    "state": "merged",
+                    "created_at": "2026-09-20T01:23:17Z",
+                    "merged_at": "2026-09-23T16:27:05Z"
+                },
+                {
+                    "title": "Support addmm and split_copy in the Metal (AOTI) backend",
+                    "link": "https://github.com/pytorch/executorch/pull/19924",
+                    "state": "merged",
+                    "created_at": "2026-06-01T23:23:41Z",
+                    "merged_at": "2026-08-27T00:56:32Z"
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18699",
+                    "state": "closed",
+                    "created_at": "2026-04-04T03:45:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Fix VMA assertion crash: test_host_cached_available returns bool instead of VmaAllocationCreateFlags",
+                    "link": "https://github.com/pytorch/executorch/pull/18697",
+                    "state": "closed",
+                    "created_at": "2026-04-04T02:40:11Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Serialize prepack dispatches on PowerVR GPUs",
+                    "link": "https://github.com/pytorch/executorch/pull/17468",
+                    "state": "closed",
+                    "created_at": "2026-02-15T03:26:17Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Use direct buffer-to-image copy for 1D tensor prepacking",
+                    "link": "https://github.com/pytorch/executorch/pull/17467",
+                    "state": "closed",
+                    "created_at": "2026-02-14T23:02:07Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "[ET-VK] Prevent decomposition of activation ops with native shaders",
+                    "link": "https://github.com/pytorch/executorch/pull/17361",
+                    "state": "open",
+                    "created_at": "2026-02-11T00:06:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Initial PowerVR GPU support for Vulkan backend",
+                    "link": "https://github.com/pytorch/executorch/pull/17323",
+                    "state": "closed",
+                    "created_at": "2026-02-10T03:33:24Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Fix Vulkan texture tensor UBO budget overflow",
+                    "link": "https://github.com/pytorch/executorch/pull/17294",
+                    "state": "merged",
+                    "created_at": "2026-02-08T00:04:58Z",
+                    "merged_at": "2026-02-09T21:06:04Z"
+                },
+                {
+                    "title": "Add null pointer check in XNNWeightsCache::look_up_or_insert",
+                    "link": "https://github.com/pytorch/executorch/pull/16242",
+                    "state": "closed",
+                    "created_at": "2025-12-14T23:59:29Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "wang-bin/fvp": {
+            "repo_stars": 371,
+            "repo_link": "https://github.com/wang-bin/fvp",
+            "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
+            "prs": [
+                {
+                    "title": "feat: open at a `#t=` media fragment start time",
+                    "link": "https://github.com/wang-bin/fvp/pull/421",
+                    "state": "closed",
+                    "created_at": "2026-11-15T13:06:37Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "ci: build the example with current Flutter and Xcode",
+                    "link": "https://github.com/wang-bin/fvp/pull/419",
+                    "state": "merged",
+                    "created_at": "2026-11-15T02:23:29Z",
+                    "merged_at": "2026-11-15T09:00:58Z"
+                },
+                {
+                    "title": "android: don't touch a deleted player from surfaceDestroyed",
+                    "link": "https://github.com/wang-bin/fvp/pull/418",
+                    "state": "open",
+                    "created_at": "2026-11-15T02:00:15Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: 8bit render target fallback when rgb10a2 window configs are non-conformant (#374)",
+                    "link": "https://github.com/wang-bin/fvp/pull/385",
+                    "state": "open",
+                    "created_at": "2026-07-18T14:28:20Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "expose audioBackends option in registerWith",
+                    "link": "https://github.com/wang-bin/fvp/pull/383",
+                    "state": "closed",
+                    "created_at": "2026-07-18T14:22:09Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: probe rgb10a2 cross-context sampling, force 8-bit when broken (#374)",
+                    "link": "https://github.com/wang-bin/fvp/pull/380",
+                    "state": "open",
+                    "created_at": "2026-07-11T18:38:21Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "android: implement VideoViewType.platformView with SurfaceView output",
+                    "link": "https://github.com/wang-bin/fvp/pull/379",
+                    "state": "merged",
+                    "created_at": "2026-07-11T14:21:25Z",
+                    "merged_at": "2026-07-28T09:51:29Z"
+                },
+                {
+                    "title": "fix(darwin): ship PrivacyInfo.xcprivacy as a real file for SwiftPM",
+                    "link": "https://github.com/wang-bin/fvp/pull/373",
+                    "state": "merged",
+                    "created_at": "2026-06-27T21:09:22Z",
+                    "merged_at": "2026-06-28T05:27:21Z"
+                },
+                {
+                    "title": "fix(windows): extract mdk-sdk via realpath to avoid CMake symlink rejection",
+                    "link": "https://github.com/wang-bin/fvp/pull/367",
+                    "state": "merged",
+                    "created_at": "2026-06-20T21:52:21Z",
+                    "merged_at": "2026-06-20T22:48:32Z"
+                },
+                {
+                    "title": "fix warning on android",
+                    "link": "https://github.com/wang-bin/fvp/pull/191",
+                    "state": "merged",
+                    "created_at": "2024-12-12T02:35:39Z",
+                    "merged_at": "2024-12-12T15:25:42Z"
+                },
+                {
+                    "title": "revert impeller",
+                    "link": "https://github.com/wang-bin/fvp/pull/102",
+                    "state": "closed",
+                    "created_at": "2024-06-22T21:36:10Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix path for android FindMDK.cmake",
+                    "link": "https://github.com/wang-bin/fvp/pull/13",
+                    "state": "merged",
+                    "created_at": "2023-08-21T17:08:39Z",
+                    "merged_at": "2023-08-22T05:14:16Z"
+                },
+                {
+                    "title": "fix: android compilation",
+                    "link": "https://github.com/wang-bin/fvp/pull/12",
+                    "state": "closed",
+                    "created_at": "2023-08-21T16:22:02Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "google/XNNPACK": {
+            "repo_stars": 2498,
+            "repo_link": "https://github.com/google/XNNPACK",
+            "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
+            "prs": [
+                {
+                    "title": "Count tensor sizes in bytes so 32-bit targets accept tensors over 512 MiB",
+                    "link": "https://github.com/google/XNNPACK/pull/12038",
+                    "state": "open",
+                    "created_at": "2026-11-15T02:49:33Z",
+                    "merged_at": null
+                }
+            ]
+        },
+        "serverpod/serverpod": {
+            "repo_stars": 3338,
+            "repo_link": "https://github.com/serverpod/serverpod",
+            "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
+            "prs": [
+                {
+                    "title": "test: Fix two flaky database integration tests",
+                    "link": "https://github.com/serverpod/serverpod/pull/6013",
+                    "state": "open",
+                    "created_at": "2026-11-14T13:53:49Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Skip session work that is only needed when a session is logged",
+                    "link": "https://github.com/serverpod/serverpod/pull/6005",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:05Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Build ORM query strings and result rows once",
+                    "link": "https://github.com/serverpod/serverpod/pull/6004",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:03Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "perf: Stop capturing a stack trace for every database query",
+                    "link": "https://github.com/serverpod/serverpod/pull/6003",
+                    "state": "open",
+                    "created_at": "2026-11-13T03:39:01Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "fix: Migrate from dart:html to package:web for WASM support.",
+                    "link": "https://github.com/serverpod/serverpod/pull/2596",
+                    "state": "merged",
+                    "created_at": "2024-08-12T20:24:07Z",
+                    "merged_at": "2024-08-14T14:26:39Z"
+                },
+                {
+                    "title": "adding client true after serverpod create",
+                    "link": "https://github.com/serverpod/serverpod/pull/2209",
+                    "state": "merged",
+                    "created_at": "2024-05-05T21:22:24Z",
+                    "merged_at": "2024-05-17T09:50:10Z"
+                },
+                {
+                    "title": "fix: endpoint classes conflict",
+                    "link": "https://github.com/serverpod/serverpod/pull/2185",
+                    "state": "merged",
+                    "created_at": "2024-04-27T14:53:20Z",
+                    "merged_at": "2024-05-16T13:20:21Z"
+                }
+            ]
+        },
         "serverpod/relic": {
-            "repo_stars": 137,
+            "repo_stars": 144,
             "repo_link": "https://github.com/serverpod/relic",
             "repo_description": "A high-performance web server framework inspired by Shelf. Relic provides a robust, type-safe, and efficient foundation for building scalable web services.",
             "prs": [
@@ -6466,7 +6494,7 @@
             ]
         },
         "kekko7072/flutter_local_ai": {
-            "repo_stars": 50,
+            "repo_stars": 51,
             "repo_link": "https://github.com/kekko7072/flutter_local_ai",
             "repo_description": "Flutter package for local AI inference using native OS APIs - iOS Foundation Models, Android   ML Kit GenAI, and Windows AI APIs. Zero model downloads required.",
             "prs": [
@@ -6809,7 +6837,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181282,
+            "repo_stars": 181290,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7397,7 +7425,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5342,
+            "repo_stars": 5343,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7439,7 +7467,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1573,
+            "repo_stars": 1574,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -7586,7 +7614,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1151,
+            "repo_stars": 1150,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7705,7 +7733,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12844,
+            "repo_stars": 12843,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7831,7 +7859,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17698,
+            "repo_stars": 17699,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
