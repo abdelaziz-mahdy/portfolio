@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-17T11:24:17+00:00",
+    "generated_at": "2026-11-18T10:57:40+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1182,7 +1182,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1854,
-            "forks": 521,
+            "forks": 523,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1204,7 +1204,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 60,
-            "forks": 95,
+            "forks": 98,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1248,6 +1248,20 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5560 Let an AI agent run Reflow commands through one tool",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5880",
+                    "state": "open",
+                    "created_at": "2026-11-17T21:00:19Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Answer questions from the records a user can read with ragService",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5878",
+                    "state": "open",
+                    "created_at": "2026-11-17T13:16:43Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-5865 Key the select cache by sink class too",
                     "link": "https://github.com/foam-foundation/foam3/pull/5877",
@@ -1461,9 +1475,9 @@
                 {
                     "title": "PT-FIXES:DOS-5607 Upload mapping: AScript formulas, Dynamic shown as JavaScript",
                     "link": "https://github.com/foam-foundation/foam3/pull/5780",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-29T18:15:39Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-17T15:05:05Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5584 Add a Dock where any long task or agent shows a card on every screen",
@@ -1482,7 +1496,7 @@
                 {
                     "title": "PT-FIXES:DOS-5560 Let an AI agent run Reflow commands through one tool",
                     "link": "https://github.com/foam-foundation/foam3/pull/5774",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-10-28T13:18:32Z",
                     "merged_at": null
                 },
@@ -6263,7 +6277,7 @@
             ]
         },
         "wang-bin/fvp": {
-            "repo_stars": 371,
+            "repo_stars": 370,
             "repo_link": "https://github.com/wang-bin/fvp",
             "repo_description": "Flutter video player plugin for all desktop+mobile platforms. download prebuilt examples from github actions. https://pub.dev/packages/fvp",
             "prs": [
@@ -6361,7 +6375,7 @@
             ]
         },
         "google/XNNPACK": {
-            "repo_stars": 2498,
+            "repo_stars": 2502,
             "repo_link": "https://github.com/google/XNNPACK",
             "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
             "prs": [
@@ -6431,7 +6445,7 @@
             ]
         },
         "serverpod/relic": {
-            "repo_stars": 144,
+            "repo_stars": 145,
             "repo_link": "https://github.com/serverpod/relic",
             "repo_description": "A high-performance web server framework inspired by Shelf. Relic provides a robust, type-safe, and efficient foundation for building scalable web services.",
             "prs": [
@@ -6837,7 +6851,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181290,
+            "repo_stars": 181289,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7467,7 +7481,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1574,
+            "repo_stars": 1573,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -7600,7 +7614,7 @@
             ]
         },
         "kodjodevf/mangayomi-extensions": {
-            "repo_stars": 364,
+            "repo_stars": 363,
             "repo_link": "https://github.com/kodjodevf/mangayomi-extensions",
             "repo_description": "Public source extensions (Manga & novels only) for the Mangayomi app.",
             "prs": [
@@ -7733,7 +7747,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12843,
+            "repo_stars": 12844,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7859,7 +7873,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17699,
+            "repo_stars": 17701,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
