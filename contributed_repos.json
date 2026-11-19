@@ -315,6 +315,10 @@
     ],
     "external": [
         {
+            "name": "serverpod/relic",
+            "link": "https://github.com/serverpod/relic"
+        },
+        {
             "name": "foam-foundation/foam3",
             "link": "https://github.com/foam-foundation/foam3"
         },
@@ -333,10 +337,6 @@
         {
             "name": "serverpod/serverpod",
             "link": "https://github.com/serverpod/serverpod"
-        },
-        {
-            "name": "serverpod/relic",
-            "link": "https://github.com/serverpod/relic"
         },
         {
             "name": "isoos/postgresql-dart",

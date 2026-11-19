@@ -83,12 +83,12 @@
 
 ## External
 
+- [serverpod/relic](https://github.com/serverpod/relic)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
 - [google/XNNPACK](https://github.com/google/XNNPACK)
 - [serverpod/serverpod](https://github.com/serverpod/serverpod)
-- [serverpod/relic](https://github.com/serverpod/relic)
 - [isoos/postgresql-dart](https://github.com/isoos/postgresql-dart)
 - [simolus3/sqlite3.dart](https://github.com/simolus3/sqlite3.dart)
 - [kekko7072/flutter_local_ai](https://github.com/kekko7072/flutter_local_ai)
