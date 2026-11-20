@@ -83,8 +83,8 @@
 
 ## External
 
-- [serverpod/relic](https://github.com/serverpod/relic)
 - [foam-foundation/foam3](https://github.com/foam-foundation/foam3)
+- [serverpod/relic](https://github.com/serverpod/relic)
 - [pytorch/executorch](https://github.com/pytorch/executorch)
 - [wang-bin/fvp](https://github.com/wang-bin/fvp)
 - [google/XNNPACK](https://github.com/google/XNNPACK)

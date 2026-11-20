@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-19T10:59:49+00:00",
+    "generated_at": "2026-11-20T10:48:45+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1182,7 +1182,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1856,
-            "forks": 523,
+            "forks": 526,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1192,7 +1192,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-11-19T08:37:13Z",
+            "updated_at": "2026-11-20T03:42:59Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1243,32 +1243,74 @@
         }
     ],
     "pull_requests": {
-        "serverpod/relic": {
-            "repo_stars": 146,
-            "repo_link": "https://github.com/serverpod/relic",
-            "repo_description": "A high-performance web server framework inspired by Shelf. Relic provides a robust, type-safe, and efficient foundation for building scalable web services.",
-            "prs": [
-                {
-                    "title": "fix(native): Yield to the event loop instead of lingering while handlers wait",
-                    "link": "https://github.com/serverpod/relic/pull/446",
-                    "state": "open",
-                    "created_at": "2026-11-18T21:00:42Z",
-                    "merged_at": null
-                },
-                {
-                    "title": "perf: Reuse parsed Content-Type headers",
-                    "link": "https://github.com/serverpod/relic/pull/437",
-                    "state": "closed",
-                    "created_at": "2026-11-13T03:41:40Z",
-                    "merged_at": null
-                }
-            ]
-        },
         "foam-foundation/foam3": {
             "repo_stars": 50,
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5676 Send a question no document covers to the model, unless requireRetrievedContext",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5905",
+                    "state": "open",
+                    "created_at": "2026-11-19T20:42:45Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5560 List an agent's commands in the Reflow history",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5904",
+                    "state": "merged",
+                    "created_at": "2026-11-19T20:39:39Z",
+                    "merged_at": "2026-11-19T21:00:35Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5896 Embed EmbeddingAware records in a batched background sync",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5902",
+                    "state": "open",
+                    "created_at": "2026-11-19T19:01:37Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Add an Ask AI chat to the Knowledge Base, answered by ragService",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5901",
+                    "state": "open",
+                    "created_at": "2026-11-19T19:01:32Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Answer questions on the server from only the records the caller can read",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5900",
+                    "state": "merged",
+                    "created_at": "2026-11-19T19:01:19Z",
+                    "merged_at": "2026-11-19T19:23:21Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Run the browser RAG demo's models on WebGPU in a Web Worker",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5899",
+                    "state": "open",
+                    "created_at": "2026-11-19T19:01:00Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Let a VectorStoreDAO search drop rows below a minimum score before ranking",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5898",
+                    "state": "open",
+                    "created_at": "2026-11-19T19:00:55Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5676 Keep a model's embeddings in step with its records through a DAO decorator",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5897",
+                    "state": "open",
+                    "created_at": "2026-11-19T18:25:43Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5631 Keep one FScript parse cache per parser (p-u-3.32)",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5896",
+                    "state": "closed",
+                    "created_at": "2026-11-19T13:59:44Z",
+                    "merged_at": null
+                },
                 {
                     "title": "Move the removeAllChildren() row to a Usually Better table in foam-view-builder",
                     "link": "https://github.com/foam-foundation/foam3/pull/5888",
@@ -1291,16 +1333,16 @@
                     "merged_at": "2026-11-18T14:36:49Z"
                 },
                 {
-                    "title": "PT-FIXES:DOS-5560 Let an AI agent run Reflow commands written in its reply",
+                    "title": "PT-FIXES:DOS-5560 Give an AI agent the Reflow prompt through one execute_command tool",
                     "link": "https://github.com/foam-foundation/foam3/pull/5880",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-17T21:00:19Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-19T20:27:33Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5676 Answer questions from the records a user can read with ragService",
                     "link": "https://github.com/foam-foundation/foam3/pull/5878",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2026-11-17T13:16:43Z",
                     "merged_at": null
                 },
@@ -1545,9 +1587,9 @@
                 {
                     "title": "PT-FIXES:DOS-5459 Let llmService callers give the model tools, and stream and retry every reply",
                     "link": "https://github.com/foam-foundation/foam3/pull/5773",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-10-28T13:18:15Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-19T19:16:57Z"
                 },
                 {
                     "title": "Re-read client DAOs without a cache on pollingInterval",
@@ -6185,8 +6227,29 @@
                 }
             ]
         },
+        "serverpod/relic": {
+            "repo_stars": 146,
+            "repo_link": "https://github.com/serverpod/relic",
+            "repo_description": "A high-performance web server framework inspired by Shelf. Relic provides a robust, type-safe, and efficient foundation for building scalable web services.",
+            "prs": [
+                {
+                    "title": "fix(native): Yield to the event loop instead of lingering while handlers wait",
+                    "link": "https://github.com/serverpod/relic/pull/446",
+                    "state": "merged",
+                    "created_at": "2026-11-18T21:00:42Z",
+                    "merged_at": "2026-11-20T09:14:24Z"
+                },
+                {
+                    "title": "perf: Reuse parsed Content-Type headers",
+                    "link": "https://github.com/serverpod/relic/pull/437",
+                    "state": "closed",
+                    "created_at": "2026-11-13T03:41:40Z",
+                    "merged_at": null
+                }
+            ]
+        },
         "pytorch/executorch": {
-            "repo_stars": 5181,
+            "repo_stars": 5182,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6431,7 +6494,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3337,
+            "repo_stars": 3335,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6508,7 +6571,7 @@
             ]
         },
         "simolus3/sqlite3.dart": {
-            "repo_stars": 305,
+            "repo_stars": 304,
             "repo_link": "https://github.com/simolus3/sqlite3.dart",
             "repo_description": "sqlite3 bindings for Dart",
             "prs": [
@@ -6697,7 +6760,7 @@
             ]
         },
         "rainyl/opencv_dart": {
-            "repo_stars": 253,
+            "repo_stars": 255,
             "repo_link": "https://github.com/rainyl/opencv_dart",
             "repo_description": "OpenCV bindings for Dart language and Flutter. Support Asynchronous Now!",
             "prs": [
@@ -6711,9 +6774,9 @@
                 {
                     "title": "feat(ml): add the ml module (TrainData, SVM, ANN_MLP, KNearest, DTrees, RTrees, Boost, EM, LogisticRegression, NormalBayesClassifier, SVMSGD)",
                     "link": "https://github.com/rainyl/opencv_dart/pull/466",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-01T23:58:54Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-20T09:54:25Z"
                 },
                 {
                     "title": "fix: iOS build fails - OpenCL/cl.h not found due to FORCE in cmake options",
@@ -6872,14 +6935,14 @@
                 {
                     "title": "Ml module imp",
                     "link": "https://github.com/rainyl/opencv_dart/pull/63",
-                    "state": "open",
+                    "state": "closed",
                     "created_at": "2024-05-25T11:44:42Z",
                     "merged_at": null
                 }
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181285,
+            "repo_stars": 181308,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7509,7 +7572,7 @@
             ]
         },
         "vicajilau/flutter_file_picker": {
-            "repo_stars": 1573,
+            "repo_stars": 1572,
             "repo_link": "https://github.com/vicajilau/flutter_file_picker",
             "repo_description": "File picker plugin for Flutter, compatible with mobile (iOS & Android), Web, Desktop (Mac, Linux, Windows) platforms with Flutter Go support.",
             "prs": [
@@ -7656,7 +7719,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1149,
+            "repo_stars": 1148,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7670,7 +7733,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1527,
+            "repo_stars": 1526,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7775,7 +7838,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12844,
+            "repo_stars": 12843,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7901,7 +7964,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17701,
+            "repo_stars": 17699,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
