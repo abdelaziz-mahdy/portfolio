@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-20T10:48:45+00:00",
+    "generated_at": "2026-11-21T10:32:12+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1249,6 +1249,34 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
+                    "title": "PT-FIXES:DOS-5676 Keep a server model's cached prompt start across chat turns",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5913",
+                    "state": "merged",
+                    "created_at": "2026-11-20T19:43:00Z",
+                    "merged_at": "2026-11-20T20:21:34Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5459 Name the LLM credentials foam/ai/llm/<provider> after their package",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5912",
+                    "state": "closed",
+                    "created_at": "2026-11-20T18:37:28Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5459 Send OpenAI chat and embedding calls to the credential url",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5909",
+                    "state": "merged",
+                    "created_at": "2026-11-20T15:22:07Z",
+                    "merged_at": "2026-11-20T20:19:24Z"
+                },
+                {
+                    "title": "Add the AI agent rules to foam-design-patterns",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5907",
+                    "state": "merged",
+                    "created_at": "2026-11-20T13:49:52Z",
+                    "merged_at": "2026-11-20T15:50:25Z"
+                },
+                {
                     "title": "PT-FIXES:DOS-5676 Send a question no document covers to the model, unless requireRetrievedContext",
                     "link": "https://github.com/foam-foundation/foam3/pull/5905",
                     "state": "open",
@@ -1272,9 +1300,9 @@
                 {
                     "title": "PT-FIXES:DOS-5676 Add an Ask AI chat to the Knowledge Base, answered by ragService",
                     "link": "https://github.com/foam-foundation/foam3/pull/5901",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-19T19:01:32Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-20T19:28:02Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5676 Answer questions on the server from only the records the caller can read",
@@ -1398,9 +1426,9 @@
                 {
                     "title": "foam-screenshot-builder: label callouts as a second style",
                     "link": "https://github.com/foam-foundation/foam3/pull/5863",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-13T16:18:41Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-20T14:16:38Z"
                 },
                 {
                     "title": "Add a guide to writing Knowledge Base docs",
@@ -6228,7 +6256,7 @@
             ]
         },
         "serverpod/relic": {
-            "repo_stars": 146,
+            "repo_stars": 147,
             "repo_link": "https://github.com/serverpod/relic",
             "repo_description": "A high-performance web server framework inspired by Shelf. Relic provides a robust, type-safe, and efficient foundation for building scalable web services.",
             "prs": [
@@ -6249,7 +6277,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5182,
+            "repo_stars": 5187,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6480,7 +6508,7 @@
             ]
         },
         "google/XNNPACK": {
-            "repo_stars": 2503,
+            "repo_stars": 2506,
             "repo_link": "https://github.com/google/XNNPACK",
             "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
             "prs": [
@@ -6942,7 +6970,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181308,
+            "repo_stars": 181322,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7488,7 +7516,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 846,
+            "repo_stars": 845,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -7530,7 +7558,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5345,
+            "repo_stars": 5346,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7719,7 +7747,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1148,
+            "repo_stars": 1149,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7733,7 +7761,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1526,
+            "repo_stars": 1525,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
