@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-21T10:32:12+00:00",
+    "generated_at": "2026-11-22T10:36:33+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1182,7 +1182,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1856,
-            "forks": 526,
+            "forks": 528,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -6508,7 +6508,7 @@
             ]
         },
         "google/XNNPACK": {
-            "repo_stars": 2506,
+            "repo_stars": 2507,
             "repo_link": "https://github.com/google/XNNPACK",
             "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
             "prs": [
@@ -6522,7 +6522,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3335,
+            "repo_stars": 3334,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6585,9 +6585,9 @@
                 {
                     "title": "Capture the pool acquire stack trace only when it fails",
                     "link": "https://github.com/isoos/postgresql-dart/pull/499",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-13T03:40:38Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-21T13:50:15Z"
                 },
                 {
                     "title": "Don't reset pooled sessions after UPDATE ... SET or quoted keywords",
@@ -6970,7 +6970,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181322,
+            "repo_stars": 181394,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7558,7 +7558,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5346,
+            "repo_stars": 5345,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7747,7 +7747,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1149,
+            "repo_stars": 1150,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7950,7 +7950,7 @@
             ]
         },
         "transistorsoft/flutter_background_fetch": {
-            "repo_stars": 596,
+            "repo_stars": 595,
             "repo_link": "https://github.com/transistorsoft/flutter_background_fetch",
             "repo_description": "Periodic callbacks in the background for both IOS and Android.  Includes Android Headless mechanism",
             "prs": [
@@ -7992,7 +7992,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17699,
+            "repo_stars": 17697,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
