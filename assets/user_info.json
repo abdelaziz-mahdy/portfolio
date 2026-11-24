@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-23T11:38:01+00:00",
+    "generated_at": "2026-11-24T13:10:32+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -12,11 +12,11 @@
             "owner": "abdelaziz-mahdy",
             "link": "https://github.com/abdelaziz-mahdy/executorch_flutter",
             "description": "A Flutter plugin package using ExecuTorch to allow model inference on Android, iOS, macOS, Windows, Linux, and Web platforms.",
-            "stars": 29,
+            "stars": 31,
             "forks": 3,
             "language": "Dart",
             "topics": [],
-            "updated_at": "2026-11-15T02:45:36Z",
+            "updated_at": "2026-11-24T09:16:03Z",
             "archived": false,
             "is_organization": false,
             "demo_url": "https://abdelaziz-mahdy.github.io/executorch_flutter/"
@@ -1182,7 +1182,7 @@
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
             "stars": 1856,
-            "forks": 529,
+            "forks": 532,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1204,7 +1204,7 @@
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 61,
-            "forks": 100,
+            "forks": 101,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1248,6 +1248,69 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5941 Reflow agent: one model call per turn, so it stops",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5943",
+                    "state": "closed",
+                    "created_at": "2026-11-23T22:01:51Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Reflow agent: send an ask's answer to the agent that asked",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5939",
+                    "state": "closed",
+                    "created_at": "2026-11-23T19:07:21Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "State refinement order as built-vs-unbuilt class, not Java vs JS",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5938",
+                    "state": "closed",
+                    "created_at": "2026-11-23T18:57:58Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Reflow agent: run the bootstrap once and stop a reply after an ask",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5935",
+                    "state": "closed",
+                    "created_at": "2026-11-23T17:01:12Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Keep backslashes in a block's command on Save",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5934",
+                    "state": "open",
+                    "created_at": "2026-11-23T16:43:06Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Keep the Reflow agent prompt's output-format checks",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5933",
+                    "state": "merged",
+                    "created_at": "2026-11-23T16:34:03Z",
+                    "merged_at": "2026-11-23T16:36:12Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Restore the Reflow agent command's command-line protocol",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5931",
+                    "state": "merged",
+                    "created_at": "2026-11-23T15:51:48Z",
+                    "merged_at": "2026-11-23T16:26:14Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5459 Send the api key set in code before reading the credential",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5930",
+                    "state": "merged",
+                    "created_at": "2026-11-23T14:26:54Z",
+                    "merged_at": "2026-11-23T14:46:34Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5929 MarkdownView: show tags, links and images as text when untrusted",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5929",
+                    "state": "closed",
+                    "created_at": "2026-11-23T14:00:42Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-5676 Keep a server model's cached prompt start across chat turns",
                     "link": "https://github.com/foam-foundation/foam3/pull/5913",
@@ -6277,7 +6340,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5190,
+            "repo_stars": 5193,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6627,7 +6690,7 @@
             ]
         },
         "kekko7072/flutter_local_ai": {
-            "repo_stars": 51,
+            "repo_stars": 52,
             "repo_link": "https://github.com/kekko7072/flutter_local_ai",
             "repo_description": "Flutter package for local AI inference using native OS APIs - iOS Foundation Models, Android   ML Kit GenAI, and Windows AI APIs. Zero model downloads required.",
             "prs": [
@@ -6970,16 +7033,16 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181478,
+            "repo_stars": 181399,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
                 {
                     "title": "[macOS] Fix back buffer cache returning a wrong-size surface (Impeller null deref in Canvas::SetupRenderPass)",
                     "link": "https://github.com/flutter/flutter/pull/192522",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-09-10T00:23:40Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-23T19:06:17Z"
                 },
                 {
                     "title": "Pass EXCLUDED_ARCHS from Xcode project to xcodebuild for macOS builds",
@@ -7747,7 +7810,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1149,
+            "repo_stars": 1150,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7866,7 +7929,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12842,
+            "repo_stars": 12843,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -7992,7 +8055,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17698,
+            "repo_stars": 17697,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
