@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-24T13:10:32+00:00",
+    "generated_at": "2026-11-25T11:58:24+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1176,6 +1176,28 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "libmpv-darwin-build",
+            "full_name": "media-kit/libmpv-darwin-build",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/libmpv-darwin-build",
+            "description": "libmpv for macOS & iOS.",
+            "stars": 62,
+            "forks": 102,
+            "language": "Nix",
+            "topics": [
+                "build",
+                "libmpv",
+                "macos",
+                "mpv",
+                "ffmpeg",
+                "ios"
+            ],
+            "updated_at": "2026-11-24T15:36:20Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": null
+        },
+        {
             "name": "media-kit",
             "full_name": "media-kit/media-kit",
             "owner": "media-kit",
@@ -1196,28 +1218,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
-        },
-        {
-            "name": "libmpv-darwin-build",
-            "full_name": "media-kit/libmpv-darwin-build",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/libmpv-darwin-build",
-            "description": "libmpv for macOS & iOS.",
-            "stars": 61,
-            "forks": 101,
-            "language": "Nix",
-            "topics": [
-                "build",
-                "libmpv",
-                "macos",
-                "mpv",
-                "ffmpeg",
-                "ios"
-            ],
-            "updated_at": "2026-11-19T03:11:18Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": null
         },
         {
             "name": "media-kit-android-helper",
@@ -1248,6 +1248,41 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "PT-FIXES:DOS-5967 Keep File and Blob values in IDBDAO",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5950",
+                    "state": "open",
+                    "created_at": "2026-11-24T22:27:27Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-4323 OMAlarmTest: read the first three alarms from one closed minute",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5949",
+                    "state": "merged",
+                    "created_at": "2026-11-24T20:19:57Z",
+                    "merged_at": "2026-11-24T20:52:05Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5957 Send upload batches as grouped jobs so a resent batch is stored once",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5948",
+                    "state": "open",
+                    "created_at": "2026-11-24T18:16:25Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-5947 Show the AI gateway's queue status, and let Stop end a call that is still waiting",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5947",
+                    "state": "merged",
+                    "created_at": "2026-11-24T17:02:48Z",
+                    "merged_at": "2026-11-24T20:22:34Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5941 Reflow agent prompt: one ask per reply, so the agent stops",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5946",
+                    "state": "merged",
+                    "created_at": "2026-11-24T14:31:13Z",
+                    "merged_at": "2026-11-24T16:30:59Z"
+                },
                 {
                     "title": "PT-FIXES:DOS-5941 Reflow agent: one model call per turn, so it stops",
                     "link": "https://github.com/foam-foundation/foam3/pull/5943",
@@ -6571,7 +6606,7 @@
             ]
         },
         "google/XNNPACK": {
-            "repo_stars": 2507,
+            "repo_stars": 2508,
             "repo_link": "https://github.com/google/XNNPACK",
             "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
             "prs": [
@@ -7033,7 +7068,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181399,
+            "repo_stars": 181498,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7621,7 +7656,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5346,
+            "repo_stars": 5347,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7810,7 +7845,7 @@
             ]
         },
         "fastforgedev/fastforge": {
-            "repo_stars": 1150,
+            "repo_stars": 1151,
             "repo_link": "https://github.com/fastforgedev/fastforge",
             "repo_description": "Ship every app faster to your users \u2014 Build, package, and publish with one clear configuration. Target popular distribution formats and app stores while fitting naturally into your CI/CD pipeline.",
             "prs": [
@@ -7929,7 +7964,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12843,
+            "repo_stars": 12842,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -8055,7 +8090,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17697,
+            "repo_stars": 17699,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
