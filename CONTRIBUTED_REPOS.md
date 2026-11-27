@@ -77,8 +77,8 @@
 - [6Niners/Purr](https://github.com/6Niners/Purr)
 - [6Niners/Smart-Customer-Care](https://github.com/6Niners/Smart-Customer-Care)
 - [6Niners/Escape69](https://github.com/6Niners/Escape69)
-- [media-kit/libmpv-darwin-build](https://github.com/media-kit/libmpv-darwin-build)
 - [media-kit/media-kit](https://github.com/media-kit/media-kit)
+- [media-kit/libmpv-darwin-build](https://github.com/media-kit/libmpv-darwin-build)
 - [media-kit/media-kit-android-helper](https://github.com/media-kit/media-kit-android-helper)
 
 ## External

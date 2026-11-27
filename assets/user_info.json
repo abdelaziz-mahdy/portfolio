@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-26T11:46:47+00:00",
+    "generated_at": "2026-11-27T11:39:59+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1176,13 +1176,35 @@
             "demo_url": "https://github.com/6Niners/Escape69"
         },
         {
+            "name": "media-kit",
+            "full_name": "media-kit/media-kit",
+            "owner": "media-kit",
+            "link": "https://github.com/media-kit/media-kit",
+            "description": "Cross-platform video player & audio player for Flutter & Dart.",
+            "stars": 1857,
+            "forks": 534,
+            "language": "Dart",
+            "topics": [
+                "dart",
+                "flutter",
+                "libmpv",
+                "c",
+                "cpp",
+                "media-player"
+            ],
+            "updated_at": "2026-11-26T20:16:53Z",
+            "archived": false,
+            "is_organization": true,
+            "demo_url": "https://github.com/media-kit/media-kit"
+        },
+        {
             "name": "libmpv-darwin-build",
             "full_name": "media-kit/libmpv-darwin-build",
             "owner": "media-kit",
             "link": "https://github.com/media-kit/libmpv-darwin-build",
             "description": "libmpv for macOS & iOS.",
             "stars": 62,
-            "forks": 102,
+            "forks": 104,
             "language": "Nix",
             "topics": [
                 "build",
@@ -1196,28 +1218,6 @@
             "archived": false,
             "is_organization": true,
             "demo_url": null
-        },
-        {
-            "name": "media-kit",
-            "full_name": "media-kit/media-kit",
-            "owner": "media-kit",
-            "link": "https://github.com/media-kit/media-kit",
-            "description": "Cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1856,
-            "forks": 532,
-            "language": "Dart",
-            "topics": [
-                "dart",
-                "flutter",
-                "libmpv",
-                "c",
-                "cpp",
-                "media-player"
-            ],
-            "updated_at": "2026-11-20T03:42:59Z",
-            "archived": false,
-            "is_organization": true,
-            "demo_url": "https://github.com/media-kit/media-kit"
         },
         {
             "name": "media-kit-android-helper",
@@ -1248,6 +1248,20 @@
             "repo_link": "https://github.com/foam-foundation/foam3",
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
+                {
+                    "title": "Remove Chart.js and the views that only it drew",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5965",
+                    "state": "open",
+                    "created_at": "2026-11-27T02:51:26Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Draw dashboard charts with FOAM SVG views instead of Chart.js",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5964",
+                    "state": "open",
+                    "created_at": "2026-11-27T00:35:37Z",
+                    "merged_at": null
+                },
                 {
                     "title": "PT-FIXES:DOS-5988 Keep underscores inside a word out of MarkdownView italics",
                     "link": "https://github.com/foam-foundation/foam3/pull/5955",
@@ -6648,7 +6662,7 @@
             ]
         },
         "serverpod/serverpod": {
-            "repo_stars": 3332,
+            "repo_stars": 3334,
             "repo_link": "https://github.com/serverpod/serverpod",
             "repo_description": "Serverpod is a next-generation app and web server, explicitly built for the Flutter and Dart ecosystem.",
             "prs": [
@@ -6921,9 +6935,9 @@
                 {
                     "title": "feat: web support (Emscripten build + wasm-backed ffi), draft",
                     "link": "https://github.com/rainyl/opencv_dart/pull/467",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-02T02:40:51Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-26T13:50:30Z"
                 },
                 {
                     "title": "feat(ml): add the ml module (TrainData, SVM, ANN_MLP, KNearest, DTrees, RTrees, Boost, EM, LogisticRegression, NormalBayesClassifier, SVMSGD)",
@@ -7096,7 +7110,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181521,
+            "repo_stars": 181566,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7278,7 +7292,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1856,
+            "repo_stars": 1857,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "Cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -7642,7 +7656,7 @@
             ]
         },
         "Frezyx/talker": {
-            "repo_stars": 845,
+            "repo_stars": 846,
             "repo_link": "https://github.com/Frezyx/talker",
             "repo_description": "\u260e\ufe0f Advanced error handler and logger for dart and flutter apps",
             "prs": [
@@ -7684,7 +7698,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5349,
+            "repo_stars": 5350,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -7887,7 +7901,7 @@
             ]
         },
         "justfoolingaround/animdl": {
-            "repo_stars": 1528,
+            "repo_stars": 1529,
             "repo_link": "https://github.com/justfoolingaround/animdl",
             "repo_description": "A highly efficient, fast, powerful and light-weight anime downloader and streamer for your favorite anime.",
             "prs": [
@@ -7992,7 +8006,7 @@
             ]
         },
         "cfug/dio": {
-            "repo_stars": 12843,
+            "repo_stars": 12844,
             "repo_link": "https://github.com/cfug/dio",
             "repo_description": "A powerful HTTP client for Dart and Flutter, which supports global settings, Interceptors, FormData, aborting and canceling a request, files uploading and downloading, requests timeout, custom adapters, etc.",
             "prs": [
@@ -8006,7 +8020,7 @@
             ]
         },
         "leanflutter/window_manager": {
-            "repo_stars": 849,
+            "repo_stars": 850,
             "repo_link": "https://github.com/leanflutter/window_manager",
             "repo_description": "The window_manager plugin provides comprehensive window management capabilities for Flutter desktop applications, enabling full control over window size, position, appearance, close behavior, and listening to events.",
             "prs": [
@@ -8118,7 +8132,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17699,
+            "repo_stars": 17700,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
