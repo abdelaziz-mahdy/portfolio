@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-27T11:39:59+00:00",
+    "generated_at": "2026-11-28T11:14:40+00:00",
     "username": "abdelaziz-mahdy",
     "name": "Abdelaziz Mahdy",
     "bio": "Flutter plugin author who goes down to the native layer. On-device ML, video and casting, FFI, Rust. FOAM3 contributor.",
@@ -1181,8 +1181,8 @@
             "owner": "media-kit",
             "link": "https://github.com/media-kit/media-kit",
             "description": "Cross-platform video player & audio player for Flutter & Dart.",
-            "stars": 1857,
-            "forks": 534,
+            "stars": 1858,
+            "forks": 535,
             "language": "Dart",
             "topics": [
                 "dart",
@@ -1192,7 +1192,7 @@
                 "cpp",
                 "media-player"
             ],
-            "updated_at": "2026-11-26T20:16:53Z",
+            "updated_at": "2026-11-28T01:20:36Z",
             "archived": false,
             "is_organization": true,
             "demo_url": "https://github.com/media-kit/media-kit"
@@ -1249,14 +1249,63 @@
             "repo_description": "FOAM: Feature-Oriented Active Modeller, Version 3",
             "prs": [
                 {
-                    "title": "Remove Chart.js and the views that only it drew",
+                    "title": "PT-FIXES:DOS-5957 Keep a finished job finished when a resend races its end",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5985",
+                    "state": "open",
+                    "created_at": "2026-11-27T21:25:50Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Skills: an unset Enum reads its first declared value, not ordinal 0",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5984",
+                    "state": "open",
+                    "created_at": "2026-11-27T19:56:08Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "Skills: CSSAuditTest also rejects hard-coded font values",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5983",
+                    "state": "merged",
+                    "created_at": "2026-11-27T19:11:09Z",
+                    "merged_at": "2026-11-27T19:41:26Z"
+                },
+                {
+                    "title": "PT-FIXES:DOS-5644 Keep a currency or country set right after clone()",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5982",
+                    "state": "open",
+                    "created_at": "2026-11-27T18:13:55Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-6021 Add a foam-reflow-builder skill",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5971",
+                    "state": "open",
+                    "created_at": "2026-11-27T17:42:38Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-6021 Add sixteen more dashboard charts: bubble, radar, heatmap, histogram, waterfall, box plot, treemap, funnel, gauge, candlestick, sankey, polar area, bullet, bar-and-line, sunburst and range bar, plus stacked lines and a 100% stacked bar",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5970",
+                    "state": "open",
+                    "created_at": "2026-11-27T17:18:27Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-6021 Add a scatter chart to the dashboard charts",
+                    "link": "https://github.com/foam-foundation/foam3/pull/5969",
+                    "state": "open",
+                    "created_at": "2026-11-27T15:27:43Z",
+                    "merged_at": null
+                },
+                {
+                    "title": "PT-FIXES:DOS-6021 Remove Chart.js and the views that only it drew",
                     "link": "https://github.com/foam-foundation/foam3/pull/5965",
                     "state": "open",
                     "created_at": "2026-11-27T02:51:26Z",
                     "merged_at": null
                 },
                 {
-                    "title": "Draw dashboard charts with FOAM SVG views instead of Chart.js",
+                    "title": "PT-FIXES:DOS-6021 Draw dashboard charts with FOAM SVG views instead of Chart.js",
                     "link": "https://github.com/foam-foundation/foam3/pull/5964",
                     "state": "open",
                     "created_at": "2026-11-27T00:35:37Z",
@@ -1265,16 +1314,16 @@
                 {
                     "title": "PT-FIXES:DOS-5988 Keep underscores inside a word out of MarkdownView italics",
                     "link": "https://github.com/foam-foundation/foam3/pull/5955",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-25T19:28:26Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-27T15:28:21Z"
                 },
                 {
                     "title": "PT-FIXES:DOS-5985 Let running pool tasks finish their cleanup when the server shuts down",
                     "link": "https://github.com/foam-foundation/foam3/pull/5953",
-                    "state": "open",
+                    "state": "merged",
                     "created_at": "2026-11-25T17:01:59Z",
-                    "merged_at": null
+                    "merged_at": "2026-11-28T01:26:19Z"
                 },
                 {
                     "title": "Show a live heap estimate on the health page",
@@ -6417,7 +6466,7 @@
             ]
         },
         "pytorch/executorch": {
-            "repo_stars": 5197,
+            "repo_stars": 5198,
             "repo_link": "https://github.com/pytorch/executorch",
             "repo_description": "On-device AI across mobile, embedded and edge for PyTorch",
             "prs": [
@@ -6648,7 +6697,7 @@
             ]
         },
         "google/XNNPACK": {
-            "repo_stars": 2508,
+            "repo_stars": 2510,
             "repo_link": "https://github.com/google/XNNPACK",
             "repo_description": "High-efficiency floating-point neural network inference operators for mobile, server, and Web",
             "prs": [
@@ -7110,7 +7159,7 @@
             ]
         },
         "flutter/flutter": {
-            "repo_stars": 181566,
+            "repo_stars": 181396,
             "repo_link": "https://github.com/flutter/flutter",
             "repo_description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
             "prs": [
@@ -7292,7 +7341,7 @@
             ]
         },
         "media-kit/media-kit": {
-            "repo_stars": 1857,
+            "repo_stars": 1858,
             "repo_link": "https://github.com/media-kit/media-kit",
             "repo_description": "Cross-platform video player & audio player for Flutter & Dart.",
             "prs": [
@@ -7698,7 +7747,7 @@
             ]
         },
         "flutter/packages": {
-            "repo_stars": 5350,
+            "repo_stars": 5352,
             "repo_link": "https://github.com/flutter/packages",
             "repo_description": "A collection of useful packages maintained by the Flutter team",
             "prs": [
@@ -8132,7 +8181,7 @@
             ]
         },
         "flutter-team-archive/plugins": {
-            "repo_stars": 17700,
+            "repo_stars": 17698,
             "repo_link": "https://github.com/flutter-team-archive/plugins",
             "repo_description": "Plugins for Flutter maintained by the Flutter team",
             "prs": [
